@@ -7,7 +7,7 @@ import util.Driver;
 public class BeforeAfterSteps {
     @Before
     public void before() {
-        Driver.createDriver();
+            Driver.createDriver();
     }
 
     @After

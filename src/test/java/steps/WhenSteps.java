@@ -1,12 +1,14 @@
 package steps;
 
 import cucumber.api.java.en.When;
-import pages.EnterPageGB;
+import pages.MainPage;
 
 public class WhenSteps {
-
-    @When("^Press on category$")
+    MainPage mainPage = new MainPage();
+//    @When("^Press on '(.*)' category$")
+    @When("^Press on electrocasnice category$")
     public void pressOnCategory() {
-        EnterPageGB.electroCasniceCategory();
+        mainPage.ClickOnelectroCasniceCategory();
+//        mainPage.electroCasniceCategoryIsDisplayed();
     }
 }
