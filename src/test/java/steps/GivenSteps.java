@@ -1,13 +1,13 @@
 package steps;
 
 import cucumber.api.java.en.Given;
-import pages.EnterPageGB;
+import pages.MainPage;
+import util.Driver;
 
 public class GivenSteps {
-
+    MainPage mainPage = new MainPage();
     @Given("^User is on homepage$")
     public void userIsOnHomepage() {
-        EnterPageGB.initialisePage();
-
+        Driver.getDriver().get("https://enter.online/");
     }
 }
