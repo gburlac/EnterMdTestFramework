@@ -12,17 +12,17 @@ public class ThenSteps {
         mainPage.electroCasniceCategoryIsDisplayed();
     }
 
-    @And("^tehnica de bucatarie part is displayed$")
+    @Then("^tehnica de bucatarie part is displayed$")
     public void tehnicaDeBucatariePartIsDisplayed() {
         mainPage.tehnicaDeBucatarieLabel();
     }
 
-    @And("^aparate de uz casnice part is displaed$")
+    @Then("^aparate de uz casnice part is displaed$")
     public void aparateDeUzCasnicePartIsDisplaed() {
         mainPage.aparateDeUzCasnicePart();
     }
 
-    @And("^ingrijire personala part is displayed$")
+    @Then("^ingrijire personala part is displayed$")
     public void ingrijirePersonalaPartIsDisplayed() {
         mainPage.ingrijirePersonala();
     }
