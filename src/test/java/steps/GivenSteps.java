@@ -2,7 +2,7 @@ package steps;
 
 import cucumber.api.java.en.Given;
 import pages.MainPage;
-import util.Driver;
+import util.*;
 
 public class GivenSteps {
     MainPage mainPage = new MainPage();
