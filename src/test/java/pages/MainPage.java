@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import static junit.framework.Assert.assertTrue;
 
 public class MainPage extends Page {
+
     //find elements
     //*[@id="index"]/div[3]/div/div[1]/div/div/ul/li[1]/a
     //div[contains(@class, 'ty-wysiwyg-content')]/ul/li[1]/a
@@ -19,6 +20,7 @@ public class MainPage extends Page {
     private WebElement aparateDeUzCasnicePart;
     @FindBy(xpath = "//*[@id=\"block3\"]/h2")
     private WebElement ingrijirePersonala;
+
 
     //method
     public void ingrijirePersonala() {

@@ -4,40 +4,40 @@ Feature: Navigate on EnterPages
     Given User is on homepage
 
     Scenario: Navigate on enterOnline and check UI
-    When  press on electrocasnice category
+    When  press on <electrocasnice category>
     Then electrocasnice category is displayed
     And tehnica de bucatarie part is displayed
     And aparate de uz casnice part is displaed
     And ingrijire personala part is displayed
 
 
-    Scenario: Search for a product
-      When input in search bar a OnePlus
-      And select OnePlus 7 Pro device
-      And add to wishlist
-      Then verify is in wishlist
-
-    Scenario: Add to cart from category cadou pentru ea
-        When go to cadou pentru ea category
-        And select  Bobby Compact anti-theft product
-        And Select color to blue
-        And add to cart
-        Then verify is in cart
-
-    Scenario: Add to cart from toate categoriile
-          When go to periferice
-          And select tastaturi
-          And select 2 checkbox from filter
-          And add to cart
-          And go to cart
-          Then verify is in cart
-
-    Scenario:Order products from home page
-      When go to casti category
-      And select a product
-      And add to cart
-      And fill the delivery info
-      And place a order
-      Then verify the success message
+#    Scenario: Search for a product
+#      When input in search bar a OnePlus
+#      And select OnePlus 7 Pro device
+#      And add to wishlist
+#      Then verify is in wishlist
+#
+#    Scenario: Add to cart from category cadou pentru ea
+#        When go to cadou pentru ea category
+#        And select  Bobby Compact anti-theft product
+#        And Select color to blue
+#        And add to cart
+#        Then verify is in cart
+#
+#    Scenario: Add to cart from toate categoriile
+#          When go to periferice
+#          And select tastaturi
+#          And select 2 checkbox from filter
+#          And add to cart
+#          And go to cart
+#          Then verify is in cart
+#
+#    Scenario:Order products from home page
+#      When go to casti category
+#      And select a product
+#      And add to cart
+#      And fill the delivery info
+#      And place a order
+#      Then verify the success message
 
 

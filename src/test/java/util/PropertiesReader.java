@@ -1,0 +1,47 @@
+package util;
+
+import com.sun.xml.internal.bind.v2.TODO;
+import org.slf4j.Logger;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+public class PropertiesReader {
+
+    String browser;
+
+    static PropertiesReader propertiesReader;
+
+    private PropertiesReader(){
+        initProperties();
+    }
+
+    private void initProperties() {
+        Properties prop = new Properties();
+        String path = "C:\\javaxAutomation\\EnterMdTestFramework\\src\\test\\properties\\env.properties";
+        try {
+            InputStream istream = new FileInputStream(path);
+            prop.load(istream);
+
+            browser = prop.getProperty("browser");
+        } catch (FileNotFoundException e) {
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static PropertiesReader getInstatnce(){
+        if (propertiesReader == null) {
+            propertiesReader = new PropertiesReader();
+        }
+        return propertiesReader;
+    }
+
+    public String getBrowser() {
+        return browser;
+    }
+}
