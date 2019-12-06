@@ -11,4 +11,9 @@ public class WhenSteps {
         mainPage.ClickOnelectroCasniceCategory();
 //        mainPage.electroCasniceCategoryIsDisplayed();
     }
+
+    @When("^ Press on ?'(.*)' category$")
+    public void pressOnElectrocasniceCategory() {
+
+    }
 }
