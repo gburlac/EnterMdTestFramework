@@ -1,7 +1,7 @@
 package pages;
 
 import org.openqa.selenium.support.PageFactory;
-import util.Driver;
+import util.*;
 
 public class Page {
     Page(){
