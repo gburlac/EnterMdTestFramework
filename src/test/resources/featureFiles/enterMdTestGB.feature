@@ -3,7 +3,7 @@ Feature: Navigate on EnterPages
   Background:
     Given User is on homepage
 
-  @George
+
   Scenario: Navigate on enterOnline and check UI
     When  press on electrocasnice category
     Then electrocasnice category is displayed
