@@ -32,7 +32,7 @@ public class Driver {
 //            capabilities.setCapability("marionette", true);
 //            driver = new FirefoxDriver(capabilities);
         }
-        log.error("", new RuntimeException("dwadwadaw"));
+        log.error("Driver exeption", new RuntimeException("initialising exeption"));
         return driver;
     }
     public static WebDriver getDriver() {
