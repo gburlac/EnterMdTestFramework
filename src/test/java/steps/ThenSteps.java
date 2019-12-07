@@ -5,6 +5,9 @@ import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
 import pages.Electrocasnice;
 import pages.MainPage;
+import util.Driver;
+
+import java.util.concurrent.TimeUnit;
 
 public class ThenSteps<log> {
     MainPage mainPage = new MainPage();
@@ -32,4 +35,11 @@ public class ThenSteps<log> {
         electrocasnice.ingrijirePersonala();
     }
 
+    @Then("^verify is in wishlist$")
+    public void verifyIsInWishlist() throws InterruptedException {
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(5000);
+        mainPage.assertProductInWischlist();
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
 }
