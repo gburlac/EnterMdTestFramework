@@ -23,7 +23,6 @@ public class Driver {
 
     private static WebDriver driver;
     public static WebDriver createDriver() {
-        properties.getBrowser();
         if (driver == null)
         {
             switch (properties.getBrowser()) {
