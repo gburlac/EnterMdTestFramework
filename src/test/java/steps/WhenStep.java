@@ -23,4 +23,9 @@ public class WhenStep {
     public void clickOnLoginMenu(){
         mainPage.accessLoginMenu();
     }
+
+    @When("^user click on 'facebook' icon$")
+    public void clickOnFacebookIcon(){
+        mainPage.loginViaFacebook();
+    }
 }

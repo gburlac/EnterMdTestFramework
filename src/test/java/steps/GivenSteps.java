@@ -11,6 +11,7 @@ public class GivenSteps {
     @Given("^User is on homepage$")
     public void userIsOnHomepage() {
         driver.get("https://enter.online/");
+        Waiter.waiter();
         TakeScreens.takeScreenshot(driver, "home_page");
     }
 }

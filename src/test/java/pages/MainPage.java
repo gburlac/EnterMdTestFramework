@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.security.cert.X509Certificate;
+
 import static junit.framework.Assert.assertTrue;
 
 public class MainPage extends Page {
@@ -25,9 +27,10 @@ public class MainPage extends Page {
     WebElement loginOption;
     @FindBy (xpath = "//button[@name='dispatch[auth.login]']")
     WebElement loginButton;
-
-
-
+    @FindBy (xpath = "//a[3]//img[1]")
+    WebElement facebookIcon;
+    @FindBy(xpath = "//span[contains(text(),'în cont')]")
+    WebElement loginMenu;
 
     //method
     public void ingrijirePersonala() {
@@ -53,13 +56,22 @@ public class MainPage extends Page {
     public void accessLoginMenu(){
         loginOption.click();
     }
-
-    public void showAsserts(){
+    public void loginViaFacebook(){
+        facebookIcon.click();
+    }
+    public void showAssertsLoginMenu(){
         try {
             Assert.assertTrue(loginButton.isDisplayed());
             System.out.println(">>Login pop up is displayed!<<<");
         } catch (Exception e){
             System.out.println(">>>Login pop up is not displayed!<<<");
+        }
+    }
+    public void checkThatUserIsLoggedIn() throws Exception {
+        if (loginMenu.getText() != "în cont"){
+            System.out.println(">>>User is logged in!<<<");
+        } else {
+            throw new Exception("Login failed!");
         }
     }
 }

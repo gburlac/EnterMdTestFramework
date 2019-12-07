@@ -32,6 +32,7 @@ public class Driver {
 //            capabilities.setCapability("marionette", true);
 //            driver = new FirefoxDriver(capabilities);
         }
+        driver.manage().window().maximize();
         log.error("", new RuntimeException("dwadwadaw"));
         return driver;
     }
