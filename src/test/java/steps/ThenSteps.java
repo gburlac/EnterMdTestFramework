@@ -3,6 +3,7 @@ package steps;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
+import pages.CadouPentruEa;
 import pages.Electrocasnice;
 import pages.MainPage;
 import util.Driver;
@@ -12,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class ThenSteps<log> {
     MainPage mainPage = new MainPage();
     Electrocasnice electrocasnice = new Electrocasnice();
+    CadouPentruEa cadouPentruEa = new CadouPentruEa();
     static Logger log = Logger.getLogger(ThenSteps.class);
 
     @Then("^electrocasnice category is displayed$")
@@ -41,5 +43,10 @@ public class ThenSteps<log> {
         Thread.sleep(5000);
         mainPage.assertProductInWischlist();
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
+
+    @Then("^verify is in cart$")
+    public void verifyIsInCart() {
+        cadouPentruEa.assertInCartItem();
     }
 }

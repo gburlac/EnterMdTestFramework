@@ -4,12 +4,12 @@ Feature: Navigate on EnterPages
     Given User is on homepage
 
 
-#  Scenario: Navigate on enterOnline and check UI
-#    When  press on electrocasnice category
-#    Then electrocasnice category is displayed
-#    And tehnica de bucatarie part is displayed
-#    And aparate de uz casnice part is displaed
-#    And ingrijire personala part is displayed
+    Scenario: Navigate on enterOnline and check UI
+    When  press on electrocasnice category
+    Then electrocasnice category is displayed
+    And tehnica de bucatarie part is displayed
+    And aparate de uz casnice part is displaed
+    And ingrijire personala part is displayed
 
 
     Scenario: Search for a product
@@ -18,13 +18,14 @@ Feature: Navigate on EnterPages
       And add to wishlist
       And go to wishlist
       Then verify is in wishlist
-#
-#    Scenario: Add to cart from category cadou pentru ea
-#        When go to cadou pentru ea category
-#        And select  Bobby Compact anti-theft product
-#        And Select color to blue
-#        And add to cart
-#        Then verify is in cart
+
+    Scenario: Add to cart from category cadou pentru ea
+        When go to cadou pentru ea category
+        And select  Bobby Compact anti-theft product
+        And select color to blue
+        And add to cart
+        And go to cart
+        Then verify is in cart
 #
 #    Scenario: Add to cart from toate categoriile
 #          When go to periferice
