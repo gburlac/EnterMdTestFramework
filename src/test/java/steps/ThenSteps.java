@@ -2,7 +2,10 @@ package steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import org.openqa.selenium.WebDriver;
 import pages.MainPage;
+import util.Driver;
+import util.TakeScreens;
 
 public class ThenSteps {
     MainPage mainPage = new MainPage();
@@ -25,5 +28,11 @@ public class ThenSteps {
     @Then("^ingrijire personala part is displayed$")
     public void ingrijirePersonalaPartIsDisplayed() {
         mainPage.ingrijirePersonala();
+    }
+
+    @Then("^login menu popup is displayed$")
+    public void loginPopupAsserts(){
+        mainPage.showAsserts();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "login_menu");
     }
 }

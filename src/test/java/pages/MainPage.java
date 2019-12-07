@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -20,6 +21,12 @@ public class MainPage extends Page {
     private WebElement aparateDeUzCasnicePart;
     @FindBy(xpath = "//*[@id=\"block3\"]/h2")
     private WebElement ingrijirePersonala;
+    @FindBy (xpath = "//span[contains(text(),'în cont')]")
+    WebElement loginOption;
+    @FindBy (xpath = "//button[@name='dispatch[auth.login]']")
+    WebElement loginButton;
+
+
 
 
     //method
@@ -41,5 +48,18 @@ public class MainPage extends Page {
 
     public void ClickOnelectroCasniceCategory() {
         electroCasniceCategory.click();
+    }
+
+    public void accessLoginMenu(){
+        loginOption.click();
+    }
+
+    public void showAsserts(){
+        try {
+            Assert.assertTrue(loginButton.isDisplayed());
+            System.out.println(">>Login pop up is displayed!<<<");
+        } catch (Exception e){
+            System.out.println(">>>Login pop up is not displayed!<<<");
+        }
     }
 }
