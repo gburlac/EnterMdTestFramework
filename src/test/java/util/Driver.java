@@ -1,14 +1,18 @@
 package util;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import sun.rmi.runtime.Log;
 
 
@@ -19,12 +23,22 @@ public class Driver {
 
     private static WebDriver driver;
     public static WebDriver createDriver() {
-//        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Vatamanenco\\.m2\\repository\\webdriver\\geckodriver\\win64\\geckodriver.exe");
-        WebDriverManager.chromedriver().setup();
         properties.getBrowser();
         if (driver == null)
         {
-            driver = new ChromeDriver();
+            switch (properties.getBrowser()) {
+                    case "chrome" :{
+                        driver = new ChromeDriver();
+                        break;
+                    }
+                    case "ie":{
+                        InternetExplorerOptions capabilities= new InternetExplorerOptions();
+                        capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+                        driver = new InternetExplorerDriver(capabilities);
+                        driver.manage().window().maximize();
+                        break;
+                    }
+            }
 //            OperaOptions options = new OperaOptions();
 //            options.setBinary("C:\\Users\\Vatamanenco\\AppData\\Local\\Programs\\Opera\\65.0.3467.48\\opera.exe");
 //            driver = new OperaDriver(options);
@@ -34,9 +48,14 @@ public class Driver {
         }
         log.error("Driver exeption", new RuntimeException("initialising exeption"));
         return driver;
+
     }
     public static WebDriver getDriver() {
         return driver;
+    }
+    public static void closeDriver(){
+        driver.quit();
+        driver = null;
     }
 
 

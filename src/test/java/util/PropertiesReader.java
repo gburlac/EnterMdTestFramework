@@ -12,7 +12,6 @@ import java.util.Properties;
 public class PropertiesReader {
 
     String browser;
-
     static PropertiesReader propertiesReader;
 
     private PropertiesReader(){
