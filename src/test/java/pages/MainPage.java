@@ -74,4 +74,7 @@ public class MainPage extends Page {
             throw new Exception("Login failed!");
         }
     }
+    public void getTextFromElement(){
+        loginMenu.getText();
+    }
 }

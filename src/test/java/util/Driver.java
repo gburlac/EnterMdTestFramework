@@ -33,6 +33,7 @@ public class Driver {
 //            driver = new FirefoxDriver(capabilities);
         }
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
         log.error("", new RuntimeException("dwadwadaw"));
         return driver;
     }

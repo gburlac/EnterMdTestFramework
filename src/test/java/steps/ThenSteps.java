@@ -8,6 +8,7 @@ import pages.MainPage;
 import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
+import util.WindowsHandler;
 
 public class ThenSteps {
     MainPage mainPage = new MainPage();
@@ -37,10 +38,25 @@ public class ThenSteps {
         mainPage.showAssertsLoginMenu();
         TakeScreens.takeScreenshot(Driver.getDriver(), "login_menu");
     }
+
+    @Then("^login window pops up$")
+    public void loginWindowPopupAssert(){
+        Waiter.waiter();
+        TakeScreens.takeScreenshot(Driver.getDriver(),"login_popup_window");
+    }
+
+    @Then("^email and password fiels are filled in$")
+    public void checkThatCredentialsAreSent(){
+        Waiter.waiter();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "login_and_password_filled");
+    }
+
+
     @Then("^user is logged in via facebook profile and home page is displayed$")
     public void assertUserIsLogged() throws Exception {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        mainPage.checkThatUserIsLoggedIn();
-        TakeScreens.takeScreenshot(Driver.getDriver(),"user_is_logged");
+        Thread.sleep(7000);
+//        mainPage.checkThatUserIsLoggedIn();
+        mainPage.getTextFromElement();
+//        TakeScreens.takeScreenshot(Driver.getDriver(),"user_is_logged");
     }
 }
