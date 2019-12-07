@@ -21,7 +21,7 @@ public class PropertiesReader {
 
     private void initProperties() {
         Properties prop = new Properties();
-        String path = "C:\\javaxAutomation\\EnterMdTestFramework\\src\\test\\properties\\env.properties";
+        String path = "src/test/properties/env.properties";
         try {
             InputStream istream = new FileInputStream(path);
             prop.load(istream);

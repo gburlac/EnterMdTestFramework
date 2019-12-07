@@ -3,8 +3,9 @@ Feature: Navigate on EnterPages
   Background:
     Given User is on homepage
 
-    Scenario: Navigate on enterOnline and check UI
-    When  press on <electrocasnice category>
+
+  Scenario: Navigate on enterOnline and check UI
+    When  press on electrocasnice category
     Then electrocasnice category is displayed
     And tehnica de bucatarie part is displayed
     And aparate de uz casnice part is displaed
