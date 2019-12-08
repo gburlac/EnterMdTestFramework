@@ -12,27 +12,30 @@ Feature: Navigate on EnterPages
     And ingrijire personala part is displayed
 
 
-#    Scenario: Search for a product
-#      When input in search bar a OnePlus
-#      And select OnePlus 7 Pro device
-#      And add to wishlist
-#      Then verify is in wishlist
+  Scenario: Search for a product
+    When input in search bar a OnePlus
+    And select OnePlus 7 Pro device
+    And add to wishlist
+    And go to wishlist
+    Then verify is in wishlist
+
+  Scenario: Add to cart from category cadou pentru ea
+    When go to cadou pentru ea category
+    And select Bobby Compact anti-theft product
+    And select color to blue
+    And add to cart
+    And go to cart
+    Then verify is in cart
 #
-#    Scenario: Add to cart from category cadou pentru ea
-#        When go to cadou pentru ea category
-#        And select  Bobby Compact anti-theft product
-#        And Select color to blue
-#        And add to cart
-#        Then verify is in cart
-#
-#    Scenario: Add to cart from toate categoriile
-#          When go to periferice
-#          And select tastaturi
-#          And select 2 checkbox from filter
-#          And add to cart
-#          And go to cart
-#          Then verify is in cart
-#
+  Scenario: Add to cart from toate categoriile
+    When go to periferice
+    And select PC si periferice
+    And select tastaturi
+    And select two option from filter
+    And select and add to cart
+    And go to see the cart
+    Then verify selected product is in cart
+
 #    Scenario:Order products from home page
 #      When go to casti category
 #      And select a product

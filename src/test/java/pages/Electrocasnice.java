@@ -1,11 +1,13 @@
 package pages;
 
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import static junit.framework.Assert.assertTrue;
 
 public class Electrocasnice extends Page {
+
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
     private WebElement electroCasniceCategory;
     @FindBy(xpath = "//*[@id=\"categories\"]/div[3]/div/div[2]/div/div/div/h1")
@@ -35,5 +37,6 @@ public class Electrocasnice extends Page {
 
     public void electroCasniceCategory() {
         assertTrue(electroCasniceCategoryMainLabel.isDisplayed());
+        electroCasniceCategoryMainLabel.getScreenshotAs(OutputType.FILE);
     }
 }

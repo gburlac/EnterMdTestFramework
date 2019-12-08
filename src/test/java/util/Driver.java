@@ -11,30 +11,28 @@ import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import sun.rmi.runtime.Log;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class Driver {
 
     static PropertiesReader properties = PropertiesReader.getInstatnce();
     static Logger log = Logger.getLogger(Driver.class);
 
-    private static WebDriver driver;
+    public static WebDriver driver;
+
     public static WebDriver createDriver() {
-//        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Vatamanenco\\.m2\\repository\\webdriver\\geckodriver\\win64\\geckodriver.exe");
         WebDriverManager.chromedriver().setup();
         properties.getBrowser();
-        if (driver == null)
-        {
+        if (driver == null) {
             driver = new ChromeDriver();
-//            OperaOptions options = new OperaOptions();
-//            options.setBinary("C:\\Users\\Vatamanenco\\AppData\\Local\\Programs\\Opera\\65.0.3467.48\\opera.exe");
-//            driver = new OperaDriver(options);
-//            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-//            capabilities.setCapability("marionette", true);
-//            driver = new FirefoxDriver(capabilities);
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
         }
         log.error("Driver exeption", new RuntimeException("initialising exeption"));
         return driver;
     }
+
     public static WebDriver getDriver() {
         return driver;
     }
