@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import pages.CadouPentruEa;
 import pages.Electrocasnice;
 import pages.MainPage;
+import pages.ToateCategoriile;
 import util.Driver;
 
 import java.util.concurrent.TimeUnit;
@@ -14,6 +15,7 @@ public class ThenSteps<log> {
     MainPage mainPage = new MainPage();
     Electrocasnice electrocasnice = new Electrocasnice();
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
+    ToateCategoriile toateCategoriile = new ToateCategoriile();
     static Logger log = Logger.getLogger(ThenSteps.class);
 
     @Then("^electrocasnice category is displayed$")
@@ -48,5 +50,11 @@ public class ThenSteps<log> {
     @Then("^verify is in cart$")
     public void verifyIsInCart() {
         cadouPentruEa.assertInCartItem();
+    }
+
+    @Then("^verify selected product is in cart$")
+    public void verifySelectedProductIsInCart() {
+        toateCategoriile.assertCheckIsInCart();
+
     }
 }

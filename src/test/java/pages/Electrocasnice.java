@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -36,5 +37,6 @@ public class Electrocasnice extends Page {
 
     public void electroCasniceCategory() {
         assertTrue(electroCasniceCategoryMainLabel.isDisplayed());
+        electroCasniceCategoryMainLabel.getScreenshotAs(OutputType.FILE);
     }
 }

@@ -12,10 +12,10 @@ public class CadouPentruEa extends Page {
     //*[@id="text_links_2948"]/li[6]/a
     //ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]/a[contains(@class, 'ty-text-links__a')]
 //    /html/body/div[1]/div[4]/div/div[4]/div/div[2]/div/div[1]/div[3]/div/div[2]/ul/li[6]/a
-    @FindBy(xpath = "//*[@id=\"text_links_2948\"]/li[6]/a")
+    @FindBy(xpath = "//ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]")
     private WebElement cadouPentruEaLink;
     //*[@id="pages"]/div[3]/div/div[4]/div/div/div[2]/div/div/div/div[4]/div/div/form/div/a/div[1]/img
-    @FindBy(xpath = "//*[@id=\"pages\"]/div[3]/div/div[4]/div/div/div[2]/div/div/div/div[4]/div/div/form/div/a/div[1]/img")
+    @FindBy(xpath = "//*[@id=\"pages\"]/div[3]/div/div[4]/div/div/div[2]/div/div/div/div[4]/div/div/form/div/a/div[2]")
     private WebElement productBobyCompact;
     @FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[2]/div[3]/div[2]/a/span")
     private WebElement changeColorToBlueDark;
@@ -36,6 +36,8 @@ public class CadouPentruEa extends Page {
     }
 
     public void clickButtonAddToCart() {
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(buttonAddToCart).build().perform();
         buttonAddToCart.click();
     }
 
@@ -48,10 +50,9 @@ public class CadouPentruEa extends Page {
     }
 
     public void clickCadouPentruEaLink() {
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(cadouPentruEaLink).build().perform();
         cadouPentruEaLink.click();
-//        cadouPentruEaLink.click();
-//        Actions actions = new Actions(Driver.getDriver());
-//        actions.moveToElement(cadouPentruEaLink).build().perform();
     }
 
 }
