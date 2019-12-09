@@ -25,6 +25,7 @@ public class ThenSteps<log> {
     @Then("^electrocasnice category is displayed$")
     public void electrocasniceCategoryIsDisplayed() {
         electrocasnice.electroCasniceCategory();
+        TakeScreens.takeScreenshot(Driver.getDriver(),"electrcasnice");
 
     }
 
