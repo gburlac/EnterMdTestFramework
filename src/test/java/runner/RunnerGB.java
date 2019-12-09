@@ -6,10 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/featureFiles"
-        ,glue={"steps"}
-        ,name = "Navigate on EnterPages"
-        ,tags ="RunnerGB"
+        features = "src/test/resources/featureFiles",
+        glue={"steps"},
+        name = "Navigate on EnterPages",
+        plugin = { "pretty" },
+        monochrome = true
 )
 public class RunnerGB {
 }
