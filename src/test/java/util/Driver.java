@@ -28,6 +28,7 @@ public class Driver {
             switch (properties.getBrowser()) {
                     case "chrome" :{
                         driver = new ChromeDriver();
+                        driver.manage().window().maximize();
                         break;
                     }
                     case "ie":{
