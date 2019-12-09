@@ -1,7 +1,4 @@
-# new feature
-# Tags: optional
+Feature: A description
 
-#Feature: A description
-#
-#  Scenario: A scenario
-#    Given something..
+  Scenario: A scenario
+    Given something..

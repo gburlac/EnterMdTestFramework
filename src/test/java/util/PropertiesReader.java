@@ -1,6 +1,5 @@
 package util;
 
-import com.sun.xml.internal.bind.v2.TODO;
 import org.slf4j.Logger;
 
 import java.io.FileInputStream;
@@ -32,14 +31,12 @@ public class PropertiesReader {
             e.printStackTrace();
         }
     }
-
     public static PropertiesReader getInstatnce(){
         if (propertiesReader == null) {
             propertiesReader = new PropertiesReader();
         }
         return propertiesReader;
     }
-
     public String getBrowser() {
         return browser;
     }
