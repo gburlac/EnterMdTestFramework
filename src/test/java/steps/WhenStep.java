@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import pages.LoginPopup;
 import pages.MainPage;
+import pages.MainPageAsLogged;
 import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
@@ -16,6 +17,7 @@ public class WhenStep {
 
     MainPage mainPage = new MainPage();
     LoginPopup loginPopup = new LoginPopup();
+    MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
 
     @When("^press on electrocasnice category$")
     public void pressOnCategory() {
@@ -26,28 +28,43 @@ public class WhenStep {
     public void inputInSearchBarAOnePlus() {
     }
 
-    @When("^user click on login menu$")
+    @When("^user clicks on login menu$")
     public void clickOnLoginMenu(){
         mainPage.accessLoginMenu();
     }
 
-    @When("^user click on 'facebook' icon$")
+    @When("^user clicks on 'facebook' icon$")
     public void clickOnFacebookIcon(){
         mainPage.loginViaFacebook();
+        WindowsHandler.switchWindow();
     }
 
-    @When("^user enter credentials")
-    public void enterCredentials() throws InterruptedException {
-        WindowsHandler.switchWindow();
-        Thread.sleep(5000);
-        loginPopup.inputEmail("qweqwewq@me.com");
-        loginPopup.inputPassword("123123");
+    @When("^user enters credentials")
+    public void enterCredentials() {
+        Waiter.waitById("email");
+        Waiter.waitById("pass");
+        loginPopup.inputEmail("vovc1k.ru@gmail.com");
+        loginPopup.inputPassword("Vilrkrew@1");
     }
 
     @When("^user press login button$")
     public void clickLoginButton(){
         loginPopup.login();
-//        WindowsHandler.switchBack();
-        WindowsHandler.getParentWindow();
+        WindowsHandler.switchBackToMain();
+    }
+
+    @When("^user clicks on 'categoryList'$")
+    public void openCategoryList(){
+        mainPageAsLogged.openAllCategories();
+    }
+
+    @When("^user clicks on 'telefoane' category$")
+    public void openTelefoaneCategories(){
+        mainPageAsLogged.openAllTelefoaneCategories();
+    }
+
+    @When("^user clicks on 'smartphones' category$")
+    public void openSmartphonesCategory(){
+        mainPageAsLogged.goToSmartphones();
     }
 }

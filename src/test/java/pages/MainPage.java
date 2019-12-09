@@ -1,14 +1,20 @@
 package pages;
 
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import util.DrawBorder;
+import util.Driver;
 
 import java.security.cert.X509Certificate;
 
 import static junit.framework.Assert.assertTrue;
 
 public class MainPage extends Page {
+
+    WebDriver driver = Driver.getDriver();
+    DrawBorder dB;
 
     //find elements
     //*[@id="index"]/div[3]/div/div[1]/div/div/ul/li[1]/a
@@ -29,8 +35,10 @@ public class MainPage extends Page {
     WebElement loginButton;
     @FindBy (xpath = "//a[3]//img[1]")
     WebElement facebookIcon;
-    @FindBy(xpath = "//span[contains(text(),'în cont')]")
+    @FindBy(className = "name")
     WebElement loginMenu;
+    @FindBy(xpath = "//div[contains(@class,'span16 modern2-top-banner fullwidth')]//div[2]//div[1]//div[1]//div[1]//a[1]//picture[1]//img[1]")
+    public static WebElement mainBanner;
 
     //method
     public void ingrijirePersonala() {
@@ -54,9 +62,11 @@ public class MainPage extends Page {
     }
 
     public void accessLoginMenu(){
+        dB.drawBorder(loginOption, driver);
         loginOption.click();
     }
     public void loginViaFacebook(){
+        dB.drawBorder(facebookIcon, driver);
         facebookIcon.click();
     }
     public void showAssertsLoginMenu(){
@@ -73,8 +83,5 @@ public class MainPage extends Page {
         } else {
             throw new Exception("Login failed!");
         }
-    }
-    public void getTextFromElement(){
-        loginMenu.getText();
     }
 }
