@@ -20,7 +20,7 @@ java.lang.RuntimeException: dwadwadaw
 	at cucumber.api.cli.Main.main(Main.java:18)
 2019-12-06 17:50:03 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
 2019-12-06 17:50:03 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-06 17:50:09 ERROR Driver:35 - 
+2019-12-06 17:50:09 ERROR Driver:35 -
 java.lang.RuntimeException: dwadwadaw
 	at util.Driver.createDriver(Driver.java:35)
 	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:12)
@@ -42,7 +42,7 @@ java.lang.RuntimeException: dwadwadaw
 	at cucumber.api.cli.Main.main(Main.java:18)
 2019-12-06 17:52:32 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
 2019-12-06 17:52:32 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-06 17:52:37 ERROR Driver:35 - 
+2019-12-06 17:52:37 ERROR Driver:35 -
 java.lang.RuntimeException: Driver exeption
 	at util.Driver.createDriver(Driver.java:35)
 	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:12)
@@ -64,7 +64,7 @@ java.lang.RuntimeException: Driver exeption
 	at cucumber.api.cli.Main.main(Main.java:18)
 2019-12-06 17:55:16 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
 2019-12-06 17:55:16 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-06 17:55:22 ERROR Driver:35 - 
+2019-12-06 17:55:22 ERROR Driver:35 -
 java.lang.RuntimeException: Driver exeption
 	at util.Driver.createDriver(Driver.java:35)
 	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:12)

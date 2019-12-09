@@ -7,12 +7,19 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CadouPentruEa;
 import pages.Electrocasnice;
+import pages.LoginPopup;
 import pages.MainPage;
 import pages.ToateCategoriile;
 
+import util.Driver;
+import util.TakeScreens;
+import util.Waiter;
+import util.WindowsHandler;
 
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class WhenStep {
 
@@ -25,7 +32,11 @@ public class WhenStep {
     static Logger log = Logger.getLogger(WhenStep.class);
 
     @When("^press on electrocasnice category$")
+    LoginPopup loginPopup = new LoginPopup();
+
+    @When("^press on electrocasnice category$")
     public void pressOnCategory() {
+        mainPage.ClickOnelectroCasniceCategory();
            electrocasnice.ClickOnelectroCasniceCategory();
     }
 
@@ -115,5 +126,30 @@ public class WhenStep {
     public void goToSeeTheCart() throws InterruptedException {
 //        toateCategoriile.clickOnCart();
         toateCategoriile.clickbuttonVizualizatiCosul();
+    }
+
+    @When("^user click on login menu$")
+    public void clickOnLoginMenu(){
+        mainPage.accessLoginMenu();
+    }
+
+    @When("^user click on 'facebook' icon$")
+    public void clickOnFacebookIcon(){
+        mainPage.loginViaFacebook();
+    }
+
+    @When("^user enter credentials")
+    public void enterCredentials() throws InterruptedException {
+        WindowsHandler.switchWindow();
+        Thread.sleep(5000);
+        loginPopup.inputEmail("qweqwewq@me.com");
+        loginPopup.inputPassword("123123");
+    }
+
+    @When("^user press login button$")
+    public void clickLoginButton(){
+        loginPopup.login();
+//        WindowsHandler.switchBack();
+        WindowsHandler.getParentWindow();
     }
 }
