@@ -10,6 +10,7 @@ import pages.ToateCategoriile;
 import util.*;
 
 import java.util.concurrent.TimeUnit;
+
 import pages.ToateCategoriile;
 import util.*;
 
@@ -25,24 +26,28 @@ public class ThenSteps<log> {
     @Then("^electrocasnice category is displayed$")
     public void electrocasniceCategoryIsDisplayed() {
         electrocasnice.electroCasniceCategory();
-        TakeScreens.takeScreenshot(Driver.getDriver(),"electrcasnice");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "electrcasnice");
 
     }
 
     @Then("^tehnica de bucatarie part is displayed$")
     public void tehnicaDeBucatariePartIsDisplayed() {
         electrocasnice.tehnicaDeBucatarieLabel();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "tehnicaDeBucatarieLabel");
     }
 
     @Then("^aparate de uz casnice part is displaed$")
     public void aparateDeUzCasnicePartIsDisplaed() {
         electrocasnice.aparateDeUzCasnicePart();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "aparateDeUzCasnicePartIsDisplaed");
     }
 
     @Then("^ingrijire personala part is displayed$")
     public void ingrijirePersonalaPartIsDisplayed() {
         electrocasnice.ingrijirePersonala();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "ingrijirePersonalaPartIsDisplayed");
     }
+
     @Then("^verify is in wishlist$")
     public void verifyIsInWishlist() throws InterruptedException {
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -53,6 +58,7 @@ public class ThenSteps<log> {
 
     @Then("^verify is in cart$")
     public void verifyIsInCart() {
+
         cadouPentruEa.assertInCartItem();
     }
 
