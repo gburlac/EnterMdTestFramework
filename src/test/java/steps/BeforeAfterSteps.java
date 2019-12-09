@@ -29,7 +29,7 @@ public class BeforeAfterSteps {
         Driver.createDriver();
     }
 
-    @After
+//    @After
     public void after() throws Exception {
         Driver.closeDriver();
     }

@@ -2,7 +2,6 @@ package steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
-import pages.Electrocasnice;
 import pages.MainPage;
 
 import java.util.logging.Logger;
@@ -13,11 +12,21 @@ public class WhenStep {
     Electrocasnice electrocasnice = new Electrocasnice();
        @When("^press on electrocasnice category$")
     public void pressOnCategory() {
-           electrocasnice.ClickOnelectroCasniceCategory();
+           mainPage.ClickOnelectroCasniceCategory();
     }
 
     @When("^input in search bar a OnePlus$")
     public void inputInSearchBarAOnePlus() {
            mainPage.searchBarMethod();
+    }
+
+    @When("^user click on login menu$")
+    public void clickOnLoginMenu(){
+        mainPage.accessLoginMenu();
+    }
+
+    @When("^user click on 'facebook' icon$")
+    public void clickOnFacebookIcon(){
+        mainPage.loginViaFacebook();
     }
 }
