@@ -108,9 +108,11 @@ public class WhenStep {
     @When("^select two option from filter$")
     public void selectTwoOptionFromFilter() throws InterruptedException {
         toateCategoriile.selectOptionTastaturi();
-//        Thread.sleep(2000);
+//        Thread.sleep(1000);
+        Waiter.waiter();
         toateCategoriile.selectOptionTastaturi2();
-//        Thread.sleep(2000);
+        Waiter.waiter();
+//        Thread.sleep(1000);
     }
 
     @When("^select and add to cart$")

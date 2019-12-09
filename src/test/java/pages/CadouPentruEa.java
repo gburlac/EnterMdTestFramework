@@ -9,9 +9,7 @@ import static junit.framework.Assert.assertTrue;
 
 public class CadouPentruEa extends Page {
 
-    //*[@id="text_links_2948"]/li[6]/a
-    //ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]/a[contains(@class, 'ty-text-links__a')]
-//    /html/body/div[1]/div[4]/div/div[4]/div/div[2]/div/div[1]/div[3]/div/div[2]/ul/li[6]/a
+
     @FindBy(xpath = "//ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]")
     private WebElement cadouPentruEaLink;
     //*[@id="pages"]/div[3]/div/div[4]/div/div/div[2]/div/div/div/div[4]/div/div/form/div/a/div[1]/img

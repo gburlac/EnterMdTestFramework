@@ -16,6 +16,8 @@ public class ToateCategoriile extends Page {
     private WebElement buttonTastaturi;
     @FindBy(xpath = "//input[@id='elm_checkbox_376_239_61352']")
     private WebElement selectOptionTastaturi;
+    //*[@id="elm_checkbox_376_256_65292"]
+    //input[@id='elm_checkbox_376_256_65292']
     @FindBy(xpath = "//*[@id=\"elm_checkbox_376_256_65292\"]")
     private WebElement selectOptionTastaturi2;
     @FindBy(xpath = "//button[@id='button_cart_98934']")
@@ -26,7 +28,7 @@ public class ToateCategoriile extends Page {
     //*[@id="sw_dropdown_3262_cart"]/a/span/svg/path[1]
     @FindBy(xpath = "//*[@id=\"sw_dropdown_3262_cart\"]/a/span/svg/path[1]")
     private WebElement clickOnCart;
-    @FindBy(xpath = "//*[@id=\"det_img_2716447294\"]")
+    @FindBy(xpath = "//*[@id='det_img_2716447294']")
     private WebElement checkIsInCart;
 
 

@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
         plugin = { "pretty" },
         monochrome = true
 )
-public class RunnerGB {
+public class Runner {
 }
