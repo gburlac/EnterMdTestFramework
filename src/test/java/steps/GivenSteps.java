@@ -1,17 +1,18 @@
 package steps;
 
 import cucumber.api.java.en.Given;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.apache.log4j.Logger;
 import pages.MainPage;
 import util.*;
 
+import java.util.concurrent.TimeUnit;
+
 public class GivenSteps {
-    WebDriver driver = Driver.getDriver();
+    static Logger log = Logger.getLogger(GivenSteps.class);
     @Given("^User is on homepage$")
     public void userIsOnHomepage() {
-        driver.get("https://enter.online/");
-        Waiter.waiter();
-        TakeScreens.takeScreenshot(driver, "home_page");
+        Driver.getDriver().manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
+        Driver.getDriver().get("https://enter.online/");
+
     }
 }

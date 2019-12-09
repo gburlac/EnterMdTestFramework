@@ -2,45 +2,64 @@ package steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.log4j.Logger;
+import pages.CadouPentruEa;
+import pages.Electrocasnice;
 import pages.MainPage;
-import util.Driver;
-import util.TakeScreens;
-import util.Waiter;
+import pages.ToateCategoriile;
+import util.*;
 
-public class ThenSteps {
+import java.util.concurrent.TimeUnit;
+import pages.ToateCategoriile;
+import util.*;
+
+import java.util.concurrent.TimeUnit;
+
+public class ThenSteps<log> {
     MainPage mainPage = new MainPage();
+    Electrocasnice electrocasnice = new Electrocasnice();
+    CadouPentruEa cadouPentruEa = new CadouPentruEa();
+    ToateCategoriile toateCategoriile = new ToateCategoriile();
+    static Logger log = Logger.getLogger(ThenSteps.class);
 
     @Then("^electrocasnice category is displayed$")
     public void electrocasniceCategoryIsDisplayed() {
-        mainPage.electroCasniceCategoryIsDisplayed();
+        electrocasnice.electroCasniceCategory();
+        TakeScreens.takeScreenshot(Driver.getDriver(),"electrcasnice");
+
     }
 
     @Then("^tehnica de bucatarie part is displayed$")
     public void tehnicaDeBucatariePartIsDisplayed() {
-        mainPage.tehnicaDeBucatarieLabel();
+        electrocasnice.tehnicaDeBucatarieLabel();
     }
 
     @Then("^aparate de uz casnice part is displaed$")
     public void aparateDeUzCasnicePartIsDisplaed() {
-        mainPage.aparateDeUzCasnicePart();
+        electrocasnice.aparateDeUzCasnicePart();
     }
 
     @Then("^ingrijire personala part is displayed$")
     public void ingrijirePersonalaPartIsDisplayed() {
-        mainPage.ingrijirePersonala();
+        electrocasnice.ingrijirePersonala();
+    }
+    @Then("^verify is in wishlist$")
+    public void verifyIsInWishlist() throws InterruptedException {
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(5000);
+        mainPage.assertProductInWischlist();
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    @Then("^login menu popup is displayed$")
-    public void loginPopupAsserts(){
-        mainPage.showAssertsLoginMenu();
-        TakeScreens.takeScreenshot(Driver.getDriver(), "login_menu");
+    @Then("^verify is in cart$")
+    public void verifyIsInCart() {
+        cadouPentruEa.assertInCartItem();
     }
-    @Then("^user is logged in via facebook profile and home page is displayed$")
-    public void assertUserIsLogged() throws Exception {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        mainPage.checkThatUserIsLoggedIn();
-        TakeScreens.takeScreenshot(Driver.getDriver(),"user_is_logged");
+
+    @Then("^verify selected product is in cart$")
+    public void verifySelectedProductIsInCart() {
+        toateCategoriile.assertCheckIsInCart();
+
     }
+
 }

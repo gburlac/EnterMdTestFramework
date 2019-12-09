@@ -1,6 +1,5 @@
 package util;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -28,6 +27,7 @@ public class Driver {
             switch (properties.getBrowser()) {
                     case "chrome" :{
                         driver = new ChromeDriver();
+                        driver.manage().window().maximize();
                         break;
                     }
                     case "ie":{
@@ -38,12 +38,6 @@ public class Driver {
                         break;
                     }
             }
-//            OperaOptions options = new OperaOptions();
-//            options.setBinary("C:\\Users\\Vatamanenco\\AppData\\Local\\Programs\\Opera\\65.0.3467.48\\opera.exe");
-//            driver = new OperaDriver(options);
-//            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-//            capabilities.setCapability("marionette", true);
-//            driver = new FirefoxDriver(capabilities);
         }
         log.error("Driver exeption", new RuntimeException("initialising exeption"));
         return driver;
