@@ -7,7 +7,11 @@ import pages.CadouPentruEa;
 import pages.Electrocasnice;
 import pages.MainPage;
 import pages.ToateCategoriile;
-import util.Driver;
+import util.*;
+
+import java.util.concurrent.TimeUnit;
+import pages.ToateCategoriile;
+import util.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -38,7 +42,6 @@ public class ThenSteps<log> {
     public void ingrijirePersonalaPartIsDisplayed() {
         electrocasnice.ingrijirePersonala();
     }
-
     @Then("^verify is in wishlist$")
     public void verifyIsInWishlist() throws InterruptedException {
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -57,4 +60,5 @@ public class ThenSteps<log> {
         toateCategoriile.assertCheckIsInCart();
 
     }
+
 }

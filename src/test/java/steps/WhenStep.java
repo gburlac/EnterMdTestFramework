@@ -9,11 +9,10 @@ import pages.CadouPentruEa;
 import pages.Electrocasnice;
 import pages.MainPage;
 import pages.ToateCategoriile;
-import util.Driver;
+
+
 
 import java.util.concurrent.TimeUnit;
-
-import static util.Driver.driver;
 
 public class WhenStep {
 
@@ -21,13 +20,13 @@ public class WhenStep {
     Electrocasnice electrocasnice = new Electrocasnice();
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
     ToateCategoriile toateCategoriile = new ToateCategoriile();
-    WebDriverWait wait = new WebDriverWait(driver, 40);
+
 
     static Logger log = Logger.getLogger(WhenStep.class);
 
     @When("^press on electrocasnice category$")
     public void pressOnCategory() {
-        electrocasnice.ClickOnelectroCasniceCategory();
+           electrocasnice.ClickOnelectroCasniceCategory();
     }
 
     @When("^input in search bar a OnePlus$")
@@ -38,35 +37,31 @@ public class WhenStep {
     @When("^select OnePlus (\\d+) Pro device$")
     public void selectOnePlusProDevice(int arg0) throws InterruptedException {
 //        Thread.sleep(5000);
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         mainPage.clickOnSelectOnePlus();
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
     }
 
     @When("^add to wishlist$")
     public void addToWishlist() {
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         mainPage.clickbuttonAddToWishlist();
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
     }
 
     @When("^go to wishlist$")
     public void goToWishlist() throws InterruptedException {
 //        Thread.sleep(5000);
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         mainPage.clickbuttonCheckWischlist();
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
     }
 
     @When("^go to cadou pentru ea category$")
     public void goToCadouPentruEaCategory() {
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        cadouPentruEa.clickCadouPentruEaLink();
+                cadouPentruEa.clickCadouPentruEaLink();
     }
 
     @When("^select Bobby Compact anti-theft product$")
     public void selectBobbyCompactAntiTheftProduct() throws InterruptedException {
-        Thread.sleep(4000);
+//        Thread.sleep(4000);
         cadouPentruEa.clickProductBobyCompact();
     }
 
@@ -82,7 +77,7 @@ public class WhenStep {
 
     @When("^go to cart$")
     public void goToCart() throws InterruptedException {
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         cadouPentruEa.clickButtonGoToCart();
     }
 
@@ -105,9 +100,9 @@ public class WhenStep {
     @When("^select two option from filter$")
     public void selectTwoOptionFromFilter() throws InterruptedException {
         toateCategoriile.selectOptionTastaturi();
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
         toateCategoriile.selectOptionTastaturi2();
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
     }
 
     @When("^select and add to cart$")
