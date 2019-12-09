@@ -1,6 +1,5 @@
 package util;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -28,6 +27,7 @@ public class Driver {
             switch (properties.getBrowser()) {
                     case "chrome" :{
                         driver = new ChromeDriver();
+                        driver.manage().window().maximize();
                         break;
                     }
                     case "ie":{

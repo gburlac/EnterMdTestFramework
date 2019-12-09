@@ -7,12 +7,19 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CadouPentruEa;
 import pages.Electrocasnice;
+import pages.LoginPopup;
 import pages.MainPage;
 import pages.ToateCategoriile;
 
+import util.*;
+import util.TakeScreens;
+import util.Waiter;
+import util.WindowsHandler;
 
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
+
 
 public class WhenStep {
 
@@ -24,9 +31,10 @@ public class WhenStep {
 
     static Logger log = Logger.getLogger(WhenStep.class);
 
+
     @When("^press on electrocasnice category$")
     public void pressOnCategory() {
-           electrocasnice.ClickOnelectroCasniceCategory();
+        electrocasnice.ClickOnelectroCasniceCategory();
     }
 
     @When("^input in search bar a OnePlus$")
@@ -56,7 +64,7 @@ public class WhenStep {
 
     @When("^go to cadou pentru ea category$")
     public void goToCadouPentruEaCategory() {
-                cadouPentruEa.clickCadouPentruEaLink();
+        cadouPentruEa.clickCadouPentruEaLink();
     }
 
     @When("^select Bobby Compact anti-theft product$")
@@ -100,9 +108,11 @@ public class WhenStep {
     @When("^select two option from filter$")
     public void selectTwoOptionFromFilter() throws InterruptedException {
         toateCategoriile.selectOptionTastaturi();
-//        Thread.sleep(2000);
+//        Thread.sleep(1000);
+        Waiter.waiter();
         toateCategoriile.selectOptionTastaturi2();
-//        Thread.sleep(2000);
+        Waiter.waiter();
+//        Thread.sleep(1000);
     }
 
     @When("^select and add to cart$")
@@ -116,4 +126,6 @@ public class WhenStep {
 //        toateCategoriile.clickOnCart();
         toateCategoriile.clickbuttonVizualizatiCosul();
     }
+
+
 }
