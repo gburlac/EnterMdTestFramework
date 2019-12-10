@@ -14,6 +14,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import sun.rmi.runtime.Log;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class Driver {
 
@@ -21,32 +23,35 @@ public class Driver {
     static Logger log = Logger.getLogger(Driver.class);
 
     private static WebDriver driver;
+
     public static WebDriver createDriver() {
-        if (driver == null)
-        {
+        if (driver == null) {
             switch (properties.getBrowser()) {
-                    case "chrome" :{
-                        driver = new ChromeDriver();
-                        driver.manage().window().maximize();
-                        break;
-                    }
-                    case "ie":{
-                        InternetExplorerOptions capabilities= new InternetExplorerOptions();
-                        capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
-                        driver = new InternetExplorerDriver(capabilities);
-                        driver.manage().window().maximize();
-                        break;
-                    }
+                case "chrome": {
+                    driver = new ChromeDriver();
+                    driver.manage().window().maximize();
+                    driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
+                    break;
+                }
+                case "ie": {
+                    InternetExplorerOptions capabilities = new InternetExplorerOptions();
+                    capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+                    driver = new InternetExplorerDriver(capabilities);
+                    driver.manage().window().maximize();
+                    break;
+                }
             }
         }
         log.error("Driver exeption", new RuntimeException("initialising exeption"));
         return driver;
 
     }
+
     public static WebDriver getDriver() {
         return driver;
     }
-    public static void closeDriver(){
+
+    public static void closeDriver() {
         driver.quit();
         driver = null;
     }
