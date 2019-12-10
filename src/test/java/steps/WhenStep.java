@@ -5,11 +5,7 @@ import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.CadouPentruEa;
-import pages.Electrocasnice;
-import pages.LoginPopup;
-import pages.MainPage;
-import pages.ToateCategoriile;
+import pages.*;
 
 import util.*;
 import util.TakeScreens;
@@ -27,6 +23,7 @@ public class WhenStep {
     Electrocasnice electrocasnice = new Electrocasnice();
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
     ToateCategoriile toateCategoriile = new ToateCategoriile();
+    CastiPage castiPage = new CastiPage();
 
 
     static Logger log = Logger.getLogger(WhenStep.class);
@@ -110,15 +107,16 @@ public class WhenStep {
     @When("^select two option from filter$")
     public void selectTwoOptionFromFilter() throws InterruptedException {
         toateCategoriile.selectOptionTastaturi();
-        Thread.sleep(1000);
-//        Waiter.waiter();
+//        Thread.sleep(1000);
+        Waiter.waitByXPath("//button[@id='button_cart_98934']");
         toateCategoriile.selectOptionTastaturi2();
-//        Waiter.waiter();
-        Thread.sleep(1000);
+
+//        Thread.sleep(1000);
     }
 
     @When("^select and add to cart$")
     public void selectAndAddToCart() throws InterruptedException {
+        Waiter.waitByXPath("//button[@id='button_cart_98934']");
         toateCategoriile.clickAddToCart();
 //        Thread.sleep(4000);
     }
@@ -126,8 +124,26 @@ public class WhenStep {
     @When("^go to see the cart$")
     public void goToSeeTheCart() throws InterruptedException {
 //        toateCategoriile.clickOnCart();
+//        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         toateCategoriile.clickbuttonVizualizatiCosul();
     }
 
 
+    @When("^go to casti category$")
+    public void goToCastiCategory() {
+        castiPage.clickButonCasti();
+    }
+
+    @When("^select a product$")
+    public void selectAProduct() {
+        castiPage.clickButonAddtocartProduct();
+    }
+
+    @When("^take a look to cart$")
+    public void takeALookToCart() throws InterruptedException {
+        castiPage.clickButonCartStatusPopUp();
+        Thread.sleep(6000);
+//        castiPage.clickButonCartStatus();
+//        castiPage.clickButonCartStatusSecondary();
+    }
 }

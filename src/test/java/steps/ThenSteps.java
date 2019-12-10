@@ -54,7 +54,7 @@ public class ThenSteps<log> {
     public void verifyIsInWishlist() throws InterruptedException {
 //        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        Thread.sleep(5000);
-        Waiter.waiter();
+        Waiter.waitByXPath("//*[@id=\"det_img_98549\"]");
         mainPage.assertProductInWischlist();
 
     }
