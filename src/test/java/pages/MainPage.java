@@ -11,7 +11,7 @@ public class MainPage extends Page {
 
     @FindBy(xpath = "//*[@id=\"iam_search\"]")
     private WebElement searchBar;
-    @FindBy(xpath = "//*[@id=\"iam_search_products\"]/li[2]/a/div/div[2]/div[1]")
+    @FindBy(xpath = "//div[contains(text(),'OnePlus 7 Pro')]")
     private WebElement selectOnePlus;
     //button[@id='button_wishlist_9854998549']
     @FindBy(xpath = "//button[@id='button_wishlist_9854998549']")
