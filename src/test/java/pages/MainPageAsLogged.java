@@ -12,6 +12,7 @@ public class MainPageAsLogged extends Page {
 
     WebDriver driver = Driver.getDriver();
     DrawBorder dB;
+    Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(id = "megamenubutton")
     WebElement allCategories;
@@ -23,6 +24,10 @@ public class MainPageAsLogged extends Page {
     WebElement samsungCategory;
     @FindBy(xpath = "//img[@id='det_img_95196']")
     WebElement phoneDetails;
+    @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
+    WebElement userMenu;
+    @FindBy(xpath = "//div[@class='uk-width-auto@m']//li[6]//a[1]")
+    WebElement logoutOption;
 
 
     public void openAllCategories(){
@@ -45,7 +50,6 @@ public class MainPageAsLogged extends Page {
     }
 
     public void goToSmartphones(){
-        Actions actions = new Actions(Driver.getDriver());
 //        dB.drawBorder(smartphonesCategory, driver);
         TakeScreens.takeScreenshot(driver, "go_to_smartphones");
         actions.moveToElement(smartphonesCategory).build().perform();
@@ -82,6 +86,19 @@ public class MainPageAsLogged extends Page {
             System.out.println(">>>>> List of all categories is displayed! <<<<<");
         } catch (Exception e){
             throw new Exception(">>>>> List of all categories is NOT displayed! <<<<<");
+        }
+    }
+
+    public void logout() throws Exception {
+        actions.moveToElement(userMenu).moveToElement(logoutOption).click().build().perform();
+    }
+
+    public void assertUserIsLoggedOut() throws Exception {
+        try {
+            if (userMenu.getText().equals("intră în cont"))
+            System.out.println(">>>>> SUCCESS! User is logged out! <<<<<");
+        } catch (Exception e){
+            throw new Exception(">>>>> ERROR! User is not logged out! <<<<<");
         }
     }
 

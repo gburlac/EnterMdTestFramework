@@ -36,34 +36,41 @@ public class ThenSteps {
         mainPage.ingrijirePersonala();
     }
 
-    @Then("^login menu popup is displayed$")
-    public void loginPopupAsserts() {
-        Waiter.waitByXPath("//form[contains(@name,'popup3262_form')]");
-        mainPage.showAssertsLoginMenu();
-        TakeScreens.takeScreenshot(driver, "login_menu");
-    }
-
-    @Then("^login window pops up$")
-    public void loginWindowPopupAssert() throws InterruptedException {
-        Waiter.waitById("loginbutton");
-        TakeScreens.takeScreenshot(driver, "login_popup_window");
-    }
-
-    @Then("^email and password fiels are filled in$")
-    public void checkThatCredentialsAreSent() throws InterruptedException {
-        Thread.sleep(2000);
-        TakeScreens.takeScreenshot(driver, "login_and_password_filled");
-    }
-
-
-    @Then("^user is logged in via facebook profile and home page is displayed$")
-    public void assertUserIsLogged() throws Exception {
-        String pageName = driver.getTitle();
-        System.out.println(">>>>> page name is: " + pageName);
+    @Then("^home page is displayed and user is logged in$")
+    public void assertUserLoggedMainPageDisplayed() throws Exception {
         Waiter.waitbyClassName("ty-banner__image-item");
         mainPage.checkThatUserIsLoggedIn();
         TakeScreens.takeScreenshot(driver, "user_is_logged");
     }
+
+//    @Then("^login menu popup is displayed$")
+//    public void loginPopupAsserts() {
+//        Waiter.waitByXPath("//form[contains(@name,'popup3262_form')]");
+//        mainPage.showAssertsLoginMenu();
+//        TakeScreens.takeScreenshot(driver, "login_menu");
+//    }
+
+//    @Then("^login window pops up$")
+//    public void loginWindowPopupAssert() throws InterruptedException {
+//        Waiter.waitById("loginbutton");
+//        TakeScreens.takeScreenshot(driver, "login_popup_window");
+//    }
+
+//    @Then("^email and password fiels are filled in$")
+//    public void checkThatCredentialsAreSent() throws InterruptedException {
+//        Thread.sleep(2000);
+//        TakeScreens.takeScreenshot(driver, "login_and_password_filled");
+//    }
+
+
+//    @Then("^user is logged in via facebook profile and home page is displayed$")
+//    public void assertUserIsLogged() throws Exception {
+//        String pageName = driver.getTitle();
+//        System.out.println(">>>>> page name is: " + pageName);
+//        Waiter.waitbyClassName("ty-banner__image-item");
+//        mainPage.checkThatUserIsLoggedIn();
+//        TakeScreens.takeScreenshot(driver, "user_is_logged");
+//    }
 
     @Then("^list of all categories is displayed$")
     public void assertAllCategories() throws Exception {
@@ -112,6 +119,18 @@ public class ThenSteps {
         TakeScreens.takeScreenshot(driver, "cart_page");
         cartPage.assertCartPageIsDisplayed();
         cartPage.assertCartIsNotEmpty();
+    }
+
+    @Then("^user is logged out and main page is displayed$")
+    public void assertUserIsLoggedOut() throws Exception {
+        mainPageAsLogged.assertUserIsLoggedOut();
+        TakeScreens.takeScreenshot(driver, "logged_out");
+    }
+
+    @Then("^warning message appears and user is login fails$")
+    public void assertWarningAllert(){
+        mainPage.assertAlertNotification();
+        TakeScreens.takeScreenshot(driver, "login_failed");
     }
 
 

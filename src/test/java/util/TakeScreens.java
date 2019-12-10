@@ -18,7 +18,7 @@ public class TakeScreens {
         DateTimeFormatter dateTime = DateTimeFormatter.ofPattern("hh_mm_ss_dd_mm_yy");
         try {
             File fileSource = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileHandler.copy(fileSource, new File("./Screenshots/" + dateTime + "_" + screenshotName + ".png"));
+            FileHandler.copy(fileSource, new File("./Screenshots/" + "_" + screenshotName + ".png"));
         } catch (IOException e) {
             System.out.println("Error while taking screenshot " + e.getMessage());
         }

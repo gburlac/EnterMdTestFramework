@@ -1,15 +1,19 @@
 package steps;
 
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
 import pages.LoginPopup;
 import pages.MainPage;
 import pages.MainPageAsLogged;
 import pages.ProductPage;
+import util.Driver;
+import util.TakeScreens;
 import util.Waiter;
 import util.WindowsHandler;
 
 public class WhenStep {
 
+    WebDriver driver = Driver.getDriver();
     MainPage mainPage = new MainPage();
     LoginPopup loginPopup = new LoginPopup();
     MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
@@ -24,30 +28,48 @@ public class WhenStep {
     public void inputInSearchBarAOnePlus() {
     }
 
-    @When("^user clicks on login menu$")
-    public void clickOnLoginMenu() {
+    @When("^user logs in$")
+    public void loginViaFB() throws Exception {
         mainPage.accessLoginMenu();
-    }
-
-    @When("^user clicks on 'facebook' icon$")
-    public void clickOnFacebookIcon() {
         mainPage.loginViaFacebook();
         WindowsHandler.switchWindow();
-    }
-
-    @When("^user enters credentials")
-    public void enterCredentials() {
         Waiter.waitById("email");
         Waiter.waitById("pass");
         loginPopup.inputEmail("");
         loginPopup.inputPassword("");
-    }
-
-    @When("^user press login button$")
-    public void clickLoginButton() {
         loginPopup.login();
         WindowsHandler.switchBackToMain();
     }
+
+    @When("^user click on logout option$")
+    public void logout() throws Exception {
+        mainPageAsLogged.logout();
+    }
+
+//    @When("^user clicks on login menu$")
+//    public void clickOnLoginMenu() {
+//        mainPage.accessLoginMenu();
+//    }
+
+//    @When("^user clicks on 'facebook' icon$")
+//    public void clickOnFacebookIcon() {
+//        mainPage.loginViaFacebook();
+//        WindowsHandler.switchWindow();
+//    }
+
+//    @When("^user enters credentials")
+//    public void enterCredentials() {
+//        Waiter.waitById("email");
+//        Waiter.waitById("pass");
+//        loginPopup.inputEmail("");
+//        loginPopup.inputPassword("");
+//    }
+
+//    @When("^user press login button$")
+//    public void clickLoginButton() {
+//        loginPopup.login();
+//        WindowsHandler.switchBackToMain();
+//    }
 
     @When("^user clicks on 'categoryList'$")
     public void openCategoryList() {
@@ -82,6 +104,18 @@ public class WhenStep {
     @When("^user clicks on 'visualize cart' button$")
     public void goToCart() throws Exception {
         productPage.goToCart();
+    }
+    @When("^user tries to log in with invalid credentials$")
+    public void loginNegative(){
+//        mainPage.accessLoginMenu();
+//        Waiter.waitById("login_popup3262");
+//        mainPage.inputNegativeEmail("testmail.com");
+//        mainPage.clickLoginButton();
+        mainPage.invalidLoginFlow("test@test.com", "1");
+        mainPage.invalidLoginFlow("test@test.com", "   ");
+
+
+
     }
 
 
