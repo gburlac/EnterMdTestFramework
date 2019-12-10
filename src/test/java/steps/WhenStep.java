@@ -1,11 +1,10 @@
 package steps;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
-import pages.CadouPentruEa;
-import pages.Electrocasnice;
-import pages.MainPage;
-import pages.ToateCategoriile;
+import pages.*;
+import util.Waiter;
 
 
 public class WhenStep {
@@ -14,8 +13,7 @@ public class WhenStep {
     Electrocasnice electrocasnice = new Electrocasnice();
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
     ToateCategoriile toateCategoriile = new ToateCategoriile();
-
-
+    SmartphonesCategory smartphonesCategory = new SmartphonesCategory();
     static Logger log = Logger.getLogger(WhenStep.class);
 
 
@@ -115,4 +113,14 @@ public class WhenStep {
     }
 
 
+    @When("^User selects Smartphones category$")
+    public void userSelectsAnyCategory() throws InterruptedException {
+        mainPage.selectSmartphonesCategory();
+        Thread.sleep(2000);
+    }
+
+    @And("^change value in Manufacturer field to '<manufacturer>'$")
+    public void changeValueInManufacturerFieldToManufacturer() throws InterruptedException{
+        smartphonesCategory.checkFilterAppleCheckbox();
+    }
 }

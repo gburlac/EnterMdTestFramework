@@ -24,6 +24,7 @@ public class CadouPentruEa extends Page {
     @FindBy(xpath = "//*[@id=\"cart_items\"]/div/div[2]/a")
     private WebElement inCartItem;
 
+    private Actions actions = new Actions(Driver.getDriver());
 
     public void assertInCartItem() {
         assertTrue(inCartItem.isDisplayed());
@@ -48,7 +49,6 @@ public class CadouPentruEa extends Page {
     }
 
     public void clickCadouPentruEaLink() {
-        Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(cadouPentruEaLink).build().perform();
         cadouPentruEaLink.click();
     }

@@ -1,12 +1,9 @@
 package pages;
 
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-
 import util.*;
-
 import static junit.framework.Assert.assertTrue;
 
 public class Electrocasnice extends Page {
@@ -21,31 +18,27 @@ public class Electrocasnice extends Page {
     private WebElement aparateDeUzCasnicePart;
     @FindBy(xpath = "//*[@id=\"block3\"]/h2")
     private WebElement ingrijirePersonala;
-
+    private Actions actions = new Actions(Driver.getDriver());
     public void ClickOnelectroCasniceCategory() {
         electroCasniceCategory.click();
     }
 
     public void ingrijirePersonala() {
-        Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(ingrijirePersonala).build().perform();
         assertTrue(ingrijirePersonala.isDisplayed());
     }
 
     public void aparateDeUzCasnicePart() {
-        Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(aparateDeUzCasnicePart).build().perform();
         assertTrue(aparateDeUzCasnicePart.isDisplayed());
     }
 
     public void tehnicaDeBucatarieLabel() {
-        Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(tehnicaDeBucatarieLabel).build().perform();
         assertTrue(tehnicaDeBucatarieLabel.isDisplayed());
     }
 
     public void electroCasniceCategory() {
-        Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(electroCasniceCategoryMainLabel).build().perform();
         assertTrue(electroCasniceCategoryMainLabel.isDisplayed());
 

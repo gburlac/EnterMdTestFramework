@@ -4,10 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
 import org.apache.logging.log4j.message.TimestampMessage;
-import pages.CadouPentruEa;
-import pages.Electrocasnice;
-import pages.MainPage;
-import pages.ToateCategoriile;
+import pages.*;
 import util.*;
 
 import java.security.Timestamp;
@@ -19,6 +16,7 @@ import util.*;
 import java.util.concurrent.TimeUnit;
 
 public class ThenSteps<log> {
+    SmartphonesCategory smartphonesCategory = new SmartphonesCategory();
     MainPage mainPage = new MainPage();
     Electrocasnice electrocasnice = new Electrocasnice();
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
@@ -71,4 +69,8 @@ public class ThenSteps<log> {
 
     }
 
+    @Then("^only products that match the specified filters are displayed$")
+    public void onlyProductsThatMatchTheSpecifiedFiltersAreDisplayed() {
+        smartphonesCategory.filterAssert();
+    }
 }
