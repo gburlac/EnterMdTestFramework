@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import util.DrawBorder;
 import util.Driver;
+import util.Waiter;
 
 import java.security.cert.X509Certificate;
 
@@ -29,7 +30,8 @@ public class MainPage extends Page {
     private WebElement aparateDeUzCasnicePart;
     @FindBy(xpath = "//*[@id=\"block3\"]/h2")
     private WebElement ingrijirePersonala;
-    @FindBy (xpath = "//span[contains(text(),'în cont')]")
+//    @FindBy (xpath = "//span[contains(text(),'în cont')]")
+    @FindBy (xpath = "//div[@class='auth uk-grid uk-grid-small uk-flex-middle']")
     WebElement loginOption;
     @FindBy (xpath = "//button[@name='dispatch[auth.login]']")
     WebElement loginButton;
@@ -62,7 +64,7 @@ public class MainPage extends Page {
     }
 
     public void accessLoginMenu(){
-        dB.drawBorder(loginOption, driver);
+//        dB.drawBorder(loginOption, driver);
         loginOption.click();
     }
     public void loginViaFacebook(){

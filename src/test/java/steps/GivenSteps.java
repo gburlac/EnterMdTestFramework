@@ -11,7 +11,8 @@ public class GivenSteps {
     @Given("^User is on homepage$")
     public void userIsOnHomepage() {
         driver.get("https://enter.online/");
-        Waiter.waitbyClassName("ty-banner__image-item");
+        Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
+//        Waiter.waitbyClassName("ty-banner__image-item");
         TakeScreens.takeScreenshot(driver, "home_page");
     }
 }

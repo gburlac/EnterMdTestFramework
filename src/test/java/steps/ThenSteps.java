@@ -1,22 +1,20 @@
 package steps;
 
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.MainPage;
-import pages.MainPageAsLogged;
-import pages.Smartphones;
+import pages.*;
 import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
-import util.WindowsHandler;
 
 public class ThenSteps {
     MainPage mainPage = new MainPage();
     MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
     Smartphones smartphones = new Smartphones();
     WebDriver driver = Driver.getDriver();
+    ProductPage productPage = new ProductPage();
+    CartPage cartPage = new CartPage();
 
     @Then("^electrocasnice category is displayed$")
     public void electrocasniceCategoryIsDisplayed() {
@@ -39,7 +37,7 @@ public class ThenSteps {
     }
 
     @Then("^login menu popup is displayed$")
-    public void loginPopupAsserts(){
+    public void loginPopupAsserts() {
         Waiter.waitByXPath("//form[contains(@name,'popup3262_form')]");
         mainPage.showAssertsLoginMenu();
         TakeScreens.takeScreenshot(driver, "login_menu");
@@ -48,7 +46,7 @@ public class ThenSteps {
     @Then("^login window pops up$")
     public void loginWindowPopupAssert() throws InterruptedException {
         Waiter.waitById("loginbutton");
-        TakeScreens.takeScreenshot(driver,"login_popup_window");
+        TakeScreens.takeScreenshot(driver, "login_popup_window");
     }
 
     @Then("^email and password fiels are filled in$")
@@ -64,7 +62,7 @@ public class ThenSteps {
         System.out.println(">>>>> page name is: " + pageName);
         Waiter.waitbyClassName("ty-banner__image-item");
         mainPage.checkThatUserIsLoggedIn();
-        TakeScreens.takeScreenshot(driver,"user_is_logged");
+        TakeScreens.takeScreenshot(driver, "user_is_logged");
     }
 
     @Then("^list of all categories is displayed$")
@@ -87,4 +85,43 @@ public class ThenSteps {
         smartphones.showSmartphonesAssert();
         TakeScreens.takeScreenshot(driver, "smartphones_category");
     }
+
+    @Then("^phone details are displayed$")
+    public void assertPhoneDetails() throws Exception {
+        Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
+        productPage.assertProductDetails();
+        TakeScreens.takeScreenshot(driver, "product_detail_page");
+    }
+
+    @Then("^a confirmation module pops up$")
+    public void assertConfirmationPopup() {
+        Waiter.waitByXPath("//h1[contains(text(),'Produs adaugat in cos')]");
+        TakeScreens.takeScreenshot(driver, "product_added_to_cart_confirm");
+        Waiter.waitByXPathUntilDissapear("//h1[contains(text(),'Produs adaugat in cos')]");
+    }
+
+    @Then("^a cart module pops up$")
+    public void assertCartModulePopup() {
+//        Waiter.waitbyClassName("//div[@class= 'ty-cart-items']");
+        TakeScreens.takeScreenshot(driver, "cart_popup");
+    }
+
+    @Then("^cart page is opened$")
+    public void assertCarPage() throws Exception {
+        Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
+        TakeScreens.takeScreenshot(driver, "cart_page");
+        cartPage.assertCartPageIsDisplayed();
+        cartPage.assertCartIsNotEmpty();
+    }
+
+
+
+//
+//    @Then("^all 'samsung' phones are displayed$")
+//    public void assertSamsungIsDisplayed() throws Exception {
+//        Waiter.waitByXPath("//img[@id='det_img_98764']");
+//        smartphones.showSamsungAssert();
+//        TakeScreens.takeScreenshot(driver, "samsung_phones");
+//
+//    }
 }
