@@ -3,7 +3,7 @@ Feature: Navigate on EnterPages
   Background:
     Given User is on homepage
 
-  @Geo
+  @RunnerGB
   Scenario: Navigate on enterOnline and check UI
     When  press on electrocasnice category
     Then electrocasnice category is displayed
@@ -11,7 +11,7 @@ Feature: Navigate on EnterPages
     And aparate de uz casnice part is displaed
     And ingrijire personala part is displayed
 
-  @Geo
+
   Scenario: Search for a product
     When input in search bar a OnePlus
     And select OnePlus 7 Pro device
@@ -19,7 +19,7 @@ Feature: Navigate on EnterPages
     And go to wishlist
     Then verify is in wishlist
 
-  @Geo
+
   Scenario: Add to cart from category cadou pentru ea
     When go to cadou pentru ea category
     And select Bobby Compact anti-theft product
@@ -28,7 +28,7 @@ Feature: Navigate on EnterPages
     And go to cart
     Then verify is in cart
 
-  @Geo
+
   Scenario: Add to cart from toate categoriile
     When go to periferice
     And select PC si periferice

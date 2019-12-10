@@ -14,6 +14,7 @@ public class BeforeAfterSteps {
     static PropertiesReader properties = PropertiesReader.getInstatnce();
     @Before
     public void before() {
+
         switch (properties.getBrowser()) {
             case "chrome" :{
                 WebDriverManager.chromedriver().setup();
@@ -29,7 +30,7 @@ public class BeforeAfterSteps {
         Driver.createDriver();
     }
 
-//    @After
+  @After
     public void after() throws Exception {
         Driver.closeDriver();
     }
