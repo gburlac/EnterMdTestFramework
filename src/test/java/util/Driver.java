@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
-import steps.PropertiesReader;
 
 
 public class Driver {
@@ -30,9 +29,12 @@ public class Driver {
                         driver.manage().window().maximize();
                         break;
                     }
+                    default:{
+                    log.error("Driver exeption", new RuntimeException("initialising exeption"));
+                }
             }
         }
-        log.error("Driver exeption", new RuntimeException("initialising exeption"));
+
         return driver;
 
     }

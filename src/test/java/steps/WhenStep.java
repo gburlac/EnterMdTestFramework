@@ -1,24 +1,11 @@
 package steps;
 
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CadouPentruEa;
 import pages.Electrocasnice;
-import pages.LoginPopup;
 import pages.MainPage;
 import pages.ToateCategoriile;
-
-import util.*;
-import util.TakeScreens;
-import util.Waiter;
-import util.WindowsHandler;
-
-
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeUnit;
 
 
 public class WhenStep {
