@@ -9,9 +9,11 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/featureFiles",
         glue={"steps"},
 //        name = "A description",
-        name = "Navigate on EnterPages",
+//        name = "Navigate on EnterPages",
+        tags = {"@George"},
         plugin = { "pretty" },
         monochrome = true
+
 )
 public class Runner {
 }

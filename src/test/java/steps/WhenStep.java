@@ -35,6 +35,7 @@ public class WhenStep {
     @When("^press on electrocasnice category$")
     public void pressOnCategory() {
         electrocasnice.ClickOnelectroCasniceCategory();
+        log.error("WhenSteps exeption", new RuntimeException("ClickOnelectroCasniceCategory exeption"));
     }
 
     @When("^input in search bar a OnePlus$")
@@ -57,7 +58,8 @@ public class WhenStep {
 
     @When("^go to wishlist$")
     public void goToWishlist() throws InterruptedException {
-//        Thread.sleep(5000);
+        Thread.sleep(2000);
+//        Waiter.waiter();
         mainPage.clickbuttonCheckWischlist();
 
     }
@@ -108,11 +110,11 @@ public class WhenStep {
     @When("^select two option from filter$")
     public void selectTwoOptionFromFilter() throws InterruptedException {
         toateCategoriile.selectOptionTastaturi();
-//        Thread.sleep(1000);
-        Waiter.waiter();
+        Thread.sleep(1000);
+//        Waiter.waiter();
         toateCategoriile.selectOptionTastaturi2();
-        Waiter.waiter();
-//        Thread.sleep(1000);
+//        Waiter.waiter();
+        Thread.sleep(1000);
     }
 
     @When("^select and add to cart$")
