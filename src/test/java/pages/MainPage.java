@@ -68,7 +68,7 @@ public class MainPage extends Page {
         loginOption.click();
     }
     public void loginViaFacebook(){
-        dB.drawBorder(facebookIcon, driver);
+//        dB.drawBorder(facebookIcon, driver);
         facebookIcon.click();
     }
     public void showAssertsLoginMenu(){

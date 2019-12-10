@@ -32,18 +32,18 @@ public class ProductPage extends Page {
         }
     }
     public void addProductToCart(){
-        dB.drawBorder(addToCartButton, driver);
+//        dB.drawBorder(addToCartButton, driver);
         TakeScreens.takeScreenshot(driver, "add_to_cart_button");
         addToCartButton.click();
     }
     public void clickOnCartIcon(){
-        dB.drawBorder(cartIcon, driver);
+//        dB.drawBorder(cartIcon, driver);
         TakeScreens.takeScreenshot(driver, "cart_icon");
         cartIcon.click();
     }
     public void goToCart() throws Exception {
         if (goToCart.isDisplayed()){
-            dB.drawBorder(goToCart, driver);
+//            dB.drawBorder(goToCart, driver);
             TakeScreens.takeScreenshot(driver, "go_to_cart");
             goToCart.click();
         } else {

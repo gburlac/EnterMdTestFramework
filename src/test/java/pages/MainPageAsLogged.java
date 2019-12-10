@@ -26,19 +26,19 @@ public class MainPageAsLogged extends Page {
 
 
     public void openAllCategories(){
-        dB.drawBorder(allCategories, driver);
+//        dB.drawBorder(allCategories, driver);
         TakeScreens.takeScreenshot(driver, "go_to_all_categories");
         allCategories.click();
     }
 
     public void openAllTelefoaneCategories(){
-        dB.drawBorder(telefoaneCategoriesList, driver);
+//        dB.drawBorder(telefoaneCategoriesList, driver);
         TakeScreens.takeScreenshot(driver, "telefoane_categories");
         telefoaneCategoriesList.click();
     }
 
     public void openPhoneDetails(){
-        dB.drawBorder(phoneDetails, driver);
+//        dB.drawBorder(phoneDetails, driver);
         TakeScreens.takeScreenshot(driver, "go_to_phone_details");
         phoneDetails.click();
 
@@ -46,14 +46,14 @@ public class MainPageAsLogged extends Page {
 
     public void goToSmartphones(){
         Actions actions = new Actions(Driver.getDriver());
-        dB.drawBorder(smartphonesCategory, driver);
+//        dB.drawBorder(smartphonesCategory, driver);
         TakeScreens.takeScreenshot(driver, "go_to_smartphones");
         actions.moveToElement(smartphonesCategory).build().perform();
         smartphonesCategory.click();
     }
 
     public void goToSamsungPhones(){
-        dB.drawBorder(samsungCategory, driver);
+//        dB.drawBorder(samsungCategory, driver);
         TakeScreens.takeScreenshot(driver,"go_to_samsung");
         samsungCategory.click();
     }

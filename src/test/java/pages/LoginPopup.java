@@ -20,25 +20,25 @@ public class LoginPopup extends Page {
     WebElement loginButton;
 
     public void inputEmail(String email){
-        dB.drawBorder(emailField, driver);
+//        dB.drawBorder(emailField, driver);
         emailField.click();
         emailField.clear();
         emailField.sendKeys(email);
     }
 
     public void inputPassword(String password){
-        dB.drawBorder(passwordField, driver);
+//        dB.drawBorder(passwordField, driver);
         passwordField.click();
         passwordField.clear();
         passwordField.sendKeys(password);
     }
 
     public void login(){
-        dB.drawBorder(loginButton, driver);
+//        dB.drawBorder(loginButton, driver);
         loginButton.click();
     }
     public void loginFB(){
-        dB.drawBorder(loginButton, driver);
+//        dB.drawBorder(loginButton, driver);
         loginButton.click();
         WindowsHandler.switchWindow();
     }
