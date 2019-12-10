@@ -16,5 +16,16 @@ public class Waiter {
     public static void waitByXPath(String elementXPath){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXPath)));
     }
+    public static void waitbyClassNameUntilDissapear(String elementClassName){
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className(elementClassName)));
+    }
+    public static void waitByXpathUntilDissapear(String elementXPath){
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id(elementXPath)));
+    }
+    public static void waitByXPathUntilDissapear(String elementXPath){
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(elementXPath)));
+    }
+
+
 
 }

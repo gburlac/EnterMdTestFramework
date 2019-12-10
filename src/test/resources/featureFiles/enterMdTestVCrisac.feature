@@ -17,4 +17,19 @@ Feature: A description
     Then list of 'telefoane' is displayed
     When user clicks on 'smartphones' category
     Then 'smartphones' category is displayed
+    When user clicks on product
+    Then phone details are displayed
+    When user add product to cart
+    Then a confirmation module pops up
+    When user clicks on cart icon
+    Then a cart module pops up
+    When user clicks on 'visualize cart' button
+    Then cart page is opened
+
+
+
+#
+#
+#    When user choose 'samsung' brand
+#    Then all 'samsung' phones are displayed
 
