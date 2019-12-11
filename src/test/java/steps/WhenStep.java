@@ -46,6 +46,17 @@ public class WhenStep {
         mainPageAsLogged.logout();
     }
 
+    @When("^user select category and add product to cart$")
+    public void addProductToCart() throws Exception {
+        mainPageAsLogged.openAllCategories();
+        mainPageAsLogged.openAllTelefoaneCategories();
+        mainPageAsLogged.goToSmartphones();
+        mainPageAsLogged.openPhoneDetails();
+        productPage.addProductToCart();
+        productPage.clickOnCartIcon();
+        productPage.goToCart();
+    }
+
 //    @When("^user clicks on login menu$")
 //    public void clickOnLoginMenu() {
 //        mainPage.accessLoginMenu();
@@ -70,41 +81,41 @@ public class WhenStep {
 //        loginPopup.login();
 //        WindowsHandler.switchBackToMain();
 //    }
+/* ------------------------- */
+//    @When("^user clicks on 'categoryList'$")
+//    public void openCategoryList() {
+//        mainPageAsLogged.openAllCategories();
+//    }
 
-    @When("^user clicks on 'categoryList'$")
-    public void openCategoryList() {
-        mainPageAsLogged.openAllCategories();
-    }
+//    @When("^user clicks on 'telefoane' category$")
+//    public void openTelefoaneCategories() {
+//        mainPageAsLogged.openAllTelefoaneCategories();
+//    }
 
-    @When("^user clicks on 'telefoane' category$")
-    public void openTelefoaneCategories() {
-        mainPageAsLogged.openAllTelefoaneCategories();
-    }
+//    @When("^user clicks on 'smartphones' category$")
+//    public void openSmartphonesCategory(){
+//        mainPageAsLogged.goToSmartphones();
+//    }
 
-    @When("^user clicks on 'smartphones' category$")
-    public void openSmartphonesCategory(){
-        mainPageAsLogged.goToSmartphones();
-    }
+//    @When("^user clicks on product$")
+//    public void openPhoneDetails() {
+//        mainPageAsLogged.openPhoneDetails();
+//    }
 
-    @When("^user clicks on product$")
-    public void openPhoneDetails() {
-        mainPageAsLogged.openPhoneDetails();
-    }
+//    @When("^user add product to cart$")
+//    public void addToCart() {
+//        productPage.addProductToCart();
+//    }
 
-    @When("^user add product to cart$")
-    public void addToCart() {
-        productPage.addProductToCart();
-    }
+//    @When("^user clicks on cart icon$")
+//    public void clickOnCartIcon() {
+//        productPage.clickOnCartIcon();
+//    }
 
-    @When("^user clicks on cart icon$")
-    public void clickOnCartIcon() {
-        productPage.clickOnCartIcon();
-    }
-
-    @When("^user clicks on 'visualize cart' button$")
-    public void goToCart() throws Exception {
-        productPage.goToCart();
-    }
+//    @When("^user clicks on 'visualize cart' button$")
+//    public void goToCart() throws Exception {
+//        productPage.goToCart();
+//    }
     @When("^user tries to log in with invalid credentials$")
     public void loginNegative(){
 //        mainPage.accessLoginMenu();

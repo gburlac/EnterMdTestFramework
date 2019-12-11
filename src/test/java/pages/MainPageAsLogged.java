@@ -22,13 +22,15 @@ public class MainPageAsLogged extends Page {
     WebElement smartphonesCategory;
     @FindBy(xpath = "//a[contains(@class,'cm-ajax cm-ajax-full-render cm-history')][contains(text(),'Samsung')]")
     WebElement samsungCategory;
-    @FindBy(xpath = "//img[@id='det_img_95196']")
-    WebElement phoneDetails;
+//    @FindBy(xpath = "//img[@id='det_img_95196']")
+    @FindBy(xpath = "//form[@name='product_form_95196']//a[@class='pm-product']")
+    public WebElement phoneDetails;
+    @FindBy(xpath = "//bdi")
+    WebElement productDetailsNameOfProduct;
     @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
     WebElement userMenu;
     @FindBy(xpath = "//div[@class='uk-width-auto@m']//li[6]//a[1]")
     WebElement logoutOption;
-
 
     public void openAllCategories(){
 //        dB.drawBorder(allCategories, driver);
@@ -46,7 +48,17 @@ public class MainPageAsLogged extends Page {
 //        dB.drawBorder(phoneDetails, driver);
         TakeScreens.takeScreenshot(driver, "go_to_phone_details");
         phoneDetails.click();
+    }
 
+    private String prodName = null;
+
+    public String getProdNameText(){
+        if (prodName==null) {
+            prodName = productDetailsNameOfProduct.getText();
+            return prodName;
+        } else {
+            return prodName ;
+        }
     }
 
     public void goToSmartphones(){

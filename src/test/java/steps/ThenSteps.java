@@ -129,8 +129,13 @@ public class ThenSteps {
 
     @Then("^warning message appears and user is login fails$")
     public void assertWarningAllert(){
-        mainPage.assertAlertNotification();
+//        mainPage.assertAlertNotification();
         TakeScreens.takeScreenshot(driver, "login_failed");
+    }
+
+    @Then("^product is added to cart$")
+    public void assertProductIsAddedToCart() throws Exception {
+        cartPage.assertProductAddedToCart();
     }
 
 

@@ -105,6 +105,7 @@ public class MainPage extends Page {
     }
 
     public void invalidLoginFlow(String email, String password) {
+        driver.navigate().refresh();
         accessLoginMenu();
         Waiter.waitById("login_popup3262");
         inputNegativeEmail(email);
@@ -113,6 +114,7 @@ public class MainPage extends Page {
     }
 
     public void repeatEmailAndPassword(String email, String password) {
+        driver.navigate().refresh();
         inputNegativeEmail(email);
         inputNegativePassword(password);
         clickLoginButton();
@@ -147,8 +149,9 @@ public class MainPage extends Page {
 //        }
 //    }
     public void assertAlertNotification() {
-        if (invalidEmailAlert.isDisplayed() && invalidPasswordAlert.isDisplayed() && notificationAlertError.isDisplayed()) {
+        if (invalidEmailAlert.isDisplayed() || invalidPasswordAlert.isDisplayed() || notificationAlertError.isDisplayed()) {
             System.out.println(">> ENTERED INVALID CREDENTIALS! <<<");
+            invalidLoginFlow("me@me.com", "123123");
         }
     }
 

@@ -1,6 +1,5 @@
 #Feature: Login via facebook profile with valid credentials
 
-#  @RunnerVCrisac
 #  Scenario: Login on Enter.Online and logout
 #    Given User is on homepage
 #    When user logs in
@@ -8,12 +7,31 @@
 #    When user click on logout option
 #    Then user is logged out and main page is displayed
 
-Feature: Login with invalid credentials
-  @RunnerVCrisac
-  Scenario: Attempt to login on Enter.online with invalid credentials
-    Given User is on homepage
-    When user tries to log in with invalid credentials
-    Then warning message appears and user is login fails
+#Feature: Login with invalid credentials
+
+#  Scenario: Attempt to login on Enter.online with invalid credentials
+#    Given User is on homepage
+#    When user tries to log in with invalid credentials
+#    Then warning message appears and user is login fails
+### to finish ###
+
+
+Feature: add product to the cart and validate it
+
+  Scenario: as logged user add product to the cart and validate it
+  Given user is logged in
+  When user select category and add product to cart
+  Then product is added to cart
+
+
+
+
+
+
+
+
+
+
 
 
 ###############################################################
