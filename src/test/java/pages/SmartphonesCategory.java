@@ -1,6 +1,7 @@
 package pages;
 
 import junit.framework.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -27,14 +28,19 @@ public class SmartphonesCategory extends Page {
         Thread.sleep(5000);
     }
 
+
     public void filterAppleAssert() {
-        String value;
-        value = productnameLabel.getText();
-        assertTrue(value.contains("Apple"));
+        for (int i = 1; i <= 4 ; i++) {
+            String value;
+            value = Driver.getDriver().findElement(By.xpath("//*[@id=\"pagination_contents\"]/div[4]/div["+ i +"]/div/div[2]/form/div/a/div[2]/span")).getText();
+            assertTrue(value.contains("Apple"));
+        }
     }
     public void filterXiaomiAssert() {
-        String value;
-        value = productnameLabel.getText();
-        assertTrue(value.contains("Xiaomi"));
+        for (int i = 1; i <= 4 ; i++) {
+            String value;
+            value = Driver.getDriver().findElement(By.xpath("//*[@id=\"pagination_contents\"]/div[4]/div["+ i +"]/div/div[2]/form/div/a/div[2]/span")).getText();
+            assertTrue(value.contains("Xiaomi"));
+        }
     }
 }
