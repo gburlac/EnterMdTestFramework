@@ -4,6 +4,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
 import pages.*;
+import util.Driver;
+import util.TakeScreens;
 import util.Waiter;
 
 
@@ -117,10 +119,15 @@ public class WhenStep {
     public void userSelectsAnyCategory() throws InterruptedException {
         mainPage.selectSmartphonesCategory();
         Thread.sleep(2000);
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Smartphones");
     }
 
-    @And("^change value in Manufacturer field to '<manufacturer>'$")
-    public void changeValueInManufacturerFieldToManufacturer() throws InterruptedException{
+    @And("^change value in Manufacturer field to '(.*)'$")
+    public void changeValueInManufacturerFieldToManufacturer(String manufacturer) throws InterruptedException {
+        if(manufacturer.equals("Apple"))
         smartphonesCategory.checkFilterAppleCheckbox();
+        else if (manufacturer.equals("Xiaomi"))
+            smartphonesCategory.checkFilterXiaomiCheckbox();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Filter " + manufacturer + " enabled");
     }
 }

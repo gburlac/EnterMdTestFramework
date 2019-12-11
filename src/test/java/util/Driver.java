@@ -14,22 +14,22 @@ public class Driver {
     static Logger log = Logger.getLogger(Driver.class);
 
     private static WebDriver driver;
+
     public static WebDriver createDriver() {
-        if (driver == null)
-        {
+        if (driver == null) {
             switch (properties.getBrowser()) {
-                    case "chrome" :{
-                        driver = new ChromeDriver();
-                        break;
-                    }
-                    case "ie":{
-                        InternetExplorerOptions capabilities= new InternetExplorerOptions();
-                        capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
-                        driver = new InternetExplorerDriver(capabilities);
-                        driver.manage().window().maximize();
-                        break;
-                    }
-                    default:{
+                case "chrome": {
+                    driver = new ChromeDriver();
+                    break;
+                }
+                case "ie": {
+                    InternetExplorerOptions capabilities = new InternetExplorerOptions();
+                    capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+                    driver = new InternetExplorerDriver(capabilities);
+                    driver.manage().window().maximize();
+                    break;
+                }
+                default: {
                     log.error("Driver exeption", new RuntimeException("initialising exeption"));
                 }
             }
@@ -38,10 +38,12 @@ public class Driver {
         return driver;
 
     }
+
     public static WebDriver getDriver() {
         return driver;
     }
-    public static void closeDriver(){
+
+    public static void closeDriver() {
         driver.quit();
         driver = null;
     }

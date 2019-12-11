@@ -13,7 +13,7 @@ public class PropertiesReader {
     String browser;
     static PropertiesReader propertiesReader;
 
-    private PropertiesReader(){
+    private PropertiesReader() {
         initProperties();
     }
 
@@ -31,12 +31,14 @@ public class PropertiesReader {
             e.printStackTrace();
         }
     }
-    public static PropertiesReader getInstatnce(){
+
+    public static PropertiesReader getInstatnce() {
         if (propertiesReader == null) {
             propertiesReader = new PropertiesReader();
         }
         return propertiesReader;
     }
+
     public String getBrowser() {
         return browser;
     }

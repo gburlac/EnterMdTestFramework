@@ -7,12 +7,15 @@
 
 Feature: Product filtering functionality
 
-  Scenario: User goes on enter.online, select any category and use filter for products changing.
+  Scenario Outline: User goes on enter.online, select any category and use filter for products changing.
     Given User is on homepage
     When User selects Smartphones category
     And change value in Manufacturer field to '<manufacturer>'
-    Then only products that match the specified filters are displayed
-
+    Then dislpays only products of manufacturer '<manufacturer>'
+    Examples:
+      | manufacturer |
+      | Apple        |
+      | Xiaomi       |
 #Feature: Product sorting functionality
 #  Scenario: User goes on enter.online, select any category and use sorting dropdowns for products sorting.
 #    Given User is on homepage

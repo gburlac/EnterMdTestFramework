@@ -8,19 +8,18 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import util.*;
 
 
-
-
 public class BeforeAfterSteps {
     static PropertiesReader properties = PropertiesReader.getInstatnce();
+
     @Before
     public void before() {
 
         switch (properties.getBrowser()) {
-            case "chrome" :{
+            case "chrome": {
                 WebDriverManager.chromedriver().setup();
                 break;
             }
-            case "ie":{
+            case "ie": {
                 WebDriverManager.iedriver().setup();
                 break;
             }
@@ -30,7 +29,7 @@ public class BeforeAfterSteps {
         Driver.createDriver();
     }
 
-  @After
+    @After
     public void after() throws Exception {
         Driver.closeDriver();
     }

@@ -6,7 +6,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Waiter {
     private static WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-    public static void waiter(){
+
+    public static void waiter() {
         wait.until(
                 webDriver -> ((JavascriptExecutor) webDriver)
                         .executeScript("return document.readyState")

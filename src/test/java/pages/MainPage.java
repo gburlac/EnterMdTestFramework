@@ -26,6 +26,7 @@ public class MainPage extends Page {
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[2]/div/div[1]/div[1]/ul/li/a")
     private WebElement allCategoriesDropdownTelephonesCategorySmartphones;
     Actions actions = new Actions(Driver.getDriver());
+
     public void assertProductInWischlist() throws InterruptedException {
         assertTrue(buttonCheckProductInWischlist.isDisplayed());
     }
@@ -45,11 +46,12 @@ public class MainPage extends Page {
     public void searchBarMethod() {
         searchBar.sendKeys("Oneplus");
     }
-    public void selectSmartphonesCategory(){
+
+    public void selectSmartphonesCategory() {
         allCategoriesDropdown.click();
         allCategoriesDropdownTelephonesCategory.click();
         allCategoriesDropdownTelephonesCategorySmartphones.click();
-        }
+    }
 
 }
 

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.*;
+
 import static junit.framework.Assert.assertTrue;
 
 public class Electrocasnice extends Page {
@@ -19,6 +20,7 @@ public class Electrocasnice extends Page {
     @FindBy(xpath = "//*[@id=\"block3\"]/h2")
     private WebElement ingrijirePersonala;
     private Actions actions = new Actions(Driver.getDriver());
+
     public void ClickOnelectroCasniceCategory() {
         electroCasniceCategory.click();
     }

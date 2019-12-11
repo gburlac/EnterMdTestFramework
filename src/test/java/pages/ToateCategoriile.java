@@ -16,8 +16,6 @@ public class ToateCategoriile extends Page {
     private WebElement buttonTastaturi;
     @FindBy(xpath = "//input[@id='elm_checkbox_376_239_61352']")
     private WebElement selectOptionTastaturi;
-    //*[@id="elm_checkbox_376_256_65292"]
-    //input[@id='elm_checkbox_376_256_65292']
     @FindBy(xpath = "//*[@id=\"elm_checkbox_376_256_65292\"]")
     private WebElement selectOptionTastaturi2;
     @FindBy(xpath = "//button[@id='button_cart_98934']")

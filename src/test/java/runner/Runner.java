@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/featureFiles",
-        glue={"steps"},
+        glue = {"steps"},
         name = "Navigate on EnterPages",
-        plugin = { "pretty" },
+        plugin = {"pretty"},
         monochrome = true
 )
 public class Runner {

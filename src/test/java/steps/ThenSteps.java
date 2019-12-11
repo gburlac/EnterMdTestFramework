@@ -1,19 +1,11 @@
 package steps;
 
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
-import org.apache.logging.log4j.message.TimestampMessage;
 import pages.*;
 import util.*;
 
-import java.security.Timestamp;
-import java.util.concurrent.TimeUnit;
-
 import pages.ToateCategoriile;
-import util.*;
-
-import java.util.concurrent.TimeUnit;
 
 public class ThenSteps<log> {
     SmartphonesCategory smartphonesCategory = new SmartphonesCategory();
@@ -69,8 +61,13 @@ public class ThenSteps<log> {
 
     }
 
-    @Then("^only products that match the specified filters are displayed$")
-    public void onlyProductsThatMatchTheSpecifiedFiltersAreDisplayed() {
-        smartphonesCategory.filterAssert();
+    @Then("^dislpays only products of manufacturer '(.*)'$")
+    public void dislpaysOnlyProductsOfManufacturerManufacturer(String manufacturer) {
+        if (manufacturer.equals("Apple")) {
+            smartphonesCategory.filterAppleAssert();
+        } else if (manufacturer.equals("Xiaomi")) {
+            smartphonesCategory.filterXiaomiAssert();
+        }
     }
-}
+    }
+
