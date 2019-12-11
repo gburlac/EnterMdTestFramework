@@ -6,22 +6,40 @@
 #    Then home page is displayed and user is logged in
 #    When user click on logout option
 #    Then user is logged out and main page is displayed
+  ##### pass #####
+
 
 #Feature: Login with invalid credentials
-
+#
 #  Scenario: Attempt to login on Enter.online with invalid credentials
 #    Given User is on homepage
 #    When user tries to log in with invalid credentials
 #    Then warning message appears and user is login fails
-### to finish ###
+### works -->  to finish ###
 
 
-Feature: add product to the cart and validate it
+#Feature: add product to the cart and validate it
+#
+#  Scenario: as logged user add product to the cart and validate it
+#  Given user is logged in via facebook
+#  When user select category and add product to cart
+#  Then product is added to cart
+###  not working --> to finish assert product is added
 
-  Scenario: as logged user add product to the cart and validate it
-  Given user is logged in
-  When user select category and add product to cart
-  Then product is added to cart
+
+#  Feature: edit user details
+#    Scenario: as logged user edit user details
+#    Given user is logged in as REGISTEREDUSER
+#    When user go to user profile page and edit the details
+#      | Prenume | Abramov |
+#      | Nume    | Stas    |
+#      | Parola  | 123NRTM456 |
+#      | Confirma parola | 123NRTM456 |
+#      | Phone | 068800900            |
+#      | City  | Chisinau             |
+#
+#    Then user details are edited and saved
+
 
 
 

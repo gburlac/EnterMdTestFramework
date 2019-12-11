@@ -2,10 +2,7 @@ package steps;
 
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
-import pages.LoginPopup;
-import pages.MainPage;
-import pages.MainPageAsLogged;
-import pages.ProductPage;
+import pages.*;
 import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
@@ -19,6 +16,17 @@ public class WhenStep {
     MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
     ProductPage productPage = new ProductPage();
 
+    ///////////// examples /////////////
+
+    @When("^$")
+    public void login(){
+//        enterCredentials(Example.BOB.getNames(), Example.BOB.getPassword());
+    }
+
+
+    ////////////////////////////////////
+
+
     @When("^press on electrocasnice category$")
     public void pressOnCategory() {
         mainPage.ClickOnelectroCasniceCategory();
@@ -26,19 +34,6 @@ public class WhenStep {
 
     @When("^input in search bar a OnePlus$")
     public void inputInSearchBarAOnePlus() {
-    }
-
-    @When("^user logs in$")
-    public void loginViaFB() throws Exception {
-        mainPage.accessLoginMenu();
-        mainPage.loginViaFacebook();
-        WindowsHandler.switchWindow();
-        Waiter.waitById("email");
-        Waiter.waitById("pass");
-        loginPopup.inputEmail("");
-        loginPopup.inputPassword("");
-        loginPopup.login();
-        WindowsHandler.switchBackToMain();
     }
 
     @When("^user click on logout option$")

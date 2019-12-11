@@ -85,12 +85,12 @@ public class MainPage extends Page {
         TakeScreens.takeScreenshot(driver, "login_menu");
     }
 
-    public void inputNegativeEmail(String email) {
+    public void inputEmail(String email) {
         emailField.clear();
         emailField.sendKeys(email);
     }
 
-    public void inputNegativePassword(String password) {
+    public void inputPassword(String password) {
         passwordField.clear();
         passwordField.sendKeys(password);
     }
@@ -108,15 +108,15 @@ public class MainPage extends Page {
         driver.navigate().refresh();
         accessLoginMenu();
         Waiter.waitById("login_popup3262");
-        inputNegativeEmail(email);
-        inputNegativePassword(password);
+        inputEmail(email);
+        inputPassword(password);
         clickLoginButton();
     }
 
     public void repeatEmailAndPassword(String email, String password) {
         driver.navigate().refresh();
-        inputNegativeEmail(email);
-        inputNegativePassword(password);
+        inputEmail(email);
+        inputPassword(password);
         clickLoginButton();
     }
 

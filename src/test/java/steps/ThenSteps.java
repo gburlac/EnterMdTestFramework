@@ -36,12 +36,12 @@ public class ThenSteps {
         mainPage.ingrijirePersonala();
     }
 
-    @Then("^home page is displayed and user is logged in$")
-    public void assertUserLoggedMainPageDisplayed() throws Exception {
-        Waiter.waitbyClassName("ty-banner__image-item");
-        mainPage.checkThatUserIsLoggedIn();
-        TakeScreens.takeScreenshot(driver, "user_is_logged");
-    }
+//    @Then("^home page is displayed and user is logged in$")
+//    public void assertUserLoggedMainPageDisplayed() throws Exception {
+//        Waiter.waitbyClassName("ty-banner__image-item");
+//        mainPage.checkThatUserIsLoggedIn();
+//        TakeScreens.takeScreenshot(driver, "user_is_logged");
+//    }
 
 //    @Then("^login menu popup is displayed$")
 //    public void loginPopupAsserts() {

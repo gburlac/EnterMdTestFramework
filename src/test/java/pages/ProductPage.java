@@ -41,7 +41,7 @@ public class ProductPage extends Page {
     public void addProductToCart() {
 //        dB.drawBorder(addToCartButton, driver);
         Waiter.waitByXPath("//bdi");
-        mainPageAsLogged.getProdNameText();
+//        mainPageAsLogged.getProdNameText();
         TakeScreens.takeScreenshot(driver, "add_to_cart_button");
         addToCartButton.click();
         Waiter.waitByXPath("//h1[contains(text(),'Produs adaugat in cos')]");

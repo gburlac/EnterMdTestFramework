@@ -10,6 +10,7 @@ public class BeforeAfterSteps {
     @Before
     public void before() {
         Driver.createDriver();
+        Driver.createDriver().get("https://enter.online/");
     }
 
 //    @After
