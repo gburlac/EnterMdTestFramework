@@ -25,6 +25,6 @@ Feature: Make orders on enter.online
       When go to casti category
       And select a product
       And take a look to cart
-#      And place a order
+      And place a order
 #      And fill the delivery info
 #      Then verify the success message

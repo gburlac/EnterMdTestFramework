@@ -15,7 +15,14 @@ public class CastiPage extends Page {
     private WebElement butonCartStatusSecondary;
     @FindBy(xpath = "//a[contains(@class, 'ty-btn ty-btn__primary')]")
     private WebElement butonCartStatusPopUp;
+    @FindBy(xpath = "//button[@name='dispatch[checkout.customer_info]']")
+    private WebElement butonCartProcessFaraInregistrare;
 
+
+    public void clickButonCartProcessFaraInregistrare() {
+
+        butonCartProcessFaraInregistrare.click();
+    }
 
     public void clickButonCartStatusPopUp() {
 

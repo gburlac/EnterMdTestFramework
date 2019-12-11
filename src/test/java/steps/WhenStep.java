@@ -141,9 +141,17 @@ public class WhenStep {
 
     @When("^take a look to cart$")
     public void takeALookToCart() throws InterruptedException {
+        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         castiPage.clickButonCartStatusPopUp();
-        Thread.sleep(6000);
+//        Thread.sleep(6000);
 //        castiPage.clickButonCartStatus();
 //        castiPage.clickButonCartStatusSecondary();
+    }
+
+    @When("^place a order$")
+    public void placeAOrder() {
+        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
+        castiPage.clickButonCartStatusPopUp();
+        castiPage.clickButonCartProcessFaraInregistrare();
     }
 }
