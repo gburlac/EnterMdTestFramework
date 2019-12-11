@@ -1,6 +1,6 @@
 package util;
 
-import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.Set;
 
 public class WindowsHandler {
@@ -8,33 +8,16 @@ public class WindowsHandler {
         String mainWindow = Driver.getDriver().getWindowHandle();
         Set<String> windows = Driver.getDriver().getWindowHandles();
         for (String w : windows) {
-            if (w.equals(mainWindow) != true) {
+            if (!w.equals(mainWindow)) {
                 Driver.getDriver().switchTo().window(w);
                 break;
             }
         }
     }
 
-//    public static void switchBack(){
-//        String loginWindow = Driver.getDriver().getWindowHandle();
-//        Set <String> windows = Driver.getDriver().getWindowHandles();
-//        for (String w : windows) {
-//            if (w.equals(loginWindow) != true){
-//                Driver.getDriver().switchTo().window(w);
-//                break;
-//            }
-//        }
-//    }
-
-    public static void getParentWindow() {
+    public static void switchBackToMain(){
         Set<String> windows = Driver.getDriver().getWindowHandles();
-        Iterator<String> iter = windows.iterator();
-        String parentID = iter.next();
-    }
-
-    public static void getChildWindow() {
-        Set<String> windows = Driver.getDriver().getWindowHandles();
-        Iterator<String> iter = windows.iterator();
-        String childID = iter.next();
+        ArrayList<String> windowsaray = new ArrayList<>(windows);
+        Driver.getDriver().switchTo().window(windowsaray.get(0));
     }
 }
