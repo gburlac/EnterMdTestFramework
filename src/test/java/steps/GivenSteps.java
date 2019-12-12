@@ -10,10 +10,10 @@ public class GivenSteps {
     WebDriver driver = Driver.getDriver();
     WhenStep whenStep = new WhenStep();
     @Given("^User is on homepage$")
-    public void userIsOnHomepage() {
-        driver.get("https://enter.online/");
+    public void userIsOnHomepage() throws InterruptedException {
+        Driver.getDriver().get("https://enter.online/");
         Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
-//        Waiter.waitbyClassName("ty-banner__image-item");
+//        Thread.sleep(5000);
         TakeScreens.takeScreenshot(driver, "home_page");
     }
     @Given("^user is logged in$")

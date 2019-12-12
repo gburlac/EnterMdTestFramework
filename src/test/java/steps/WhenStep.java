@@ -57,7 +57,7 @@ public class WhenStep {
     }
 
     @When("^user enter credentials")
-    public void enterCredentials() throws InterruptedException {
+    public void enterCredentials() throws Exception {
         WindowsHandler.switchWindow();
         Thread.sleep(5000);
         loginPopup.inputEmail("qweqwewq@me.com");
@@ -68,7 +68,7 @@ public class WhenStep {
     public void clickLoginButton(){
         loginPopup.login();
 //        WindowsHandler.switchBack();
-        WindowsHandler.getParentWindow();
+//        WindowsHandler.getParentWindow();
     }
     @When("^go to wishlist$")
     public void goToWishlist() throws InterruptedException {
@@ -124,9 +124,9 @@ public class WhenStep {
     public void selectTwoOptionFromFilter() throws InterruptedException {
         toateCategoriile.selectOptionTastaturi();
 //        Thread.sleep(1000);
-        Waiter.waiter();
+//        Waiter.waiter();
         toateCategoriile.selectOptionTastaturi2();
-        Waiter.waiter();
+//        Waiter.waiter();
 //        Thread.sleep(1000);
     }
 

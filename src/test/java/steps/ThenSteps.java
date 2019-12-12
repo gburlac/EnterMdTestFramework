@@ -12,12 +12,18 @@ import util.Waiter;
 
 import pages.ToateCategoriile;
 
+
 public class ThenSteps<log> {
+    WebDriver driver = Driver.getDriver();
     SmartphonesCategory smartphonesCategory = new SmartphonesCategory();
+    Smartphones smartphones = new Smartphones();
     MainPage mainPage = new MainPage();
     Electrocasnice electrocasnice = new Electrocasnice();
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
     ToateCategoriile toateCategoriile = new ToateCategoriile();
+    ProductPage productPage = new ProductPage();
+    MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
+    CartPage cartPage = new CartPage();
     static Logger log = Logger.getLogger(ThenSteps.class);
 
     @Then("^electrocasnice category is displayed$")
@@ -55,13 +61,13 @@ public class ThenSteps<log> {
 
     @Then("^login window pops up$")
     public void loginWindowPopupAssert(){
-        Waiter.waiter();
+//        Waiter.waiter();
         TakeScreens.takeScreenshot(Driver.getDriver(),"login_popup_window");
     }
 
     @Then("^email and password fiels are filled in$")
     public void checkThatCredentialsAreSent(){
-        Waiter.waiter();
+//        Waiter.waiter();
         TakeScreens.takeScreenshot(Driver.getDriver(), "login_and_password_filled");
     }
 
@@ -70,13 +76,13 @@ public class ThenSteps<log> {
     public void assertUserIsLogged() throws Exception {
         Thread.sleep(7000);
 //        mainPage.checkThatUserIsLoggedIn();
-        mainPage.getTextFromElement();
+//        mainPage.getTextFromElement();
 //        TakeScreens.takeScreenshot(Driver.getDriver(),"user_is_logged");
     }
     @Then("^list of all categories is displayed$")
     public void assertAllCategories() throws Exception {
         Waiter.waitByXPath("//li[@class='first-level blue']//a[contains(text(),'Telefoane')]");
-        mainPageAsLogged.assertAllCategories();
+//        mainPageAsLogged.assertAllCategories();
         TakeScreens.takeScreenshot(driver, "list_of_all_categories");
     }
 
@@ -142,7 +148,7 @@ public class ThenSteps<log> {
     public void verifyIsInWishlist() throws InterruptedException {
 //        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        Thread.sleep(5000);
-        Waiter.waiter();
+//        Waiter.waiter();
         mainPage.assertProductInWischlist();
 
     }
