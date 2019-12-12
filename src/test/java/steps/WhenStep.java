@@ -146,7 +146,7 @@ public class WhenStep {
     @When("^User selects Smartphones category$")
     public void userSelectsAnyCategory() throws InterruptedException {
         mainPage.selectSmartphonesCategory();
-        Thread.sleep(2000);
+        Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
         TakeScreens.takeScreenshot(Driver.getDriver(), "Smartphones");
     }
 
@@ -156,6 +156,7 @@ public class WhenStep {
             smartphonesCategory.checkFilterAppleCheckbox();
         else if (manufacturer.equals("Xiaomi"))
             smartphonesCategory.checkFilterXiaomiCheckbox();
+        Waiter.waitByXPathUntilVisible("//*[@id=\"ajax_loading_box\"]");
         TakeScreens.takeScreenshot(Driver.getDriver(), "Filter " + manufacturer + " enabled");
     }
 

@@ -30,16 +30,16 @@ public class SmartphonesCategory extends Page {
 
 
     public void filterAppleAssert() {
-        for (int i = 1; i <= 4 ; i++) {
+        for (int i = 1; i <= 20 ; i++) {
             String value;
-            value = Driver.getDriver().findElement(By.xpath("//*[@id=\"pagination_contents\"]/div[4]/div["+ i +"]/div/div[2]/form/div/a/div[2]/span")).getText();
+            value = Driver.getDriver().findElement(By.xpath("//*[@id=\"pagination_contents\"]/div[4]/div["+i+"]/div/div/form/div/a/div[2]/span")).getText();
             assertTrue(value.contains("Apple"));
         }
     }
     public void filterXiaomiAssert() {
-        for (int i = 1; i <= 4 ; i++) {
+        for (int i = 1; i <= 20 ; i++) {
             String value;
-            value = Driver.getDriver().findElement(By.xpath("//*[@id=\"pagination_contents\"]/div[4]/div["+ i +"]/div/div[2]/form/div/a/div[2]/span")).getText();
+            value = Driver.getDriver().findElement(By.xpath("//*[@id=\"pagination_contents\"]/div[4]/div["+i+"]/div/div/form/div/a/div[2]/span")).getText();
             assertTrue(value.contains("Xiaomi"));
         }
     }

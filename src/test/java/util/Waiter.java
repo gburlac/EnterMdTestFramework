@@ -16,8 +16,12 @@ public class Waiter {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(elementId)));
     }
     public static void waitByXPath(String elementXPath){
-        wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait = new WebDriverWait(Driver.getDriver(), 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXPath)));
+    }
+    public static void waitByXPathUntilVisible(String elementXPath){
+        wait = new WebDriverWait(Driver.getDriver(), 20);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(elementXPath)));
     }
     public static void waitbyClassNameUntilDissapear(String elementClassName){
         wait = new WebDriverWait(Driver.getDriver(), 10);
