@@ -50,12 +50,15 @@ public class ThenSteps<log> {
         TakeScreens.takeScreenshot(Driver.getDriver(), "ingrijirePersonalaPartIsDisplayed");
     }
 
-    @Then("^verify is in wishlist$")
-    public void verifyIsInWishlist() throws InterruptedException {
+    @Then("^verify '(.*)' is in wishlist$")
+    public void verifyIsInWishlist(String manufacture) throws InterruptedException {
 //        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        Thread.sleep(5000);
         Waiter.waitByXPath("//*[@id=\"det_img_98549\"]");
-        mainPage.assertProductInWischlist();
+        if (manufacture.equals("Iphone 11"))
+            mainPage.assertbuttonCheckProductInWischlistIphone();
+        else if (manufacture.equals("OnePlus 7 Pro"))
+            mainPage.assertProductInWischlist();
 
     }
 
@@ -71,4 +74,9 @@ public class ThenSteps<log> {
 
     }
 
+    @Then("^verify credit page is displayed$")
+    public void verifyCreditPageIsDisplayed() throws InterruptedException {
+        Waiter.waitByXPath("//div[@class='tab-credit-submit']//input[2]");
+        mainPage.assertcheckCreditPage();
+    }
 }

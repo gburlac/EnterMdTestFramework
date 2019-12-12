@@ -10,6 +10,7 @@ import util.*;
 import static junit.framework.Assert.assertTrue;
 
 public class Electrocasnice extends Page {
+    Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
     private WebElement electroCasniceCategory;
@@ -27,25 +28,25 @@ public class Electrocasnice extends Page {
     }
 
     public void ingrijirePersonala() {
-        Actions actions = new Actions(Driver.getDriver());
+
         actions.moveToElement(ingrijirePersonala).build().perform();
         assertTrue(ingrijirePersonala.isDisplayed());
     }
 
     public void aparateDeUzCasnicePart() {
-        Actions actions = new Actions(Driver.getDriver());
+
         actions.moveToElement(aparateDeUzCasnicePart).build().perform();
         assertTrue(aparateDeUzCasnicePart.isDisplayed());
     }
 
     public void tehnicaDeBucatarieLabel() {
-        Actions actions = new Actions(Driver.getDriver());
+
         actions.moveToElement(tehnicaDeBucatarieLabel).build().perform();
         assertTrue(tehnicaDeBucatarieLabel.isDisplayed());
     }
 
     public void electroCasniceCategory() {
-        Actions actions = new Actions(Driver.getDriver());
+
         actions.moveToElement(electroCasniceCategoryMainLabel).build().perform();
         assertTrue(electroCasniceCategoryMainLabel.isDisplayed());
 

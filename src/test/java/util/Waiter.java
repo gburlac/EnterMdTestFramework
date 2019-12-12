@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Waiter {
-    private static WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+    private static WebDriverWait wait;
 
     public static void waitbyClassName(String elementClassName){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(elementClassName)));
@@ -14,6 +14,7 @@ public class Waiter {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(elementId)));
     }
     public static void waitByXPath(String elementXPath){
+      wait = new WebDriverWait(Driver.getDriver(), 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXPath)));
     }
     public static void waitbyClassNameUntilDissapear(String elementClassName){

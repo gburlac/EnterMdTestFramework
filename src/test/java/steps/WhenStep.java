@@ -35,31 +35,25 @@ public class WhenStep {
         log.error("WhenSteps exeption", new RuntimeException("ClickOnelectroCasniceCategory exeption"));
     }
 
-    @When("^input in search bar a OnePlus$")
-    public void inputInSearchBarAOnePlus() {
-        mainPage.searchBarMethod();
+    @When("^input in search bar a '(.*)'$")
+    public void inputInSearchBarAOnePlus(String value) {
+        mainPage.searchBarMethod(value);
     }
 
-    @When("^select OnePlus (\\d+) Pro device$")
-    public void selectOnePlusProDevice(int arg0) throws InterruptedException {
+    @When("^select '(.*)' device$")
+    public void selectOnePlusProDevice(String manufacture) throws InterruptedException {
 //        Thread.sleep(5000);
-        mainPage.clickOnSelectOnePlus();
+        if (manufacture.equals("Iphone 11"))
+            mainPage.clickbuttonselectIphone();
+        else if (manufacture.equals("OnePlus 7 Pro"))
+            mainPage.clickOnSelectOnePlus();
+    }
+    @And("^buy product in credit$")
+    public void buyProductInCredit() {
+        mainPage.clickButtonBuyInCredit();
 
     }
 
-    @When("^add to wishlist$")
-    public void addToWishlist() {
-        mainPage.clickbuttonAddToWishlist();
-
-    }
-
-    @When("^go to wishlist$")
-    public void goToWishlist() throws InterruptedException {
-        Thread.sleep(2000);
-//        Waiter.waiter();
-        mainPage.clickbuttonCheckWischlist();
-
-    }
 
     @When("^go to cadou pentru ea category$")
     public void goToCadouPentruEaCategory() {
@@ -154,4 +148,6 @@ public class WhenStep {
         castiPage.clickButonCartStatusPopUp();
         castiPage.clickButonCartProcessFaraInregistrare();
     }
+
+
 }
