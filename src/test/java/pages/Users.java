@@ -2,7 +2,8 @@ package pages;
 
 public enum Users {
 
-    REGISTEREDUSER("abramov.stas@gmail.com", "123NRTM456"),
+    REGISTERED_USER("abramov.stas@gmail.com", "123NRTM456"),
+    FACEBOOKUSER("", ""),
     UNREGISTEREDUSER("test@test.com", "testpassword"),
     UNREGISTEREDUSER2("test@", "");
 

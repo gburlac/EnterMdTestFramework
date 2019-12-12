@@ -12,6 +12,7 @@ import util.Waiter;
 
 import java.security.cert.X509Certificate;
 
+import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 import static junit.framework.Assert.assertTrue;
 
 public class MainPage extends Page {
@@ -138,20 +139,18 @@ public class MainPage extends Page {
         }
     }
 
-    //    public void assertAlertNotification(){
-//        if (invalidEmailAlert.isDisplayed() || invalidPasswordAlert.isDisplayed()){
-//            System.out.println(">> ENTERED INVALID CREDENTIALS! <<<");
-//        } else if (notificationAlertError.isDisplayed()){
-//            Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
-//            loginOption.click();
-//            Waiter.waitByXPath("//form[contains(@name,'popup3262_form')]");
-//            showAssertsLoginMenu();
-//        }
-//    }
-    public void assertAlertNotification() {
-        if (invalidEmailAlert.isDisplayed() || invalidPasswordAlert.isDisplayed() || notificationAlertError.isDisplayed()) {
-            System.out.println(">> ENTERED INVALID CREDENTIALS! <<<");
-            invalidLoginFlow("me@me.com", "123123");
+    public void assertAlertNotification(String errorMessage) {
+        if (errorMessage.contains("Adresa de e-mail din")){
+            Assert.assertTrue(invalidEmailAlert.isDisplayed());
+            log.println("ENTERED INVALID EMAIL");
+        }
+        if (errorMessage.contains("Campul Parola")) {
+            Assert.assertTrue(invalidPasswordAlert.isDisplayed());
+            log.println("ENTERED INVALID PASSWORD");
+        }
+        if (errorMessage.contains("Numele de utilizator sau parola introdusa este incorecta")){
+            Assert.assertTrue(notificationAlertError.isDisplayed());
+            log.println(">> ENTERED INVALID CREDENTIALS! <<<");
         }
     }
 

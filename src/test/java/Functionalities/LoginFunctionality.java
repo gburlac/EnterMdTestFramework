@@ -8,13 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import pages.LoginPopup;
-import pages.MainPage;
-import pages.Users;
+import pages.*;
 import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
 import util.WindowsHandler;
+
+import java.util.HashMap;
 
 public class LoginFunctionality {
 
@@ -24,7 +24,7 @@ public class LoginFunctionality {
     WebDriver driver = Driver.getDriver();
     MainPage mainPage = new MainPage();
     LoginPopup loginPopup = new LoginPopup();
-    Actions actions = new Actions(Driver.getDriver());
+    MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
 
     @Given("^User is on homepage$")
     public void userIsOnHomepage() {
@@ -52,9 +52,10 @@ public class LoginFunctionality {
     }
 
 //    @Given("^user logs in with credential$")
-//    public void logWithCredentials(HashMap<String, String> dataTable) throws Exception {
-////        dataTable.
-//    }
+
+    public void logWithCredentials(HashMap<String, String> dataTable) throws Exception {
+//        dataTable.
+    }
 
     @When("^user is logged in as (.*)$")
     public void loginOnSite(Users user){
@@ -72,6 +73,33 @@ public class LoginFunctionality {
         mainPage.checkThatUserIsLoggedIn();
         TakeScreens.takeScreenshot(driver, "user_is_logged");
     }
+
+    @When("^user tries to log in with invalid (.*?) and (.*?)$")
+    public void loginNegative(String email, String password){
+        mainPage.accessLoginMenu();
+        Waiter.waitById("login_popup3262");
+        mainPage.inputEmail(email);
+        mainPage.inputPassword(password);
+        mainPage.clickLoginButton();
+    }
+
+    @Then("^(.*?) appears and user is login fails$")
+    public void assertWarningAllert(LoginErrorMessages errorMessage){
+        mainPage.assertAlertNotification(errorMessage.getMessage());
+        TakeScreens.takeScreenshot(driver, "login_failed");
+    }
+
+    @When("^user click on logout option$")
+    public void logout() throws Exception {
+        mainPageAsLogged.logout();
+    }
+
+    @Then("^user is logged out and main page is displayed$")
+    public void assertUserIsLoggedOut() throws Exception {
+        mainPageAsLogged.assertUserIsLoggedOut();
+        TakeScreens.takeScreenshot(driver, "logged_out");
+    }
+
 
 
 

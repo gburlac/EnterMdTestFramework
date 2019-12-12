@@ -121,23 +121,6 @@ public class ThenSteps {
         cartPage.assertCartIsNotEmpty();
     }
 
-    @Then("^user is logged out and main page is displayed$")
-    public void assertUserIsLoggedOut() throws Exception {
-        mainPageAsLogged.assertUserIsLoggedOut();
-        TakeScreens.takeScreenshot(driver, "logged_out");
-    }
-
-    @Then("^warning message appears and user is login fails$")
-    public void assertWarningAllert(){
-//        mainPage.assertAlertNotification();
-        TakeScreens.takeScreenshot(driver, "login_failed");
-    }
-
-    @Then("^product is added to cart$")
-    public void assertProductIsAddedToCart() throws Exception {
-        cartPage.assertProductAddedToCart();
-    }
-
 
 
 //

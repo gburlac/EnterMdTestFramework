@@ -116,8 +116,8 @@ public class MainPageAsLogged extends Page {
         }
     }
 
-    public void goToAccountDetails() throws Exception {
-        actions.moveToElement(userMenu).moveToElement(myAccount).click().build().perform();
-    }
+//    public void goToAccountDetails() throws Exception {
+//        actions.moveToElement(userMenu).moveToElement(myAccount).click().build().perform();
+//    }
 
 }

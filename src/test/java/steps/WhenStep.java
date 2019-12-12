@@ -36,22 +36,6 @@ public class WhenStep {
     public void inputInSearchBarAOnePlus() {
     }
 
-    @When("^user click on logout option$")
-    public void logout() throws Exception {
-        mainPageAsLogged.logout();
-    }
-
-    @When("^user select category and add product to cart$")
-    public void addProductToCart() throws Exception {
-        mainPageAsLogged.openAllCategories();
-        mainPageAsLogged.openAllTelefoaneCategories();
-        mainPageAsLogged.goToSmartphones();
-        mainPageAsLogged.openPhoneDetails();
-        productPage.addProductToCart();
-        productPage.clickOnCartIcon();
-        productPage.goToCart();
-    }
-
 //    @When("^user clicks on login menu$")
 //    public void clickOnLoginMenu() {
 //        mainPage.accessLoginMenu();
@@ -111,18 +95,18 @@ public class WhenStep {
 //    public void goToCart() throws Exception {
 //        productPage.goToCart();
 //    }
-    @When("^user tries to log in with invalid credentials$")
-    public void loginNegative(){
-//        mainPage.accessLoginMenu();
-//        Waiter.waitById("login_popup3262");
-//        mainPage.inputNegativeEmail("testmail.com");
-//        mainPage.clickLoginButton();
-        mainPage.invalidLoginFlow("test@test.com", "1");
-        mainPage.invalidLoginFlow("test@test.com", "   ");
-
-
-
-    }
+//    @When("^user tries to log in with invalid (.*?) and (.*?)$")
+//    public void loginNegative(){
+////        mainPage.accessLoginMenu();
+////        Waiter.waitById("login_popup3262");
+////        mainPage.inputNegativeEmail("testmail.com");
+////        mainPage.clickLoginButton();
+//        mainPage.invalidLoginFlow("test@test.com", "1");
+//        mainPage.invalidLoginFlow("test@test.com", "   ");
+//
+//
+//
+//    }
 
 
 
