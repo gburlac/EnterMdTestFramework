@@ -14,7 +14,7 @@ Feature: Make orders on enter.online
     When go to periferice
     And select PC si periferice
     And select tastaturi
-    And select two option from filter
+    And select option from filter
     And select and add to cart
     And go to see the cart
     Then verify selected product is in cart

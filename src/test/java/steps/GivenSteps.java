@@ -13,6 +13,7 @@ public class GivenSteps {
     public void userIsOnHomepage() {
 //        Driver.getDriver().manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
         Driver.getDriver().get("https://enter.online/");
+        log.info("User is on homepage");
 
     }
 }
