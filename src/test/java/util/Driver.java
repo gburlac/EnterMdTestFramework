@@ -42,7 +42,7 @@ public class Driver {
                 }
             }
         }
-        log.error("Driver exeption", new RuntimeException("initialising exeption"));
+        log.info("Initialising Driver");
         return driver;
 
     }

@@ -1,0 +1,352 @@
+2019-12-13 18:51:49 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 18:51: 50 INFO  WebDriverManager:1042 - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2019-12-13 18:51:52 INFO  Downloader:128 - Downloading https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_win32.zip
+2019-12-13 18:51:55 INFO  Downloader:183 - Extracting binary from compressed file chromedriver_win32.zip
+2019-12-13 18:51:59 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 18:52:38 ERROR Driver:45 - Driver exeption
+java.lang.RuntimeException: initialising exeption
+	at util.Driver.createDriver(Driver.java:45)
+	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2019-12-13 18:52:50 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 18:53:12 INFO  WhenStep:65 - go to cadou pentru ea category
+2019-12-13 18:53:17 INFO  WhenStep:71 - select a product from the page
+2019-12-13 18:53:25 INFO  WhenStep:89 - go to cart
+2019-12-13 18:53:27 INFO  ThenSteps:67 - verify is in cart
+2019-12-13 18:53:35 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 18:53:35 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 18:53:48 ERROR Driver:45 - Driver exeption
+java.lang.RuntimeException: initialising exeption
+	at util.Driver.createDriver(Driver.java:45)
+	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2019-12-13 18:54:02 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 18:54:16 INFO  WhenStep:95 - go to periferice
+2019-12-13 18:54:21 INFO  WhenStep:102 - select PC si periferice
+2019-12-13 18:54:24 INFO  WhenStep:108 - select tastaturi
+2019-12-13 18:54:32 INFO  WhenStep:114 - select option from filter
+2019-12-13 18:54:39 INFO  WhenStep:121 - select and add to cart
+2019-12-13 18:54:42 INFO  WhenStep:128 - go to see the cart
+2019-12-13 18:54:45 INFO  ThenSteps:73 - verify selected product is in cart
+2019-12-13 18:54:48 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 18:54:48 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 18:55:02 ERROR Driver:45 - Driver exeption
+java.lang.RuntimeException: initialising exeption
+	at util.Driver.createDriver(Driver.java:45)
+	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2019-12-13 18:55:09 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 18:55:25 INFO  WhenStep:135 - go to casti category
+2019-12-13 18:55:34 INFO  WhenStep:141 - select a product
+2019-12-13 18:55:38 INFO  WhenStep:148 - take a look to cart
+2019-12-13 18:55:50 INFO  WhenStep:157 - place a order
+2019-12-13 18:56:09 INFO  WhenStep:173 - fill out the delivery info
+2019-12-13 18:56:10 INFO  ThenSteps:86 - verify the success message
+2019-12-13 18:57:24 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 18:57:24 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 18:57:40 ERROR Driver:45 - Driver exeption
+java.lang.RuntimeException: initialising exeption
+	at util.Driver.createDriver(Driver.java:45)
+	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2019-12-13 18:57:48 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 18:58:05 INFO  WhenStep:37 - Press on electrocasnice category
+2019-12-13 18:58:12 INFO  ThenSteps:30 - Electrocasnice category is displayed
+2019-12-13 18:58:14 INFO  ThenSteps:37 - Tehnica de bucatarie part is displayed
+2019-12-13 18:58:16 INFO  ThenSteps:44 - Aparate de uz casnice part is displaed
+2019-12-13 18:58:17 INFO  ThenSteps:51 - Ingrijire personala part is displayed
+2019-12-13 18:58:19 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 18:58:19 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 18:58:31 ERROR Driver:45 - Driver exeption
+java.lang.RuntimeException: initialising exeption
+	at util.Driver.createDriver(Driver.java:45)
+	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2019-12-13 18:58:42 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 18:59:10 INFO  WhenStep:43 - input in search bar 
+2019-12-13 18:59:18 INFO  WhenStep:52 - select '(.*)' device
+2019-12-13 18:59:30 INFO  WhenStep:58 - Buy product in credit
+2019-12-13 18:59:31 INFO  ThenSteps:80 - verify credit page is displayed
+2019-12-13 18:59:33 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 18:59:33 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 18:59:45 ERROR Driver:45 - Driver exeption
+java.lang.RuntimeException: initialising exeption
+	at util.Driver.createDriver(Driver.java:45)
+	at steps.BeforeAfterSteps.before(BeforeAfterSteps.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2019-12-13 18:59:52 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 19:00:07 INFO  WhenStep:43 - input in search bar 
+2019-12-13 19:00:16 INFO  WhenStep:52 - select '(.*)' device
+2019-12-13 19:00:25 INFO  WhenStep:58 - Buy product in credit
+2019-12-13 19:00:27 INFO  ThenSteps:80 - verify credit page is displayed
+2019-12-13 20:11:07 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 20:11:08 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 20:11:24 INFO  Driver:45 - Initialising Driver
+2019-12-13 20:11:33 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 20:11:55 INFO  WhenStep:37 - Press on electrocasnice category
+2019-12-13 20:12:05 INFO  ThenSteps:30 - Electrocasnice category is displayed
+2019-12-13 20:12:07 INFO  ThenSteps:37 - Tehnica de bucatarie part is displayed
+2019-12-13 20:12:09 INFO  ThenSteps:44 - Aparate de uz casnice part is displaed
+2019-12-13 20:12:10 INFO  ThenSteps:51 - Ingrijire personala part is displayed
+2019-12-13 20:12:11 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 20:12:11 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 20:12:25 INFO  Driver:45 - Initialising Driver
+2019-12-13 20:12:39 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 20:12:58 INFO  WhenStep:43 - input in search bar 
+2019-12-13 20:13:17 INFO  WhenStep:52 - select '(.*)' device
+2019-12-13 20:13:47 INFO  WhenStep:58 - Buy product in credit
+2019-12-13 20:13:47 INFO  ThenSteps:80 - verify credit page is displayed
+2019-12-13 20:13:49 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-13 20:13:49 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-13 20:14:01 INFO  Driver:45 - Initialising Driver
+2019-12-13 20:14:07 INFO  GivenSteps:16 - User is on homepage
+2019-12-13 20:14:22 INFO  WhenStep:43 - input in search bar 
+2019-12-13 20:14:35 INFO  WhenStep:52 - select '(.*)' device
+2019-12-13 20:14:44 INFO  WhenStep:58 - Buy product in credit
+2019-12-13 20:14:45 INFO  ThenSteps:80 - verify credit page is displayed
