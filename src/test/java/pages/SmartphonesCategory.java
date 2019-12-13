@@ -19,13 +19,11 @@ public class SmartphonesCategory extends Page {
     @FindBy(xpath = "//*[@id=\"pagination_contents\"]/div[4]/div[1]/div/div[2]/form/div/a/div[2]/span")
     private WebElement productnameLabel;
 
-    public void checkFilterAppleCheckbox() throws InterruptedException {
+    public void checkFilterAppleCheckbox() {
         filterAppleCheckbox.click();
-        Thread.sleep(5000);
     }
-    public void checkFilterXiaomiCheckbox() throws InterruptedException {
+    public void checkFilterXiaomiCheckbox() {
         filterXiaomiCheckbox.click();
-        Thread.sleep(5000);
     }
 
 

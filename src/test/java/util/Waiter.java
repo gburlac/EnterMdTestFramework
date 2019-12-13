@@ -19,10 +19,6 @@ public class Waiter {
         wait = new WebDriverWait(Driver.getDriver(), 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXPath)));
     }
-    public static void waitByXPathUntilVisible(String elementXPath){
-        wait = new WebDriverWait(Driver.getDriver(), 20);
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(elementXPath)));
-    }
     public static void waitbyClassNameUntilDissapear(String elementClassName){
         wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className(elementClassName)));
@@ -35,7 +31,4 @@ public class Waiter {
         wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(elementXPath)));
     }
-
-
-
 }

@@ -49,7 +49,6 @@ public class ThenSteps<log> {
     public void ingrijirePersonalaPartIsDisplayed() {
         electrocasnice.ingrijirePersonala();
         TakeScreens.takeScreenshot(Driver.getDriver(), "ingrijirePersonalaPartIsDisplayed");
-        mainPage.ingrijirePersonala();
     }
 
     @Then("^home page is displayed and user is logged in$")
@@ -169,8 +168,15 @@ public class ThenSteps<log> {
     public void dislpaysOnlyProductsOfManufacturerManufacturer(String manufacturer) {
         if (manufacturer.equals("Apple")) {
             smartphonesCategory.filterAppleAssert();
+            log.info("Displayed only Apple smartphones");
         } else if (manufacturer.equals("Xiaomi")) {
             smartphonesCategory.filterXiaomiAssert();
+            log.info("Displayed only Xiaomi smartphones");
         }
+    }
+
+    @Then("^All non-changeable elements is present$")
+    public void allNonChangeableElementsIsPresent() {
+
     }
 }

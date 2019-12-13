@@ -12,7 +12,7 @@ import util.WindowsHandler;
 
 import java.util.concurrent.TimeUnit;
 
-public class WhenStep {
+public class WhenStep <log>{
     MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
     ProductPage productPage = new ProductPage();
     WebDriver driver = Driver.getDriver();
@@ -22,7 +22,9 @@ public class WhenStep {
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
     ToateCategoriile toateCategoriile = new ToateCategoriile();
     SmartphonesCategory smartphonesCategory = new SmartphonesCategory();
-    static org.apache.log4j.Logger log = Logger.getLogger(WhenStep.class);
+//    static org.apache.log4j.Logger log = Logger.getLogger(WhenStep.class);
+    static Logger log = Logger.getLogger(ThenSteps.class);
+
     @When("^press on electrocasnice category$")
     public void pressOnCategory() {
         electrocasnice.ClickOnelectroCasniceCategory();
@@ -147,17 +149,19 @@ public class WhenStep {
     public void userSelectsAnyCategory() throws InterruptedException {
         mainPage.selectSmartphonesCategory();
         Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
-        TakeScreens.takeScreenshot(Driver.getDriver(), "Smartphones");
+        log.info("Smartphones is selected");
     }
 
     @And("^change value in Manufacturer field to '(.*)'$")
     public void changeValueInManufacturerFieldToManufacturer(String manufacturer) throws InterruptedException {
-        if(manufacturer.equals("Apple"))
+        if(manufacturer.equals("Apple")) {
             smartphonesCategory.checkFilterAppleCheckbox();
-        else if (manufacturer.equals("Xiaomi"))
+            log.info("Filter Apple smartphones");
+        } else if (manufacturer.equals("Xiaomi")) {
             smartphonesCategory.checkFilterXiaomiCheckbox();
-        Waiter.waitByXPathUntilVisible("//*[@id=\"ajax_loading_box\"]");
-        TakeScreens.takeScreenshot(Driver.getDriver(), "Filter " + manufacturer + " enabled");
+            log.info("Filter Xiaomi smartphones");
+        }
+        Waiter.waitByXPathUntilDissapear("//*[@id=\"ajax_loading_box\"]");
     }
 
     @When("^user select category and add product to cart$")

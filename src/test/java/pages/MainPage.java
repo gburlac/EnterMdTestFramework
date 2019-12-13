@@ -21,19 +21,6 @@ public class MainPage extends Page {
     WebDriver driver = Driver.getDriver();
     DrawBorder dB;
 
-    //find elements
-    //*[@id="index"]/div[3]/div/div[1]/div/div/ul/li[1]/a
-    //div[contains(@class, 'ty-wysiwyg-content')]/ul/li[1]/a
-    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
-    private WebElement electroCasniceCategory;
-    @FindBy(xpath = "//*[@id=\"categories\"]/div[3]/div/div[2]/div/div/div/h1")
-    private WebElement electroCasniceCategoryMainLabel;
-    @FindBy(xpath = "//div[@id='block1']/h2[contains(@class, 'uk-cover tm-landing-white-title')]")
-    private WebElement tehnicaDeBucatarieLabel;
-    @FindBy(xpath = "//div[@id='block1']/h2[contains(@class, 'uk-cover tm-landing-white-title')]")
-    private WebElement aparateDeUzCasnicePart;
-    @FindBy(xpath = "//*[@id=\"block3\"]/h2")
-    private WebElement ingrijirePersonala;
     @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
     private WebElement loginOption;
     @FindBy(xpath = "//button[@name='dispatch[auth.login]']")
@@ -72,31 +59,20 @@ public class MainPage extends Page {
     private WebElement allCategoriesDropdownTelephonesCategory;
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[2]/div/div[1]/div[1]/ul/li/a")
     private WebElement allCategoriesDropdownTelephonesCategorySmartphones;
-    @FindBy(xpath = "//button[@name='dispatch[auth.login]']")
-
-
+    @FindBy(xpath = "//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]/a/svg")
+    private WebElement logoEnter;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
+    private WebElement electrocasniceButton;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[2]/a")
+    private WebElement nouatisipromotiiButton;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[3]/a")
+    private WebElement gadgeturiPentruOriceVirstaButton;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[4]/a")
+    private WebElement sfaturiUtileButton;
 
     Actions actions = new Actions(Driver.getDriver());
     //method
-    public void ingrijirePersonala() {
-        assertTrue(tehnicaDeBucatarieLabel.isDisplayed());
-    }
 
-    public void aparateDeUzCasnicePart() {
-        assertTrue(tehnicaDeBucatarieLabel.isDisplayed());
-    }
-
-    public void tehnicaDeBucatarieLabel() {
-        assertTrue(tehnicaDeBucatarieLabel.isDisplayed());
-    }
-
-    public void electroCasniceCategoryIsDisplayed() {
-        assertTrue(electroCasniceCategoryMainLabel.isDisplayed());
-    }
-
-    public void ClickOnelectroCasniceCategory() {
-        electroCasniceCategory.click();
-    }
     public void assertProductInWischlist() throws InterruptedException {
         assertTrue(buttonCheckProductInWischlist.isDisplayed());
     }

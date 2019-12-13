@@ -12,7 +12,6 @@ public class CadouPentruEa extends Page {
 
     @FindBy(xpath = "//ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]")
     private WebElement cadouPentruEaLink;
-    //*[@id="pages"]/div[3]/div/div[4]/div/div/div[2]/div/div/div/div[4]/div/div/form/div/a/div[1]/img
     @FindBy(xpath = "//*[@id=\"pages\"]/div[3]/div/div[4]/div/div/div[2]/div/div/div/div[4]/div/div/form/div/a/div[2]")
     private WebElement productBobyCompact;
     @FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[2]/div[3]/div[2]/a/span")
