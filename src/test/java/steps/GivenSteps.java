@@ -11,7 +11,7 @@ public class GivenSteps {
     static Logger log = Logger.getLogger(GivenSteps.class);
     @Given("^User is on homepage$")
     public void userIsOnHomepage() {
-        Driver.getDriver().manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
+//        Driver.getDriver().manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
         Driver.getDriver().get("https://enter.online/");
 
     }

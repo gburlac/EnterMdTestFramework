@@ -5,9 +5,7 @@ Feature: Make orders on enter.online
 
   Scenario: Add to cart from category cadou pentru ea
     When go to cadou pentru ea category
-    And select Bobby Compact anti-theft product
-    And select color to blue
-    And add to cart
+    And select a product from the page
     And go to cart
     Then verify is in cart
 
@@ -26,5 +24,6 @@ Feature: Make orders on enter.online
       And select a product
       And take a look to cart
       And place a order
-#      And fill the delivery info
-#      Then verify the success message
+      And fill out the delivery info
+  |Bond|James|bond007@bond.uk|070000007|Chisinau|Dacia 7|
+      Then verify the success message

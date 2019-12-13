@@ -1,13 +1,16 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import util.Driver;
 
 import static junit.framework.Assert.assertTrue;
 
 public class MainPage extends Page {
 
     //find elements
+    Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(xpath = "//*[@id=\"iam_search\"]")
     private WebElement searchBar;
@@ -29,6 +32,7 @@ public class MainPage extends Page {
     private WebElement buttonCheckProductInWischlist;
     @FindBy(xpath = "//img[@id='det_img_102069']")
     private WebElement buttonCheckProductInWischlistIphone;
+    //a[contains(@class, 'uk-margin-small-top uk-button uk-button-default uk-border-pill ty-tk-product-button')]
     @FindBy(xpath = " //a[@class='uk-margin-small-top uk-button uk-button-default uk-border-pill ty-tk-product-button']")
     private WebElement buttonBuyInCredit;
     @FindBy(xpath = "//div[@class='tab-credit-submit']//input[2]")
@@ -50,6 +54,7 @@ public class MainPage extends Page {
     }
 
     public void clickButtonBuyInCredit() {
+        actions.moveToElement(buttonBuyInCredit).build().perform();
         buttonBuyInCredit.click();
     }
 

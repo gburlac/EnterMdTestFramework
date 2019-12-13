@@ -1,5 +1,6 @@
 package steps;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
@@ -13,6 +14,7 @@ import util.Waiter;
 import util.WindowsHandler;
 
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeUnit;
 
@@ -32,7 +34,7 @@ public class WhenStep {
     @When("^press on electrocasnice category$")
     public void pressOnCategory() {
         electrocasnice.ClickOnelectroCasniceCategory();
-        log.error("WhenSteps exeption", new RuntimeException("ClickOnelectroCasniceCategory exeption"));
+        log.info("Press on electrocasnice category");
     }
 
     @When("^input in search bar a '(.*)'$")
@@ -48,7 +50,8 @@ public class WhenStep {
         else if (manufacture.equals("OnePlus 7 Pro"))
             mainPage.clickOnSelectOnePlus();
     }
-    @And("^buy product in credit$")
+
+    @When("^buy product in credit$")
     public void buyProductInCredit() {
         mainPage.clickButtonBuyInCredit();
 
@@ -60,10 +63,9 @@ public class WhenStep {
         cadouPentruEa.clickCadouPentruEaLink();
     }
 
-    @When("^select Bobby Compact anti-theft product$")
-    public void selectBobbyCompactAntiTheftProduct() throws InterruptedException {
-//        Thread.sleep(4000);
-        cadouPentruEa.clickProductBobyCompact();
+    @When("^select a product from the page$")
+    public void selectAProductFromThePage() {
+        cadouPentruEa.clickproductFromCadouPentruEa();
     }
 
     @When("^select color to blue$")
@@ -78,7 +80,7 @@ public class WhenStep {
 
     @When("^go to cart$")
     public void goToCart() throws InterruptedException {
-//        Thread.sleep(1000);
+
         cadouPentruEa.clickButtonGoToCart();
     }
 
@@ -101,24 +103,18 @@ public class WhenStep {
     @When("^select two option from filter$")
     public void selectTwoOptionFromFilter() throws InterruptedException {
         toateCategoriile.selectOptionTastaturi();
-//        Thread.sleep(1000);
         Waiter.waitByXPath("//button[@id='button_cart_98934']");
         toateCategoriile.selectOptionTastaturi2();
-
-//        Thread.sleep(1000);
     }
 
     @When("^select and add to cart$")
     public void selectAndAddToCart() throws InterruptedException {
         Waiter.waitByXPath("//button[@id='button_cart_98934']");
         toateCategoriile.clickAddToCart();
-//        Thread.sleep(4000);
     }
 
     @When("^go to see the cart$")
     public void goToSeeTheCart() throws InterruptedException {
-//        toateCategoriile.clickOnCart();
-//        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         toateCategoriile.clickbuttonVizualizatiCosul();
     }
 
@@ -137,17 +133,29 @@ public class WhenStep {
     public void takeALookToCart() throws InterruptedException {
         Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         castiPage.clickButonCartStatusPopUp();
-//        Thread.sleep(6000);
-//        castiPage.clickButonCartStatus();
-//        castiPage.clickButonCartStatusSecondary();
     }
 
     @When("^place a order$")
     public void placeAOrder() {
         Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         castiPage.clickButonCartStatusPopUp();
+        Waiter.waitByXPath("//button[@name='dispatch[checkout.customer_info]']");
         castiPage.clickButonCartProcessFaraInregistrare();
     }
 
 
+    @When("^fill out the delivery info$")
+    public void fillOutTheDeliveryInfo(DataTable dt) throws InterruptedException {
+        List<String> value = dt.asList(String.class);
+        castiPage.fillInputPrenume(value.get(0));
+        castiPage.fillInputNume(value.get(1));
+        castiPage.fillInputEmail(value.get(2));
+        castiPage.fillInputPhoneNumber(value.get(3));
+        castiPage.fillInputCity(value.get(4));
+        castiPage.fillInputAddres(value.get(5));
+        castiPage.clickButtonContinue();
+        castiPage.clickButtonDeliveryOption();
+        castiPage.clickButtonAmplaseazaComanda();
+
+    }
 }
