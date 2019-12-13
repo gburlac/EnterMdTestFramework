@@ -15,5 +15,6 @@ public class GivenSteps {
         Driver.getDriver().get("https://enter.online/");
         log.info("User is on homepage");
 
+
     }
 }
