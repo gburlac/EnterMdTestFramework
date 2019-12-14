@@ -411,3 +411,180 @@ java.lang.RuntimeException: initialising exeption
 2019-12-14 13:39:45 INFO  WhenStep:157 - place a order
 2019-12-14 13:39:57 INFO  WhenStep:173 - fill out the delivery info
 2019-12-14 13:39:58 INFO  ThenSteps:86 - verify the success message
+2019-12-14 14:17:15 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:17:15 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:17:21 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:17:21 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:17:29 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:17:34 INFO  WhenStep:55 - Press on electrocasnice category
+2019-12-14 14:17:37 INFO  ThenSteps:40 - Electrocasnice category is displayed
+2019-12-14 14:17:38 INFO  ThenSteps:47 - Tehnica de bucatarie part is displayed
+2019-12-14 14:17:39 INFO  ThenSteps:54 - Aparate de uz casnice part is displaed
+2019-12-14 14:18:07 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:18:07 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:18:13 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:18:13 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:18:20 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:18:25 INFO  WhenStep:61 - input in search bar 
+2019-12-14 14:18:32 INFO  WhenStep:70 - select '(.*)' device
+2019-12-14 14:18:35 INFO  WhenStep:76 - Buy product in credit
+2019-12-14 14:18:37 INFO  ThenSteps:91 - verify credit page is displayed
+2019-12-14 14:18:38 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:18:38 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:18:42 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:18:42 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:18:51 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:18:55 INFO  WhenStep:61 - input in search bar 
+2019-12-14 14:19:01 INFO  WhenStep:70 - select '(.*)' device
+2019-12-14 14:19:03 INFO  WhenStep:76 - Buy product in credit
+2019-12-14 14:19:06 INFO  ThenSteps:91 - verify credit page is displayed
+2019-12-14 14:20:39 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:20:39 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:20:45 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:20:45 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:20:52 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:20:58 INFO  WhenStep:55 - Press on electrocasnice category
+2019-12-14 14:21:00 INFO  ThenSteps:40 - Electrocasnice category is displayed
+2019-12-14 14:21:01 INFO  ThenSteps:47 - Tehnica de bucatarie part is displayed
+2019-12-14 14:21:02 INFO  ThenSteps:54 - Aparate de uz casnice part is displaed
+2019-12-14 14:21:31 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:21:31 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:21:35 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:21:35 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:21:42 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:21:47 INFO  WhenStep:61 - input in search bar 
+2019-12-14 14:21:55 INFO  WhenStep:70 - select '(.*)' device
+2019-12-14 14:21:58 INFO  WhenStep:76 - Buy product in credit
+2019-12-14 14:22:00 INFO  ThenSteps:91 - verify credit page is displayed
+2019-12-14 14:22:01 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:22:01 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:22:06 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:22:06 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:22:14 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:22:22 INFO  WhenStep:61 - input in search bar 
+2019-12-14 14:22:29 INFO  WhenStep:70 - select '(.*)' device
+2019-12-14 14:22:31 INFO  WhenStep:76 - Buy product in credit
+2019-12-14 14:22:33 INFO  ThenSteps:91 - verify credit page is displayed
+2019-12-14 14:25:40 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:25:40 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:25:45 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:25:45 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:25:54 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:25:58 INFO  WhenStep:55 - Press on electrocasnice category
+2019-12-14 14:26:01 INFO  ThenSteps:40 - Electrocasnice category is displayed
+2019-12-14 14:26:02 INFO  ThenSteps:47 - Tehnica de bucatarie part is displayed
+2019-12-14 14:26:03 INFO  ThenSteps:54 - Aparate de uz casnice part is displaed
+2019-12-14 14:26:30 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:26:30 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:26:35 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:26:35 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:26:42 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:26:47 INFO  WhenStep:61 - input in search bar 
+2019-12-14 14:29:45 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:29:45 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:29:50 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:29:50 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:29:57 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:30:02 INFO  WhenStep:55 - Press on electrocasnice category
+2019-12-14 14:30:04 INFO  ThenSteps:40 - Electrocasnice category is displayed
+2019-12-14 14:30:06 INFO  ThenSteps:47 - Tehnica de bucatarie part is displayed
+2019-12-14 14:30:07 INFO  ThenSteps:54 - Aparate de uz casnice part is displaed
+2019-12-14 14:30:08 INFO  ThenSteps:62 - Ingrijire personala part is displayed
+2019-12-14 14:30:09 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:30:09 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:30:13 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:30:13 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:30:30 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:30:37 INFO  WhenStep:61 - input in search bar 
+2019-12-14 14:30:46 INFO  WhenStep:70 - select '(.*)' device
+2019-12-14 14:30:49 INFO  WhenStep:76 - Buy product in credit
+2019-12-14 14:30:52 INFO  ThenSteps:91 - verify credit page is displayed
+2019-12-14 14:30:53 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:30:53 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:30:57 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:30:57 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:31:03 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:31:08 INFO  WhenStep:61 - input in search bar 
+2019-12-14 14:31:14 INFO  WhenStep:70 - select '(.*)' device
+2019-12-14 14:31:16 INFO  WhenStep:76 - Buy product in credit
+2019-12-14 14:31:19 INFO  ThenSteps:91 - verify credit page is displayed
+2019-12-14 14:33:31 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:33:31 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:33:36 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:33:36 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:33:43 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:33:48 INFO  WhenStep:55 - Press on electrocasnice category
+2019-12-14 14:33:50 INFO  ThenSteps:40 - Electrocasnice category is displayed
+2019-12-14 14:33:51 INFO  ThenSteps:47 - Tehnica de bucatarie part is displayed
+2019-12-14 14:33:53 INFO  ThenSteps:54 - Aparate de uz casnice part is displaed
+2019-12-14 14:33:54 INFO  ThenSteps:62 - Ingrijire personala part is displayed
+2019-12-14 14:34:48 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 14:34:48 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 14:34:54 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:34:54 INFO  Driver:45 - Initialising Driver
+2019-12-14 14:35:01 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 14:35:05 INFO  WhenStep:55 - Press on electrocasnice category
+2019-12-14 14:35:07 INFO  ThenSteps:40 - Electrocasnice category is displayed
+2019-12-14 14:35:08 INFO  ThenSteps:47 - Tehnica de bucatarie part is displayed
+2019-12-14 14:35:10 INFO  ThenSteps:54 - Aparate de uz casnice part is displaed
+2019-12-14 14:35:39 INFO  ThenSteps:62 - Ingrijire personala part is displayed
+2019-12-14 15:11:12 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 15:11:12 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 15:11:18 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:11:18 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:11:27 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 15:11:32 INFO  VerifyUISteps:22 - Press on electrocasnice category
+2019-12-14 15:11:34 INFO  VerifyUISteps:28 - Electrocasnice category is displayed
+2019-12-14 15:11:36 INFO  VerifyUISteps:34 - Tehnica de bucatarie part is displayed
+2019-12-14 15:11:37 INFO  VerifyUISteps:40 - Aparate de uz casnice part is displaed
+2019-12-14 15:12:05 INFO  VerifyUISteps:48 - Ingrijire personala part is displayed
+2019-12-14 15:12:07 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 15:12:07 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 15:12:12 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:12:12 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:12:19 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 15:12:24 INFO  SearchFunctionalitiesSteps:16 - input in search bar 
+2019-12-14 15:12:30 INFO  SearchFunctionalitiesSteps:25 - select '(.*)' device
+2019-12-14 15:12:34 INFO  SearchFunctionalitiesSteps:31 - Buy product in credit
+2019-12-14 15:12:35 INFO  SearchFunctionalitiesSteps:37 - verify credit page is displayed
+2019-12-14 15:12:37 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 15:12:37 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 15:12:41 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:12:41 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:12:48 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 15:12:53 INFO  SearchFunctionalitiesSteps:16 - input in search bar 
+2019-12-14 15:13:00 INFO  SearchFunctionalitiesSteps:25 - select '(.*)' device
+2019-12-14 15:13:03 INFO  SearchFunctionalitiesSteps:31 - Buy product in credit
+2019-12-14 15:13:04 INFO  SearchFunctionalitiesSteps:37 - verify credit page is displayed
+2019-12-14 15:34:30 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 15:34:30 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 15:34:36 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:34:36 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:34:44 INFO  CommonSteps:13 - User is on homepage
+2019-12-14 15:34:51 INFO  AddingToCartFunctionSteps:18 - go to cadou pentru ea category
+2019-12-14 15:34:54 INFO  AddingToCartFunctionSteps:23 - select a product from the page
+2019-12-14 15:34:57 INFO  AddingToCartFunctionSteps:28 - go to cart
+2019-12-14 15:34:57 INFO  AddingToCartFunctionSteps:33 - verify is in cart
+2019-12-14 15:34:59 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 15:34:59 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 15:35:04 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:35:04 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:35:11 INFO  CommonSteps:13 - User is on homepage
+2019-12-14 15:35:15 INFO  AddingToCartFunctionSteps:39 - go to periferice
+2019-12-14 15:35:16 INFO  AddingToCartFunctionSteps:44 - select PC si periferice
+2019-12-14 15:35:18 INFO  AddingToCartFunctionSteps:50 - select tastaturi
+2019-12-14 15:35:20 INFO  AddingToCartFunctionSteps:55 - select option from filter
+2019-12-14 15:35:22 INFO  AddingToCartFunctionSteps:61 - select and add to cart
+2019-12-14 15:35:24 INFO  AddingToCartFunctionSteps:66 - go to see the cart
+2019-12-14 15:35:25 INFO  AddingToCartFunctionSteps:71 - verify selected product is in cart
+2019-12-14 15:35:26 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 15:35:26 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 15:35:31 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:35:31 INFO  Driver:45 - Initialising Driver
+2019-12-14 15:35:37 INFO  CommonSteps:13 - User is on homepage
+2019-12-14 15:35:43 INFO  CheckoutFunctionSteps:20 - go to casti category
+2019-12-14 15:35:47 INFO  CheckoutFunctionSteps:26 - select a product
+2019-12-14 15:35:48 INFO  CheckoutFunctionSteps:33 - take a look to cart
+2019-12-14 15:35:52 INFO  CheckoutFunctionSteps:42 - place a order
+2019-12-14 15:36:04 INFO  CheckoutFunctionSteps:58 - fill out the delivery info
+2019-12-14 15:36:04 INFO  CheckoutFunctionSteps:65 - verify the success message
