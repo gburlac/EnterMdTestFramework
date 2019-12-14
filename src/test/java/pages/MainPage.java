@@ -4,6 +4,7 @@ package pages;
 =========
 import cucumber.api.java.de.Wenn;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 >>>>>>>>> Temporary merge branch 2
 import org.openqa.selenium.WebElement;
@@ -91,17 +92,18 @@ public class MainPage extends Page {
     private WebElement allCategoriesDropdownTelephonesCategory;
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[2]/div/div[1]/div[1]/ul/li/a")
     private WebElement allCategoriesDropdownTelephonesCategorySmartphones;
-    @FindBy(xpath = "//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]/a/svg")
+    @FindBy(xpath = "//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]")
     private WebElement logoEnter;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
     private WebElement electrocasniceButton;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[2]/a")
-    private WebElement nouatisipromotiiButton;
+    private WebElement nouatiSiPromotiiButton;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[3]/a")
     private WebElement gadgeturiPentruOriceVirstaButton;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[4]/a")
     private WebElement sfaturiUtileButton;
-
+    @FindBy(xpath = "//*[@id=\"languages_638\"]/div[1]/a")
+    private WebElement langChanger;
     Actions actions = new Actions(Driver.getDriver());
     //method
 
@@ -171,4 +173,23 @@ public class MainPage extends Page {
 
 
 
+    public void asserttElectrocasniceButton() {
+        assertTrue(electrocasniceButton.isDisplayed());
+    }
+
+    public void assertLogoEnter() {
+        assertTrue(logoEnter.isDisplayed());
+    }
+    public void assertNouatiSiPromotiiButton(){
+        assertTrue(nouatiSiPromotiiButton.isDisplayed());
+    }
+    public void assertGadgeturiPentruOriceVirstaButton(){
+        assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
+    }
+    public void assertSfaturiUtileButton(){
+        assertTrue(sfaturiUtileButton.isDisplayed());
+    }
+    public void langChangerClick(){
+        langChanger.click();
+    }
 }

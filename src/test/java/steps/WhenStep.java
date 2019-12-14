@@ -13,16 +13,16 @@ import util.WindowsHandler;
 import java.util.concurrent.TimeUnit;
 
 public class WhenStep <log>{
-    MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
-    ProductPage productPage = new ProductPage();
     WebDriver driver = Driver.getDriver();
-    MainPage mainPage = new MainPage();
-    LoginPopup loginPopup = new LoginPopup();
-    Electrocasnice electrocasnice = new Electrocasnice();
-    CadouPentruEa cadouPentruEa = new CadouPentruEa();
-    ToateCategoriile toateCategoriile = new ToateCategoriile();
-    SmartphonesCategory smartphonesCategory = new SmartphonesCategory();
-//    static org.apache.log4j.Logger log = Logger.getLogger(WhenStep.class);
+    Page page = new Page();
+    MainPageAsLogged mainPageAsLogged = page.getMainPageAsLogged();
+    ProductPage productPage = page.getProductPage();
+    MainPage mainPage = page.getMainPage();
+    LoginPopup loginPopup = page.getLoginPopup();
+    Electrocasnice electrocasnice = page.getElectrocasnice();
+    CadouPentruEa cadouPentruEa = page.getCadouPentruEa();
+    ToateCategoriile toateCategoriile = page.toateCategoriile();
+    SmartphonesCategory smartphonesCategory = page.getSmartphonesCategory();
     static Logger log = Logger.getLogger(ThenSteps.class);
 
     @When("^press on electrocasnice category$")
@@ -147,6 +147,7 @@ public class WhenStep <log>{
 
     @When("^User selects Smartphones category$")
     public void userSelectsAnyCategory() throws InterruptedException {
+
         mainPage.selectSmartphonesCategory();
         Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
         log.info("Smartphones is selected");
@@ -263,6 +264,11 @@ public class WhenStep <log>{
     @When("^user click on logout option$")
     public void logout() throws Exception {
         mainPageAsLogged.logout();
+    }
+
+    @When("^User changes language$")
+    public void userChangesLanguage() {
+        mainPage.langChangerClick();
     }
 
 //

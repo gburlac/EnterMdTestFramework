@@ -3,6 +3,7 @@ package steps;
 import cucumber.api.java.en.Given;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import pages.Page;
 import util.Driver;
 import util.TakeScreens;
 import util.Waiter;

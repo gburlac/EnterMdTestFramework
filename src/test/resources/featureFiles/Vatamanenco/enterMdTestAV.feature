@@ -1,4 +1,3 @@
-
 Feature: Product filtering functionality
 
   Scenario Outline: User goes on enter.online, select any category and use filter for products changing.

@@ -15,15 +15,17 @@ import pages.ToateCategoriile;
 
 public class ThenSteps<log> {
     WebDriver driver = Driver.getDriver();
-    SmartphonesCategory smartphonesCategory = new SmartphonesCategory();
-    Smartphones smartphones = new Smartphones();
-    MainPage mainPage = new MainPage();
-    Electrocasnice electrocasnice = new Electrocasnice();
-    CadouPentruEa cadouPentruEa = new CadouPentruEa();
-    ToateCategoriile toateCategoriile = new ToateCategoriile();
-    ProductPage productPage = new ProductPage();
-    MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
-    CartPage cartPage = new CartPage();
+    Page page = new Page();
+    SmartphonesCategory smartphonesCategory = page.getSmartphonesCategory();
+    Smartphones smartphones = page.getSmartphones();
+    MainPage mainPage = page.getMainPage();
+    Electrocasnice electrocasnice = page.getElectrocasnice();
+    CadouPentruEa cadouPentruEa = page.getCadouPentruEa();
+    ToateCategoriile toateCategoriile = page.toateCategoriile();
+    ProductPage productPage = page.getProductPage();
+    MainPageAsLogged mainPageAsLogged = page.getMainPageAsLogged();
+    CartPage cartPage = page.getCartPage();
+    Waiter wait = new Waiter();
     static Logger log = Logger.getLogger(ThenSteps.class);
 
     @Then("^electrocasnice category is displayed$")
@@ -145,9 +147,6 @@ public class ThenSteps<log> {
     }
     @Then("^verify is in wishlist$")
     public void verifyIsInWishlist() throws InterruptedException {
-//        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//        Thread.sleep(5000);
-//        Waiter.waiter();
         mainPage.assertProductInWischlist();
 
     }
@@ -177,6 +176,25 @@ public class ThenSteps<log> {
 
     @Then("^All non-changeable elements is present$")
     public void allNonChangeableElementsIsPresent() {
+        wait.waitByXPath("//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Is on main page");
+        mainPage.assertLogoEnter();
+        mainPage.assertNouatiSiPromotiiButton();
+        mainPage.asserttElectrocasniceButton();
+        mainPage.assertGadgeturiPentruOriceVirstaButton();
+        mainPage.assertSfaturiUtileButton();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "UI elements checked");
+    }
 
+    @Then("^Then all non-changeable elements with text are displayed on selected language$")
+    public void thenAllNonChangeableElementsWithTextAreDisplayedOnSelectedLanguage() {
+        wait.waitByXPath("//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Is on main page");
+        mainPage.assertLogoEnter();
+        mainPage.assertNouatiSiPromotiiButton();
+        mainPage.asserttElectrocasniceButton();
+        mainPage.assertGadgeturiPentruOriceVirstaButton();
+        mainPage.assertSfaturiUtileButton();
+        TakeScreens.takeScreenshot(Driver.getDriver(), "UI elements checked");
     }
 }
