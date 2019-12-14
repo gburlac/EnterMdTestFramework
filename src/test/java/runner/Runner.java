@@ -14,6 +14,9 @@ import org.junit.runner.RunWith;
         tags = {"@GeoMakeOrders"},
         plugin = { "pretty" },
         monochrome = true
+        features = "src/test/resources/featureFiles"
+        ,glue={"steps", "Functionalities"}
+        ,tags = {"@Run"}
 )
 public class Runner {
 }

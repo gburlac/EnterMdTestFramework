@@ -28,6 +28,7 @@ public class BeforeAfterSteps {
                 throw new IllegalStateException("Unexpected value: " + properties.getBrowser());
         }
         Driver.createDriver();
+        Driver.createDriver().get("https://enter.online/");
     }
 
   @After

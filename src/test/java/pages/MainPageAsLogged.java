@@ -12,6 +12,7 @@ public class MainPageAsLogged extends Page {
 
     WebDriver driver = Driver.getDriver();
     DrawBorder dB;
+    Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(id = "megamenubutton")
     WebElement allCategories;
@@ -21,39 +22,56 @@ public class MainPageAsLogged extends Page {
     WebElement smartphonesCategory;
     @FindBy(xpath = "//a[contains(@class,'cm-ajax cm-ajax-full-render cm-history')][contains(text(),'Samsung')]")
     WebElement samsungCategory;
-    @FindBy(xpath = "//img[@id='det_img_95196']")
-    WebElement phoneDetails;
-
+//    @FindBy(xpath = "//img[@id='det_img_95196']")
+    @FindBy(xpath = "//form[@name='product_form_95196']//a[@class='pm-product']")
+    public WebElement phoneDetails;
+    @FindBy(xpath = "//bdi")
+    WebElement productDetailsNameOfProduct;
+    @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
+    WebElement userMenu;
+    @FindBy(xpath = "//div[@class='uk-width-auto@m']//li[6]//a[1]")
+    WebElement logoutOption;
+    @FindBy(xpath = "//div[contains(@class,'tygh-header clearfix')]//li[contains(@class,'uk-active')]//a[1]")
+    WebElement myAccount;
 
     public void openAllCategories(){
-        dB.drawBorder(allCategories, driver);
+//        dB.drawBorder(allCategories, driver);
         TakeScreens.takeScreenshot(driver, "go_to_all_categories");
         allCategories.click();
     }
 
     public void openAllTelefoaneCategories(){
-        dB.drawBorder(telefoaneCategoriesList, driver);
+//        dB.drawBorder(telefoaneCategoriesList, driver);
         TakeScreens.takeScreenshot(driver, "telefoane_categories");
         telefoaneCategoriesList.click();
     }
 
     public void openPhoneDetails(){
-        dB.drawBorder(phoneDetails, driver);
+//        dB.drawBorder(phoneDetails, driver);
         TakeScreens.takeScreenshot(driver, "go_to_phone_details");
         phoneDetails.click();
+    }
 
+    private String prodName = null;
+
+    public String getProdNameText(){
+        if (prodName==null) {
+            prodName = productDetailsNameOfProduct.getText();
+            return prodName;
+        } else {
+            return prodName ;
+        }
     }
 
     public void goToSmartphones(){
-        Actions actions = new Actions(Driver.getDriver());
-        dB.drawBorder(smartphonesCategory, driver);
+//        dB.drawBorder(smartphonesCategory, driver);
         TakeScreens.takeScreenshot(driver, "go_to_smartphones");
         actions.moveToElement(smartphonesCategory).build().perform();
         smartphonesCategory.click();
     }
 
     public void goToSamsungPhones(){
-        dB.drawBorder(samsungCategory, driver);
+//        dB.drawBorder(samsungCategory, driver);
         TakeScreens.takeScreenshot(driver,"go_to_samsung");
         samsungCategory.click();
     }
@@ -84,5 +102,22 @@ public class MainPageAsLogged extends Page {
             throw new Exception(">>>>> List of all categories is NOT displayed! <<<<<");
         }
     }
+
+    public void logout() throws Exception {
+        actions.moveToElement(userMenu).moveToElement(logoutOption).click().build().perform();
+    }
+
+    public void assertUserIsLoggedOut() throws Exception {
+        try {
+            if (userMenu.getText().equals("intră în cont"))
+            System.out.println(">>>>> SUCCESS! User is logged out! <<<<<");
+        } catch (Exception e){
+            throw new Exception(">>>>> ERROR! User is not logged out! <<<<<");
+        }
+    }
+
+//    public void goToAccountDetails() throws Exception {
+//        actions.moveToElement(userMenu).moveToElement(myAccount).click().build().perform();
+//    }
 
 }

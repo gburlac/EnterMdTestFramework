@@ -9,6 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.*;
 
 import util.*;
+import org.openqa.selenium.WebDriver;
+import pages.*;
+import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
 import util.WindowsHandler;
@@ -21,7 +24,22 @@ import java.util.concurrent.TimeUnit;
 
 public class WhenStep {
 
+    WebDriver driver = Driver.getDriver();
     MainPage mainPage = new MainPage();
+    LoginPopup loginPopup = new LoginPopup();
+    MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
+    ProductPage productPage = new ProductPage();
+
+    ///////////// examples /////////////
+
+    @When("^$")
+    public void login(){
+//        enterCredentials(Example.BOB.getNames(), Example.BOB.getPassword());
+    }
+
+
+    ////////////////////////////////////
+
     Electrocasnice electrocasnice = new Electrocasnice();
     CadouPentruEa cadouPentruEa = new CadouPentruEa();
     ToateCategoriile toateCategoriile = new ToateCategoriile();
@@ -96,6 +114,16 @@ public class WhenStep {
 
     }
 
+//    @When("^user clicks on login menu$")
+//    public void clickOnLoginMenu() {
+//        mainPage.accessLoginMenu();
+//    }
+
+//    @When("^user clicks on 'facebook' icon$")
+//    public void clickOnFacebookIcon() {
+//        mainPage.loginViaFacebook();
+//        WindowsHandler.switchWindow();
+//    }
     @When("^select PC si periferice$")
     public void selectPCSiPeriferice() {
         toateCategoriile.clickpcPeriferice();
@@ -107,13 +135,79 @@ public class WhenStep {
         toateCategoriile.clickbuttonTastaturi();
         log.info("select tastaturi");
     }
+//    @When("^user enters credentials")
+//    public void enterCredentials() {
+//        Waiter.waitById("email");
+//        Waiter.waitById("pass");
+//        loginPopup.inputEmail("");
+//        loginPopup.inputPassword("");
+//    }
 
+//    @When("^user press login button$")
+//    public void clickLoginButton() {
+//        loginPopup.login();
+//        WindowsHandler.switchBackToMain();
+//    }
+/* ------------------------- */
+//    @When("^user clicks on 'categoryList'$")
+//    public void openCategoryList() {
+//        mainPageAsLogged.openAllCategories();
+//    }
     @When("^select option from filter$")
     public void selectTwoOptionFromFilter() {
         toateCategoriile.selectOptionTastaturi();
         log.info("select option from filter");
     }
 
+//    @When("^user clicks on 'telefoane' category$")
+//    public void openTelefoaneCategories() {
+//        mainPageAsLogged.openAllTelefoaneCategories();
+//    }
+
+//    @When("^user clicks on 'smartphones' category$")
+//    public void openSmartphonesCategory(){
+//        mainPageAsLogged.goToSmartphones();
+//    }
+
+//    @When("^user clicks on product$")
+//    public void openPhoneDetails() {
+//        mainPageAsLogged.openPhoneDetails();
+//    }
+
+//    @When("^user add product to cart$")
+//    public void addToCart() {
+//        productPage.addProductToCart();
+//    }
+
+//    @When("^user clicks on cart icon$")
+//    public void clickOnCartIcon() {
+//        productPage.clickOnCartIcon();
+//    }
+
+//    @When("^user clicks on 'visualize cart' button$")
+//    public void goToCart() throws Exception {
+//        productPage.goToCart();
+//    }
+//    @When("^user tries to log in with invalid (.*?) and (.*?)$")
+//    public void loginNegative(){
+////        mainPage.accessLoginMenu();
+////        Waiter.waitById("login_popup3262");
+////        mainPage.inputNegativeEmail("testmail.com");
+////        mainPage.clickLoginButton();
+//        mainPage.invalidLoginFlow("test@test.com", "1");
+//        mainPage.invalidLoginFlow("test@test.com", "   ");
+//
+//
+//
+//    }
+
+
+
+//
+//    @When("^user choose 'samsung' brand$")
+//    public void openSamsungPhones(){
+//        mainPageAsLogged.goToSamsungPhones();
+//    }
     @When("^select and add to cart$")
     public void selectAndAddToCart() {
         Waiter.waitByXPath("//button[@id='button_cart_98934']");
