@@ -1,53 +1,26 @@
-2019-12-13 11:25:48 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 11:25:48 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 11:26:01 INFO  ThenSteps:18 - Get the enter.online
-2019-12-13 11:26:10 INFO  ThenSteps:152 - Smartphones is selected
-2019-12-13 11:26:10 INFO  ThenSteps:159 - Filter Apple smartphones
-2019-12-13 11:26:13 INFO  ThenSteps:171 - Displayed only Apple smartphones
-2019-12-13 11:26:14 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 11:26:14 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 11:26:25 INFO  ThenSteps:18 - Get the enter.online
-2019-12-13 11:26:33 INFO  ThenSteps:152 - Smartphones is selected
-2019-12-13 11:26:33 INFO  ThenSteps:162 - Filter Xiaomi smartphones
-2019-12-13 11:26:37 INFO  ThenSteps:174 - Displayed only Xiaomi smartphones2019-12-13 16:56:21 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 16:56:22 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 16:56:36 INFO  ThenSteps:18 - Get the enter.online
-2019-12-13 17:03:14 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 17:03:14 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 17:03:26 INFO  ThenSteps:18 - Get the enter.online
-2019-12-13 17:09:02 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 17:09:02 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 17:09:14 INFO  ThenSteps:18 - Get the enter.online
-2019-12-13 17:18:40 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 17:18:40 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 17:19:10 INFO  ThenSteps:18 - Get the enter.online
-2019-12-13 17:20:47 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 17:20:47 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 17:21:04 INFO  ThenSteps:18 - Get the enter.online
-2019-12-13 17:32:13 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-13 17:32:13 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-13 17:32:27 INFO  ThenSteps:18 - Get the enter.online
-2019-12-14 15:08:28 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-14 15:08:28 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-14 15:08:40 INFO  ThenSteps:19 - Get the enter.online
-2019-12-14 15:08:50 INFO  ThenSteps:154 - Smartphones is selected
-2019-12-14 15:08:51 INFO  ThenSteps:161 - Filter Apple smartphones
-2019-12-14 15:08:53 INFO  ThenSteps:169 - Displayed only Apple smartphones
-2019-12-14 15:08:54 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-14 15:08:54 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-14 15:09:05 INFO  ThenSteps:19 - Get the enter.online
-2019-12-14 15:09:14 INFO  ThenSteps:154 - Smartphones is selected
-2019-12-14 15:09:15 INFO  ThenSteps:164 - Filter Xiaomi smartphones
-2019-12-14 15:09:17 INFO  ThenSteps:172 - Displayed only Xiaomi smartphones
-2019-12-14 16:18:03 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-14 16:18:03 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-14 16:18:15 INFO  ThenSteps:19 - Get the enter.online
-2019-12-14 16:18:23 INFO  ThenSteps:153 - Smartphones is selected
-2019-12-14 16:18:24 INFO  ThenSteps:160 - Filter Apple smartphones
-2019-12-14 16:18:27 INFO  ThenSteps:170 - Displayed only Apple smartphones
-2019-12-14 16:18:28 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
-2019-12-14 16:18:28 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
-2019-12-14 16:18:38 INFO  ThenSteps:19 - Get the enter.online
-2019-12-14 16:18:49 INFO  ThenSteps:153 - Smartphones is selected
-2019-12-14 16:18:49 INFO  ThenSteps:163 - Filter Xiaomi smartphones
-2019-12-14 16:18:52 INFO  ThenSteps:173 - Displayed only Xiaomi smartphones
+2019-12-14 19:43:16 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-14 19:43:16 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-14 19:43:39 INFO  Driver:45 - Initialising Driver
+2019-12-14 19:43:39 INFO  Driver:45 - Initialising Driver
+2019-12-14 19:44:06 INFO  CommonSteps:13 - User is on homepage
+2019-12-14 19:44:41 INFO  VerifyUISteps:22 - Press on electrocasnice category
+2019-12-14 19:44:59 INFO  VerifyUISteps:28 - Electrocasnice category is displayed
+2019-12-14 19:45:03 INFO  VerifyUISteps:34 - Tehnica de bucatarie part is displayed
+2019-12-14 19:45:06 INFO  VerifyUISteps:40 - Aparate de uz casnice part is displaed
+2019-12-14 19:45:57 INFO  VerifyUISteps:48 - Ingrijire personala part is displayed
+2019-12-14 19:45:58 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-14 19:45:58 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-14 19:46:10 INFO  Driver:45 - Initialising Driver
+2019-12-14 19:46:10 INFO  Driver:45 - Initialising Driver
+2019-12-14 19:46:40 INFO  CommonSteps:13 - User is on homepage
+2019-12-14 19:47:11 INFO  SearchFunctionSteps:16 - input in search bar 
+2019-12-14 19:47:27 INFO  SearchFunctionSteps:25 - select '(.*)' device
+2019-12-14 19:48:56 INFO  SearchFunctionSteps:31 - Buy product in credit
+2019-12-14 19:48:58 INFO  SearchFunctionSteps:37 - verify credit page is displayed
+2019-12-14 19:49:12 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-14 19:49:12 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-14 19:49:30 INFO  Driver:45 - Initialising Driver
+2019-12-14 19:49:30 INFO  Driver:45 - Initialising Driver
+2019-12-14 19:49:47 INFO  CommonSteps:13 - User is on homepage
+2019-12-14 19:50:24 INFO  SearchFunctionSteps:16 - input in search bar 
+2019-12-14 19:50:29 INFO  SearchFunctionSteps:25 - select '(.*)' device

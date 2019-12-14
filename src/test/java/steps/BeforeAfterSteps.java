@@ -12,7 +12,7 @@ import util.*;
 
 public class BeforeAfterSteps <log>{
     static PropertiesReader properties = PropertiesReader.getInstatnce();
-    static Logger log = Logger.getLogger(ThenSteps.class);
+    static Logger log = Logger.getLogger(BeforeAfterSteps.class);
     @Before
     public void before() {
 

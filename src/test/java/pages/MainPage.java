@@ -1,29 +1,25 @@
 package pages;
 
-<<<<<<<<< Temporary merge branch 1
-=========
-import cucumber.api.java.de.Wenn;
+
+import org.apache.log4j.Logger;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
->>>>>>>>> Temporary merge branch 2
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import steps.CommonSteps;
 import util.DrawBorder;
 import util.Driver;
-import util.TakeScreens;
-import util.Waiter;
 
 import static junit.framework.Assert.assertTrue;
 
 public class MainPage extends Page {
-
+    static Logger log = Logger.getLogger(MainPage.class);
     WebDriver driver = Driver.getDriver();
     DrawBorder dB;
 
     //find elements
-<<<<<<<<< Temporary merge branch 1
-=========
+
     //*[@id="index"]/div[3]/div/div[1]/div/div/ul/li[1]/a
     //div[contains(@class, 'ty-wysiwyg-content')]/ul/li[1]/a
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
@@ -59,7 +55,7 @@ public class MainPage extends Page {
     @FindBy(xpath = "//div[@class='ty-control-group ty-password-forgot error']//p[1]")
     private WebElement invalidPasswordAlert;
 
->>>>>>>>> Temporary merge branch 2
+
 
     @FindBy(xpath = "//*[@id=\"iam_search\"]")
     private WebElement searchBar;
@@ -157,20 +153,17 @@ public class MainPage extends Page {
     public void assertAlertNotification(String errorMessage) {
         if (errorMessage.contains("Adresa de e-mail din")) {
             Assert.assertTrue(invalidEmailAlert.isDisplayed());
-            log.println("ENTERED INVALID EMAIL");
+            log.info("ENTERED INVALID EMAIL");
         }
         if (errorMessage.contains("Campul Parola")) {
             Assert.assertTrue(invalidPasswordAlert.isDisplayed());
-            log.println("ENTERED INVALID PASSWORD");
+            log.info("ENTERED INVALID PASSWORD");
         }
         if (errorMessage.contains("Numele de utilizator sau parola introdusa este incorecta")) {
             Assert.assertTrue(notificationAlertError.isDisplayed());
-            log.println(">> ENTERED INVALID CREDENTIALS! <<<");
+            log.info(">> ENTERED INVALID CREDENTIALS! <<<");
         }
     }
-
-
-
 
 
     public void asserttElectrocasniceButton() {
@@ -180,16 +173,20 @@ public class MainPage extends Page {
     public void assertLogoEnter() {
         assertTrue(logoEnter.isDisplayed());
     }
-    public void assertNouatiSiPromotiiButton(){
+
+    public void assertNouatiSiPromotiiButton() {
         assertTrue(nouatiSiPromotiiButton.isDisplayed());
     }
-    public void assertGadgeturiPentruOriceVirstaButton(){
+
+    public void assertGadgeturiPentruOriceVirstaButton() {
         assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
     }
-    public void assertSfaturiUtileButton(){
+
+    public void assertSfaturiUtileButton() {
         assertTrue(sfaturiUtileButton.isDisplayed());
     }
-    public void langChangerClick(){
+
+    public void langChangerClick() {
         langChanger.click();
     }
 }
