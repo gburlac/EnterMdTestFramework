@@ -156,16 +156,6 @@ public class MainPage extends Page {
         }
     }
 
-    //    public void assertAlertNotification(){
-//        if (invalidEmailAlert.isDisplayed() || invalidPasswordAlert.isDisplayed()){
-//            System.out.println(">> ENTERED INVALID CREDENTIALS! <<<");
-//        } else if (notificationAlertError.isDisplayed()){
-//            Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
-//            loginOption.click();
-//            Waiter.waitByXPath("//form[contains(@name,'popup3262_form')]");
-//            showAssertsLoginMenu();
-//        }
-//    }
     public void assertAlertNotification() {
         if (invalidEmailAlert.isDisplayed() || invalidPasswordAlert.isDisplayed() || notificationAlertError.isDisplayed()) {
             System.out.println(">> ENTERED INVALID CREDENTIALS! <<<");

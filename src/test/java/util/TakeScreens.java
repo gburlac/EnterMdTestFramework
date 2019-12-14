@@ -20,7 +20,6 @@ public class TakeScreens {
     public static void takeScreenshot(WebDriver driver, String screenshotName) {
         try {
             if (!directory.exists()) {
-
                 directory.mkdir();
             }
             File fileSource = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

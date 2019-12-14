@@ -11,7 +11,6 @@ import util.WindowsHandler;
 public class LoginPopup extends Page {
 
     WebDriver driver = Driver.getDriver();
-    DrawBorder dB;
 
     @FindBy (xpath = "//input[@id='email']")
     WebElement emailField;
@@ -21,7 +20,6 @@ public class LoginPopup extends Page {
     WebElement loginButton;
 
     public void inputEmail(String email) throws Exception {
-//        dB.drawBorder(emailField, driver);
         assertLoginWindowPopup();
         TakeScreens.takeScreenshot(driver, "login_popup_window");
         emailField.click();
@@ -30,14 +28,12 @@ public class LoginPopup extends Page {
     }
 
     public void inputPassword(String password){
-//        dB.drawBorder(passwordField, driver);
         passwordField.click();
         passwordField.clear();
         passwordField.sendKeys(password);
     }
 
     public void login(){
-//        dB.drawBorder(loginButton, driver);
         TakeScreens.takeScreenshot(driver, "login_and_password_filled");
         loginButton.click();
     }
