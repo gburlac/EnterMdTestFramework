@@ -350,3 +350,64 @@ java.lang.RuntimeException: initialising exeption
 2019-12-13 20:14:35 INFO  WhenStep:52 - select '(.*)' device
 2019-12-13 20:14:44 INFO  WhenStep:58 - Buy product in credit
 2019-12-13 20:14:45 INFO  ThenSteps:80 - verify credit page is displayed
+2019-12-14 13:34:16 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 13:34:16 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 13:34:22 INFO  Driver:45 - Initialising Driver
+2019-12-14 13:34:26 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 13:34:30 INFO  WhenStep:95 - go to periferice
+2019-12-14 13:34:31 INFO  WhenStep:102 - select PC si periferice
+2019-12-14 13:34:32 INFO  WhenStep:108 - select tastaturi
+2019-12-14 13:34:34 INFO  WhenStep:114 - select option from filter
+2019-12-14 13:34:36 INFO  WhenStep:121 - select and add to cart
+2019-12-14 13:34:39 INFO  WhenStep:128 - go to see the cart
+2019-12-14 13:34:39 INFO  ThenSteps:73 - verify selected product is in cart
+2019-12-14 13:35:00 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 13:35:00 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 13:35:06 INFO  Driver:45 - Initialising Driver
+2019-12-14 13:35:09 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 13:35:09 INFO  WhenStep:95 - go to periferice
+2019-12-14 13:35:34 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 13:35:34 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 13:35:39 INFO  Driver:45 - Initialising Driver
+2019-12-14 13:35:42 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 13:35:46 INFO  WhenStep:95 - go to periferice
+2019-12-14 13:35:47 INFO  WhenStep:102 - select PC si periferice
+2019-12-14 13:35:48 INFO  WhenStep:108 - select tastaturi
+2019-12-14 13:35:50 INFO  WhenStep:114 - select option from filter
+2019-12-14 13:36:32 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 13:36:32 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 13:36:37 INFO  Driver:45 - Initialising Driver
+2019-12-14 13:36:41 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 13:36:45 INFO  WhenStep:95 - go to periferice
+2019-12-14 13:36:45 INFO  WhenStep:102 - select PC si periferice
+2019-12-14 13:36:47 INFO  WhenStep:108 - select tastaturi
+2019-12-14 13:36:49 INFO  WhenStep:114 - select option from filter
+2019-12-14 13:38:33 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 13:38:33 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 13:38:39 INFO  Driver:45 - Initialising Driver
+2019-12-14 13:38:43 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 13:38:50 INFO  WhenStep:65 - go to cadou pentru ea category
+2019-12-14 13:38:52 INFO  WhenStep:71 - select a product from the page
+2019-12-14 13:38:56 INFO  WhenStep:89 - go to cart
+2019-12-14 13:38:56 INFO  ThenSteps:67 - verify is in cart
+2019-12-14 13:38:57 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 13:38:57 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 13:39:02 INFO  Driver:45 - Initialising Driver
+2019-12-14 13:39:06 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 13:39:09 INFO  WhenStep:95 - go to periferice
+2019-12-14 13:39:10 INFO  WhenStep:102 - select PC si periferice
+2019-12-14 13:39:12 INFO  WhenStep:108 - select tastaturi
+2019-12-14 13:39:14 INFO  WhenStep:114 - select option from filter
+2019-12-14 13:39:17 INFO  WhenStep:121 - select and add to cart
+2019-12-14 13:39:20 INFO  WhenStep:128 - go to see the cart
+2019-12-14 13:39:20 INFO  ThenSteps:73 - verify selected product is in cart
+2019-12-14 13:39:22 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-14 13:39:22 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-14 13:39:27 INFO  Driver:45 - Initialising Driver
+2019-12-14 13:39:30 INFO  GivenSteps:16 - User is on homepage
+2019-12-14 13:39:35 INFO  WhenStep:135 - go to casti category
+2019-12-14 13:39:39 INFO  WhenStep:141 - select a product
+2019-12-14 13:39:41 INFO  WhenStep:148 - take a look to cart
+2019-12-14 13:39:45 INFO  WhenStep:157 - place a order
+2019-12-14 13:39:57 INFO  WhenStep:173 - fill out the delivery info
+2019-12-14 13:39:58 INFO  ThenSteps:86 - verify the success message

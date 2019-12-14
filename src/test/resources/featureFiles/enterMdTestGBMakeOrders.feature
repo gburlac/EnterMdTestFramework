@@ -25,5 +25,5 @@ Feature: Make orders on enter.online
       And take a look to cart
       And place a order
       And fill out the delivery info
-  |Bond|James|bond007@bond.uk|070000007|Chisinau|Dacia 7|
+  |Bond|James|bond007@mi6.co.uk|070000007|Chisinau|Dacia 7|
       Then verify the success message
