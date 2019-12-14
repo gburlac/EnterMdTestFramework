@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 //        name = "A description",
 //        name = "Navigate on EnterPages",
 //        tags = {"@GeoUiTest"},
-        tags = {"@GeoMakeOrders"},
+        tags = {"@GeoMakeOrders,@GeoUiTest"},
         plugin = { "pretty" },
         monochrome = true
                 )

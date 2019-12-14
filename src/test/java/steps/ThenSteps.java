@@ -1,24 +1,9 @@
 package steps;
 
-import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
-import org.apache.logging.log4j.message.TimestampMessage;
-import pages.*;
-import util.*;
-
-import java.security.Timestamp;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import pages.*;
 import util.Driver;
-import util.TakeScreens;
-import util.Waiter;
-
-import pages.ToateCategoriile;
-import util.*;
-
-import java.util.concurrent.TimeUnit;
 
 public class ThenSteps<log> {
     MainPage mainPage = new MainPage();
@@ -127,5 +112,5 @@ public class ThenSteps<log> {
 //        TakeScreens.takeScreenshot(driver, "samsung_phones");
 //
 //    }
-    }
+}
 

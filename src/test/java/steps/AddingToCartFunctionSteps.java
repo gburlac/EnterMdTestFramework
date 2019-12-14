@@ -79,5 +79,4 @@ public class AddingToCartFunctionSteps {
         log.info("verify selected product is in cart");
     }
 
-
 }
