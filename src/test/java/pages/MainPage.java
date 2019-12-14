@@ -1,14 +1,18 @@
 package pages;
 
+<<<<<<<<< Temporary merge branch 1
+=========
+import cucumber.api.java.de.Wenn;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+>>>>>>>>> Temporary merge branch 2
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.DrawBorder;
 import util.Driver;
+import util.TakeScreens;
+import util.Waiter;
 
-import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 import static junit.framework.Assert.assertTrue;
 
 public class MainPage extends Page {
@@ -17,7 +21,8 @@ public class MainPage extends Page {
     DrawBorder dB;
 
     //find elements
-    Actions actions = new Actions(Driver.getDriver());
+<<<<<<<<< Temporary merge branch 1
+=========
     //*[@id="index"]/div[3]/div/div[1]/div/div/ul/li[1]/a
     //div[contains(@class, 'ty-wysiwyg-content')]/ul/li[1]/a
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
@@ -53,6 +58,7 @@ public class MainPage extends Page {
     @FindBy(xpath = "//div[@class='ty-control-group ty-password-forgot error']//p[1]")
     private WebElement invalidPasswordAlert;
 
+>>>>>>>>> Temporary merge branch 2
 
     @FindBy(xpath = "//*[@id=\"iam_search\"]")
     private WebElement searchBar;
@@ -79,9 +85,25 @@ public class MainPage extends Page {
     private WebElement buttonBuyInCredit;
     @FindBy(xpath = "//div[@class='tab-credit-submit']//input[2]")
     private WebElement checkCreditPage;
+    @FindBy(xpath = "//*[@id=\"megamenubutton\"]/button[2]")
+    private WebElement allCategoriesDropdown;
+    @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[1]/ul/li[1]/a")
+    private WebElement allCategoriesDropdownTelephonesCategory;
+    @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[2]/div/div[1]/div[1]/ul/li/a")
+    private WebElement allCategoriesDropdownTelephonesCategorySmartphones;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]/a/svg")
+    private WebElement logoEnter;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
+    private WebElement electrocasniceButton;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[2]/a")
+    private WebElement nouatisipromotiiButton;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[3]/a")
+    private WebElement gadgeturiPentruOriceVirstaButton;
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[4]/a")
+    private WebElement sfaturiUtileButton;
 
-
-    //methods
+    Actions actions = new Actions(Driver.getDriver());
+    //method
 
     public void assertcheckCreditPage() throws InterruptedException {
         assertTrue(checkCreditPage.isDisplayed());
@@ -116,7 +138,6 @@ public class MainPage extends Page {
 
     public void clickbuttonCheckWischlist() {
         buttonCheckWischlist.click();
-
     }
 
     public void clickbuttonAddToWishlist() {
@@ -145,6 +166,9 @@ public class MainPage extends Page {
             log.println(">> ENTERED INVALID CREDENTIALS! <<<");
         }
     }
+
+
+
 
 
 }
