@@ -8,10 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/featureFiles",
         glue={"steps"},
-//        name = "A description",
 //        name = "Navigate on EnterPages",
-        tags = {"@GeoUiTest"},
-//        tags = {"@GeoMakeOrders,@GeoUiTest"},
+//        tags = {"@GeoUiTest"},
+        tags = {"@GeoMakeOrders"},
+//         tags = {"@GeoMakeOrders,@GeoUiTest"},
         plugin = { "pretty" },
         monochrome = true
                 )

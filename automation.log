@@ -26,3 +26,26 @@
 2019-12-15 12:44:45 INFO  SearchFunctionSteps:26 - select '(.*)' device
 2019-12-15 12:44:53 INFO  SearchFunctionSteps:32 - Buy product in credit
 2019-12-15 12:44:57 INFO  SearchFunctionSteps:38 - verify credit page is displayed
+2019-12-15 13:40:41 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 13:40:41 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 13:40:58 INFO  Driver:45 - Initialising Driver
+2019-12-15 13:40:58 INFO  Driver:45 - Initialising Driver
+2019-12-15 13:41:19 INFO  CommonSteps:13 - User is on homepage
+2019-12-15 13:41:42 INFO  AddingToCartFunctionSteps:18 - go to cadou pentru ea category
+2019-12-15 13:41:49 INFO  AddingToCartFunctionSteps:24 - select a product from the page
+2019-12-15 13:41:54 INFO  AddingToCartFunctionSteps:30 - go to cart
+2019-12-15 13:41:55 INFO  AddingToCartFunctionSteps:36 - verify is in cart
+2019-12-15 13:41:57 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 13:41:57 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 13:42:09 INFO  Driver:45 - Initialising Driver
+2019-12-15 13:42:09 INFO  Driver:45 - Initialising Driver
+2019-12-15 13:42:25 INFO  CommonSteps:13 - User is on homepage
+2019-12-15 13:42:30 INFO  AddingToCartFunctionSteps:42 - go to periferice
+2019-12-15 13:42:41 INFO  AddingToCartFunctionSteps:48 - select PC si periferice
+2019-12-15 13:42:44 INFO  AddingToCartFunctionSteps:54 - select tastaturi
+2019-12-15 13:42:52 INFO  AddingToCartFunctionSteps:60 - select option from filter
+2019-12-15 13:42:55 INFO  AddingToCartFunctionSteps:67 - select and add to cart
+2019-12-15 13:43:01 INFO  AddingToCartFunctionSteps:73 - go to see the cart
+2019-12-15 13:43:03 INFO  AddingToCartFunctionSteps:79 - verify selected product is in cart
+2019-12-15 13:43:05 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 13:43:05 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe

@@ -20,8 +20,6 @@ public class MainPage extends Page {
 
     //find elements
 
-    //*[@id="index"]/div[3]/div/div[1]/div/div/ul/li[1]/a
-    //div[contains(@class, 'ty-wysiwyg-content')]/ul/li[1]/a
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
     private WebElement electroCasniceCategory;
     @FindBy(xpath = "//*[@id=\"categories\"]/div[3]/div/div[2]/div/div/div/h1")
@@ -55,29 +53,22 @@ public class MainPage extends Page {
     @FindBy(xpath = "//div[@class='ty-control-group ty-password-forgot error']//p[1]")
     private WebElement invalidPasswordAlert;
 
-
-
     @FindBy(xpath = "//*[@id=\"iam_search\"]")
     private WebElement searchBar;
     @FindBy(xpath = "//div[contains(text(),'OnePlus 7 Pro')]")
     private WebElement selectOnePlus;
     @FindBy(xpath = "//li[2]//a[1]//div[1]//div[2]//div[1]")
     private WebElement selectIphone;
-    //button[@id='button_wishlist_9854998549']
-    //button[@id='button_wishlist_102069102069']
     @FindBy(xpath = "//button[@id='button_wishlist_9854998549']")
     private WebElement buttonAddToWishlist;
     @FindBy(xpath = "//button[@id='button_wishlist_102069102069']")
     private WebElement buttonAddToWishlistIphone;
-    //div[@id='pm_wish_list_3262']/a/span
-    //div[contains(@class, 'ty-float-right')]/a[contains(@class, 'ty-btn ty-btn__secondary')]
     @FindBy(xpath = "//div[contains(@class, 'ty-float-right')]/a[contains(@class, 'ty-btn ty-btn__secondary')]")
     private WebElement buttonCheckWischlist;
     @FindBy(xpath = "//*[@id=\"det_img_98549\"]")
     private WebElement buttonCheckProductInWischlist;
     @FindBy(xpath = "//img[@id='det_img_102069']")
     private WebElement buttonCheckProductInWischlistIphone;
-    //a[contains(@class, 'uk-margin-small-top uk-button uk-button-default uk-border-pill ty-tk-product-button')]
     @FindBy(xpath = " //a[@class='uk-margin-small-top uk-button uk-button-default uk-border-pill ty-tk-product-button']")
     private WebElement buttonBuyInCredit;
     @FindBy(xpath = "//div[@class='tab-credit-submit']//input[2]")
@@ -102,7 +93,7 @@ public class MainPage extends Page {
     private WebElement langChanger;
     Actions actions = new Actions(Driver.getDriver());
 
-    //method 
+    //method
     public void assertcheckCreditPage()  {
         assertTrue(checkCreditPage.isDisplayed());
     }
