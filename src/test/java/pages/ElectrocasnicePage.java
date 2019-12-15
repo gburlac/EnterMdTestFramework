@@ -1,15 +1,13 @@
 package pages;
 
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-
-import util.*;
+import util.Driver;
 
 import static junit.framework.Assert.assertTrue;
 
-public class Electrocasnice extends Page {
+public class ElectrocasnicePage extends Page {
     Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")

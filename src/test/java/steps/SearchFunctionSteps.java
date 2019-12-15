@@ -4,6 +4,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
 import pages.MainPage;
+import pages.Page;
 import util.Waiter;
 
 public class SearchFunctionSteps {
@@ -22,7 +23,7 @@ public class SearchFunctionSteps {
             mainPage.clickbuttonselectIphone();
         else if (manufacture.equals("OnePlus 7 Pro"))
             mainPage.clickOnSelectOnePlus();
-        log.info("select '(.*)' device");
+        log.info("select a device");
     }
 
     @When("^buy product in credit$")

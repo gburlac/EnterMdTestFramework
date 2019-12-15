@@ -9,22 +9,22 @@ public class Page {
     }
 
     MainPage mainPage;
-    CadouPentruEa cadouPentruEa;
+    CadouPentruEaPage cadouPentruEaPage;
     CartPage cartPage;
     LoginPopup loginPopup;
     MainPageAsLogged mainPageAsLogged;
     ProductPage productPage;
     Smartphones smartphones;
     SmartphonesCategory smartphonesCategory;
-    ToateCategoriile toateCategoriile;
-    Electrocasnice electrocasnice;
+    ToateCategoriilePage toateCategoriilePage;
+    ElectrocasnicePage electrocasnicePage;
 
     public MainPage getMainPage() {
         return (mainPage == null) ? mainPage = new MainPage() : mainPage;
     }
 
-    public CadouPentruEa getCadouPentruEa() {
-        return (cadouPentruEa == null) ? cadouPentruEa = new CadouPentruEa() : cadouPentruEa; }
+    public CadouPentruEaPage getCadouPentruEaPage() {
+        return (cadouPentruEaPage == null) ? cadouPentruEaPage = new CadouPentruEaPage() : cadouPentruEaPage; }
 
     public CartPage getCartPage() {
         return (cartPage == null) ? cartPage = new CartPage() : cartPage; }
@@ -44,9 +44,9 @@ public class Page {
     public SmartphonesCategory getSmartphonesCategory() {
         return (smartphonesCategory == null) ? smartphonesCategory = new SmartphonesCategory() : smartphonesCategory; }
 
-    public ToateCategoriile toateCategoriile() {
-        return (toateCategoriile == null) ? toateCategoriile = new ToateCategoriile() : toateCategoriile; }
+    public ToateCategoriilePage toateCategoriile() {
+        return (toateCategoriilePage == null) ? toateCategoriilePage = new ToateCategoriilePage() : toateCategoriilePage; }
 
-    public Electrocasnice getElectrocasnice() {
-        return (electrocasnice == null) ? electrocasnice = new Electrocasnice() : electrocasnice; }
+    public ElectrocasnicePage getElectrocasnicePage() {
+        return (electrocasnicePage == null) ? electrocasnicePage = new ElectrocasnicePage() : electrocasnicePage; }
 }

@@ -101,18 +101,10 @@ public class MainPage extends Page {
     @FindBy(xpath = "//*[@id=\"languages_638\"]/div[1]/a")
     private WebElement langChanger;
     Actions actions = new Actions(Driver.getDriver());
-    //method
 
-    public void assertcheckCreditPage() throws InterruptedException {
+    //method 
+    public void assertcheckCreditPage()  {
         assertTrue(checkCreditPage.isDisplayed());
-    }
-
-    public void assertbuttonCheckProductInWischlistIphone() throws InterruptedException {
-        assertTrue(buttonCheckProductInWischlistIphone.isDisplayed());
-    }
-
-    public void assertProductInWischlist() throws InterruptedException {
-        assertTrue(buttonCheckProductInWischlist.isDisplayed());
     }
 
     public void clickButtonBuyInCredit() {
@@ -128,18 +120,6 @@ public class MainPage extends Page {
 
     public void clickbuttonselectIphone() {
         selectIphone.click();
-    }
-
-    public void clickButtonAddToWishlistIphone() {
-        buttonAddToWishlistIphone.click();
-    }
-
-    public void clickbuttonCheckWischlist() {
-        buttonCheckWischlist.click();
-    }
-
-    public void clickbuttonAddToWishlist() {
-        buttonAddToWishlist.click();
     }
 
     public void clickOnSelectOnePlus() {

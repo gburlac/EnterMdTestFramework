@@ -5,8 +5,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.Driver;
 
-import javax.swing.*;
-
 import static junit.framework.Assert.assertTrue;
 
 public class CastiPage extends Page {
@@ -23,9 +21,6 @@ public class CastiPage extends Page {
     private WebElement butonCartStatusSecondary;
     @FindBy(xpath = "//a[contains(@class, 'ty-btn ty-btn__primary')]")
     private WebElement butonCartStatusPopUp;
-    //a[contains(@class,'ty-btn ty-btn__primary')]
-    //a[contains(@class,'ty-btn ty-btn__primary')]
-    //button[@name='dispatch[checkout.customer_info]']
     @FindBy(xpath = "//button[@name='dispatch[checkout.customer_info]']")
     private WebElement butonCartProcessFaraInregistrare;
     @FindBy(xpath = "//input[@id='elm_15']")
