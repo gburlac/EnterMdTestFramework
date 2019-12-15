@@ -25,6 +25,11 @@ public class BeforeAfterSteps <log>{
                 WebDriverManager.iedriver().setup();
                 break;
             }
+            case "firefox":{
+                WebDriverManager.firefoxdriver().setup();
+            break;
+            }
+
             default:
                 throw new IllegalStateException("Unexpected value: " + properties.getBrowser());
         }
