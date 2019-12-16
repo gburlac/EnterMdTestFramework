@@ -10,13 +10,7 @@ Feature: Product filtering functionality
       | Apple        |
       | Xiaomi       |
 
-#Feature: Product sorting functionality
-#  Scenario: User goes on enter.online, select any category and use sorting dropdowns for products sorting.
-#    Given User is on homepage
-#    When User selects any category
-#    And change values in sorting dropdowns
-#    Then products displays in selected orde| manufacturer |r
-#
+
 #Feature: Product review functionality
 #  Scenario: User goes on enter.online, select any product, write review and click [Send] button
 #    Given User is on homepage

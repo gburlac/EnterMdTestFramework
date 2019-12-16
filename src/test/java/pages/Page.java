@@ -15,7 +15,6 @@ public class Page {
     MainPageAsLogged mainPageAsLogged;
     ProductPage productPage;
     Smartphones smartphones;
-    SmartphonesCategory smartphonesCategory;
     ToateCategoriile toateCategoriile;
     Electrocasnice electrocasnice;
 
@@ -40,9 +39,6 @@ public class Page {
 
     public Smartphones getSmartphones() {
         return (smartphones == null) ? smartphones = new Smartphones() : smartphones; }
-
-    public SmartphonesCategory getSmartphonesCategory() {
-        return (smartphonesCategory == null) ? smartphonesCategory = new SmartphonesCategory() : smartphonesCategory; }
 
     public ToateCategoriile toateCategoriile() {
         return (toateCategoriile == null) ? toateCategoriile = new ToateCategoriile() : toateCategoriile; }

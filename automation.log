@@ -51,3 +51,70 @@
 2019-12-14 16:18:49 INFO  ThenSteps:153 - Smartphones is selected
 2019-12-14 16:18:49 INFO  ThenSteps:163 - Filter Xiaomi smartphones
 2019-12-14 16:18:52 INFO  ThenSteps:173 - Displayed only Xiaomi smartphones
+2019-12-14 18:12:25 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-14 18:12:25 INFO  WebDriverManager:1042 - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2019-12-14 18:12:26 INFO  Downloader:128 - Downloading https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_win32.zip
+2019-12-14 18:12:27 INFO  Downloader:183 - Extracting binary from compressed file chromedriver_win32.zip
+2019-12-14 18:12:27 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 12:54:19 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 12:54:19 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 12:54:52 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 12:55:10 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 12:55:12 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 12:55:12 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 12:55:42 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 12:55:54 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 12:55:55 INFO  ThenSteps:36 - Filter Xiaomi smartphones
+2019-12-15 12:55:58 INFO  ThenSteps:25 - Displayed only Xiaomi smartphones
+2019-12-15 12:59:20 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 12:59:20 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 12:59:53 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 13:00:18 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 13:00:20 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 13:00:20 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 13:01:21 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 13:02:09 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 13:02:10 INFO  ThenSteps:36 - Filter Xiaomi smartphones
+2019-12-15 13:02:13 INFO  ThenSteps:25 - Displayed only Xiaomi smartphones
+2019-12-15 13:06:57 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 13:06:57 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 13:07:26 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 13:07:39 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 13:07:40 INFO  ThenSteps:33 - Filter Apple smartphones
+2019-12-15 13:07:43 INFO  ThenSteps:22 - Displayed only Apple smartphones
+2019-12-15 13:07:44 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 13:07:44 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 13:08:14 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 13:08:27 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 13:08:27 INFO  ThenSteps:36 - Filter Xiaomi smartphones
+2019-12-15 13:08:31 INFO  ThenSteps:25 - Displayed only Xiaomi smartphones
+2019-12-15 17:32:39 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 17:32:39 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 17:32:52 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 17:33:00 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 17:33:00 INFO  ThenSteps:33 - Filter Apple smartphones
+2019-12-15 17:33:03 INFO  ThenSteps:22 - Displayed only Apple smartphones
+2019-12-15 17:33:04 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 17:33:04 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 17:33:17 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 17:33:25 INFO  ThenSteps:26 - Smartphones is selected
+2019-12-15 17:33:26 INFO  ThenSteps:36 - Filter Xiaomi smartphones
+2019-12-15 17:33:29 INFO  ThenSteps:25 - Displayed only Xiaomi smartphones
+2019-12-15 17:45:08 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 17:45:08 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 17:45:20 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 17:45:27 INFO  FilteringSteps:22 - Smartphones is selected
+2019-12-15 17:45:28 INFO  FilteringSteps:29 - Filter Apple smartphones
+2019-12-15 17:45:30 INFO  FilteringSteps:41 - Displayed only Apple smartphones
+2019-12-15 17:45:31 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-15 17:45:31 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-15 17:45:42 INFO  ThenSteps:18 - Get the enter.online
+2019-12-15 17:45:50 INFO  FilteringSteps:22 - Smartphones is selected
+2019-12-15 17:45:51 INFO  FilteringSteps:32 - Filter Xiaomi smartphones
+2019-12-15 17:45:54 INFO  FilteringSteps:44 - Displayed only Xiaomi smartphones
+2019-12-16 09:17:40 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-16 09:17:40 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-16 09:17:54 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-16 09:17:54 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-16 09:21:20 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-16 09:21:20 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
