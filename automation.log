@@ -19,3 +19,13 @@
 2019-12-15 20:25:29 INFO  Driver:45 - Initialising Driver
 2019-12-15 20:25:38 INFO  CommonSteps:13 - User is on homepage
 2019-12-15 20:25:38 INFO  SearchFunctionSteps:17 - input in search bar 
+2019-12-16 09:15:59 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-16 09:15:59 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-16 09:16:04 INFO  Driver:45 - Initialising Driver
+2019-12-16 09:16:04 INFO  Driver:45 - Initialising Driver
+2019-12-16 09:16:12 INFO  CommonSteps:13 - User is on homepage
+2019-12-16 09:16:17 INFO  VerifyUISteps:19 - Press on electrocasnice category
+2019-12-16 09:16:19 INFO  VerifyUISteps:25 - Electrocasnice category is displayed
+2019-12-16 09:16:20 INFO  VerifyUISteps:31 - Tehnica de bucatarie part is displayed
+2019-12-16 09:16:21 INFO  VerifyUISteps:37 - Aparate de uz casnice part is displaed
+2019-12-16 09:16:49 INFO  VerifyUISteps:45 - Ingrijire personala part is displayed
