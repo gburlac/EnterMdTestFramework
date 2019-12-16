@@ -2,13 +2,11 @@ package util;
 
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
-import org.openqa.selenium.remote.CapabilityType;
 
 
 public class Driver {
@@ -23,10 +21,6 @@ public class Driver {
             switch (properties.getBrowser()) {
                 case "chrome": {
                     driver = new ChromeDriver();
-                    ChromeOptions option = new ChromeOptions();
-                    Proxy proxy = new Proxy();
-                    proxy.setHttpProxy("82.165.102.49.5555");
-                    option.setCapability(CapabilityType.PROXY, proxy);
                     driver.manage().window().maximize();
                     break;
                 }
@@ -37,8 +31,11 @@ public class Driver {
                     driver.manage().window().maximize();
                     break;
                 }
-                default: {
-                    log.error("Driver exeption", new RuntimeException("initialising exeption"));
+                case "firefox": {
+                    driver = new FirefoxDriver();
+                    driver.manage().window().maximize();
+                    driver.manage().timeouts().implicitlyWait(9,TimeUnit.SECONDS);
+                    break;
                 }
             }
         }

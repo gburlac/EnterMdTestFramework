@@ -10,7 +10,7 @@ import util.*;
 
 public class BeforeAfterSteps <log>{
     static PropertiesReader properties = PropertiesReader.getInstatnce();
-    static Logger log = Logger.getLogger(ThenSteps.class);
+    static Logger log = Logger.getLogger(BeforeAfterSteps.class);
     @Before
     public void before() {
 
@@ -23,10 +23,16 @@ public class BeforeAfterSteps <log>{
                 WebDriverManager.iedriver().setup();
                 break;
             }
+            case "firefox":{
+                WebDriverManager.firefoxdriver().setup();
+            break;
+            }
+
             default:
                 throw new IllegalStateException("Unexpected value: " + properties.getBrowser());
         }
         Driver.createDriver();
+        Driver.createDriver().get("https://enter.online/");
     }
 
 

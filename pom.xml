@@ -18,14 +18,12 @@
         <artifactId>cucumber-core</artifactId>
         <version>1.2.5</version>
     </dependency>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>1.2.6</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
         <groupId>info.cukes</groupId>
         <artifactId>cucumber-jvm-deps</artifactId>
@@ -61,35 +59,30 @@
         <artifactId>selenium-java</artifactId>
         <version>3.14.0</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
         <version>5.5.2</version>
         <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
         <version>5.5.2</version>
         <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
         <version>5.5.2</version>
         <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter</artifactId>
         <version>5.5.2</version>
         <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
     <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
@@ -110,13 +103,15 @@
             <groupId> org.apache.cassandra</groupId>
             <artifactId>cassandra-all</artifactId>
             <version>0.8.1</version>
-
         </dependency>
-
+        <dependency>
+            <groupId>ru.yandex.qatools.ashot</groupId>
+            <artifactId>ashot</artifactId>
+            <version>1.5.4</version>
+        </dependency>
     </dependencies>
 
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

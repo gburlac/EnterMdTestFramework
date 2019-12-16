@@ -1,13 +1,11 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import util.Driver;
 
 import static junit.framework.Assert.assertTrue;
 
-public class ToateCategoriile extends Page {
+public class ToateCategoriilePage extends Page {
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/button[2]")
     private WebElement butonToateCategoriile;
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[1]/ul/li[3]/a")
@@ -20,10 +18,8 @@ public class ToateCategoriile extends Page {
     private WebElement selectOptionTastaturi2;
     @FindBy(xpath = "//button[@id='button_cart_98934']")
     private WebElement selectAndAddToCart;
-    //a[contains(@class, 'ty-btn ty-btn__primary')]
     @FindBy(xpath = "//a[contains(@class, 'ty-btn ty-btn__primary')]")
     private WebElement buttonVizualizatiCosul;
-    //*[@id="sw_dropdown_3262_cart"]/a/span/svg/path[1]
     @FindBy(xpath = "//*[@id=\"sw_dropdown_3262_cart\"]/a/span/svg/path[1]")
     private WebElement clickOnCart;
     @FindBy(xpath = "//*[@id='det_img_2716447294']")
@@ -69,8 +65,6 @@ public class ToateCategoriile extends Page {
     }
 
     public void clickButonToateCategoriile() {
-//        Actions actions = new Actions(Driver.getDriver());
-//        actions.moveToElement(butonToateCategoriile).build().perform();
         butonToateCategoriile.click();
     }
 }

@@ -31,6 +31,8 @@ public class MainPageAsLogged extends Page {
     WebElement userMenu;
     @FindBy(xpath = "//div[@class='uk-width-auto@m']//li[6]//a[1]")
     WebElement logoutOption;
+    @FindBy(xpath = "//div[contains(@class,'tygh-header clearfix')]//li[contains(@class,'uk-active')]//a[1]")
+    WebElement myAccount;
 
     public void openAllCategories(){
 //        dB.drawBorder(allCategories, driver);
@@ -113,5 +115,9 @@ public class MainPageAsLogged extends Page {
             throw new Exception(">>>>> ERROR! User is not logged out! <<<<<");
         }
     }
+
+//    public void goToAccountDetails() throws Exception {
+//        actions.moveToElement(userMenu).moveToElement(myAccount).click().build().perform();
+//    }
 
 }

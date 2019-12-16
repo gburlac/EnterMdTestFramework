@@ -1,7 +1,5 @@
 package util;
 
-import org.slf4j.Logger;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,9 +9,10 @@ import java.util.Properties;
 public class PropertiesReader {
 
     String browser;
+
     static PropertiesReader propertiesReader;
 
-    private PropertiesReader() {
+    private PropertiesReader(){
         initProperties();
     }
 
@@ -32,7 +31,7 @@ public class PropertiesReader {
         }
     }
 
-    public static PropertiesReader getInstatnce() {
+    public static PropertiesReader getInstatnce(){
         if (propertiesReader == null) {
             propertiesReader = new PropertiesReader();
         }
