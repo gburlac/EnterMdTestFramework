@@ -47,7 +47,6 @@ public class Smartphones extends Page {
         filterXiaomiCheckbox.click();
     }
 
-
     public void filterAppleAssert() {
         for (int i = 1; i <= 20 ; i++) {
             String value;

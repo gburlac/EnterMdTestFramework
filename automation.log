@@ -1,0 +1,3 @@
+2019-12-17 15:28:32 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-17 15:28:32 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-17 15:28:39 INFO  CommonSteps:19 - User is on homepage
