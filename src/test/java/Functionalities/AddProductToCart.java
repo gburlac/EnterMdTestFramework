@@ -2,9 +2,7 @@ package Functionalities;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.WebDriver;
 import pages.*;
-import util.Driver;
 
 public class AddProductToCart {
     MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();

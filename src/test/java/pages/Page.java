@@ -15,35 +15,52 @@ public class Page {
     MainPageAsLogged mainPageAsLogged;
     ProductPage productPage;
     Smartphones smartphones;
-    SmartphonesCategory smartphonesCategory;
     ToateCategoriilePage toateCategoriilePage;
     ElectrocasnicePage electrocasnicePage;
+    ProductListPage productListPage;
+    CastiPage castiPage;
 
     public MainPage getMainPage() {
         return (mainPage == null) ? mainPage = new MainPage() : mainPage;
     }
 
     public CadouPentruEaPage getCadouPentruEaPage() {
-        return (cadouPentruEaPage == null) ? cadouPentruEaPage = new CadouPentruEaPage() : cadouPentruEaPage; }
+        return (cadouPentruEaPage == null) ? cadouPentruEaPage = new CadouPentruEaPage() : cadouPentruEaPage;
+    }
 
     public CartPage getCartPage() {
-        return (cartPage == null) ? cartPage = new CartPage() : cartPage; }
+        return (cartPage == null) ? cartPage = new CartPage() : cartPage;
+    }
 
     public LoginPopup getLoginPopup() {
-        return (loginPopup == null) ? loginPopup = new LoginPopup() : loginPopup; }
+        return (loginPopup == null) ? loginPopup = new LoginPopup() : loginPopup;
+    }
 
     public MainPageAsLogged getMainPageAsLogged() {
-        return (mainPageAsLogged == null) ? mainPageAsLogged = new MainPageAsLogged() : mainPageAsLogged; }
+        return (mainPageAsLogged == null) ? mainPageAsLogged = new MainPageAsLogged() : mainPageAsLogged;
+    }
 
     public ProductPage getProductPage() {
-        return (productPage == null) ? productPage = new ProductPage() : productPage; }
+        return (productPage == null) ? productPage = new ProductPage() : productPage;
+    }
 
     public Smartphones getSmartphones() {
-        return (smartphones == null) ? smartphones = new Smartphones() : smartphones; }
+        return (smartphones == null) ? smartphones = new Smartphones() : smartphones;
+    }
 
-    public ToateCategoriile toateCategoriile() {
-        return (toateCategoriile == null) ? toateCategoriile = new ToateCategoriile() : toateCategoriile; }
+    public ToateCategoriilePage toateCategoriilePage() {
+        return (toateCategoriilePage == null) ? toateCategoriilePage = new ToateCategoriilePage() : toateCategoriilePage;
+    }
 
     public ElectrocasnicePage getElectrocasnicePage() {
-        return (electrocasnicePage == null) ? electrocasnicePage = new ElectrocasnicePage() : electrocasnicePage; }
+        return (electrocasnicePage == null) ? electrocasnicePage = new ElectrocasnicePage() : electrocasnicePage;
+    }
+
+    public ProductListPage getProductListPage() {
+        return (productListPage == null) ? productListPage = new ProductListPage() : productListPage;
+    }
+
+    public CastiPage getCastiPage() {
+        return (castiPage == null) ? castiPage = new CastiPage() : castiPage;
+    }
 }

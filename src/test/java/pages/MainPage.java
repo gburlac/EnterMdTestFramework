@@ -14,10 +14,6 @@ import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
 
-import java.security.cert.X509Certificate;
-
-import static junit.framework.Assert.assertTrue;
-
 public class MainPage extends Page {
     static Logger log = Logger.getLogger(MainPage.class);
     WebDriver driver = Driver.getDriver();
@@ -77,7 +73,7 @@ public class MainPage extends Page {
     private WebElement buttonBuyInCredit;
     @FindBy(xpath = "//div[@class='tab-credit-submit']//input[2]")
     private WebElement checkCreditPage;
-    @FindBy(xpath = "//*[@id=\"megamenubutton\"]/button[2]")
+    @FindBy(xpath = "//*[@id=\"megamenubutton\"]")
     private WebElement allCategoriesDropdown;
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[1]/ul/li[1]/a")
     private WebElement allCategoriesDropdownTelephonesCategory;
@@ -98,7 +94,7 @@ public class MainPage extends Page {
     Actions actions = new Actions(Driver.getDriver());
     //method
     public void assertcheckCreditPage()  {
-        assertTrue(checkCreditPage.isDisplayed());
+        Assert.assertTrue(checkCreditPage.isDisplayed());
     }
 
     public void clickButtonBuyInCredit() {
@@ -147,28 +143,30 @@ public class MainPage extends Page {
 
     public void selectSmartphonesCategory() {
         allCategoriesDropdown.click();
+        allCategoriesDropdown.click();
+        allCategoriesDropdown.click();
         allCategoriesDropdownTelephonesCategory.click();
         allCategoriesDropdownTelephonesCategorySmartphones.click();
     }
 
     public void asserttElectrocasniceButton() {
-        assertTrue(electrocasniceButton.isDisplayed());
+        Assert.assertTrue(electrocasniceButton.isDisplayed());
     }
 
     public void assertLogoEnter() {
-        assertTrue(logoEnter.isDisplayed());
+        Assert.assertTrue(logoEnter.isDisplayed());
     }
 
     public void assertNouatiSiPromotiiButton() {
-        assertTrue(nouatiSiPromotiiButton.isDisplayed());
+        Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
     }
 
     public void assertGadgeturiPentruOriceVirstaButton() {
-        assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
+        Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
     }
 
     public void assertSfaturiUtileButton() {
-        assertTrue(sfaturiUtileButton.isDisplayed());
+        Assert.assertTrue(sfaturiUtileButton.isDisplayed());
     }
 
     public void langChangerClick() {

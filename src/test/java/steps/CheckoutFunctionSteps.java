@@ -4,14 +4,14 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
-import pages.CastiPage;
+import pages.*;
 import util.Waiter;
 
 import java.util.List;
 
 public class CheckoutFunctionSteps {
-
-    CastiPage castiPage = new CastiPage();
+    Page page = new Page();
+    CastiPage castiPage = page.getCastiPage();
     static Logger log = Logger.getLogger(CheckoutFunctionSteps.class);
 
     @When("^go to casti category$")

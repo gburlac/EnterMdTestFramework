@@ -4,12 +4,14 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
 import pages.CadouPentruEaPage;
+import pages.*;
 import pages.ToateCategoriilePage;
 import util.Waiter;
 
 public class AddingToCartFunctionSteps {
-    CadouPentruEaPage cadouPentruEaPage = new CadouPentruEaPage();
-    ToateCategoriilePage toateCategoriilePage = new ToateCategoriilePage();
+    Page page = new Page();
+    CadouPentruEaPage cadouPentruEaPage = page.getCadouPentruEaPage();
+    ToateCategoriilePage toateCategoriilePage = page.toateCategoriilePage();
     static Logger log = Logger.getLogger(AddingToCartFunctionSteps.class);
 
     @When("^go to cadou pentru ea category$")
