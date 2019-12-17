@@ -17,20 +17,20 @@ public class CheckoutFunctionSteps {
     @When("^go to casti category$")
     public void goToCastiCategory() {
         castiPage.clickButonCasti();
-        log.info("go to casti category");
+        log.info("Go to casti category");
     }
 
     @When("^select a product$")
     public void selectAProduct() {
         castiPage.clickButonAddtocartProduct();
-        log.info("select a product");
+        log.info("Select a product");
     }
 
     @When("^take a look to cart$")
     public void takeALookToCart() {
         Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         castiPage.clickButonCartStatusPopUp();
-        log.info("take a look to cart");
+        log.info("Take a look to cart");
     }
 
     @When("^place a order$")
@@ -39,7 +39,7 @@ public class CheckoutFunctionSteps {
         castiPage.clickButonCartStatusPopUp();
         Waiter.waitByXPath("//button[@name='dispatch[checkout.customer_info]']");
         castiPage.clickButonCartProcessFaraInregistrare();
-        log.info("place a order");
+        log.info("Place a order");
     }
 
 
@@ -55,13 +55,13 @@ public class CheckoutFunctionSteps {
         castiPage.clickButtonContinue();
         castiPage.clickButtonDeliveryOption();
         castiPage.clickButtonAmplaseazaComanda();
-        log.info("fill out the delivery info");
+        log.info("Fill out the delivery info");
 
     }
 
     @Then("^verify the success message$")
     public void verifyTheSuccessMessage() {
         castiPage.assertingConfirmationOfPurchase();
-        log.info("verify the success message");
+        log.info("Verify the success message");
     }
 }

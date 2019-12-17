@@ -14,7 +14,7 @@ public class SearchFunctionSteps {
     @When("^input in search bar a '(.*)'$")
     public void inputInSearchBarAOnePlus(String value) {
         mainPage.searchBarMethod(value);
-        log.info("input in search bar ");
+        log.info("Input in search bar ");
     }
 
     @When("^select '(.*)' device$")
@@ -23,7 +23,7 @@ public class SearchFunctionSteps {
             mainPage.clickbuttonselectIphone();
         else if (manufacture.equals("OnePlus 7 Pro"))
             mainPage.clickOnSelectOnePlus();
-        log.info("select a device");
+        log.info("Select a device");
     }
 
     @When("^buy product in credit$")
@@ -35,6 +35,6 @@ public class SearchFunctionSteps {
     public void verifyCreditPageIsDisplayed() throws InterruptedException {
         Waiter.waitByXPath("//div[@class='tab-credit-submit']//input[2]");
         mainPage.assertcheckCreditPage();
-        log.info("verify credit page is displayed");
+        log.info("Verify credit page is displayed");
     }
 }
