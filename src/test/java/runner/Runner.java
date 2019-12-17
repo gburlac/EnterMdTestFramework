@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/featureFiles",
         glue={"steps"},
 //        name = "Navigate on EnterPages",
-//        tags = {"@GeoUiTest"},
-        tags = {"@GeoMakeOrders"},
+        tags = {"@GeoUiTest"},
+//        tags = {"@GeoMakeOrders"},
 //         tags = {"@GeoMakeOrders,@GeoUiTest"},
         plugin = { "pretty" },
         monochrome = true

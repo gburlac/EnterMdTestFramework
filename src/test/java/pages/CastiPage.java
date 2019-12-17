@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertTrue;
 public class CastiPage extends Page {
     Actions actions = new Actions(Driver.getDriver());
 
-    @FindBy(xpath = "//div[contains(@class,'span16 uk-margin-bottom')]//div[4]//div[1]//div[1]//a[1]//picture[1]//img[1]")
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[8]/div/div[2]/div/div/div[4]/div/div/a/picture/img")
     private WebElement butonCasti;
     //button[@id='button_cart_95028']
     @FindBy(xpath = "//button[@id='button_cart_95028']")
