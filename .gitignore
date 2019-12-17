@@ -2,3 +2,5 @@
 /target
 /.idea
 /Screenshots
+/automation.log
+/debug.log
