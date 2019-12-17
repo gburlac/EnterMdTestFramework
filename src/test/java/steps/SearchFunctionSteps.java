@@ -19,10 +19,12 @@ public class SearchFunctionSteps {
 
     @When("^select '(.*)' device$")
     public void selectOnePlusProDevice(String manufacture) {
-        if (manufacture.equals("Iphone 11"))
-            mainPage.clickbuttonselectIphone();
-        else if (manufacture.equals("OnePlus 7 Pro"))
-            mainPage.clickOnSelectOnePlus();
+        if (manufacture.equals("Iphone 11")){
+            Waiter.waitByXPath("//li[2]//a[1]//div[1]//div[2]//div[1]");
+            mainPage.clickbuttonselectIphone();}
+        else if (manufacture.equals("OnePlus 7 Pro")){
+            Waiter.waitByXPath("//div[contains(text(),'OnePlus 7 Pro')]");
+            mainPage.clickOnSelectOnePlus();}
         log.info("Select a device");
     }
 

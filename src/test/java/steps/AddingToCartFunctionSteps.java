@@ -71,6 +71,7 @@ public class AddingToCartFunctionSteps {
 
     @When("^go to see the cart$")
     public void goToSeeTheCart() {
+        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         toateCategoriilePage.clickbuttonVizualizatiCosul();
         log.info("Go to see the cart");
     }
