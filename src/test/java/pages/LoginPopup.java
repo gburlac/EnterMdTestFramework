@@ -1,9 +1,17 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import util.DrawBorder;
+import util.Driver;
+import util.TakeScreens;
+import util.WindowsHandler;
 
 public class LoginPopup extends Page {
+
+    WebDriver driver = Driver.getDriver();
+
     @FindBy (xpath = "//input[@id='email']")
     WebElement emailField;
     @FindBy (xpath = "//input[@id='pass']")
@@ -11,7 +19,9 @@ public class LoginPopup extends Page {
     @FindBy (xpath = "//button[@id='loginbutton']")
     WebElement loginButton;
 
-    public void inputEmail(String email){
+    public void inputEmail(String email) throws Exception {
+        assertLoginWindowPopup();
+        TakeScreens.takeScreenshot(driver, "login_popup_window");
         emailField.click();
         emailField.clear();
         emailField.sendKeys(email);
@@ -24,7 +34,17 @@ public class LoginPopup extends Page {
     }
 
     public void login(){
+        TakeScreens.takeScreenshot(driver, "login_and_password_filled");
         loginButton.click();
+    }
+
+    public void assertLoginWindowPopup() throws Exception {
+        try {
+            emailField.isDisplayed();
+            System.out.println(">>>>> Login window popup is displayed! <<<<<");
+        } catch (Exception e){
+            throw new Exception(">>>>> Login window popup is NOT displayed! <<<<<");
+        }
     }
 
 
