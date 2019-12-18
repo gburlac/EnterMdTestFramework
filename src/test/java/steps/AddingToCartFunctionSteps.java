@@ -26,7 +26,7 @@ public class AddingToCartFunctionSteps {
 
     @When("^select product (.*?) from the page$")
     public void selectAProductFromThePage(int product) throws InterruptedException {
-//        scenarioContext.setContext(Context.PRODUCT_NAME, cadouPentruEaPage.getProductName(product));
+        scenarioContext.setContext(Context.PRODUCT_NAME, cadouPentruEaPage.getProductName(product));
         cadouPentruEaPage.addToCart(product);
         log.info("Select a product from the page");
         // TODO: setProductName Scenario context

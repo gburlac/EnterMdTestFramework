@@ -28,16 +28,16 @@ public class CadouPentruEaPage extends Page {
     private WebElement productFromCadouPentruEa;
     @FindBy(xpath = "//form[contains(@name,'product_form')]//button[contains(@id, 'button_cart')]")
     List<WebElement> addToCartFromCategoryButton;
-    @FindBy(xpath = "//form[contains(@name,'product_form')]//div[contains(@class, 'product-title')]")
+    @FindBy(xpath = "//form[contains(@name,'product_form')]//div[contains(@class, 'product-title')]//span")
     List<WebElement> productNameFromCategory;
     @FindBy(xpath = "//a[@class='ty-cart-content__product-title']")
     WebElement productNameInCart;
 
 
     public void assertInCartItem() {
-//        String productName = (String) scenarioContext.getContex(Context.PRODUCT_NAME);
-//        Assert.assertEquals(productName, productNameInCart.getText());
-        assertTrue(inCartItem.isDisplayed());
+        String productName = (String) scenarioContext.getContex(Context.PRODUCT_NAME);
+        Assert.assertEquals(productName, productNameInCart.getText());
+//        assertTrue(inCartItem.isDisplayed());
     }
 
 
