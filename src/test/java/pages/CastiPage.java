@@ -8,11 +8,11 @@ import util.Driver;
 import static junit.framework.Assert.assertTrue;
 
 public class CastiPage extends Page {
+
     Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[8]/div/div[2]/div/div/div[4]/div/div/a/picture/img")
     private WebElement butonCasti;
-    //button[@id='button_cart_95028']
     @FindBy(xpath = "//button[@id='button_cart_95028']")
     private WebElement butonAddtocartProduct;
     @FindBy(xpath = "//div[@id='cart_status_3262_cart']")
@@ -55,42 +55,34 @@ public class CastiPage extends Page {
     }
 
     public void clickButtonDeliveryOption() {
-
         buttonDeliveryOption.click();
     }
 
     public void clickButtonContinue() {
-
         buttonContinue.click();
     }
 
     public void fillInputAddres(String value) {
-
         inputAddres.sendKeys(value);
     }
 
     public void fillInputCity(String value) {
-
         inputCity.sendKeys(value);
     }
 
     public void fillInputPhoneNumber(String value) {
-
         inputPhoneNumber.sendKeys(value);
     }
 
     public void fillInputEmail(String value) {
-
         inputEmail.sendKeys(value);
     }
 
     public void fillInputNume(String value) {
-
         inputNume.sendKeys(value);
     }
 
     public void fillInputPrenume(String value) {
-
         inputPrenume.sendKeys(value);
     }
 
