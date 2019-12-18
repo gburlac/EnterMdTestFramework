@@ -41,7 +41,7 @@ public class VerifyUISteps {
     public void ingrijirePersonalaPartIsDisplayed() {
         electrocasnicePage.ingrijirePersonala();
         TakeScreens.takeScreenshot(Driver.getDriver(), "ingrijirePersonalaPartIsDisplayed");
-        TakeScreens.takeFullScreenshot(Driver.getDriver(),"electrocasniceFullPage");
+//        TakeScreens.takeFullScreenshot(Driver.getDriver(),"electrocasniceFullPage");
         log.info("Ingrijire personala part is displayed");
     }
 

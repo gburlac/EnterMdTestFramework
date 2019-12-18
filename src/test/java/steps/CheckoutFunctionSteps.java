@@ -46,7 +46,7 @@ public class CheckoutFunctionSteps {
     @When("^fill out the delivery info$")
     public void fillOutTheDeliveryInfo(DataTable dt) {
         List<String> value = dt.asList(String.class);
-        Waiter.waitByXPath("//input[@id='elm_15']");
+        Waiter.waitById("elm_15");
         castiPage.fillInputPrenume(value.get(0));
         castiPage.fillInputNume(value.get(1));
         castiPage.fillInputEmail(value.get(2));
@@ -54,7 +54,7 @@ public class CheckoutFunctionSteps {
         castiPage.fillInputCity(value.get(4));
         castiPage.fillInputAddres(value.get(5));
         castiPage.clickButtonContinue();
-        Waiter.waitByXPath("//button[@id='step_three_but']");
+        Waiter.waitById("step_three_but");
         castiPage.clickButtonDeliveryOption();
         castiPage.clickButtonAmplaseazaComanda();
         log.info("Fill out the delivery info");
