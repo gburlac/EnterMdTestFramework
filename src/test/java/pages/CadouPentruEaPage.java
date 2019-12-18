@@ -28,10 +28,12 @@ public class CadouPentruEaPage extends Page {
     private WebElement productFromCadouPentruEa;
     @FindBy(xpath = "//form[contains(@name,'product_form')]//button[contains(@id, 'button_cart')]")
     List<WebElement> addToCartFromCategoryButton;
-    @FindBy(xpath = "//form[contains(@name,'product_form')]//div[contains(@class, 'product-title')]//span")
+    @FindBy(xpath = "//form[contains(@name,'product_form')]")
     List<WebElement> productNameFromCategory;
     @FindBy(xpath = "//a[@class='ty-cart-content__product-title']")
     WebElement productNameInCart;
+    @FindBy(xpath = "//bdi")
+    WebElement productNameInProductPage;
 
 
     public void assertInCartItem() {
@@ -40,6 +42,10 @@ public class CadouPentruEaPage extends Page {
 //        assertTrue(inCartItem.isDisplayed());
     }
 
+
+    public void clickProductNameFromCategory(int product) {
+        productNameFromCategory.get(product).click();
+    }
 
     public void clickButtonGoToCart() {
         buttonGoToCart.click();
@@ -60,7 +66,7 @@ public class CadouPentruEaPage extends Page {
     }
 
     public String getProductName(int product) {
-        return productNameFromCategory.get(product).getText();
+        return productNameInProductPage.getText();
     }
 
 
