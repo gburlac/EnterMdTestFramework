@@ -11,7 +11,7 @@ import util.Waiter;
 public class AddingToCartFunctionSteps {
     Page page = new Page();
     CadouPentruEaPage cadouPentruEaPage = page.getCadouPentruEaPage();
-    ToateCategoriilePage toateCategoriilePage = page.toateCategoriilePage();
+    ToateCategoriilePage toateCategoriilePage = page.getToateCategoriilePage();
     static Logger log = Logger.getLogger(AddingToCartFunctionSteps.class);
 
     @When("^go to cadou pentru ea category$")
@@ -20,10 +20,13 @@ public class AddingToCartFunctionSteps {
         log.info("Go to cadou pentru ea category");
     }
 
-    @When("^select a product from the page$")
-    public void selectAProductFromThePage() {
-        cadouPentruEaPage.clickproductFromCadouPentruEa();
+    @When("^select product (.*?) from the page$")
+    public void selectAProductFromThePage(int product) throws InterruptedException {
+        cadouPentruEaPage.addToCart(product);
         log.info("Select a product from the page");
+        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
+//        Thread.sleep(3000);
+        // TODO: setProductName Scenario context
     }
 
     @When("^go to cart$")
@@ -36,6 +39,7 @@ public class AddingToCartFunctionSteps {
     public void verifyIsInCart() {
         cadouPentruEaPage.assertInCartItem();
         log.info("Verify is in cart");
+        // TODO: assert getProductName Scenario context
     }
 
     @When("^go to periferice$")
@@ -58,13 +62,14 @@ public class AddingToCartFunctionSteps {
 
     @When("^select option from filter$")
     public void selectTwoOptionFromFilter() {
+//        Waiter.waitById("//input[@id='elm_checkbox_376_239_61352']");
         toateCategoriilePage.selectOptionTastaturi();
         log.info("Select option from filter");
     }
 
     @When("^select and add to cart$")
     public void selectAndAddToCart() {
-        Waiter.waitByXPath("//button[@id='button_cart_98934']");
+        Waiter.waitById("button_cart_98934");
         toateCategoriilePage.clickAddToCart();
         log.info("Select and add to cart");
     }

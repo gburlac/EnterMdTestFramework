@@ -55,42 +55,34 @@ public class CastiPage extends Page {
     }
 
     public void clickButtonDeliveryOption() {
-
         buttonDeliveryOption.click();
     }
 
     public void clickButtonContinue() {
-
         buttonContinue.click();
     }
 
     public void fillInputAddres(String value) {
-
         inputAddres.sendKeys(value);
     }
 
     public void fillInputCity(String value) {
-
         inputCity.sendKeys(value);
     }
 
     public void fillInputPhoneNumber(String value) {
-
         inputPhoneNumber.sendKeys(value);
     }
 
     public void fillInputEmail(String value) {
-
         inputEmail.sendKeys(value);
     }
 
     public void fillInputNume(String value) {
-
         inputNume.sendKeys(value);
     }
 
     public void fillInputPrenume(String value) {
-
         inputPrenume.sendKeys(value);
     }
 

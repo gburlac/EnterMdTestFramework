@@ -48,7 +48,7 @@ public class Page {
         return (smartphones == null) ? smartphones = new Smartphones() : smartphones;
     }
 
-    public ToateCategoriilePage toateCategoriilePage() {
+    public ToateCategoriilePage getToateCategoriilePage() {
         return (toateCategoriilePage == null) ? toateCategoriilePage = new ToateCategoriilePage() : toateCategoriilePage;
     }
 

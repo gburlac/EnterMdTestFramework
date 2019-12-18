@@ -1,9 +1,12 @@
 package pages;
 
+import cucumber.api.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.Driver;
+
+import java.util.List;
 
 import static junit.framework.Assert.assertTrue;
 
@@ -20,6 +23,8 @@ public class CadouPentruEaPage extends Page {
     private WebElement inCartItem;
     @FindBy(xpath = "//button[@id='button_cart_95196']")
     private WebElement productFromCadouPentruEa;
+    @FindBy(xpath = "//form[contains(@name,'product_form')]//button[contains(@id, 'button_cart')]")
+    List<WebElement> addToCartFromCategoryButton;
 
 
     public void assertInCartItem() {
@@ -38,6 +43,13 @@ public class CadouPentruEaPage extends Page {
 
         actions.moveToElement(cadouPentruEaLink).build().perform();
         cadouPentruEaLink.click();
+    }
+
+    /////////////////// EXAMPLE XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+    public void addToCart(int product){
+        addToCartFromCategoryButton.get(product).click();
     }
 
 }
