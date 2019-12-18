@@ -18,9 +18,11 @@ public class CadouPentruEaPage extends Page {
 
     @FindBy(xpath = "//ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]")
     private WebElement cadouPentruEaLink;
-    @FindBy(xpath = "//*[@id=\"button_cart_74766\"]")
+    @FindBy(xpath = "//div[contains(@data-title, 'Pune în coș')]//button[contains(@type, 'submit')]")
     private WebElement buttonAddToCart;
-    @FindBy(xpath = "//a[contains(@class, 'ty-btn ty-btn__primary')]")
+    //button[@id='button_cart_95196']
+    //a[contains(@class, 'ty-btn ty-btn__primary')]
+    @FindBy(xpath = " //a[contains(@class, 'ty-btn ty-btn__primary')]")
     private WebElement buttonGoToCart;
     @FindBy(xpath = "//img[@id='det_img_1232188157']")
     private WebElement inCartItem;
@@ -65,7 +67,7 @@ public class CadouPentruEaPage extends Page {
         addToCartFromCategoryButton.get(product).click();
     }
 
-    public String getProductName(int product) {
+    public String getProductName() {
         return productNameInProductPage.getText();
     }
 
