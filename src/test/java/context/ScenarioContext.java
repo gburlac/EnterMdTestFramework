@@ -2,18 +2,18 @@ package context;
 import enums.Context;
 import java.util.HashMap;
 import java.util.Map;
-public class ScenarioContext {
-    private Map<String, Object> scenarioContext;
+public  class ScenarioContext {
+    private static Map<String, Object> scenarioContext;
     public ScenarioContext() {
         scenarioContext = new HashMap<>();
     }
-    public void setContext(Context key, Object value) {
+    public static void setContext(Context key, Object value) {
         scenarioContext.put(key.toString(), value);
     }
-    public Object getContex(Context key) {
+    public static Object getContex(Context key) {
         return scenarioContext.get(key.toString());
     }
-    public Boolean isContains(Context key) {
+    public static Boolean isContains(Context key) {
         return scenarioContext.containsKey(key.toString());
     }
 }
