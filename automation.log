@@ -165,3 +165,16 @@
 2019-12-19 12:08:28 INFO  SearchFunctionSteps:17 - Input in search bar 
 2019-12-19 12:08:39 INFO  SearchFunctionSteps:28 - Select a device
 2019-12-19 12:08:39 INFO  SearchFunctionSteps:34 - Buy product in credit
+2019-12-19 12:20:59 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-19 12:20:59 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-19 12:21:06 INFO  CommonSteps:19 - User is on homepage
+2019-12-19 12:21:26 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-19 12:21:26 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-19 12:21:32 INFO  CommonSteps:19 - User is on homepage
+2019-12-19 12:23:29 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-19 12:23:29 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-19 12:24:59 INFO  CommonSteps:19 - User is on homepage
+2019-12-19 12:25:03 INFO  AddingToCartFunctionSteps:24 - Go to cadou pentru ea category
+2019-12-19 12:25:11 INFO  AddingToCartFunctionSteps:32 - Select a product from the page
+2019-12-19 12:25:15 INFO  AddingToCartFunctionSteps:40 - Go to cart
+2019-12-19 12:25:15 INFO  AddingToCartFunctionSteps:46 - Verify is in cart

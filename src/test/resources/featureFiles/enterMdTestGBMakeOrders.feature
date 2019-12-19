@@ -25,5 +25,5 @@ Feature: Make orders on enter.online
       And take a look to cart
       And place a order
       And fill out the delivery info
-  |May|James|bond007@mi5.uk|070000777|Chisinau|Dacia 8|
+  |May|James|bond007@mi5.uk|070000997|Chisinau|Dacia 8|
       Then verify the success message

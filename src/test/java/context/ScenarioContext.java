@@ -3,10 +3,7 @@ import enums.Context;
 import java.util.HashMap;
 import java.util.Map;
 public class ScenarioContext {
-    public static Map<String, Object> scenarioContext;
-    public ScenarioContext() {
-        scenarioContext = new HashMap<>();
-    }
+    public static Map<String, Object> scenarioContext = new HashMap<>();;
     public static void setContext(Context key, Object value) {
         scenarioContext.put(key.toString(), value);
     }
