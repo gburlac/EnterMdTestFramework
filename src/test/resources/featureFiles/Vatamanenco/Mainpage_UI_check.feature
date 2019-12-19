@@ -1,4 +1,8 @@
+# new feature
+# Tags: optional
+
 Feature: Main page UI check
+
   Scenario: User goes on enter.online and check UI elements.
     Given User is on homepage
     Then All non-changeable elements is present
