@@ -1,6 +1,6 @@
 # Project exclude paths
 /target
-/.idea
 /Screenshots
 /automation.log
 /debug.log
+/.idea/
