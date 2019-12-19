@@ -7,6 +7,8 @@ import org.apache.log4j.Logger;
 import util.Driver;
 import pages.*;
 import pages.Page;
+import util.TakeScreens;
+import util.Waiter;
 
 public class CommonSteps {
     Page page = new Page();
@@ -17,6 +19,14 @@ public class CommonSteps {
     public void userIsOnHomepage() {
         Driver.getDriver().get("https://enter.online/");
         log.info("User is on homepage");
+    }
+
+    @Given("^Home page is displayed$")
+    public void homePageIsDisplayed() {
+        Driver.getDriver().get("https://enter.online/");
+        Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "home_page");
+        log.info("Enter.Online home page is opened.");
     }
 
     @When("^User changes language$")

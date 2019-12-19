@@ -1,16 +1,17 @@
 package pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import util.DrawBorder;
 import util.Driver;
 import util.TakeScreens;
-import util.WindowsHandler;
 
 public class LoginPopup extends Page {
 
     WebDriver driver = Driver.getDriver();
+    Logger log = Logger.getLogger(LoginPopup.class);
 
     @FindBy (xpath = "//input[@id='email']")
     WebElement emailField;
@@ -41,13 +42,9 @@ public class LoginPopup extends Page {
     public void assertLoginWindowPopup() throws Exception {
         try {
             emailField.isDisplayed();
-            System.out.println(">>>>> Login window popup is displayed! <<<<<");
+            log.info(">>>>> Login window popup is displayed! <<<<<");
         } catch (Exception e){
             throw new Exception(">>>>> Login window popup is NOT displayed! <<<<<");
         }
     }
-
-
-
-
 }

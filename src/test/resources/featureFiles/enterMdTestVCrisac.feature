@@ -1,12 +1,12 @@
 Feature: Login via facebook profile with valid credentials
 
   Scenario: Login on Enter.Online and logout
-    Given User is on homepage
-    When user logs in
-    Then home page is displayed and user is logged in
+    Given Home page is displayed
+    When user is logged in via Facebook as FACEBOOK_USER
+    Then home page is displayed and user is logged in as FACEBOOK_USER
     When user click on logout option
     Then user is logged out and main page is displayed
-######################   pass   ##############################
+###################### +++++ works +++++ ##############################
 
   Scenario Outline: Attempt to login on Enter.online with invalid credentials
     Given User is on homepage
@@ -14,67 +14,65 @@ Feature: Login via facebook profile with valid credentials
     Then <warning_message> appears and user is login fails
     Examples:
       | email          | password | warning_message          |
-      | тест@емэйл.ком | "№;%:?   | EMAIL_AND_PASSWORD_ERROR |
-      | a$%^&@xx.com   | password | EMAIL_AND_PASSWORD_ERROR |
       |                |          | PASSWORD_ERROR           |
-      | testemail@     | x        | EMAIL_ERROR              |
       | @testemail     |          | EMAIL_ERROR              |
-      | test.com       | тестпасс | EMAIL_ERROR              |
       |                | password | EMAIL_ERROR              |
-######################   pass   ##############################
+      | testemail@     | x        | EMAIL_ERROR              |
+      | test.com       | тестпасс | EMAIL_ERROR              |
+######################   !!!!happy pass!!!!   ##############################
 
-  @Run
   Scenario: as logged user add product to the cart and validate it
-    Given user is logged in via facebook
-    When user select category and add product to cart
+    Given user is logged in via Facebook as FACEBOOK_USER
+    When user select TV category and add productId 3 product to cart
+    And user goes to cart
     Then product is added to cart
-######### works --> to rerun ################################
-
-
+#########  +++ happy pass +++ ################################
+  @RunVCrisac
   Scenario: as logged user edit user details
-    Given user is logged in as REGISTERED_USER
-    When user go to user profile page and edit the details
-      | Prenume         | Abramov    |
-      | Nume            | Stas       |
-      | Parola          | 123NRTM456 |
-      | Confirma_parola | 123NRTM456 |
-      | Phone           | 068800900  |
-      | City            | Chisinau   |
+    Given user logs in as REGISTERED_USER
+    When user goes to user account details
+    And edit user details
+      | Prenume         | Abramov   |
+      | Nume            | Stas      |
+      | Parola          | 123NEW456 |
+      | Confirma_parola | 123NEW456 |
+      | Phone           | 068800900 |
+      | City            | Chisinau  |
+    When user click on logout option
+    Then user is logged out and main page is displayed
+#    When user logs in with new password
+#    Then home page is displayed and user is logged in as REGISTERED_USER
+#    When user goes to user account details
+#    And edit user details
+#      | Parola          | 123NRTM456 |
+#      | Confirma_parola | 123NRTM456 |
+#    When user click on logout option
+#    Then user is logged out and main page is displayed
+#    When user logs in with new password
+#  ################ +++++ works +++++ #################
 
-  ################ add logout function #################
-
-
-
-
-
-
-
-
-
-
-
-
-
-###############################################################
-#    When user clicks on 'categoryList'
-#    Then list of all categories is displayed
-#    When user clicks on 'telefoane' category
-#    Then list of 'telefoane' is displayed
-#    When user clicks on 'smartphones' category
-#    Then 'smartphones' category is displayed
-#    When user clicks on product
-#    Then phone details are displayed
-#    When user add product to cart
-#    Then a confirmation module pops up
-#    When user clicks on cart icon
-#    Then a cart module pops up
-#    When user clicks on 'visualize cart' button
-#    Then cart page is opened
+  Scenario: As logged user add several products in the cart, remove one, check if removed
+    Given user logs in as REGISTERED_USER
+    When user select Transport category and add productId 4 product to cart
+    And user goes to cart
+    Then product is added to cart
+    When user select TV category and add productId 9 product to cart
+    And user goes to cart
+    Then product is added to cart
+    When user select Phones category and add productId 2 product to cart
+    And user goes to cart
+    Then product is added to cart
+    When user delete Phones product
+    Then product is deleted
+######### works ##############
 
 
-
-#
-#
-#    When user choose 'samsung' brand
-#    Then all 'samsung' phones are displayed
-
+  # TODO: add screenshots in gitignore
+#  TODO: add user data for different social websites
+# DONE ## TODO: in DeleteProductFromCart step: user deletes X from cart try to include the stuff in while loop in a method
+#  TODO: separate functionalities from steps
+# DONE ## TODO: in ModifyUserDetailsFunctionality place the web element in a page object
+#  TODO: add screenshot switch system parameter (EX. -Dscreenshot=off) where you also exclude the border drawing --???
+#  Why do you have MainPage and MainPageAsLogged? It should be the same page
+#  TODO: keep the same naming convention (EX: all folders to be lowercase only; all page objects to end with Page word(or not), etc)
+# DONE ## TODO: add tags with your name to differentiate the feature files created by one or another

@@ -1,4 +1,4 @@
-package pages;
+package enums;
 
 public enum LoginErrorMessages {
     EMAIL_ERROR("Adresa de e-mail din campul E-mail este invalida."),

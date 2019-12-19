@@ -1,22 +1,25 @@
 package pages;
 
 
+import enums.Users;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import steps.CommonSteps;
-import util.DrawBorder;
-import util.Driver;
-import util.TakeScreens;
-import util.Waiter;
+import util.*;
+
+import java.util.List;
 
 public class MainPage extends Page {
-    static Logger log = Logger.getLogger(MainPage.class);
+    Page page = new Page();
+    Logger log = Logger.getLogger(MainPage.class);
     WebDriver driver = Driver.getDriver();
+    Actions actions = new Actions(Driver.getDriver());
+    LoginPopupFacebook loginPopupFacebook = page.getLoginPopupFacebook();
+    LoginPopupVKontakte loginPopupVKontakte = page.getLoginPopupVKontakte();
+    LoginPopupOdnoklassniki loginPopupOdnoklassniki = page.getLoginPopupOdnoklassniki();
     DrawBorder dB;
 
     //find elements
@@ -37,8 +40,16 @@ public class MainPage extends Page {
     private WebElement loginViaFBButton;
     @FindBy(xpath = "//a[3]//img[1]")
     private WebElement facebookIcon;
-    @FindBy(className = "name")
-    private WebElement loginMenu;
+    @FindBy(xpath = "//a[2]//img[1]")
+    WebElement VKontakteIcon;
+    @FindBy(xpath = "//div[@id='auth-modal']//a[1]//img[1]")
+    WebElement odnoklassnikiIcon;
+    @FindBy(className = "//div[contains(@class, 'name')]")
+    WebElement loginMenu;
+    @FindBy(xpath = "//div[@class='auth uk-grid uk-grid-small uk-flex-middle']")
+    WebElement userMenu;
+    @FindBy(xpath = "//div[contains(@class, 'name')]//span")
+    WebElement userName;
     @FindBy(xpath = "//input[@id='login_popup3262']")
     private WebElement emailField;
     @FindBy(xpath = "//input[@id='psw_popup3262']")
@@ -73,12 +84,28 @@ public class MainPage extends Page {
     private WebElement buttonBuyInCredit;
     @FindBy(xpath = "//div[@class='tab-credit-submit']//input[2]")
     private WebElement checkCreditPage;
-    @FindBy(xpath = "//*[@id=\"megamenubutton\"]")
-    private WebElement allCategoriesDropdown;
-    @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[1]/ul/li[1]/a")
-    private WebElement allCategoriesDropdownTelephonesCategory;
-    @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[2]/div/div[1]/div[1]/ul/li/a")
-    private WebElement allCategoriesDropdownTelephonesCategorySmartphones;
+    @FindBy(id = "megamenubutton")
+    WebElement allCategories;
+    @FindBy(xpath = "//li[contains(@class,'first-level blue')]//a[contains(text(),'Telefoane')]")
+    WebElement telefoaneCategoriesList;
+    @FindBy(xpath = "//a[contains(text(),'Smartphone-uri')]")
+    WebElement smartphonesCategory;
+    @FindBy(xpath = "//div[contains(@class, 'pm-grid')]//form[contains(@name, 'product_form')]//div[contains(@class, 'ty-grid-list__image')]")
+    List<WebElement> productList;
+    @FindBy(xpath = "//li[contains(@class, 'first-level')]//a[contains(text(), 'Televizoare')]")
+    WebElement TVCategoriesList;
+    @FindBy(xpath = "//li[contains(@class, 'second-level')]//a[contains(text(), 'Televizoare')]")
+    WebElement televizoareCategory;
+    @FindBy(xpath = "//li[@class='first-level blue']//a[contains(text(),'Transport')]")
+    WebElement transportCategoriesList;
+    @FindBy(xpath = "//a[contains(text(),'Transport electric')]")
+    WebElement transportCategory;
+    @FindBy(xpath = "//img[@id='det_img_98146']")
+    WebElement transportDetails;
+    @FindBy(xpath = "//div[@class='uk-width-auto@m']//li[6]//a[1]")
+    WebElement logoutOption;
+    @FindBy(xpath = "//div[contains(@class, 'uk-dropdown')]//li//a[contains(@href, 'detalii-profil')]")
+    WebElement myAccount;
     @FindBy(xpath = "//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]")
     private WebElement logoEnter;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
@@ -91,9 +118,211 @@ public class MainPage extends Page {
     private WebElement sfaturiUtileButton;
     @FindBy(xpath = "//*[@id=\"languages_638\"]/div[1]/a")
     private WebElement langChanger;
-    Actions actions = new Actions(Driver.getDriver());
-    //method
-    public void assertcheckCreditPage()  {
+
+    public void loginViaSocial(String socialNetwork, Users user) throws Exception {
+        accessLoginMenu();
+        try {
+            switch (socialNetwork) {
+                case "Facebook":
+                    loginViaFacebook(user);
+                    break;
+                case "VK":
+                    loginViaVKontakte(user);
+                    break;
+                case "Odnoklassniki":
+                    loginViaOdnoklassniki(user);
+                    break;
+            }
+            WindowsHandler.switchBackToMain();
+            log.info("User is logged via " + socialNetwork + "account.");
+        } catch (Exception e) {
+            throw new Exception("Cannot login via " + socialNetwork + "account.");
+        }
+    }
+
+    private void loginViaFacebook(Users user) throws Exception {
+        goToLoginViaFacebook();
+        WindowsHandler.switchWindow();
+        Waiter.waitById("email");
+        Waiter.waitById("pass");
+        loginPopupFacebook.inputEmail(user.getEmail());
+        loginPopupFacebook.inputPassword(user.getPassword());
+        loginPopupFacebook.login();
+    }
+
+    private void loginViaVKontakte(Users user) throws Exception {
+        goToLoginViaVKontakte();
+        WindowsHandler.switchWindow();
+        Waiter.waitByXPath("//input[@name='email']");
+        Waiter.waitByXPath("//input[@name='pass']");
+        loginPopupVKontakte.inputEmail(user.getEmail());
+        loginPopupVKontakte.inputPassword(user.getPassword());
+        loginPopupVKontakte.login();
+    }
+
+    private void loginViaOdnoklassniki(Users user) throws Exception {
+        goToLoginViaOdnoklassniki();
+        WindowsHandler.switchWindow();
+        Waiter.waitByXPath("//input[@id='field_email']");
+        Waiter.waitByXPath("//input[@id='field_password']");
+        loginPopupOdnoklassniki.inputEmail(user.getEmail());
+        loginPopupOdnoklassniki.inputPassword(user.getPassword());
+        loginPopupOdnoklassniki.login();
+    }
+
+    public void showAssertsLoginMenu() {
+        try {
+            Assert.assertTrue(loginButton.isDisplayed());
+            log.info(">> Login pop up is displayed! <<<");
+        } catch (Exception e) {
+            log.info(">>> Login pop up is not displayed! <<<");
+        }
+    }
+
+    public void checkThatUserIsLoggedIn(String user) throws Exception {
+        if (userName.getText().contains(user)) {
+            log.info("User is logged in!");
+        } else {
+            throw new Exception("Login failed!");
+        }
+    }
+
+    public void goToLoginViaFacebook() throws Exception {
+//        dB.drawBorder(facebookIcon, driver);
+        if (facebookIcon.isDisplayed()) {
+            facebookIcon.click();
+        } else {
+            throw new Exception(">>>>> Cannot find Facebook icon! <<<<");
+        }
+    }
+
+    public void goToLoginViaVKontakte() throws Exception {
+        if (VKontakteIcon.isDisplayed()) {
+            VKontakteIcon.click();
+        } else {
+            throw new Exception(">>>>> Cannot find VKontakte icon! <<<<");
+        }
+    }
+
+    public void goToLoginViaOdnoklassniki() throws Exception {
+        if (odnoklassnikiIcon.isDisplayed()) {
+            odnoklassnikiIcon.click();
+        } else {
+            throw new Exception(">>>>> Cannot find Odnoklassniki icon! <<<<<");
+        }
+    }
+
+    public void openAllCategories() {
+//        dB.drawBorder(allCategories, driver);
+        TakeScreens.takeScreenshot(driver, "go_to_all_categories");
+        allCategories.click();
+    }
+
+    public void openAllTelefoaneCategories() {
+//        dB.drawBorder(telefoaneCategoriesList, driver);
+        TakeScreens.takeScreenshot(driver, "telefoane_categories");
+        telefoaneCategoriesList.click();
+    }
+
+    public void goToSmartphones() {
+//        dB.drawBorder(smartphonesCategory, driver);
+        TakeScreens.takeScreenshot(driver, "go_to_smartphones");
+        actions.moveToElement(smartphonesCategory).build().perform();
+        smartphonesCategory.click();
+    }
+
+    public void selectSmartphonesCategory() {
+        allCategories.click();
+        allCategories.click();
+        allCategories.click();
+        telefoaneCategoriesList.click();
+        telefoaneCategoriesList.click();
+    }
+
+    public void asserttElectrocasniceButton() {
+        Assert.assertTrue(electrocasniceButton.isDisplayed());
+    }
+
+
+    public void assertLogoEnter() {
+        Assert.assertTrue(logoEnter.isDisplayed());
+    }
+
+
+    public void assertNouatiSiPromotiiButton() {
+        Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
+    }
+
+    public void assertGadgeturiPentruOriceVirstaButton() {
+        Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
+    }
+
+    public void assertSfaturiUtileButton() {
+        Assert.assertTrue(sfaturiUtileButton.isDisplayed());
+    }
+
+    public void langChangerClick() {
+        langChanger.click();
+    }
+
+    public void openAllTVCategories() {
+        TakeScreens.takeScreenshot(driver, "tv_categories");
+        TVCategoriesList.click();
+    }
+
+    public void goToTelevizoare() {
+        TakeScreens.takeScreenshot(driver, "go_to_televizoare");
+        actions.moveToElement(televizoareCategory).build().perform();
+        televizoareCategory.click();
+    }
+
+    public void openAllTransportCategories() {
+        TakeScreens.takeScreenshot(driver, "transport_categories");
+        transportCategoriesList.click();
+    }
+
+    public void goToTransportElectric() {
+        TakeScreens.takeScreenshot(driver, "go_to_transport_electric");
+        actions.moveToElement(transportCategory).build().perform();
+        transportCategory.click();
+    }
+
+    public void selectProduct(int productId) {
+        TakeScreens.takeScreenshot(driver, "products_list");
+        productList.get(productId).click();
+    }
+
+    public void logout() {
+        userMenu.click();
+        logoutOption.click();
+    }
+
+    public void assertUserIsLoggedOut() throws Exception {
+        try {
+            if (userName.getText().equals("intră în cont"))
+                log.info(">>>>> SUCCESS! User is logged out! <<<<<");
+        } catch (Exception e) {
+            throw new Exception(">>>>> ERROR! User is not logged out! <<<<<");
+        }
+    }
+
+    public void goToUserAccountDetails() {
+        Waiter.waitbyClassName("ty-banner__image-item");
+//        actions.moveToElement(loginMenu).moveToElement(myAccount).click().build().perform();
+        userMenu.click();
+        myAccount.click();
+    }
+
+    public void inputPassword(String password) {
+        passwordField.clear();
+        passwordField.sendKeys(password);
+    }
+
+    public void clickLoginButton() {
+        loginButton.click();
+    }
+
+    public void assertcheckCreditPage() {
         Assert.assertTrue(checkCreditPage.isDisplayed());
     }
 
@@ -141,35 +370,12 @@ public class MainPage extends Page {
         }
     }
 
-    public void selectSmartphonesCategory() {
-        allCategoriesDropdown.click();
-        allCategoriesDropdown.click();
-        allCategoriesDropdown.click();
-        allCategoriesDropdownTelephonesCategory.click();
-        allCategoriesDropdownTelephonesCategorySmartphones.click();
-    }
 
-    public void asserttElectrocasniceButton() {
-        Assert.assertTrue(electrocasniceButton.isDisplayed());
-    }
 
-    public void assertLogoEnter() {
-        Assert.assertTrue(logoEnter.isDisplayed());
-    }
 
-    public void assertNouatiSiPromotiiButton() {
-        Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
-    }
 
-    public void assertGadgeturiPentruOriceVirstaButton() {
-        Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
-    }
 
-    public void assertSfaturiUtileButton() {
-        Assert.assertTrue(sfaturiUtileButton.isDisplayed());
-    }
 
-    public void langChangerClick() {
-        langChanger.click();
-    }
+
+
 }

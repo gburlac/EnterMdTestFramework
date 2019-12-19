@@ -178,3 +178,20 @@
 2019-12-19 12:25:11 INFO  AddingToCartFunctionSteps:32 - Select a product from the page
 2019-12-19 12:25:15 INFO  AddingToCartFunctionSteps:40 - Go to cart
 2019-12-19 12:25:15 INFO  AddingToCartFunctionSteps:46 - Verify is in cart
+2019-12-19 18:32:06 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-19 18:32:06 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-19 18:32:43 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-19 18:32:43 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-19 18:33:04 INFO  CommonSteps:29 - Enter.Online home page is opened.
+2019-12-19 18:33:06 INFO  CommonSteps:21 - User is on homepage
+2019-12-19 18:33:15 INFO  LoginPopupFacebook:27 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2019-12-19 18:33:18 INFO  MainPage:137 - User is logged via Facebookaccount.
+2019-12-19 18:33:53 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-19 18:33:53 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-19 18:34:03 INFO  CommonSteps:21 - User is on homepage
+2019-12-19 18:34:39 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-19 18:34:39 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-19 18:34:48 INFO  CommonSteps:21 - User is on homepage
+2019-12-19 18:35:34 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-19 18:35:34 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-19 18:35:43 INFO  CommonSteps:21 - User is on homepage

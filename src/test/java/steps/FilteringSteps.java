@@ -12,7 +12,6 @@ import util.Waiter;
 public class FilteringSteps<log> {
     Page page = new Page();
     MainPage mainPage = page.getMainPage();
-    Smartphones smartphones = page.getSmartphones();
     static Logger log = Logger.getLogger(FilteringSteps.class);
 
     @When("^User selects Smartphones category$")
@@ -22,26 +21,4 @@ public class FilteringSteps<log> {
         log.info("Smartphones is selected");
     }
 
-    @And("^change value in Manufacturer field to '(.*)'$")
-    public void changeValueInManufacturerFieldToManufacturer(String manufacturer) throws InterruptedException {
-        if(manufacturer.equals("Apple")) {
-            smartphones.checkFilterAppleCheckbox();
-            log.info("Filter Apple smartphones");
-        } else if (manufacturer.equals("Xiaomi")) {
-            smartphones.checkFilterXiaomiCheckbox();
-            log.info("Filter Xiaomi smartphones");
-        }
-        Waiter.waitByXPathUntilDissapear("//*[@id=\"ajax_loading_box\"]");
-    }
-
-    @Then("^dislpays only products of manufacturer '(.*)'$")
-    public void dislpaysOnlyProductsOfManufacturerManufacturer(String manufacturer) {
-        if (manufacturer.equals("Apple")) {
-            smartphones.filterAppleAssert();
-            log.info("Displayed only Apple smartphones");
-        } else if (manufacturer.equals("Xiaomi")) {
-            smartphones.filterXiaomiAssert();
-            log.info("Displayed only Xiaomi smartphones");
-        }
-    }
 }

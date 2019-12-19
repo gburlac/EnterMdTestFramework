@@ -1,46 +1,110 @@
 package pages;
 
+import context.ScenarioContext;
+import enums.Context;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import util.Driver;
 import util.TakeScreens;
+import util.Waiter;
+
+import java.util.List;
 
 public class CartPage extends Page {
-    MainPageAsLogged mainPageAsLogged = new MainPageAsLogged();
     @FindBy(xpath = "//span[contains(text(), 'Total')]")
     WebElement totalSumOfProducts;
     @FindBy(xpath = "//a[contains(text(), 'Coș de cumpărături')]")
     WebElement assertCartPage;
     @FindBy(xpath = "//a[@class='ty-cart-content__product-title']")
     WebElement productTitleCart;
+    @FindBy(xpath = "//a[contains(@class,'ty-cart-content__product-title')][contains(text(),'Hisense H40B5600 40')]")
+    WebElement TVTitleInCart;
+    @FindBy(xpath = "//a[contains(@class,'ty-cart-content__product-title')][contains(text(),'Xiaomi Redmi Note 7')]")
+    WebElement phoneTitleInCart;
+    @FindBy(xpath = "//a[contains(@class,'ty-cart-content__product-title')][contains(text(),'Windgoo M11')]")
+    WebElement transportTitleInCart;
+    @FindBy(xpath = "//div[contains(@id, 'cart_items')]//a[contains(@class, 'product-title')]")
+    List<WebElement> productNamesListInCart;
+    @FindBy(xpath = "//input[@id='amount_246748269']")
+    WebElement transportQuantity;
+    @FindBy(xpath = "//div[@id='quantity_update_246748269']//a[contains(@class,'cm-decrease ty')]")
+    WebElement transportQuantityDecreaser;
+    @FindBy(xpath = "//input[@id='amount_2944274987']")
+    WebElement tvQuantity;
+    @FindBy(xpath = "//div[@id='quantity_update_2944274987']//a[@class='cm-decrease ty-value-changer__decrease']")
+    WebElement tvQuantityDecreaser;
+    @FindBy(xpath = "//div[contains(@class, 'am-cart-item')]//div[contains(@class, 'ty-center')]//input")
+    WebElement phoneQuantity;
+    @FindBy(xpath = "//div[@id='quantity_update_2776009334']//a[@class='cm-decrease ty-value-changer__decrease']")
+    WebElement phoneQuantityDecreaser;
+    @FindBy(xpath = "//div[contains(@class, 'am-cart-item')]//div[contains(@class, 'ty-center')]//input")
+    WebElement productQuantity;
+    @FindBy(xpath = "//div[contains(@class, 'ty-value-changer')]//a[contains(@class, 'cm-decrease')]")
+    WebElement productQuantityDecreaser;
 
-    public void assertCartIsNotEmpty() throws Exception {
-        if (totalSumOfProducts.isDisplayed()) {
-            System.out.println(">>>>> You have products in your cart! <<<<<");
-        } else {
-            throw new Exception(">>>>> Your cart is empty! <<<<<");
-        }
-    }
+    Logger log = Logger.getLogger(CartPage.class);
 
-    public void assertCartPageIsDisplayed() throws Exception {
-        try {
-            assertCartPage.isDisplayed();
-            System.out.println(">>>>> Cart page is displayed! <<<<<");
-        } catch (Exception e){
-            System.out.println("There is following exception: " + e.getMessage());
-            throw new Exception(">>>>> Your cart is empty! <<<<<");
-        }
-    }
-
-    public void assertProductAddedToCart() throws Exception {
+    public void assertProductAddedToCart(String productName) throws Exception {
         try {
             TakeScreens.takeScreenshot(Driver.getDriver(), "cart_page");
-//            Assert.assertEquals(mainPageAsLogged.getProdNameText(), productTitleCart.getText());
-            System.out.println(">>>>> Product is added successfully to cart! <<<<<");
-        } catch (Exception e){
-            throw new Exception(">>>>> Product is not added to cart! <<<<<");
+            Assert.assertEquals(productName, productTitleCart.getText());
+            log.info(">>>>> Selected product is added successfully to cart! <<<<<");
+        } catch (Exception e) {
+            throw new Exception(">>>>> Selected product is not added to cart! <<<<<");
         }
     }
 
+    public void assertProductDeletedFromCart(String productName) throws Exception {
+        try {
+            TakeScreens.takeScreenshot(Driver.getDriver(), "cart_page");
+            Assert.assertNotEquals(productName, productTitleCart.getText());
+            log.info(">>>>> Selected product is deleted successfully to cart! <<<<<");
+        } catch (Exception e) {
+            throw new Exception(">>>>> Selected product is not deleted to cart! <<<<<");
+        }
+    }
+
+    public void deleteProductFromCart() {
+        while (!productQuantity.getText().equals("0")) {
+            productQuantityDecreaser.click();
+            waitSpinner();
+        }
+    }
+
+    public void deletePhoneFromCart() {
+        while (!phoneQuantity.getText().equals("0")) {
+            phoneQuantityDecreaser.click();
+            waitSpinner();
+            break;
+        }
+    }
+
+    public void deleteTVFromCart() {
+        while (!tvQuantity.getText().equals("0")) {
+            tvQuantityDecreaser.click();
+            waitSpinner();
+        }
+    }
+
+    public void deleteTransportFromCart() {
+        while (!transportQuantity.getText().equals("0")) {
+            transportQuantityDecreaser.click();
+            waitSpinner();
+        }
+    }
+
+    public void waitSpinner() {
+        Waiter.waitByXPath("//div[@id='ajax_loading_box'][contains(@style,'block')]");
+        Waiter.waitByXpathUntilDissapear("//div[@id='ajax_loading_box'][contains(@style,'block')]");
+    }
+
+    ScenarioContext scenarioContext = new ScenarioContext();
+
+    public void assertProductName() {
+        List<WebElement> productList = productNamesListInCart.subList(0, productNamesListInCart.size());
+//        Assert.assertTrue(productNamesListInCart.contains(scenarioContext.getContex(Context.PRODUCT_NAME)));
+        Assert.assertTrue(productList.contains(scenarioContext.getContex(Context.PRODUCT_NAME)));
+    }
 }

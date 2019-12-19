@@ -22,25 +22,26 @@ public class UserPage extends Page {
     @FindBy(xpath = "//button[contains(@type, 'submit')]")
     public WebElement saveButton;
 
-
-
-//    public void enterInformatiiDeContactData(){
-//
+//    public void setPrenumeField() {
 //    }
 //
-//    public void enterSecuritateData(){
-//
+//    public void setNumeField() {
 //    }
 //
-//    public void enterAdresaDeLivrareData(){
-//
+//    public void setPasswordField() {
 //    }
 //
-//    public void saveChanges(){
-//        saveButton.click();
+//    public void setConfirmPasswordField() {
 //    }
 //
+//    public void setPhoneField() {
+//    }
 //
+//    public void setCityField() {
+//    }
+//
+//    public void setSaveButton() {
+//    }
 
 
 
