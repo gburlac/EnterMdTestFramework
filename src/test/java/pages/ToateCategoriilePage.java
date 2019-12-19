@@ -4,11 +4,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.Driver;
-
 import static junit.framework.Assert.assertTrue;
 
 public class ToateCategoriilePage extends Page {
+
     Actions actions = new Actions(Driver.getDriver());
+
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/button[2]")
     private WebElement butonToateCategoriile;
     @FindBy(xpath = "//*[@id=\"megamenubutton\"]/div/div/div/div[1]/ul/li[3]/a")

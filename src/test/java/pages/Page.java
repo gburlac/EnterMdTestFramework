@@ -1,7 +1,9 @@
 package pages;
 
+import context.ScenarioContext;
 import org.openqa.selenium.support.PageFactory;
 import util.Driver;
+import steps.CommonSteps;
 
 public class Page {
     public Page() {
@@ -12,20 +14,43 @@ public class Page {
     CadouPentruEaPage cadouPentruEaPage;
     CartPage cartPage;
     LoginPopup loginPopup;
-    MainPageAsLogged mainPageAsLogged;
+    LoginPopupFacebook loginPopupFacebook;
+    LoginPopupVKontakte loginPopupVKontakte;
+    LoginPopupOdnoklassniki loginPopupOdnoklassniki;
     ProductPage productPage;
-    Smartphones smartphones;
     ToateCategoriilePage toateCategoriilePage;
     ElectrocasnicePage electrocasnicePage;
-    ProductListPage productListPage;
     CastiPage castiPage;
+    CommonSteps commonSteps;
+    ScenarioContext scenarioContext;
+    ProductListPage productListPage;
 
     public MainPage getMainPage() {
         return (mainPage == null) ? mainPage = new MainPage() : mainPage;
     }
 
+    public CommonSteps getCommonSteps() {
+        return (commonSteps == null) ? commonSteps = new CommonSteps() : commonSteps;
+    }
+
+    public ScenarioContext getScenarioContext() {
+        return (scenarioContext == null) ? scenarioContext = new ScenarioContext() : scenarioContext;
+    }
+
     public CadouPentruEaPage getCadouPentruEaPage() {
         return (cadouPentruEaPage == null) ? cadouPentruEaPage = new CadouPentruEaPage() : cadouPentruEaPage;
+    }
+
+    public LoginPopupFacebook getLoginPopupFacebook() {
+        return (loginPopupFacebook == null) ? loginPopupFacebook = new LoginPopupFacebook() : loginPopupFacebook;
+    }
+
+    public LoginPopupVKontakte getLoginPopupVKontakte() {
+        return (loginPopupVKontakte == null) ? loginPopupVKontakte = new LoginPopupVKontakte() : loginPopupVKontakte;
+    }
+
+    public LoginPopupOdnoklassniki getLoginPopupOdnoklassniki() {
+        return (loginPopupOdnoklassniki == null) ? loginPopupOdnoklassniki = new LoginPopupOdnoklassniki() : loginPopupOdnoklassniki;
     }
 
     public CartPage getCartPage() {
@@ -36,16 +61,8 @@ public class Page {
         return (loginPopup == null) ? loginPopup = new LoginPopup() : loginPopup;
     }
 
-    public MainPageAsLogged getMainPageAsLogged() {
-        return (mainPageAsLogged == null) ? mainPageAsLogged = new MainPageAsLogged() : mainPageAsLogged;
-    }
-
     public ProductPage getProductPage() {
         return (productPage == null) ? productPage = new ProductPage() : productPage;
-    }
-
-    public Smartphones getSmartphones() {
-        return (smartphones == null) ? smartphones = new Smartphones() : smartphones;
     }
 
     public ToateCategoriilePage getToateCategoriilePage() {
@@ -63,4 +80,5 @@ public class Page {
     public CastiPage getCastiPage() {
         return (castiPage == null) ? castiPage = new CastiPage() : castiPage;
     }
+
 }

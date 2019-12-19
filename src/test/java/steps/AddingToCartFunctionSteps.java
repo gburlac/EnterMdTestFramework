@@ -18,7 +18,6 @@ public class AddingToCartFunctionSteps {
     ScenarioContext scenarioContext = new ScenarioContext();
 
     @When("^go to cadou pentru ea category$")
-
     public void goToCadouPentruEaCategory() {
         cadouPentruEaPage.clickCadouPentruEaLink();
         log.info("Go to cadou pentru ea category");

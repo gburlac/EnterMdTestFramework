@@ -11,8 +11,8 @@ import util.Driver;
 import java.util.List;
 
 public class CadouPentruEaPage extends Page {
+    Page page = new Page();
     Actions actions = new Actions(Driver.getDriver());
-    ScenarioContext scenarioContext = new ScenarioContext();
 
     @FindBy(xpath = "//ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]")
     private WebElement cadouPentruEaLink;
