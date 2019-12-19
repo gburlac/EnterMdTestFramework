@@ -42,7 +42,7 @@ public class CadouPentruEaPage extends Page {
 
 
     public void assertInCartItem() {
-        String productName = (String) scenarioContext.getContex(Context.PRODUCT_NAME);
+        String productName = (String) ScenarioContext.getContex(Context.PRODUCT_NAME);
         Assert.assertEquals(productName, productNameInCart.getText());
 //        assertTrue(inCartItem.isDisplayed());
     }
