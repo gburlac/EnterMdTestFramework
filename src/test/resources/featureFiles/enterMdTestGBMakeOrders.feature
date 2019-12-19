@@ -1,5 +1,7 @@
-@GeoMakeOrders
+@GBurlacAll
+@GBurlacMakeOrders
 Feature: Make orders on enter.online
+
   Background:
     Given User is on homepage
 
@@ -19,11 +21,10 @@ Feature: Make orders on enter.online
     And go to see the cart
     Then verify selected product is in cart
 
-    Scenario:Order products from home page to checkout
-      When go to casti category
-      And select a product
-      And take a look to cart
-      And place a order
-      And fill out the delivery info
-  |May|James|bond007@mi5.uk|070000997|Chisinau|Dacia 8|
-      Then verify the success message
+  Scenario:Order products from home page to checkout
+    When go to casti category
+    And select a product
+    And place a order
+    And fill out the delivery info
+      | Bond | James | bond007@mi5.uk | 070000997 | Chisinau | Dacia 8 |
+    Then verify the success message

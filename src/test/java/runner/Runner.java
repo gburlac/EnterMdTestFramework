@@ -7,14 +7,14 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/featureFiles",
-        glue={"steps"},
+        glue = {"steps"},
 //        name = "Navigate on EnterPages",
-//        tags = {"@GeoUiTest"},
-        tags = {"@RunVCrisac"},
-//        tags = {"@GeoMakeOrders"},
-//         tags = {"@GeoMakeOrders,@GeoUiTest"},
-        plugin = { "pretty" },
+        tags = {"@GBurlacAll"},
+//        tags = {"@GBurlacUiTest"},
+//        tags = {"@GBurlacMakeOrders"},
+//        tags = {"@RunVCrisac"},
+        plugin = {"pretty"},
         monochrome = true
-                )
+)
 public class Runner {
 }

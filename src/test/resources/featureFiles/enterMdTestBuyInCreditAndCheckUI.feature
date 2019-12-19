@@ -1,4 +1,5 @@
-@GeoUiTest
+@GBurlacAll
+@GBurlacUiTest
 Feature: Search for a product on EnterPages and check UI
 
   Background:
