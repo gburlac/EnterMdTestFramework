@@ -18,18 +18,21 @@ public class VerifyUISteps {
         electrocasnicePage.ClickOnelectroCasniceCategory();
         log.info("Press on electrocasnice category");
     }
+
     @Then("^electrocasnice category is displayed$")
     public void electrocasniceCategoryIsDisplayed() {
         electrocasnicePage.electroCasniceCategory();
         TakeScreens.takeScreenshot(Driver.getDriver(), "electrcasnice");
         log.info("Electrocasnice category is displayed");
     }
+
     @Then("^tehnica de bucatarie part is displayed$")
     public void tehnicaDeBucatariePartIsDisplayed() {
         electrocasnicePage.tehnicaDeBucatarieLabel();
         TakeScreens.takeScreenshot(Driver.getDriver(), "tehnicaDeBucatarieLabel");
         log.info("Tehnica de bucatarie part is displayed");
     }
+
     @Then("^aparate de uz casnice part is displaed$")
     public void aparateDeUzCasnicePartIsDisplaed() {
         electrocasnicePage.aparateDeUzCasnicePart();

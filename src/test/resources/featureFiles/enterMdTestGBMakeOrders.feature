@@ -21,7 +21,7 @@ Feature: Make orders on enter.online
     And go to see the cart
     Then verify selected product is in cart
 
-  Scenario:Order products from home page to checkout
+  Scenario:Order product and checkout
     When go to casti category
     And select a product
     And place a order

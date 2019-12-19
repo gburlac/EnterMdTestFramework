@@ -15,7 +15,7 @@ public class AddingToCartFunctionSteps {
     CadouPentruEaPage cadouPentruEaPage = page.getCadouPentruEaPage();
     ToateCategoriilePage toateCategoriilePage = page.getToateCategoriilePage();
     static Logger log = Logger.getLogger(AddingToCartFunctionSteps.class);
-    ScenarioContext scenarioContext = new ScenarioContext();
+
 
     @When("^go to cadou pentru ea category$")
     public void goToCadouPentruEaCategory() {
@@ -29,7 +29,6 @@ public class AddingToCartFunctionSteps {
         ScenarioContext.setContext(Context.PRODUCT_NAME, cadouPentruEaPage.getProductName());
         cadouPentruEaPage.clickButtonAddToCartFromProd();
         log.info("Select a product from the page");
-        // TODO: setProductName Scenario context
     }
 
     @When("^go to cart$")
@@ -43,8 +42,6 @@ public class AddingToCartFunctionSteps {
     public void verifyIsInCart() {
         cadouPentruEaPage.assertInCartItem();
         log.info("Verify is in cart");
-        // TODO: assert getProductName Scenario context
-
     }
 
     @When("^go to periferice$")
