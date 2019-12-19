@@ -8,11 +8,11 @@ public class ProductListPageSteps {
     Page page = new Page();
     MainPage mainPage = page.getMainPage();
     ProductListPage productListPage = page.getProductListPage();
-    static Logger log = Logger.getLogger(FilteringSteps.class);
+    static Logger log = Logger.getLogger(ProductListPageSteps.class);
 
     @And("^User selects product$")
     public void userSelectsProduct() {
-        productListPage.product1OpenProductPageClick();
+        productListPage.openProductPageByID();
         log.info("Product page is opened");
     }
 }
