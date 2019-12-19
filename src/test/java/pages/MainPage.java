@@ -46,7 +46,7 @@ public class MainPage extends Page {
     WebElement odnoklassnikiIcon;
     @FindBy(className = "//div[contains(@class, 'name')]")
     WebElement loginMenu;
-    @FindBy(xpath = "//div[@class='auth uk-grid uk-grid-small uk-flex-middle']")
+    @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
     WebElement userMenu;
     @FindBy(xpath = "//div[contains(@class, 'name')]//span")
     WebElement userName;
@@ -369,13 +369,4 @@ public class MainPage extends Page {
             log.info(">> ENTERED INVALID CREDENTIALS! <<<");
         }
     }
-
-
-
-
-
-
-
-
-
 }
