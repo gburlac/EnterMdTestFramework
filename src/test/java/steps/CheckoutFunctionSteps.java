@@ -4,7 +4,8 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
-import pages.*;
+import pages.CastiPage;
+import pages.Page;
 import util.Waiter;
 
 import java.util.List;
@@ -26,15 +27,10 @@ public class CheckoutFunctionSteps {
         log.info("Select a product");
     }
 
-    @When("^take a look to cart$")
-    public void takeALookToCart() {
-        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
-        castiPage.clickButonCartStatusPopUp();
-        log.info("Take a look to cart");
-    }
-
     @When("^place a order$")
     public void placeAOrder() {
+        Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
+        castiPage.clickButonCartStatusPopUp();
         Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         castiPage.clickButonCartStatusPopUp();
         Waiter.waitByXPath("//button[@name='dispatch[checkout.customer_info]']");
