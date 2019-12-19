@@ -12,7 +12,7 @@ Feature: Search for a product on EnterPages and check UI
     And aparate de uz casnice part is displaed
     And ingrijire personala part is displayed
 
-@Run
+
   Scenario Outline: Search for a product
     When input in search bar a '<test>'
     And select '<test>' device

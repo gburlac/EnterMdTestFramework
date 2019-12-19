@@ -11,7 +11,7 @@ Feature: Make orders on enter.online
     And go to cart
     Then verify is in cart
 
-
+  @Run
   Scenario: Add to cart from toate categoriile
     When go to periferice
     And select PC si periferice
