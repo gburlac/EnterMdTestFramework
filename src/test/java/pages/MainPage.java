@@ -325,7 +325,6 @@ public class MainPage extends Page {
     public void clickButtonBuyInCredit() {
 //        actions.moveToElement(buttonBuyInCredit).build().perform();
         buttonBuyInCredit.click();
-
     }
 
     public void accessLoginMenu() {

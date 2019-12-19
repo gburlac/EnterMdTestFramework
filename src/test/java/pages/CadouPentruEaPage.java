@@ -10,6 +10,9 @@ import util.Driver;
 
 import java.util.List;
 
+import static junit.framework.Assert.assertTrue;
+
+
 public class CadouPentruEaPage extends Page {
     Page page = new Page();
     Actions actions = new Actions(Driver.getDriver());
@@ -18,9 +21,7 @@ public class CadouPentruEaPage extends Page {
     private WebElement cadouPentruEaLink;
     @FindBy(xpath = "//div[contains(@data-title, 'Pune în coș')]//button[contains(@type, 'submit')]")
     private WebElement buttonAddToCart;
-    //button[@id='button_cart_95196']
-    //a[contains(@class, 'ty-btn ty-btn__primary')]
-    @FindBy(xpath = " //a[contains(@class, 'ty-btn ty-btn__primary')]")
+    @FindBy(xpath = "//a[contains(@class, 'ty-btn ty-btn__primary')]")
     private WebElement buttonGoToCart;
     @FindBy(xpath = "//img[@id='det_img_1232188157']")
     private WebElement inCartItem;
@@ -62,7 +63,7 @@ public class CadouPentruEaPage extends Page {
     }
 
     public void clickButtonGoToCart() {
-        buttonGoToCart.click();
+        buttonGoToCart.get(0).click();
     }
 
     public void clickproductFromCadouPentruEa() {
@@ -70,7 +71,6 @@ public class CadouPentruEaPage extends Page {
     }
 
     public void clickCadouPentruEaLink() {
-
         actions.moveToElement(cadouPentruEaLink).build().perform();
         cadouPentruEaLink.click();
     }

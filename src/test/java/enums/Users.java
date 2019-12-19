@@ -11,6 +11,14 @@ public enum Users {
     private String password;
     private String userName;
 
+public enum Users {
+    REGISTERED_USER("Stanislav Abramov","abramov.stas@gmail.com", "123NRTM456"),
+    FACEBOOK_USER("ssss", "username@email.com","password"),
+    VKONTAKTE_USER("", "",""),
+    ODNOKLASSNIKI_USER("", "","");
+    private String email;
+    private String password;
+    private String userName;
     Users(String userName, String email, String password){
         this.userName = userName;
         this.email = email;
@@ -25,7 +33,6 @@ public enum Users {
     public String getEmail() {
         return email;
     }
-
     public String getPassword() {
         return password;
     }
