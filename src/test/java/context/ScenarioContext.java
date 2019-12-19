@@ -2,8 +2,8 @@ package context;
 import enums.Context;
 import java.util.HashMap;
 import java.util.Map;
-public  class ScenarioContext {
-    private static Map<String, Object> scenarioContext;
+public class ScenarioContext {
+    public static Map<String, Object> scenarioContext;
     public ScenarioContext() {
         scenarioContext = new HashMap<>();
     }
