@@ -24,10 +24,11 @@ public class AddingToCartFunctionSteps {
         log.info("Go to cadou pentru ea category");
     }
 
-    @When("^select product (.*?) from the page$")
-    public void selectAProductFromThePage(int product) throws InterruptedException {
-//        scenarioContext.setContext(Context.PRODUCT_NAME, cadouPentruEaPage.getProductName(product));
-        cadouPentruEaPage.addToCart(product);
+    @When("^select product from the page$")
+    public void selectAProductFromThePage() throws InterruptedException {
+        cadouPentruEaPage.clickSelectProductName();
+        ScenarioContext.setContext(Context.PRODUCT_NAME, cadouPentruEaPage.getProductName());
+        cadouPentruEaPage.clickButtonAddToCartFromProd();
         log.info("Select a product from the page");
         // TODO: setProductName Scenario context
     }
