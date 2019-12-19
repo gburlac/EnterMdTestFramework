@@ -10,8 +10,6 @@ import util.Driver;
 
 import java.util.List;
 
-import static junit.framework.Assert.assertTrue;
-
 public class CadouPentruEaPage extends Page {
     Actions actions = new Actions(Driver.getDriver());
     ScenarioContext scenarioContext = new ScenarioContext();
@@ -32,10 +30,15 @@ public class CadouPentruEaPage extends Page {
     List<WebElement> addToCartFromCategoryButton;
     @FindBy(xpath = "//form[contains(@name,'product_form')]")
     List<WebElement> productNameFromCategory;
+    //a[@class='ty-cart-content__product-title']
     @FindBy(xpath = "//a[@class='ty-cart-content__product-title']")
     WebElement productNameInCart;
-    @FindBy(xpath = "//bdi")
+    @FindBy(xpath = "//bdi[contains(text(),'Xiaomi Redmi Note 7')]")
     WebElement productNameInProductPage;
+    @FindBy(xpath = "//form[@name='product_form_95196']//span[contains(text(),'Xiaomi Redmi Note 7')]")
+    WebElement selectProductName;
+    @FindBy(xpath = "//button[@id='button_cart_95196']")
+    WebElement buttonAddToCartFromProd;
 
 
     public void assertInCartItem() {
@@ -47,6 +50,14 @@ public class CadouPentruEaPage extends Page {
 
     public void clickProductNameFromCategory(int product) {
         productNameFromCategory.get(product).click();
+    }
+
+    public void clickButtonAddToCartFromProd() {
+        buttonAddToCartFromProd.click();
+    }
+
+    public void clickSelectProductName() {
+        selectProductName.click();
     }
 
     public void clickButtonGoToCart() {

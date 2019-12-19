@@ -48,3 +48,25 @@
 2019-12-18 17:49:07 INFO  CommonSteps:19 - User is on homepage
 2019-12-18 17:49:13 INFO  AddingToCartFunctionSteps:24 - Go to cadou pentru ea category
 2019-12-18 17:49:18 INFO  AddingToCartFunctionSteps:32 - Select a product from the page
+2019-12-18 19:14:08 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-18 19:14:09 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-18 19:14:42 INFO  CommonSteps:19 - User is on homepage
+2019-12-18 19:15:09 INFO  AddingToCartFunctionSteps:24 - Go to cadou pentru ea category
+2019-12-18 19:34:22 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-18 19:34:22 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-18 19:34:53 INFO  CommonSteps:19 - User is on homepage
+2019-12-18 19:35:27 INFO  AddingToCartFunctionSteps:24 - Go to cadou pentru ea category
+2019-12-18 19:35:50 INFO  AddingToCartFunctionSteps:32 - Select a product from the page
+2019-12-18 19:35:55 INFO  AddingToCartFunctionSteps:40 - Go to cart
+2019-12-18 19:42:57 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-18 19:42:57 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-18 19:43:22 INFO  CommonSteps:19 - User is on homepage
+2019-12-18 19:43:46 INFO  AddingToCartFunctionSteps:24 - Go to cadou pentru ea category
+2019-12-18 19:44:10 INFO  AddingToCartFunctionSteps:32 - Select a product from the page
+2019-12-18 19:44:15 INFO  AddingToCartFunctionSteps:40 - Go to cart
+2019-12-18 19:49:21 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-18 19:49:21 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-18 19:49:50 INFO  CommonSteps:19 - User is on homepage
+2019-12-18 19:50:13 INFO  AddingToCartFunctionSteps:24 - Go to cadou pentru ea category
+2019-12-18 19:50:33 INFO  AddingToCartFunctionSteps:32 - Select a product from the page
+2019-12-18 19:50:37 INFO  AddingToCartFunctionSteps:40 - Go to cart
