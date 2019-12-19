@@ -23,9 +23,9 @@ public class ReviewSteps {
         log.info("'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \\[Send\\] button are displayed");
     }
 
-    @When("^User fill in all fields valid data and click \\[Send\\] button$")
-    public void userFillInAllFieldsValidDataAndClickSendButton() {
-            productPage.reviewFormComplete();
+    @When("^User fills in the (.*?) (.*?) (.*?) fields and submit$")
+    public void userFillInAllFieldsValidDataAndClickSendButton(String name, String email, String message) {
+            productPage.reviewFormComplete(name, email, message);
             log.info("Write review button is clicked");
         }
 

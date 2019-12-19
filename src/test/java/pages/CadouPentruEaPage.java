@@ -5,6 +5,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.Driver;
 
+import java.util.List;
+
 import static junit.framework.Assert.assertTrue;
 
 public class CadouPentruEaPage extends Page {
@@ -15,8 +17,8 @@ public class CadouPentruEaPage extends Page {
     @FindBy(xpath = "//*[@id=\"button_cart_74766\"]")
     private WebElement buttonAddToCart;
     @FindBy(xpath = "//a[contains(@class, 'ty-btn ty-btn__primary')]")
-    private WebElement buttonGoToCart;
-    @FindBy(xpath = "//img[@id='det_img_1232188157']")
+    private List<WebElement> buttonGoToCart;
+    @FindBy(xpath = "//button[contains(text(), 'Pune în coș')]")
     private WebElement inCartItem;
     @FindBy(xpath = "//button[@id='button_cart_95196']")
     private WebElement productFromCadouPentruEa;
@@ -27,7 +29,7 @@ public class CadouPentruEaPage extends Page {
     }
 
     public void clickButtonGoToCart() {
-        buttonGoToCart.click();
+        buttonGoToCart.get(0).click();
     }
 
     public void clickproductFromCadouPentruEa() {
@@ -35,7 +37,6 @@ public class CadouPentruEaPage extends Page {
     }
 
     public void clickCadouPentruEaLink() {
-
         actions.moveToElement(cadouPentruEaLink).build().perform();
         cadouPentruEaLink.click();
     }

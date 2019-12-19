@@ -13,7 +13,7 @@ public class BeforeAfterSteps <log>{
     static Logger log = Logger.getLogger(BeforeAfterSteps.class);
     @Before
     public void before() {
-
+        log.info("----------------------TEST STARTED----------------------");
         switch (properties.getBrowser()) {
             case "chrome": {
                 WebDriverManager.chromedriver().setup();
@@ -37,6 +37,7 @@ public class BeforeAfterSteps <log>{
 
     @After
     public void after() {
+        log.info("----------------------TEST FINISHED----------------------");
         Driver.closeDriver();
     }
 }

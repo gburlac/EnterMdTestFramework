@@ -89,8 +89,10 @@ public class MainPage extends Page {
     private WebElement gadgeturiPentruOriceVirstaButton;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[4]/a")
     private WebElement sfaturiUtileButton;
-    @FindBy(xpath = "//*[@id=\"languages_638\"]/div[1]/a")
-    private WebElement langChanger;
+    @FindBy(xpath = "//div[@id='languages_638']//div//a[@href='https://enter.online/ru/']")
+    private WebElement langChangerRU;
+    @FindBy(xpath = "//div[@id='languages_638']//div//a[@href='https://enter.online/']")
+    private WebElement langChangerRO;
     Actions actions = new Actions(Driver.getDriver());
     //method
     public void assertcheckCreditPage()  {
@@ -143,33 +145,19 @@ public class MainPage extends Page {
 
     public void selectSmartphonesCategory() {
         allCategoriesDropdown.click();
-        allCategoriesDropdown.click();
-        allCategoriesDropdown.click();
         allCategoriesDropdownTelephonesCategory.click();
         allCategoriesDropdownTelephonesCategorySmartphones.click();
     }
 
-    public void asserttElectrocasniceButton() {
+    public void assertMainPageUIElements() {
         Assert.assertTrue(electrocasniceButton.isDisplayed());
-    }
-
-    public void assertLogoEnter() {
         Assert.assertTrue(logoEnter.isDisplayed());
-    }
-
-    public void assertNouatiSiPromotiiButton() {
         Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
-    }
-
-    public void assertGadgeturiPentruOriceVirstaButton() {
         Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
-    }
-
-    public void assertSfaturiUtileButton() {
         Assert.assertTrue(sfaturiUtileButton.isDisplayed());
     }
 
     public void langChangerClick() {
-        langChanger.click();
+        langChangerRU.click();
     }
 }

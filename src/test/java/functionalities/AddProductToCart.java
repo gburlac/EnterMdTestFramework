@@ -1,4 +1,4 @@
-package Functionalities;
+package functionalities;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

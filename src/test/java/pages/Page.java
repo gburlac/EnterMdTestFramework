@@ -1,5 +1,6 @@
 package pages;
 
+import context.ScenarioContext;
 import org.openqa.selenium.support.PageFactory;
 import util.Driver;
 
@@ -14,7 +15,6 @@ public class Page {
     LoginPopup loginPopup;
     MainPageAsLogged mainPageAsLogged;
     ProductPage productPage;
-    Smartphones smartphones;
     ToateCategoriilePage toateCategoriilePage;
     ElectrocasnicePage electrocasnicePage;
     ProductListPage productListPage;
@@ -42,10 +42,6 @@ public class Page {
 
     public ProductPage getProductPage() {
         return (productPage == null) ? productPage = new ProductPage() : productPage;
-    }
-
-    public Smartphones getSmartphones() {
-        return (smartphones == null) ? smartphones = new Smartphones() : smartphones;
     }
 
     public ToateCategoriilePage toateCategoriilePage() {

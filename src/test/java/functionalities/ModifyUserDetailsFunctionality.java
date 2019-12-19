@@ -1,7 +1,6 @@
-package Functionalities;
+package functionalities;
 
 import cucumber.api.java.en.When;
-import pages.MainPage;
 import pages.MainPageAsLogged;
 import pages.UserPage;
 
