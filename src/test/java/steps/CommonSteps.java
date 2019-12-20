@@ -38,7 +38,7 @@ public class CommonSteps {
     @When("^User changes language of interface$")
     public void userChangesLanguage() {
         mainPage.langChangerClick();
-        log.info("User changed language on Russian");
+        log.info("User changes language on Russian");
     }
 
 }
