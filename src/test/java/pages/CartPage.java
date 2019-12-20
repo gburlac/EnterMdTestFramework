@@ -97,7 +97,7 @@ public class CartPage extends Page {
 
     public void waitSpinner() {
         Waiter.waitByXPath("//div[@id='ajax_loading_box'][contains(@style,'block')]");
-        Waiter.waitByXpathUntilDissapear("//div[@id='ajax_loading_box'][contains(@style,'block')]");
+        Waiter.waitByXPathUntilDissapear("//div[@id='ajax_loading_box'][contains(@style,'block')]");
     }
 
     ScenarioContext scenarioContext = new ScenarioContext();
@@ -105,6 +105,6 @@ public class CartPage extends Page {
     public void assertProductName() {
         List<WebElement> productList = productNamesListInCart.subList(0, productNamesListInCart.size());
 //        Assert.assertTrue(productNamesListInCart.contains(scenarioContext.getContex(Context.PRODUCT_NAME)));
-        Assert.assertTrue(productList.contains(scenarioContext.getContex(Context.PRODUCT_NAME)));
+        Assert.assertTrue(productList.contains(scenarioContext.getContext(Context.PRODUCT_NAME)));
     }
 }

@@ -22,10 +22,9 @@ public class PropertiesReader {
         try {
             InputStream istream = new FileInputStream(path);
             prop.load(istream);
-
             browser = prop.getProperty("browser");
         } catch (FileNotFoundException e) {
-
+            System.out.println("PROPRETIES FILE IS NOT FOUND");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -37,7 +36,6 @@ public class PropertiesReader {
         }
         return propertiesReader;
     }
-
     public String getBrowser() {
         return browser;
     }

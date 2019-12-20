@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.*;
-
 import java.util.List;
 
 public class MainPage extends Page {
@@ -115,6 +114,10 @@ public class MainPage extends Page {
     private WebElement gadgeturiPentruOriceVirstaButton;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[4]/a")
     private WebElement sfaturiUtileButton;
+    @FindBy(xpath = "//div[@id='languages_638']//div//a[@href='https://enter.online/ru/']")
+    private WebElement langChangerRU;
+    @FindBy(xpath = "//div[@id='languages_638']//div//a[@href='https://enter.online/']")
+    private WebElement langChangerRO;
     @FindBy(xpath = "//*[@id=\"languages_638\"]/div[1]/a")
     private WebElement langChanger;
 
@@ -232,10 +235,8 @@ public class MainPage extends Page {
 
     public void selectSmartphonesCategory() {
         allCategories.click();
-        allCategories.click();
-        allCategories.click();
         telefoaneCategoriesList.click();
-        telefoaneCategoriesList.click();
+        smartphonesCategory.click();
     }
 
     public void asserttElectrocasniceButton() {
@@ -258,10 +259,6 @@ public class MainPage extends Page {
 
     public void assertSfaturiUtileButton() {
         Assert.assertTrue(sfaturiUtileButton.isDisplayed());
-    }
-
-    public void langChangerClick() {
-        langChanger.click();
     }
 
     public void openAllTVCategories() {
@@ -366,5 +363,17 @@ public class MainPage extends Page {
             Assert.assertTrue(notificationAlertError.isDisplayed());
             log.info(">> ENTERED INVALID CREDENTIALS! <<<");
         }
+    }
+
+    public void assertMainPageUIElements() {
+        Assert.assertTrue(electrocasniceButton.isDisplayed());
+        Assert.assertTrue(logoEnter.isDisplayed());
+        Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
+        Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
+        Assert.assertTrue(sfaturiUtileButton.isDisplayed());
+    }
+
+    public void langChangerClick() {
+        langChangerRU.click();
     }
 }
