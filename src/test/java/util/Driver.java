@@ -3,6 +3,7 @@ package util;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Proxy;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -31,7 +32,21 @@ public class Driver {
                 }
                 case "ie": {
                     InternetExplorerOptions capabilities = new InternetExplorerOptions();
-                    capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+                    capabilities.disableNativeEvents().setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+                    capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+
+
+
+
+                    InternetExplorerOptions internetExplorerOptions = new InternetExplorerOptions()
+                            .introduceFlakinessByIgnoringSecurityDomains()
+                            .disableNativeEvents()
+                            .enablePersistentHovering()
+                            .setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
+
+
+
+
                     driver = new InternetExplorerDriver(capabilities);
                     driver.manage().window().maximize();
                     break;
