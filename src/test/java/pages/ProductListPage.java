@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import util.Waiter;
 
 import java.util.List;
 import java.util.Random;
@@ -13,17 +14,17 @@ import java.util.Random;
 import static junit.framework.Assert.assertTrue;
 
 public class ProductListPage extends Page {
-    @FindBy(xpath = "//*[@id=\"pagination_contents\"]/div[4]/div[5]/div/div[2]/form/div/div[4]/div/div[3]")
-    WebElement product1AddToCompareButton;
-
-    @FindBy(xpath = "//*[@id=\"pm_compare_3262\"]/a/span")
+    @FindBy(xpath = "//div[@class='ty-compare']")
     WebElement compareButton;
+
+    @FindBy(xpath = "//a[@class='ty-btn ty-btn__text picon-compare-two  cm-ajax cm-ajax-full-render text-button ']")
+    List<WebElement> addProductToCompareButton;
 
     @FindBy(xpath = "//div[@class='ty-grid-list__image']")
     List<WebElement> productsOnPageList;
 
     @FindBy(xpath = "//form[contains(@name,'product_form')]//div[@class='ty-grid-list__item-name product-title']//span")
-    List<WebElement> productnameLabel;
+    List<WebElement> productNameLabel;
 
     @FindBy(xpath = "//*[@id=\"pagination_contents\"]/div[2]/div/div[1]/div[2]/div[2]/select")
     WebElement sortingByDropdown;
@@ -33,27 +34,19 @@ public class ProductListPage extends Page {
 
     @FindBy(xpath = "//*[@id=\"content_376_239\"]/li[2]//ul//li//a//input")
     List<WebElement> filterCheckbox;
-//    String selectedCategory;
     Page page = new Page();
-    public void product1AddToCompareButtonClick() {
-        product1AddToCompareButton.click();
-    }
-
-    public void compareButtonClick() {
-        compareButton.click();
-    }
 
     public void openProductPageByID() {
         int a = 0;
         Random random = new Random();
         a = random.ints(0, (20 + 1)).findFirst().getAsInt();
-
-//        scenarioContext.setContext(Context.PRODUCT_NAME,productNameLabel.getText());
+        ScenarioContext.setContext(Context.PRODUCT_NAME,productNameLabel.get(a).getText());
         productsOnPageList.get(a).click();
+        Waiter.waitByXPath("//span//span//a");
     }
     public void filterAssert() {
         String productValue;
-        for (WebElement webElement : productnameLabel) {
+        for (WebElement webElement : productNameLabel) {
             productValue = webElement.getText();
 //            assertTrue(value.contains(selectedCategory));
             String filterValue = (String) ScenarioContext.getContext(Context.SELECTED_MANUFACTURER_FILTER);
@@ -65,10 +58,7 @@ public class ProductListPage extends Page {
         changingCountOfItems.selectByVisibleText(dropdownValue);
     }
     public void checkFilterCheckbox(int i) {
-//        selectedCategory = filterCheckboxName.get(i).getText();
         ScenarioContext.setContext(Context.SELECTED_MANUFACTURER_FILTER,filterCheckboxName.get(i).getText());
-        System.out.println(filterCheckboxName.get(i).getText());
-        System.out.println(ScenarioContext.getContext(Context.SELECTED_MANUFACTURER_FILTER));
         filterCheckbox.get(i).click();
     }
     public void checkCountOfItemsOnPage(int count){
@@ -76,4 +66,14 @@ public class ProductListPage extends Page {
         Assert.assertTrue(productsOnPageList.size() == count);
     }
 
+    public void addingProductsInCompareList(int i) {
+        addProductToCompareButton.get(i).click();
+        Waiter.waitByXPathUntilDissapear("//div[@id=\"ajax_loading_box\"]");
+        Waiter.waitByXPathUntilDissapear("//div[@class='ty-product-notification__item clearfix']");
+    }
+    public void compareButtonClick()
+    {
+        compareButton.click();
+        Waiter.waitByXPath("//span[@class='support-trigger-round-icon support-icon-comments-o']");
+    }
 }

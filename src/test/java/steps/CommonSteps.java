@@ -15,6 +15,14 @@ public class CommonSteps {
     MainPage mainPage = page.getMainPage();
     static Logger log = Logger.getLogger(CommonSteps.class);
 
+    @When("^User selects Smartphones category$")
+    public void userSelectsAnyCategory() {
+        mainPage.selectSmartphonesCategory();
+        Waiter.waitByXPath("//span[contains(@class,'support-trigger-round-icon support-icon-comments-o')]");
+        log.info("Smartphones is selected");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Smartphones category is selected");
+    }
+
     @Given("^User is on homepage$")
     public void userIsOnHomepage() {
         Driver.getDriver().get("https://enter.online/");
@@ -29,10 +37,11 @@ public class CommonSteps {
         log.info("Enter.Online home page is opened.");
     }
 
-    @When("^User changes language$")
+    @When("^User changes language of interface$")
     public void userChangesLanguage() {
         mainPage.langChangerClick();
-        log.info("User changes language on Russian");
+        log.info("User changed language on Russian");
     }
+
 
 }

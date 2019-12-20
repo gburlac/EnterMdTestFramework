@@ -1,5 +1,5 @@
 # new feature
-# Tags: optional
+@Vatamanenco
 
 Feature: Pagination content manage
 

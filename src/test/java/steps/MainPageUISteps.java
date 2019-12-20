@@ -23,10 +23,10 @@ public class MainPageUISteps {
         log.info("UI elements are present");
     }
 
-    @Then("^Then all non-changeable elements with text are displayed on selected language$")
+    @Then("^All non-changeable elements with text are displayed on selected language$")
     public void thenAllNonChangeableElementsWithTextAreDisplayedOnSelectedLanguage() {
         Waiter.waitByXPath("//div[contains(@class,'uk-flex-middle attar-header')]//div[contains(@class,'uk-width-auto@m')]");
-        TakeScreens.takeScreenshot(Driver.getDriver(), "Is on main page");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Language is changed, user is on main page");
         mainPage.assertMainPageUIElements();
         TakeScreens.takeScreenshot(Driver.getDriver(), "UI elements checked");
         log.info("UI elements are present");
