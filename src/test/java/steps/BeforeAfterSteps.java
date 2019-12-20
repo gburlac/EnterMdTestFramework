@@ -7,11 +7,6 @@ import org.apache.log4j.Logger;
 
 import util.*;
 
-import java.io.File;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
-
 public class BeforeAfterSteps <log>{
     static PropertiesReader properties = PropertiesReader.getInstatnce();
     static Logger log = Logger.getLogger(BeforeAfterSteps.class);
@@ -42,6 +37,5 @@ public class BeforeAfterSteps <log>{
     public void after() {
         log.info("----------------------TEST FINISHED----------------------");
         Driver.closeDriver();
-        log.info("----------------------TEST FINISHED----------------------");
     }
 }
