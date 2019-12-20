@@ -63,7 +63,7 @@ public class CadouPentruEaPage extends Page {
     }
 
     public void clickButtonGoToCart() {
-        buttonGoToCart.get(0).click();
+        buttonGoToCart.click();
     }
 
     public void clickproductFromCadouPentruEa() {

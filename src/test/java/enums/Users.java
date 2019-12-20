@@ -1,7 +1,8 @@
 package enums;
 
-public enum Users {
 
+
+public enum Users {
     REGISTERED_USER("Stanislav Abramov","abramov.stas@gmail.com", "123NRTM456"),
     FACEBOOK_USER("Владимир Крысак", "krysak.vladimir@gmail.com","endVilrkrew@1fb"),
     VKONTAKTE_USER("", "",""),
@@ -11,14 +12,6 @@ public enum Users {
     private String password;
     private String userName;
 
-public enum Users {
-    REGISTERED_USER("Stanislav Abramov","abramov.stas@gmail.com", "123NRTM456"),
-    FACEBOOK_USER("ssss", "username@email.com","password"),
-    VKONTAKTE_USER("", "",""),
-    ODNOKLASSNIKI_USER("", "","");
-    private String email;
-    private String password;
-    private String userName;
     Users(String userName, String email, String password){
         this.userName = userName;
         this.email = email;

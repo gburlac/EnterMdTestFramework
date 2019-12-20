@@ -37,11 +37,9 @@ public class BeforeAfterSteps <log>{
         }
         Driver.createDriver();
     }
-
-
-//    @After
+@After
     public void after() {
-        log.info("----------------------TEST FINISHED----------------------");
         Driver.closeDriver();
+        log.info("----------------------TEST FINISHED----------------------");
     }
 }

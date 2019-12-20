@@ -56,17 +56,10 @@ public class ProductListPage extends Page {
             Assert.assertTrue(productValue.contains(filterValue));
         }
     }
-    public void changingCountOfItemsOnPage(String dropdownValue){
-        Select changingCountOfItems = new Select(sortingByDropdown);
-        changingCountOfItems.selectByVisibleText(dropdownValue);
-    }
+
     public void checkFilterCheckbox(int i) {
         ScenarioContext.setContext(Context.SELECTED_MANUFACTURER_FILTER,filterCheckboxName.get(i).getText());
         filterCheckbox.get(i).click();
-    }
-    public void checkCountOfItemsOnPage(int count){
-        ScenarioContext.setContext(Context.COUNT_OF_ITEMS_ON_THE_PAGE, productsOnPageList.size());
-        Assert.assertTrue(productsOnPageList.size() == count);
     }
 
     public void addingProductsInCompareList(int i) {
@@ -79,26 +72,12 @@ public class ProductListPage extends Page {
         compareButton.click();
         Waiter.waitByXPath("//span[@class='support-trigger-round-icon support-icon-comments-o']");
     }
-    public void filterAssert() {
-        String productValue;
-        for (WebElement webElement : productnameLabel) {
-            productValue = webElement.getText();
-//            assertTrue(value.contains(selectedCategory));
-            String filterValue = (String) ScenarioContext.getContext(Context.SELECTED_MANUFACTURER_FILTER);
-            Assert.assertTrue(productValue.contains(filterValue));
-        }
-    }
+
     public void changingCountOfItemsOnPage(String dropdownValue){
         Select changingCountOfItems = new Select(sortingByDropdown);
         changingCountOfItems.selectByVisibleText(dropdownValue);
     }
-    public void checkFilterCheckbox(int i) {
-//        selectedCategory = filterCheckboxName.get(i).getText();
-        ScenarioContext.setContext(Context.SELECTED_MANUFACTURER_FILTER,filterCheckboxName.get(i).getText());
-        System.out.println(filterCheckboxName.get(i).getText());
-        System.out.println(ScenarioContext.getContext(Context.SELECTED_MANUFACTURER_FILTER));
-        filterCheckbox.get(i).click();
-    }
+
     public void checkCountOfItemsOnPage(int count){
         ScenarioContext.setContext(Context.COUNT_OF_ITEMS_ON_THE_PAGE, productsOnPageList.size());
         Assert.assertTrue(productsOnPageList.size() == count);
