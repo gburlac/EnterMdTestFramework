@@ -37,6 +37,7 @@ public class LoginFunctionality {
         mainPage.inputEmail(user.getEmail());
         mainPage.inputPassword(user.getPassword());
         mainPage.clickLoginButton();
+        log.info("Home page is displayed. User is logged.");
     }
     @When("^user logs in with new password as (.*?)$")
     public void loginOnSiteWithNewPass(Users user){
@@ -46,6 +47,7 @@ public class LoginFunctionality {
         mainPage.inputEmail(user.getEmail());
         mainPage.inputPassword((String) ScenarioContext.getContex(Context.CHANGED_PASSWORD));
         mainPage.clickLoginButton();
+        log.info("Home page is displayed. User is logged.");
     }
 
     @Then("^home page is displayed and user is logged in as (.*?)$")
@@ -53,6 +55,7 @@ public class LoginFunctionality {
         Waiter.waitbyClassName("ty-banner__image-item");
         mainPage.checkThatUserIsLoggedIn(user.getUserName());
         TakeScreens.takeScreenshot(driver, "user_is_logged");
+        log.info("Home page is displayed. User is logged.");
     }
 
     @When("^user tries to log in with invalid (.*?) and (.*?)$")
