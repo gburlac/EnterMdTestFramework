@@ -5,6 +5,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
 import pages.*;
+import util.Driver;
+import util.TakeScreens;
 import util.Waiter;
 
 
@@ -17,6 +19,7 @@ public class PaginationContentSteps {
         productListPage.changingCountOfItemsOnPage(dropdownValue);
         log.info("selecting value in dropdown: " + dropdownValue);
         Waiter.waitByXPathUntilDissapear("//div[@id=\"ajax_loading_box\"]");
+        TakeScreens.takeScreenshot(Driver.getDriver(), dropdownValue + " value in dropdown is selected");
     }
 
 

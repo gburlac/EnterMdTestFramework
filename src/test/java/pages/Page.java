@@ -26,6 +26,7 @@ public class Page {
     CommonSteps commonSteps;
     ScenarioContext scenarioContext;
     ProductListPage productListPage;
+    ComparingPage comparingPage;
 
     public MainPage getMainPage() {
         return (mainPage == null) ? mainPage = new MainPage() : mainPage;
@@ -85,6 +86,9 @@ public class Page {
 
     public CastiPage getCastiPage() {
         return (castiPage == null) ? castiPage = new CastiPage() : castiPage;
+    }
+    public ComparingPage getComparingPage() {
+        return (comparingPage == null) ? comparingPage = new ComparingPage() : comparingPage;
     }
 
 }
