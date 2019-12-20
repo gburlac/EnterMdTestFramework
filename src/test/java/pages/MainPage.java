@@ -45,7 +45,7 @@ public class MainPage extends Page {
     WebElement loginMenu;
     @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
     WebElement userMenu;
-    @FindBy(xpath = "//div[contains(@class, 'name')]//span")
+    @FindBy(xpath = "//div[contains(@class, 'auth')]//div[contains(@class, 'name')]//span")
     WebElement userName;
     @FindBy(xpath = "//input[@id='login_popup3262']")
     private WebElement emailField;
@@ -303,8 +303,7 @@ public class MainPage extends Page {
     }
 
     public void goToUserAccountDetails() {
-        Waiter.waitbyClassName("ty-banner__image-item");
-//        actions.moveToElement(loginMenu).moveToElement(myAccount).click().build().perform();
+//        Waiter.waitbyClassName("ty-banner__image-item");
         userMenu.click();
         myAccount.click();
     }

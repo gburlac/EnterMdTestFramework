@@ -1,5 +1,5 @@
+@RunVCrisac
 Feature: Login via facebook profile with valid credentials
-
   Scenario: Login on Enter.Online and logout
     Given Home page is displayed
     When user is logged in via Facebook as FACEBOOK_USER
@@ -25,13 +25,25 @@ Feature: Login via facebook profile with valid credentials
     And user goes to cart
     Then product is added to cart
 
-  @RunVCrisac
+  Scenario: As logged user add several products in the cart, remove one, check if removed
+    Given user logs in as REGISTERED_USER
+    When user select Transport category and add productId 4 product to cart
+    And user goes to cart
+    Then product is added to cart
+    When user select TV category and add productId 9 product to cart
+    And user goes to cart
+    Then product is added to cart
+    When user select Phones category and add productId 2 product to cart
+    And user goes to cart
+    Then product is added to cart
+    When user delete Phones product
+    Then product is deleted
+
+
   Scenario: as logged user edit user details
     Given user logs in as REGISTERED_USER
     When user goes to user account details
     And edit user details
-      | Prenume         | Abramov            |
-      | Nume            | Stanislav          |
       | Parola          | 11122223333NRTM456 |
       | Confirma_parola | 11122223333NRTM456 |
       | Phone           | 068800900          |
@@ -47,19 +59,3 @@ Feature: Login via facebook profile with valid credentials
     When user click on logout option
     Then user is logged out and main page is displayed
     When user logs in with new password as REGISTERED_USER
-
-
-  Scenario: As logged user add several products in the cart, remove one, check if removed
-    Given user logs in as REGISTERED_USER
-    When user select Transport category and add productId 4 product to cart
-    And user goes to cart
-    Then product is added to cart
-    When user select TV category and add productId 9 product to cart
-    And user goes to cart
-    Then product is added to cart
-    When user select Phones category and add productId 2 product to cart
-    And user goes to cart
-    Then product is added to cart
-    When user delete Phones product
-    Then product is deleted
-
