@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 
 import util.*;
 
+
 public class BeforeAfterSteps <log>{
     static PropertiesReader properties = PropertiesReader.getInstatnce();
     static Logger log = Logger.getLogger(BeforeAfterSteps.class);
