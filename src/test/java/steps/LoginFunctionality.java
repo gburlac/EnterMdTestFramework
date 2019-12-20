@@ -38,7 +38,7 @@ public class LoginFunctionality {
         mainPage.inputPassword(user.getPassword());
         mainPage.clickLoginButton();
     }
-    @When("^user logs in with new password$")
+    @When("^user logs in with new password as (.*?)$")
     public void loginOnSiteWithNewPass(Users user){
         commonSteps.userIsOnHomepage();
         mainPage.accessLoginMenu();
