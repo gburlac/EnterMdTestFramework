@@ -82,5 +82,4 @@ public class ProductListPage extends Page {
         ScenarioContext.setContext(Context.COUNT_OF_ITEMS_ON_THE_PAGE, productsOnPageList.size());
         Assert.assertTrue(productsOnPageList.size() == count);
     }
-
 }
