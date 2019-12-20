@@ -44,7 +44,7 @@ public class LoginFunctionality {
         mainPage.accessLoginMenu();
         Waiter.waitById("login_popup3262");
         mainPage.inputEmail(user.getEmail());
-        mainPage.inputPassword((String) ScenarioContext.getContex(Context.CHANGED_PASSWORD));
+        mainPage.inputPassword((String) ScenarioContext.getContext(Context.CHANGED_PASSWORD));
         mainPage.clickLoginButton();
     }
 
