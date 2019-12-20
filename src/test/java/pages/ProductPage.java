@@ -45,7 +45,7 @@ public class ProductPage extends Page {
     @FindBy(xpath = "//textarea[@name='post_data[message]']")
     WebElement reviewMessageTextbox;
 
-    @FindBy(xpath = "//label[contains(text(),'cut foarte mult')]")
+    @FindBy(xpath = "//label[contains(@class, 'ty-rating__label')][1]")//label[contains(text(),'cut foarte mult')]
     WebElement reviewFiveStarsButton;
 
     @FindBy(xpath = "//button[@name='dispatch[discussion.add]']")
@@ -59,6 +59,9 @@ public class ProductPage extends Page {
 
     @FindBy(xpath = "//ul[@id='ranges_376_239']")
     WebElement assertSmartphonesCategory;
+
+    @FindBy(xpath = "//a[@class='ty-btn ty-btn__text picon-compare-two   text-button ']")
+    WebElement addToCompareListButton;
 
     public void assertProductDetails() throws Exception {
         try {
@@ -108,8 +111,10 @@ public class ProductPage extends Page {
     }
 
     public void writeReviewButtonClick() {
+        Waiter.waitByXPath("//a[contains(@class,'ty-btn cm-dialog-opener cm-dialog-auto-size uk-button uk-border-rounded uk-button-primary tm-add-review')]");
         writeReviewButton.click();
         Waiter.waitByXPath("//button[@name='dispatch[discussion.add]']");
+        Waiter.waitByXPath("//label[contains(text(),'cut foarte mult')]");
     }
     public void reviewFormCheck(){
         Assert.assertTrue(reviewNameTextbox.isDisplayed());
@@ -122,6 +127,7 @@ public class ProductPage extends Page {
         reviewEmailTextbox.sendKeys(email);
         reviewMessageTextbox.sendKeys(message);
         reviewFiveStarsButton.click();
+        TakeScreens.takeScreenshot(Driver.getDriver(),  "Data is introduced");
         reviewSendButton.click();
         Waiter.waitByXPath("//div[@class='cm-notification-content notification-content alert-warning']");
     }
@@ -152,6 +158,9 @@ public class ProductPage extends Page {
 
     }
 
-
+    public void addToCompareListButtonClick(){
+        addToCompareListButton.click();
+        Waiter.waitByXPathUntilDissapear("//div[@class='ty-product-notification__item clearfix']");
+    }
 
 }

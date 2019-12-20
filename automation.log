@@ -1,120 +1,235 @@
-2019-12-18 19:24:48 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-18 19:24:48 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-18 19:24:59 INFO  CommonSteps:19 - User is on homepage
-2019-12-18 19:25:11 INFO  FilteringSteps:24 - Smartphones is selected
-2019-12-18 19:25:11 INFO  FilteringSteps:30 - Filter smartphones by manufacturer Asus
-2019-12-18 19:25:14 INFO  FilteringSteps:37 - Displayed only Asus smartphones
-2019-12-18 19:35:02 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-18 19:35:02 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-18 19:35:14 INFO  CommonSteps:19 - User is on homepage
-2019-12-18 19:35:24 INFO  FilteringSteps:24 - Smartphones is selected
-2019-12-18 19:35:26 INFO  FilteringSteps:16 - Product page is opened
-2019-12-18 19:35:28 INFO  ReviewSteps:17 - Write review button is clicked
-2019-12-18 19:35:29 INFO  ReviewSteps:23 - 'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \[Send\] button are displayed
-2019-12-18 19:35:35 INFO  ReviewSteps:29 - Write review button is clicked
-2019-12-18 19:45:19 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-18 19:45:20 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-18 19:45:25 INFO  BeforeAfterSteps:35 - ----------------------TEST STARTED----------------------
-2019-12-18 19:45:32 INFO  CommonSteps:27 - User is on homepage
-2019-12-18 19:45:37 INFO  MainPageUISteps:23 - UI elements are present
-2019-12-18 19:45:48 INFO  MainPageUISteps:32 - UI elements are present
-2019-12-18 19:45:48 INFO  BeforeAfterSteps:41 - ----------------------TEST FINISHED----------------------
-2019-12-18 19:48:22 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-18 19:48:22 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-18 19:48:27 INFO  BeforeAfterSteps:35 - ----------------------TEST STARTED----------------------
-2019-12-18 19:48:34 INFO  CommonSteps:27 - User is on homepage
-2019-12-18 19:48:38 INFO  MainPageUISteps:23 - UI elements are present
-2019-12-18 19:48:44 INFO  CommonSteps:33 - User changes language on Russian
-2019-12-18 19:48:47 INFO  MainPageUISteps:32 - UI elements are present
-2019-12-18 19:48:47 INFO  BeforeAfterSteps:41 - ----------------------TEST FINISHED----------------------
-2019-12-19 10:26:03 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 10:26:05 INFO  WebDriverManager:1042 - Reading https://selenium-release.storage.googleapis.com/ to seek IEDriverServer
-2019-12-19 10:26:07 INFO  WebDriverManager:949 - Latest version of IEDriverServer is 3.150
-2019-12-19 10:26:07 INFO  Downloader:167 - Using binary driver previously downloaded
-2019-12-19 10:26:07 INFO  WebDriverManager:1078 - Exporting webdriver.ie.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\IEDriverServer\x64\3.150\IEDriverServer.exe
-2019-12-19 10:31:58 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 10:32:00 INFO  WebDriverManager:1105 - Reading https://api.github.com/repos/mozilla/geckodriver/releases to seek geckodriver
-2019-12-19 10:32:01 INFO  WebDriverManager:949 - Latest version of geckodriver is 0.26.0
-2019-12-19 10:32:01 INFO  Downloader:167 - Using binary driver previously downloaded
-2019-12-19 10:32:01 INFO  WebDriverManager:1078 - Exporting webdriver.gecko.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\geckodriver\win64\0.26.0\geckodriver.exe
-2019-12-19 10:32:19 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 10:32:20 INFO  MainPageUISteps:23 - UI elements are present
-2019-12-19 10:32:33 INFO  CommonSteps:33 - User changes language on Russian
-2019-12-19 10:32:35 INFO  MainPageUISteps:32 - UI elements are present
-2019-12-19 10:32:35 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 10:34:15 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 10:34:17 INFO  WebDriverManager:1105 - Reading https://api.github.com/repos/mozilla/geckodriver/releases to seek geckodriver
-2019-12-19 10:34:19 INFO  WebDriverManager:949 - Latest version of geckodriver is 0.26.0
-2019-12-19 10:34:19 INFO  Downloader:167 - Using binary driver previously downloaded
-2019-12-19 10:34:19 INFO  WebDriverManager:1078 - Exporting webdriver.gecko.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\geckodriver\win64\0.26.0\geckodriver.exe
-2019-12-19 10:34:35 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 10:34:35 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 11:07:42 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 11:07:44 INFO  WebDriverManager:1042 - Reading https://selenium-release.storage.googleapis.com/ to seek IEDriverServer
-2019-12-19 11:07:46 INFO  WebDriverManager:949 - Latest version of IEDriverServer is 3.150
-2019-12-19 11:07:46 INFO  Downloader:167 - Using binary driver previously downloaded
-2019-12-19 11:07:46 INFO  WebDriverManager:1078 - Exporting webdriver.ie.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\IEDriverServer\x64\3.150\IEDriverServer.exe
-2019-12-19 11:09:03 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 11:09:04 INFO  WebDriverManager:1042 - Reading https://selenium-release.storage.googleapis.com/ to seek IEDriverServer
-2019-12-19 11:09:06 INFO  WebDriverManager:949 - Latest version of IEDriverServer is 3.150
-2019-12-19 11:09:06 INFO  Downloader:167 - Using binary driver previously downloaded
-2019-12-19 11:09:06 INFO  WebDriverManager:1078 - Exporting webdriver.ie.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\IEDriverServer\x64\3.150\IEDriverServer.exe
-2019-12-19 12:04:55 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:04:57 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:04:57 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:05:38 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:06:08 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:06:11 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:06:12 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:06:12 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:06:12 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:06:16 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:06:16 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:06:16 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:06:16 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:12:10 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:12:11 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:12:11 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:12:43 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:12:58 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:12:59 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Asus
-2019-12-19 12:13:01 INFO  FilteringSteps:30 - Displayed only Asus smartphones
-2019-12-19 12:13:01 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:19:03 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:19:05 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:19:05 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:19:52 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:20:11 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:20:13 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:21:12 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:21:13 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:21:14 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:21:41 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:22:08 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:22:09 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Asus
-2019-12-19 12:22:11 INFO  FilteringSteps:30 - Displayed only Asus smartphones
-2019-12-19 12:22:11 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:40:35 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:40:36 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:40:36 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:41:01 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:41:15 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:41:17 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:41:18 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:41:18 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:41:18 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:41:39 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:41:52 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:41:52 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:41:53 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:41:53 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:41:53 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:42:18 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:42:32 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:42:33 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
-2019-12-19 12:42:34 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
-2019-12-19 12:42:34 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
-2019-12-19 12:42:34 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
-2019-12-19 12:42:59 INFO  CommonSteps:27 - User is on homepage
-2019-12-19 12:43:12 INFO  CommonSteps:21 - Smartphones is selected
-2019-12-19 12:43:14 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
+2019-12-20 10:36:20 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2019-12-20 10:36:22 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 10:36:23 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 10:36:41 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 10:36:51 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 10:36:56 INFO  ProductListPageSteps:22 - Samsung Galaxy S10+ G975 Product page is opened
+2019-12-20 10:37:06 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 10:37:14 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 10:37:19 INFO  ProductListPageSteps:22 - Samsung Galaxy Fold F900 Product page is opened
+2019-12-20 10:37:28 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 10:37:33 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
+2019-12-20 10:37:33 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2019-12-20 10:37:33 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 10:37:33 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 10:37:54 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 10:37:57 INFO  MainPageUISteps:23 - UI elements are present
+2019-12-20 10:38:13 INFO  CommonSteps:35 - User changed language on Russian
+2019-12-20 10:38:16 INFO  MainPageUISteps:32 - UI elements are present
+2019-12-20 10:38:16 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
+2019-12-20 10:38:17 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2019-12-20 10:38:17 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 10:38:17 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 10:38:35 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 10:38:44 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 10:38:46 INFO  PaginationContentSteps:20 - selecting value in dropdown: 16 produse pe pagină
+2019-12-20 10:38:47 INFO  PaginationContentSteps:29 - Items checked. Actual result: 16 Expected: 
+2019-12-20 10:38:47 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
+2019-12-20 10:38:48 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2019-12-20 10:38:48 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 10:38:48 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 10:39:07 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 10:39:17 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 10:39:18 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Asus
+2019-12-20 10:39:21 INFO  FilteringSteps:32 - Displayed only Asus smartphones
+2019-12-20 10:39:21 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
+2019-12-20 10:39:22 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2019-12-20 10:39:22 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 10:39:22 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 10:39:38 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 10:39:47 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 10:39:48 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Xiaomi
+2019-12-20 10:39:54 INFO  ProductListPageSteps:22 - Xiaomi Redmi Note 7 Product page is opened
+2019-12-20 10:39:56 INFO  ReviewSteps:19 - Write review button is clicked
+2019-12-20 10:39:56 INFO  ReviewSteps:26 - 'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \[Send\] button are displayed
+2019-12-20 10:40:03 INFO  ReviewSteps:32 - Data is introduced, send review buton is clicked
+2019-12-20 10:40:04 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
+2019-12-20 10:44:30 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2019-12-20 10:44:31 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 10:44:31 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 10:44:53 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 10:45:07 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 10:45:16 INFO  ProductListPageSteps:22 - Samsung Galaxy Note 10 N970 Product page is opened
+2019-12-20 10:45:27 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 10:45:36 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 10:45:42 INFO  ProductListPageSteps:22 - Xiaomi Redmi Note 7 Product page is opened
+2019-12-20 10:45:51 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 10:45:56 INFO  log:67 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2019-12-20 10:45:56 INFO  log:67 - List of comparing is displayed
+2019-12-20 10:45:56 INFO  BeforeAfterSteps:40 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:00:26 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:00:27 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:00:27 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:00:51 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:01:02 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:01:45 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:01:46 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:01:46 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:01:46 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:01:58 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:02:02 INFO  MainPageUISteps:23 - UI elements are present
+2019-12-20 11:02:14 INFO  CommonSteps:35 - User changed language on Russian
+2019-12-20 11:02:17 INFO  MainPageUISteps:32 - UI elements are present
+2019-12-20 11:02:17 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:02:18 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:02:18 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:02:18 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:02:48 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:03:03 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:03:04 INFO  PaginationContentSteps:20 - selecting value in dropdown: 16 produse pe pagină
+2019-12-20 11:03:06 INFO  PaginationContentSteps:29 - Items checked. Actual result: 16 Expected: 
+2019-12-20 11:03:06 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:03:06 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:03:07 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:03:07 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:03:29 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:03:41 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:03:42 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Asus
+2019-12-20 11:03:45 INFO  FilteringSteps:32 - Displayed only Asus smartphones
+2019-12-20 11:03:45 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:03:46 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:03:46 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:03:46 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:04:06 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:04:19 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:04:20 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Xiaomi
+2019-12-20 11:04:27 INFO  ProductListPageSteps:22 - Xiaomi Mi A2 Lite Product page is opened
+2019-12-20 11:04:29 INFO  ReviewSteps:19 - Write review button is clicked
+2019-12-20 11:04:30 INFO  ReviewSteps:26 - 'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \[Send\] button are displayed
+2019-12-20 11:04:36 INFO  ReviewSteps:32 - Data is introduced, send review buton is clicked
+2019-12-20 11:04:37 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:09:00 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:09:02 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:09:02 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:09:35 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:09:56 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:10:06 INFO  ProductListPageSteps:22 - Samsung Galaxy A70 A705 Product page is opened
+2019-12-20 11:10:16 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 11:10:23 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:10:28 INFO  ProductListPageSteps:22 - Samsung Galaxy Fold F900 Product page is opened
+2019-12-20 11:10:36 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 11:10:46 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:10:47 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:10:47 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:10:47 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:11:05 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:11:08 INFO  MainPageUISteps:23 - UI elements are present
+2019-12-20 11:11:17 INFO  CommonSteps:35 - User changed language on Russian
+2019-12-20 11:11:21 INFO  MainPageUISteps:32 - UI elements are present
+2019-12-20 11:11:21 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:11:22 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:11:22 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:11:22 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:11:41 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:12:00 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:12:01 INFO  PaginationContentSteps:20 - selecting value in dropdown: 16 produse pe pagină
+2019-12-20 11:12:03 INFO  PaginationContentSteps:29 - Items checked. Actual result: 16 Expected: 
+2019-12-20 11:12:03 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:12:04 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:12:04 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:12:04 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:12:19 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:12:35 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:12:36 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Asus
+2019-12-20 11:12:38 INFO  FilteringSteps:32 - Displayed only Asus smartphones
+2019-12-20 11:12:38 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:12:39 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:12:39 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:12:39 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:13:05 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:13:21 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:13:22 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Xiaomi
+2019-12-20 11:13:29 INFO  ProductListPageSteps:22 - Xiaomi Mi A2 Lite Product page is opened
+2019-12-20 11:13:32 INFO  ReviewSteps:19 - Write review button is clicked
+2019-12-20 11:13:33 INFO  ReviewSteps:26 - 'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \[Send\] button are displayed
+2019-12-20 11:13:39 INFO  ReviewSteps:32 - Data is introduced, send review buton is clicked
+2019-12-20 11:13:41 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:32:31 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:32:32 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:32:33 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:33:05 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:33:23 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:33:29 INFO  ProductListPageSteps:22 - Xiaomi Redmi Note 7 Product page is opened
+2019-12-20 11:33:33 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 11:33:42 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:33:53 INFO  ProductListPageSteps:22 - Xiaomi Redmi Note 8 Product page is opened
+2019-12-20 11:34:03 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 11:34:09 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:34:10 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:34:10 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:34:10 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:34:38 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:34:40 INFO  MainPageUISteps:23 - UI elements are present
+2019-12-20 11:35:00 INFO  CommonSteps:35 - User changed language on Russian
+2019-12-20 11:35:03 INFO  MainPageUISteps:32 - UI elements are present
+2019-12-20 11:35:03 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:35:04 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:35:04 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:35:04 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:35:33 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:35:49 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:35:50 INFO  PaginationContentSteps:20 - selecting value in dropdown: 16 produse pe pagină
+2019-12-20 11:35:52 INFO  PaginationContentSteps:29 - Items checked. Actual result: 16 Expected: 
+2019-12-20 11:35:52 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:35:53 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:35:53 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:35:53 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:36:20 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:36:37 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:36:38 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Asus
+2019-12-20 11:36:41 INFO  FilteringSteps:32 - Displayed only Asus smartphones
+2019-12-20 11:36:41 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:36:42 INFO  BeforeAfterSteps:24 - ----------------------TEST STARTED----------------------
+2019-12-20 11:36:42 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:36:42 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:37:03 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:37:23 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:37:25 INFO  BeforeAfterSteps:48 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:40:33 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
+2019-12-20 11:40:35 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:40:35 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:40:45 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:40:56 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:41:02 INFO  ProductListPageSteps:22 - Samsung Galaxy Note 10 N970 Product page is opened
+2019-12-20 11:41:12 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 11:41:19 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:41:23 INFO  ProductListPageSteps:22 - Xiaomi Redmi Note 7 Product page is opened
+2019-12-20 11:41:32 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-20 11:41:38 INFO  log:67 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2019-12-20 11:41:38 INFO  log:67 - List of comparing is displayed
+2019-12-20 11:41:38 INFO  BeforeAfterSteps:44 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:41:39 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
+2019-12-20 11:41:39 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:41:39 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:41:50 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:41:54 INFO  MainPageUISteps:23 - UI elements are present
+2019-12-20 11:41:59 INFO  CommonSteps:35 - User changed language on Russian
+2019-12-20 11:42:03 INFO  MainPageUISteps:32 - UI elements are present
+2019-12-20 11:42:03 INFO  BeforeAfterSteps:44 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:42:03 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
+2019-12-20 11:42:04 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:42:04 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:42:14 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:42:24 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:42:24 INFO  PaginationContentSteps:20 - selecting value in dropdown: 16 produse pe pagină
+2019-12-20 11:42:26 INFO  PaginationContentSteps:29 - Items checked. Actual result: 16 Expected: 
+2019-12-20 11:42:26 INFO  BeforeAfterSteps:44 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:42:27 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
+2019-12-20 11:42:27 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:42:27 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:42:36 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:42:46 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:42:47 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Asus
+2019-12-20 11:42:49 INFO  FilteringSteps:32 - Displayed only Asus smartphones
+2019-12-20 11:42:49 INFO  BeforeAfterSteps:44 - ----------------------TEST FINISHED----------------------
+2019-12-20 11:42:50 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
+2019-12-20 11:42:50 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-20 11:42:50 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-20 11:43:00 INFO  CommonSteps:29 - User is on homepage
+2019-12-20 11:43:10 INFO  CommonSteps:22 - Smartphones is selected
+2019-12-20 11:43:11 INFO  FilteringSteps:23 - Filter smartphones by manufacturer Xiaomi
+2019-12-20 11:43:18 INFO  ProductListPageSteps:22 - Xiaomi Mi A2 Lite Product page is opened
+2019-12-20 11:43:19 INFO  ReviewSteps:19 - Write review button is clicked
+2019-12-20 11:43:20 INFO  ReviewSteps:26 - 'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \[Send\] button are displayed
+2019-12-20 11:43:26 INFO  ReviewSteps:32 - Data is introduced, send review buton is clicked
+2019-12-20 11:43:28 INFO  BeforeAfterSteps:44 - ----------------------TEST FINISHED----------------------

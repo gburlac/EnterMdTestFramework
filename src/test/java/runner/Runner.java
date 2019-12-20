@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue={"steps"},
 //        name = "Navigate on EnterPages",
 //        tags = {"@GeoUiTest"},
-        tags = {"@GeoMakeOrders"},
+        tags = {"@Vatamanenco"},
 //         tags = {"@GeoMakeOrders,@GeoUiTest"},
         plugin = { "pretty" },
         monochrome = true

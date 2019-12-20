@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import util.Driver;
 import pages.*;
 import pages.Page;
+import util.TakeScreens;
 import util.Waiter;
 
 public class CommonSteps {
@@ -19,6 +20,7 @@ public class CommonSteps {
         mainPage.selectSmartphonesCategory();
         Waiter.waitByXPath("//span[contains(@class,'support-trigger-round-icon support-icon-comments-o')]");
         log.info("Smartphones is selected");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Smartphones category is selected");
     }
 
     @Given("^User is on homepage$")
@@ -27,10 +29,11 @@ public class CommonSteps {
         log.info("User is on homepage");
     }
 
-    @When("^User changes language$")
+    @When("^User changes language of interface$")
     public void userChangesLanguage() {
         mainPage.langChangerClick();
-        log.info("User changes language on Russian");
+        log.info("User changed language on Russian");
     }
+
 
 }
