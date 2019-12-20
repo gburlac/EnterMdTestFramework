@@ -12,12 +12,12 @@ Feature: Login via facebook profile with valid credentials
     When user tries to log in with invalid <email> and <password>
     Then <warning_message> appears and user is login fails
     Examples:
-      | email      | password | warning_message |
-      |            |          | PASSWORD_ERROR  |
-      | @testemail |          | EMAIL_ERROR     |
-      |            | password | EMAIL_ERROR     |
-      | testemail@ | x        | EMAIL_ERROR     |
-      | test.com   | тестпасс | EMAIL_ERROR     |
+      | email          | password | warning_message          |
+      |                |          | PASSWORD_ERROR           |
+      | @testemail     |          | EMAIL_ERROR              |
+      |                | password | EMAIL_ERROR              |
+      | testemail@     | x        | EMAIL_ERROR              |
+      | test.com       | тестпасс | EMAIL_ERROR              |
 
   Scenario: as logged user add product to the cart and validate it
     Given user is logged in via Facebook as FACEBOOK_USER
@@ -25,7 +25,7 @@ Feature: Login via facebook profile with valid credentials
     And user goes to cart
     Then product is added to cart
 
-  @RunVCrisac
+
   Scenario: as logged user edit user details
     Given user logs in as REGISTERED_USER
     When user goes to user account details
@@ -47,7 +47,7 @@ Feature: Login via facebook profile with valid credentials
     When user click on logout option
     Then user is logged out and main page is displayed
     When user logs in with new password as REGISTERED_USER
-
+  @RunVCrisac
   Scenario: As logged user add several products in the cart, remove one, check if removed
     Given user logs in as REGISTERED_USER
     When user select Transport category and add productId 4 product to cart
