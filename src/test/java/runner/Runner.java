@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
         tags = {"@GBurlacAll"},
 //        tags = {"@GBurlacUiTest"},
 //        tags = {"@GBurlacMakeOrders"},
+//                tags = {"@Run"},
 //        tags = {"@RunVCrisac"},
         plugin = {"pretty"},
         monochrome = true

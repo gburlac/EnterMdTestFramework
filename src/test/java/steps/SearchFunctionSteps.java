@@ -36,7 +36,7 @@ public class SearchFunctionSteps {
 
     @Then("^verify credit page is displayed$")
     public void verifyCreditPageIsDisplayed() throws InterruptedException {
-        Waiter.waitByXPath("//div[@class='tab-credit-submit']//input[2]");
+//        Waiter.waitByXPath("//div[@class='tab-credit-submit']//input[2]");
         Waiter.waitbyClassName("tab-credit-submit");
         mainPage.assertcheckCreditPage();
         log.info("Verify credit page is displayed");

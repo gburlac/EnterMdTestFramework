@@ -82,7 +82,8 @@ public class MainPage extends Page {
     private WebElement buttonCheckProductInWischlistIphone;
     @FindBy(xpath = " //a[@class='uk-margin-small-top uk-button uk-button-default uk-border-pill ty-tk-product-button']")
     private WebElement buttonBuyInCredit;
-    @FindBy(xpath = "//div[@class='tab-credit-submit']//input[2]")
+    //div[@class='tab-credit-submit']//input[2]
+    @FindBy(xpath = "//div[@class='tab-credit-submit']")
     private WebElement checkCreditPage;
     @FindBy(id = "megamenubutton")
     WebElement allCategories;
