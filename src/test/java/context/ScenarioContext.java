@@ -13,7 +13,7 @@ public class ScenarioContext {
         scenarioContext.put(key.toString(), value);
     }
 
-    public static Object getContex(Context key) {
+    public static Object getContext(Context key) {
         return scenarioContext.get(key.toString());
     }
 

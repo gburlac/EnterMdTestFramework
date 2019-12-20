@@ -120,9 +120,6 @@ public class MainPage extends Page {
     private WebElement langChangerRU;
     @FindBy(xpath = "//div[@id='languages_638']//div//a[@href='https://enter.online/']")
     private WebElement langChangerRO;
-    Actions actions = new Actions(Driver.getDriver());
-    //method
-    public void assertcheckCreditPage()  {
     @FindBy(xpath = "//*[@id=\"languages_638\"]/div[1]/a")
     private WebElement langChanger;
 
@@ -240,10 +237,8 @@ public class MainPage extends Page {
 
     public void selectSmartphonesCategory() {
         allCategories.click();
-        allCategories.click();
-        allCategories.click();
         telefoaneCategoriesList.click();
-        telefoaneCategoriesList.click();
+        smartphonesCategory.click();
     }
 
     public void asserttElectrocasniceButton() {
@@ -266,10 +261,6 @@ public class MainPage extends Page {
 
     public void assertSfaturiUtileButton() {
         Assert.assertTrue(sfaturiUtileButton.isDisplayed());
-    }
-
-    public void langChangerClick() {
-        langChanger.click();
     }
 
     public void openAllTVCategories() {
@@ -375,12 +366,6 @@ public class MainPage extends Page {
             Assert.assertTrue(notificationAlertError.isDisplayed());
             log.info(">> ENTERED INVALID CREDENTIALS! <<<");
         }
-    }
-
-    public void selectSmartphonesCategory() {
-        allCategoriesDropdown.click();
-        allCategoriesDropdownTelephonesCategory.click();
-        allCategoriesDropdownTelephonesCategorySmartphones.click();
     }
 
     public void assertMainPageUIElements() {

@@ -18,14 +18,12 @@ public class Page {
     LoginPopupVKontakte loginPopupVKontakte;
     LoginPopupOdnoklassniki loginPopupOdnoklassniki;
     ProductPage productPage;
-    Smartphones smartphones;
     ToateCategoriilePage toateCategoriilePage;
     ElectrocasnicePage electrocasnicePage;
     ProductListPage productListPage;
     CastiPage castiPage;
     CommonSteps commonSteps;
     ScenarioContext scenarioContext;
-    ProductListPage productListPage;
     ComparingPage comparingPage;
 
     public MainPage getMainPage() {
@@ -66,10 +64,6 @@ public class Page {
 
     public ProductPage getProductPage() {
         return (productPage == null) ? productPage = new ProductPage() : productPage;
-    }
-
-    public Smartphones getSmartphones() {
-        return (smartphones == null) ? smartphones = new Smartphones() : smartphones;
     }
 
     public ToateCategoriilePage getToateCategoriilePage() {
