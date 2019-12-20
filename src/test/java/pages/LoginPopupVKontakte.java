@@ -7,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import util.Driver;
 import util.TakeScreens;
 
-import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
-
 public class LoginPopupVKontakte extends Page {
 
     Logger log = Logger.getLogger(LoginPopupVKontakte.class);
@@ -35,7 +33,7 @@ public class LoginPopupVKontakte extends Page {
     public void inputEmail(String email) throws Exception {
         showAssertsVKLoginPopup();
         TakeScreens.takeScreenshot(Driver.getDriver(), "login_popup_window_VK");
-        if (emaiField.isDisplayed()){
+        if (emaiField.isDisplayed()) {
             emaiField.click();
             emaiField.clear();
             emaiField.sendKeys(email);
@@ -45,7 +43,7 @@ public class LoginPopupVKontakte extends Page {
     }
 
     public void inputPassword(String password) throws Exception {
-        if (passwordField.isDisplayed()){
+        if (passwordField.isDisplayed()) {
             passwordField.click();
             passwordField.clear();
             passwordField.sendKeys(password);
@@ -56,18 +54,12 @@ public class LoginPopupVKontakte extends Page {
     }
 
     public void login() throws Exception {
-        if (loginButton.isDisplayed()){
+        if (loginButton.isDisplayed()) {
             loginButton.click();
         } else {
             throw new Exception(">>>>> Cannot find LOGIN button! <<<<<");
         }
     }
-
-
-
-
-
-
 
 
 }

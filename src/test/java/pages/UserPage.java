@@ -1,10 +1,17 @@
 package pages;
 
 import cucumber.api.DataTable;
+import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import util.DrawBorder;
+import util.Driver;
+import util.Waiter;
 
 public class UserPage extends Page {
+
+    Logger log = Logger.getLogger(UserPage.class);
 
     @FindBy(xpath = "//input[@id='elm_6']")
     public WebElement prenumeField;
@@ -18,11 +25,12 @@ public class UserPage extends Page {
     public WebElement phoneField;
     @FindBy(xpath = "//input[@id='elm_23']")
     public WebElement cityField;
-//    @FindBy(xpath = "//body/div/div/div/div/div/div/div/div/div/div/form/div[2]/button[1]")
-    @FindBy(xpath = "//button[contains(@type, 'submit')]")
-    public WebElement saveButton;
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
+    WebElement saveButton;
+    @FindBy(xpath = "//div[@class='cm-notification-container notification-container']")
+    WebElement notificationContainer;
 
-//    public void setPrenumeField() {
+    //    public void setPrenumeField() {
 //    }
 //
 //    public void setNumeField() {
@@ -39,10 +47,28 @@ public class UserPage extends Page {
 //
 //    public void setCityField() {
 //    }
-//
-//    public void setSaveButton() {
-//    }
 
+    public void assertProfileUpdated() throws Exception {
+        try {
+            Assert.assertTrue(notificationContainer.isDisplayed());
+            log.info("User details updated successfully!");
+        } catch (Exception e){
+            throw new Exception("An error occur while updating user details!");
+        }
+    }
 
+    public void waitNotifications(){
+        Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
+//        Waiter.waitByXpathUntilDissapear("//div[@class='cm-notification-container notification-container']");
+    }
 
+    DrawBorder dB = new DrawBorder();
+    public void saveChanges() throws Exception {
+        try {
+            saveButton.isEnabled();
+            saveButton.click();
+        } catch (Exception e) {
+            throw new Exception("Cannot click SAVE button.");
+        }
+    }
 }

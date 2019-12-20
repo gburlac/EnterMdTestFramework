@@ -22,8 +22,6 @@ public class MainPage extends Page {
     LoginPopupOdnoklassniki loginPopupOdnoklassniki = page.getLoginPopupOdnoklassniki();
     DrawBorder dB;
 
-    //find elements
-
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
     private WebElement electroCasniceCategory;
     @FindBy(xpath = "//*[@id=\"categories\"]/div[3]/div/div[2]/div/div/div/h1")

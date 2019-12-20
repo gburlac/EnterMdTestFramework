@@ -8,9 +8,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/featureFiles",
         glue={"steps"},
-//        tags = {"@GBurlacUiTest"},
-        tags = {"@GBurlacMakeOrders"},
+        tags = {"@GBurlacUiTest"},
+//        tags = {"@GBurlacMakeOrders"},
 //        tags = {"@RunVCrisac"},
+//        tags = {"@VAtamanenco"},
+
         plugin = { "pretty" },
         monochrome = true
                 )
