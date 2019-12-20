@@ -30,6 +30,8 @@ public class ModifyUserDetailsFunctionality {
         userPage.passwordField.clear();
         userPage.passwordField.sendKeys(dataList.get("Parola"));
         ScenarioContext.setContext(Context.CHANGED_PASSWORD, dataList.get("Parola"));
+        System.out.println("getted password: " + dataList.get("Parola"));
+        System.out.println("setted password: " + ScenarioContext.getContex(Context.CHANGED_PASSWORD));
         userPage.confirmPasswordField.clear();
         userPage.confirmPasswordField.sendKeys((dataList.get("Confirma_parola")));
         userPage.phoneField.clear();
