@@ -1,7 +1,8 @@
 package enums;
 
-public enum Users {
 
+
+public enum Users {
     REGISTERED_USER("Stanislav Abramov","abramov.stas@gmail.com", "123NRTM456"),
     FACEBOOK_USER("Владимир Крысак", "krysak.vladimir@gmail.com","endVilrkrew@1fb"),
     VKONTAKTE_USER("", "",""),
@@ -25,7 +26,6 @@ public enum Users {
     public String getEmail() {
         return email;
     }
-
     public String getPassword() {
         return password;
     }

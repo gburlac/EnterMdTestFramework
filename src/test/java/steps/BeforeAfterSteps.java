@@ -7,13 +7,17 @@ import org.apache.log4j.Logger;
 
 import util.*;
 
+import java.io.File;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 public class BeforeAfterSteps <log>{
     static PropertiesReader properties = PropertiesReader.getInstatnce();
     static Logger log = Logger.getLogger(BeforeAfterSteps.class);
     @Before
     public void before() {
-
+        log.info("----------------------TEST STARTED----------------------");
         switch (properties.getBrowser()) {
             case "chrome": {
                 WebDriverManager.chromedriver().setup();
@@ -33,10 +37,10 @@ public class BeforeAfterSteps <log>{
         }
         Driver.createDriver();
     }
-
-
-//    @After
+@After
     public void after() {
+        log.info("----------------------TEST FINISHED----------------------");
         Driver.closeDriver();
+        log.info("----------------------TEST FINISHED----------------------");
     }
 }
