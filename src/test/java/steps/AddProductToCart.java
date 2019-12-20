@@ -48,7 +48,7 @@ public class AddProductToCart {
 
     @Then("^product is added to cart$")
     public void assertProductIsAddedToCart() throws Exception {
-        String prodName = (String) scenarioContext.getContex(Context.PRODUCT_NAME);
+        String prodName = (String) scenarioContext.getContext(Context.PRODUCT_NAME);
         cartPage.assertProductAddedToCart(prodName);
     }
 }

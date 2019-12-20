@@ -34,7 +34,7 @@ public class DeleteProductFromCart {
 
     @Then("^product is deleted$")
     public void assertProductDeleted() throws Exception {
-        String prodName = (String) scenarioContext.getContex(Context.PRODUCT_NAME);
+        String prodName = (String) scenarioContext.getContext(Context.PRODUCT_NAME);
         cartPage.assertProductDeletedFromCart(prodName);
 //        cartPage.assertProductName();
     }

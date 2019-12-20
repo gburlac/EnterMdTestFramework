@@ -5,6 +5,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
 import pages.*;
+import util.Driver;
+import util.TakeScreens;
 import util.Waiter;
 
 public class ReviewSteps {
@@ -15,6 +17,7 @@ public class ReviewSteps {
     public void clicksOnWriteReviewButton() {
         productPage.writeReviewButtonClick();
         log.info("Write review button is clicked");
+        TakeScreens.takeScreenshot(Driver.getDriver(),  "Write review button is clicked");
     }
 
     @Then("^Appears form with 'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \\[Send\\] button$")
@@ -23,11 +26,12 @@ public class ReviewSteps {
         log.info("'Name', 'Email' and 'Message' fields, 'stars'-bar for selecting quality, and \\[Send\\] button are displayed");
     }
 
-    @When("^User fill in all fields valid data and click \\[Send\\] button$")
-    public void userFillInAllFieldsValidDataAndClickSendButton() {
-            productPage.reviewFormComplete();
-            log.info("Write review button is clicked");
-        }
+    @When("^User fills in the (.*?) (.*?) (.*?) fields and submit$")
+    public void userFillInAllFieldsValidDataAndClickSendButton(String name, String email, String message) {
+            productPage.reviewFormComplete(name, email, message);
+            log.info("Data is introduced, send review buton is clicked");
+            TakeScreens.takeScreenshot(Driver.getDriver(),  "Write review button is clicked");
+    }
 
     @Then("^Success message appears$")
     public void successMessageAppears() {
