@@ -21,17 +21,7 @@ public class ModifyUserDetailsFunctionality {
     }
 
     @When("^edit user details$")
-//    public void editUserdetails(HashMap<String, String> userData) throws Exception {
-//        userPage.prenumeField.sendKeys(userData.get("Prenume"));
-//        userPage.numeField.sendKeys(userData.get("Nume"));
-//        userPage.passwordField.sendKeys(userData.get("Parola"));
-//        scenarioContext.setContext(Context.CHANGED_PASSWORD, userData.get("Parola"));
-//        userPage.confirmPasswordField.sendKeys((userData.get("Confirma_parola")));
-//        userPage.phoneField.sendKeys(userData.get("Phone"));
-//        userPage.cityField.sendKeys(userData.get("City"));
-//        userPage.saveButton.click();
-//    }
-    public void editUserDetails(DataTable dataTable){
+    public void editUserDetails(DataTable dataTable) throws Exception {
         Map<String, String> dataList = dataTable.asMap(String.class, String.class);
         userPage.prenumeField.clear();
         userPage.prenumeField.sendKeys(dataList.get("Prenume"));
@@ -40,12 +30,16 @@ public class ModifyUserDetailsFunctionality {
         userPage.passwordField.clear();
         userPage.passwordField.sendKeys(dataList.get("Parola"));
         ScenarioContext.setContext(Context.CHANGED_PASSWORD, dataList.get("Parola"));
+        System.out.println("getted password: " + dataList.get("Parola"));
+        System.out.println("setted password: " + ScenarioContext.getContex(Context.CHANGED_PASSWORD));
         userPage.confirmPasswordField.clear();
         userPage.confirmPasswordField.sendKeys((dataList.get("Confirma_parola")));
         userPage.phoneField.clear();
         userPage.phoneField.sendKeys(dataList.get("Phone"));
         userPage.cityField.clear();
         userPage.cityField.sendKeys(dataList.get("City"));
-        userPage.saveButton.click();
+        userPage.saveChanges();
+        Thread.sleep(10000);
+//        userPage.waitNotifications();
     }
 }

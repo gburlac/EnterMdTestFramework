@@ -35,7 +35,7 @@ public class BeforeAfterSteps <log>{
     }
 
 
-    @After
+//    @After
     public void after() {
         Driver.closeDriver();
     }
