@@ -195,3 +195,21 @@
 2019-12-19 18:35:34 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
 2019-12-19 18:35:34 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
 2019-12-19 18:35:43 INFO  CommonSteps:21 - User is on homepage
+2019-12-20 11:13:17 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-20 11:13:17 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-20 11:13:23 INFO  CommonSteps:21 - User is on homepage
+2019-12-20 11:13:24 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-20 11:13:24 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-20 11:13:29 INFO  CommonSteps:21 - User is on homepage
+2019-12-20 11:13:31 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-20 11:13:31 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-20 11:13:35 INFO  CommonSteps:21 - User is on homepage
+2019-12-20 11:13:54 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-20 11:13:55 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-20 11:14:00 INFO  CommonSteps:21 - User is on homepage
+2019-12-20 11:14:01 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-20 11:14:01 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-20 11:14:06 INFO  CommonSteps:21 - User is on homepage
+2019-12-20 11:14:07 INFO  WebDriverManager:600 - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-20 11:14:07 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\gburlac\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-20 11:14:12 INFO  CommonSteps:21 - User is on homepage
