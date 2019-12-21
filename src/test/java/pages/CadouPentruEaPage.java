@@ -10,8 +10,6 @@ import util.Driver;
 
 import java.util.List;
 
-import static junit.framework.Assert.assertTrue;
-
 
 public class CadouPentruEaPage extends Page {
     Page page = new Page();
@@ -45,7 +43,6 @@ public class CadouPentruEaPage extends Page {
     public void assertInCartItem() {
         String productName = (String) ScenarioContext.getContext(Context.PRODUCT_NAME);
         Assert.assertEquals(productName, productNameInCart.getText());
-//        assertTrue(inCartItem.isDisplayed());
     }
 
 
@@ -54,7 +51,6 @@ public class CadouPentruEaPage extends Page {
     }
 
     public void clickButtonAddToCartFromProd() {
-        buttonAddToCartFromProd.click();
         buttonAddToCartFromProd.click();
     }
 

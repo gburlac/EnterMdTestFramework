@@ -24,7 +24,6 @@ public class Page {
     CastiPage castiPage;
     CommonSteps commonSteps;
     ScenarioContext scenarioContext;
-    ProductListPage productListPage;
     UserPage userPage;
     ComparingPage comparingPage;
 
