@@ -107,8 +107,6 @@ public class CastiPage extends Page {
     }
 
     public void clickButonAddtocartProduct() {
-//        actions.moveToElement(butonAddtocartProduct).build().perform();
-//        butonAddtocartProduct.click();
         butonAddtocartProduct.click();
     }
 

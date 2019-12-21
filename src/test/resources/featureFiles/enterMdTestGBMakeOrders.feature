@@ -4,14 +4,14 @@ Feature: Make orders on enter.online
 
   Background:
     Given User is on homepage
-
+  @Run
   Scenario: Add to cart from category cadou pentru ea
     When go to cadou pentru ea category
     And select product from the page
     And go to cart
     Then verify is in cart
 
-  @Run
+
   Scenario: Add to cart from toate categoriile
     When go to periferice
     And select PC si periferice
