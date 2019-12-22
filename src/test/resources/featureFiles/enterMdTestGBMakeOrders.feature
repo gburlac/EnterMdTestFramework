@@ -17,8 +17,7 @@ Feature: Make orders on enter.online
     And select PC si periferice
     And select tastaturi
     And select option from filter
-    And select and add to cart
-    And go to see the cart
+    And select a product and add to cart
     Then verify selected product is in cart
 
   Scenario:Order product and checkout
@@ -26,5 +25,5 @@ Feature: Make orders on enter.online
     And select a product
     And place a order
     And fill out the delivery info
-      | Bond | James | bond007@mi5.uk | 070000997 | Chisinau | Dacia 8 |
+      | Bondari | James | bond007@mi5.uk | 070000997 | Chisinau | Dacia 8 |
     Then verify the success message

@@ -69,20 +69,14 @@ public class AddingToCartFunctionSteps {
         log.info("Select option from filter");
     }
 
-    @When("^select and add to cart$")
+    @When("^select a product and add to cart$")
     public void selectAndAddToCart() {
         Waiter.waitById("button_cart_98934");
         toateCategoriilePage.clickAddToCart();
-        log.info("Select and add to cart");
-    }
-
-    @When("^go to see the cart$")
-    public void goToSeeTheCart() {
         Waiter.waitByXPath("//a[contains(@class, 'ty-btn ty-btn__primary')]");
         toateCategoriilePage.clickbuttonVizualizatiCosul();
-        log.info("Go to see the cart");
+        log.info("Select and add to cart");
     }
-
     @Then("^verify selected product is in cart$")
     public void verifySelectedProductIsInCart() {
         toateCategoriilePage.assertCheckIsInCart();

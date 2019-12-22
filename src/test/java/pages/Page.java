@@ -2,8 +2,8 @@ package pages;
 
 import context.ScenarioContext;
 import org.openqa.selenium.support.PageFactory;
-import util.Driver;
 import steps.CommonSteps;
+import util.Driver;
 
 public class Page {
     public Page() {
@@ -34,6 +34,7 @@ public class Page {
     public CommonSteps getCommonSteps() {
         return (commonSteps == null) ? commonSteps = new CommonSteps() : commonSteps;
     }
+
     public UserPage getUserPage() {
         return (userPage == null) ? userPage = new UserPage() : userPage;
     }
@@ -85,6 +86,7 @@ public class Page {
     public CastiPage getCastiPage() {
         return (castiPage == null) ? castiPage = new CastiPage() : castiPage;
     }
+
     public ComparingPage getComparingPage() {
         return (comparingPage == null) ? comparingPage = new ComparingPage() : comparingPage;
     }
