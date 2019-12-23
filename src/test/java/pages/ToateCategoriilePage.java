@@ -56,7 +56,7 @@ public class ToateCategoriilePage extends Page {
     }
 
     public void selectOptionTastaturi() {
-        actions.moveToElement(selectOptionTastaturi).build().perform();
+//        actions.moveToElement(selectOptionTastaturi).build().perform();
         selectOptionTastaturi.click();
     }
 
