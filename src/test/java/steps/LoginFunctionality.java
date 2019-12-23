@@ -27,6 +27,8 @@ public class LoginFunctionality {
     public void login(String socialNetwork, Users user) throws Exception {
         commonSteps.userIsOnHomepage();
         mainPage.loginViaSocial(socialNetwork, user);
+        log.info("Opening popup for logging in via Social.");
+
     }
 
     @Given("^user logs in as (.*)$")
@@ -65,22 +67,26 @@ public class LoginFunctionality {
         mainPage.inputEmail(email);
         mainPage.inputPassword(password);
         mainPage.clickLoginButton();
+        log.info("User tries to log in with valid email and password.");
     }
 
     @Then("^(.*?) appears and user is login fails$")
     public void assertWarningAllert(LoginErrorMessages errorMessage){
         mainPage.assertAlertNotification(errorMessage.getMessage());
         TakeScreens.takeScreenshot(driver, "login_failed");
+        log.info("Notification alert message!");
     }
 
     @When("^user click on logout option$")
     public void logout() throws Exception {
         mainPage.logout();
+        log.info("User loges out.");
     }
 
     @Then("^user is logged out and main page is displayed$")
     public void assertUserIsLoggedOut() throws Exception {
         mainPage.assertUserIsLoggedOut();
         TakeScreens.takeScreenshot(driver, "logged_out");
+        log.info("User is logged out.");
     }
 }
