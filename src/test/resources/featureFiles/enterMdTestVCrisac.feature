@@ -1,14 +1,14 @@
 @RunVCrisac
 Feature: Login via facebook profile with valid credentials
+  Background:
+  Given Home page is displayed
   Scenario: Login on Enter.Online and logout
-    Given Home page is displayed
     When user is logged in via Facebook as FACEBOOK_USER
     Then home page is displayed and user is logged in as FACEBOOK_USER
     When user click on logout option
     Then user is logged out and main page is displayed
 
   Scenario Outline: Attempt to login on Enter.online with invalid credentials
-    Given User is on homepage
     When user tries to log in with invalid <email> and <password>
     Then <warning_message> appears and user is login fails
     Examples:
