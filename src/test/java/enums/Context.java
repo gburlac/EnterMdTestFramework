@@ -8,4 +8,5 @@ public enum Context {
     SELECTED_PRODUCT,
     LANGUAGE,
     SELECTED_MANUFACTURER_FILTER;
+
 }
