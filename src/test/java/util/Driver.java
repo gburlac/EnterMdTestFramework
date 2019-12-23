@@ -34,19 +34,9 @@ public class Driver {
                     InternetExplorerOptions capabilities = new InternetExplorerOptions();
                     capabilities.disableNativeEvents().setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
                     capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-
-
-
-
-                    InternetExplorerOptions internetExplorerOptions = new InternetExplorerOptions()
-                            .introduceFlakinessByIgnoringSecurityDomains()
-                            .disableNativeEvents()
-                            .enablePersistentHovering()
-                            .setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
-
-
-
-
+                    capabilities.disableNativeEvents();
+                    capabilities.enablePersistentHovering();
+                    capabilities.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
                     driver = new InternetExplorerDriver(capabilities);
                     driver.manage().window().maximize();
                     break;
@@ -54,7 +44,6 @@ public class Driver {
                 case "firefox": {
                     driver = new FirefoxDriver();
                     driver.manage().window().maximize();
-//                    driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
                     break;
                 }
             }

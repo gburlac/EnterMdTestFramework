@@ -7,14 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import util.Waiter;
-
 import java.util.List;
 import java.util.Random;
-
-import static junit.framework.Assert.assertTrue;
-import org.openqa.selenium.support.ui.Select;
-
-import static junit.framework.Assert.assertTrue;
 
 public class ProductListPage extends Page {
     @FindBy(xpath = "//div[@class='ty-compare']")
@@ -80,6 +74,6 @@ public class ProductListPage extends Page {
 
     public void checkCountOfItemsOnPage(int count){
         ScenarioContext.setContext(Context.COUNT_OF_ITEMS_ON_THE_PAGE, productsOnPageList.size());
-        Assert.assertTrue(productsOnPageList.size() == count);
+        Assert.assertEquals(productsOnPageList.size(), count);
     }
 }

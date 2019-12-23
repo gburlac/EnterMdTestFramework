@@ -21,7 +21,6 @@ public class MainPage extends Page {
     LoginPopupFacebook loginPopupFacebook = page.getLoginPopupFacebook();
     LoginPopupVKontakte loginPopupVKontakte = page.getLoginPopupVKontakte();
     LoginPopupOdnoklassniki loginPopupOdnoklassniki = page.getLoginPopupOdnoklassniki();
-    DrawBorder dB;
 
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
     private WebElement electroCasniceCategory;
@@ -40,15 +39,15 @@ public class MainPage extends Page {
     @FindBy(xpath = "//a[3]//img[1]")
     private WebElement facebookIcon;
     @FindBy(xpath = "//a[2]//img[1]")
-    WebElement VKontakteIcon;
+    private WebElement VKontakteIcon;
     @FindBy(xpath = "//div[@id='auth-modal']//a[1]//img[1]")
-    WebElement odnoklassnikiIcon;
+    private WebElement odnoklassnikiIcon;
     @FindBy(className = "//div[contains(@class, 'name')]")
-    WebElement loginMenu;
+    private WebElement loginMenu;
     @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
-    WebElement userMenu;
+    private WebElement userMenu;
     @FindBy(xpath = "//div[contains(@class, 'auth')]//div[contains(@class, 'name')]//span")
-    WebElement userName;
+    private WebElement userName;
     @FindBy(xpath = "//input[@id='login_popup3262']")
     private WebElement emailField;
     @FindBy(xpath = "//input[@id='psw_popup3262']")
@@ -81,31 +80,30 @@ public class MainPage extends Page {
     private WebElement buttonCheckProductInWischlistIphone;
     @FindBy(xpath = " //a[@class='uk-margin-small-top uk-button uk-button-default uk-border-pill ty-tk-product-button']")
     private WebElement buttonBuyInCredit;
-    //div[@class='tab-credit-submit']//input[2]
     @FindBy(xpath = "//div[@class='tab-credit-submit']")
     private WebElement checkCreditPage;
     @FindBy(id = "megamenubutton")
-    WebElement allCategories;
+    private WebElement allCategories;
     @FindBy(xpath = "//li[contains(@class,'first-level blue')]//a[contains(text(),'Telefoane')]")
-    WebElement telefoaneCategoriesList;
+    private WebElement telefoaneCategoriesList;
     @FindBy(xpath = "//a[contains(text(),'Smartphone-uri')]")
-    WebElement smartphonesCategory;
+    private WebElement smartphonesCategory;
     @FindBy(xpath = "//div[contains(@class, 'pm-grid')]//form[contains(@name, 'product_form')]//div[contains(@class, 'ty-grid-list__image')]")
     List<WebElement> productList;
     @FindBy(xpath = "//li[contains(@class, 'first-level')]//a[contains(text(), 'Televizoare')]")
-    WebElement TVCategoriesList;
+    private WebElement TVCategoriesList;
     @FindBy(xpath = "//li[contains(@class, 'second-level')]//a[contains(text(), 'Televizoare')]")
-    WebElement televizoareCategory;
+    private WebElement televizoareCategory;
     @FindBy(xpath = "//li[@class='first-level blue']//a[contains(text(),'Transport')]")
-    WebElement transportCategoriesList;
+    private WebElement transportCategoriesList;
     @FindBy(xpath = "//a[contains(text(),'Transport electric')]")
-    WebElement transportCategory;
+    private WebElement transportCategory;
     @FindBy(xpath = "//img[@id='det_img_98146']")
-    WebElement transportDetails;
+    private WebElement transportDetails;
     @FindBy(xpath = "//div[@class='uk-width-auto@m']//li[6]//a[1]")
-    WebElement logoutOption;
+    private WebElement logoutOption;
     @FindBy(xpath = "//div[contains(@class, 'uk-dropdown')]//li//a[contains(@href, 'detalii-profil')]")
-    WebElement myAccount;
+    private WebElement myAccount;
     @FindBy(xpath = "//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]")
     private WebElement logoEnter;
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
@@ -192,7 +190,6 @@ public class MainPage extends Page {
     }
 
     public void goToLoginViaFacebook() throws Exception {
-//        dB.drawBorder(facebookIcon, driver);
         if (facebookIcon.isDisplayed()) {
             facebookIcon.click();
         } else {
@@ -217,19 +214,16 @@ public class MainPage extends Page {
     }
 
     public void openAllCategories() {
-//        dB.drawBorder(allCategories, driver);
         TakeScreens.takeScreenshot(driver, "go_to_all_categories");
         allCategories.click();
     }
 
     public void openAllTelefoaneCategories() {
-//        dB.drawBorder(telefoaneCategoriesList, driver);
         TakeScreens.takeScreenshot(driver, "telefoane_categories");
         telefoaneCategoriesList.click();
     }
 
     public void goToSmartphones() {
-//        dB.drawBorder(smartphonesCategory, driver);
         TakeScreens.takeScreenshot(driver, "go_to_smartphones");
         actions.moveToElement(smartphonesCategory).build().perform();
         smartphonesCategory.click();
@@ -245,11 +239,9 @@ public class MainPage extends Page {
         Assert.assertTrue(electrocasniceButton.isDisplayed());
     }
 
-
     public void assertLogoEnter() {
         Assert.assertTrue(logoEnter.isDisplayed());
     }
-
 
     public void assertNouatiSiPromotiiButton() {
         Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
@@ -290,9 +282,14 @@ public class MainPage extends Page {
         productList.get(productId).click();
     }
 
-    public void logout() {
-        userMenu.click();
-        logoutOption.click();
+    public void logout() throws Exception {
+        try {
+            userMenu.click();
+            logoutOption.click();
+        } catch (Exception e){
+            throw new Exception("An error occured while logging out from the site.");
+        }
+
     }
 
     public void assertUserIsLoggedOut() throws Exception {
@@ -305,7 +302,6 @@ public class MainPage extends Page {
     }
 
     public void goToUserAccountDetails() {
-//        Waiter.waitbyClassName("ty-banner__image-item");
         userMenu.click();
         myAccount.click();
     }
@@ -331,7 +327,6 @@ public class MainPage extends Page {
     public void accessLoginMenu() {
         loginOption.click();
         Waiter.waitByXPath("//form[contains(@name,'popup3262_form')]");
-//        showAssertsLoginMenu();
         TakeScreens.takeScreenshot(driver, "login_menu");
     }
 

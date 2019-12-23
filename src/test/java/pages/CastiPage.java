@@ -48,7 +48,6 @@ public class CastiPage extends Page {
         assertTrue(confirmationOfPurchase.isDisplayed());
     }
 
-
     public void clickButtonAmplaseazaComanda() {
         actions.moveToElement(buttonAmplaseazaComanda).build().perform();
         buttonAmplaseazaComanda.click();
@@ -103,7 +102,6 @@ public class CastiPage extends Page {
 
     public void clickButonCartStatus() {
         butonCartStatus.click();
-
     }
 
     public void clickButonAddtocartProduct() {

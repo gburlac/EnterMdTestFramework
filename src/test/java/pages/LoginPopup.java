@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import util.DrawBorder;
 import util.Driver;
 import util.TakeScreens;
 
@@ -14,11 +13,11 @@ public class LoginPopup extends Page {
     Logger log = Logger.getLogger(LoginPopup.class);
 
     @FindBy (xpath = "//input[@id='email']")
-    WebElement emailField;
+    private WebElement emailField;
     @FindBy (xpath = "//input[@id='pass']")
-    WebElement passwordField;
+    private WebElement passwordField;
     @FindBy (xpath = "//button[@id='loginbutton']")
-    WebElement loginButton;
+    private WebElement loginButton;
 
     public void inputEmail(String email) throws Exception {
         assertLoginWindowPopup();
@@ -34,9 +33,14 @@ public class LoginPopup extends Page {
         passwordField.sendKeys(password);
     }
 
-    public void login(){
+    public void login() throws Exception {
         TakeScreens.takeScreenshot(driver, "login_and_password_filled");
-        loginButton.click();
+        try {
+            loginButton.isDisplayed();
+            loginButton.click();
+        } catch (Exception e){
+            throw new Exception("An error occured while clicking Login button.");
+        }
     }
 
     public void assertLoginWindowPopup() throws Exception {

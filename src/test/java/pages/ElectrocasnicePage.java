@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import util.Driver;
-
 import static junit.framework.Assert.assertTrue;
 
 public class ElectrocasnicePage extends Page {
@@ -26,25 +25,21 @@ public class ElectrocasnicePage extends Page {
     }
 
     public void ingrijirePersonala() {
-
         actions.moveToElement(ingrijirePersonala).build().perform();
         assertTrue(ingrijirePersonala.isDisplayed());
     }
 
     public void aparateDeUzCasnicePart() {
-
         actions.moveToElement(aparateDeUzCasnicePart).build().perform();
         assertTrue(aparateDeUzCasnicePart.isDisplayed());
     }
 
     public void tehnicaDeBucatarieLabel() {
-
         actions.moveToElement(tehnicaDeBucatarieLabel).build().perform();
         assertTrue(tehnicaDeBucatarieLabel.isDisplayed());
     }
 
     public void electroCasniceCategory() {
-
         actions.moveToElement(electroCasniceCategoryMainLabel).build().perform();
         assertTrue(electroCasniceCategoryMainLabel.isDisplayed());
 
