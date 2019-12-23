@@ -17,7 +17,7 @@ public class TakeScreens {
     private static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss");
     private static LocalDateTime now = LocalDateTime.now();
     private static String nowTime = dtf.format(now);
-    private static File directory = new File(String.valueOf("./Screenshots/" + nowTime));
+    private static File directory = new File(String.valueOf("./target/Screenshots/" + nowTime));
     public static void takeScreenshot(WebDriver driver, String screenshotName) {
         String timestamp = new SimpleDateFormat("yyyy_MM_dd__hh_mm_ss").format(new Date());
         try {
@@ -25,7 +25,7 @@ public class TakeScreens {
                 directory.mkdir();
             }
             File fileSource = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileHandler.copy(fileSource, new File("./Screenshots/"  + nowTime + "/" + timestamp + "_" + screenshotName + ".png"));
+            FileHandler.copy(fileSource, new File("./target/Screenshots/"  + nowTime + "/" + timestamp + "_" + screenshotName + ".png"));
         } catch (IOException e) {
             System.out.println("Error while taking screenshot " + e.getMessage());
         }
@@ -34,7 +34,7 @@ public class TakeScreens {
         String timestamp = new SimpleDateFormat("yyyy_MM_dd__hh_mm_ss").format(new Date());
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
         try {
-            ImageIO.write(screenshot.getImage(), "PNG", new File("./Screenshots/"  + nowTime + "/" + timestamp + "_" + screenshotName + ".png"));
+            ImageIO.write(screenshot.getImage(), "PNG", new File("./target/Screenshots/"  + nowTime + "/" + timestamp + "_" + screenshotName + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
