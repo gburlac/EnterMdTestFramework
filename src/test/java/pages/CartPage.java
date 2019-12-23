@@ -104,7 +104,6 @@ public class CartPage extends Page {
 
     public void assertProductName() {
         List<WebElement> productList = productNamesListInCart.subList(0, productNamesListInCart.size());
-//        Assert.assertTrue(productNamesListInCart.contains(scenarioContext.getContex(Context.PRODUCT_NAME)));
-        Assert.assertTrue(productList.contains(scenarioContext.getContext(Context.PRODUCT_NAME)));
+        Assert.assertTrue(productList.contains(ScenarioContext.getContext(Context.PRODUCT_NAME)));
     }
 }

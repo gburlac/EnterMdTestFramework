@@ -8,7 +8,7 @@ Feature: Make orders on enter.online
   Scenario: Add to cart from category cadou pentru ea
     When go to cadou pentru ea category
     And select product from the page
-    And go to cart
+    And go to cart from popup
     Then verify is in cart
 
   @Run

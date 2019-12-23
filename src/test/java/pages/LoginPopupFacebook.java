@@ -59,7 +59,7 @@ public class LoginPopupFacebook extends Page {
 //        dB.drawBorder(loginButton, driver);
         if (loginButton.isDisplayed()) {
             loginButton.click();
-        } else {
+            } else {
             throw new Exception(">>>>> Cannot find LOGIN button! <<<<<");
         }
     }
