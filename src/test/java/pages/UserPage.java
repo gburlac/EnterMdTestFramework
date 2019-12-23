@@ -1,12 +1,9 @@
 package pages;
 
-import cucumber.api.DataTable;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import util.DrawBorder;
-import util.Driver;
 import util.Waiter;
 
 public class UserPage extends Page {
@@ -30,39 +27,19 @@ public class UserPage extends Page {
     @FindBy(xpath = "//div[@class='cm-notification-container notification-container']")
     WebElement notificationContainer;
 
-    //    public void setPrenumeField() {
-//    }
-//
-//    public void setNumeField() {
-//    }
-//
-//    public void setPasswordField() {
-//    }
-//
-//    public void setConfirmPasswordField() {
-//    }
-//
-//    public void setPhoneField() {
-//    }
-//
-//    public void setCityField() {
-//    }
-
     public void assertProfileUpdated() throws Exception {
         try {
             Assert.assertTrue(notificationContainer.isDisplayed());
             log.info("User details updated successfully!");
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new Exception("An error occur while updating user details!");
         }
     }
 
-    public void waitNotifications(){
+    public void waitNotifications() {
         Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
-//        Waiter.waitByXpathUntilDissapear("//div[@class='cm-notification-container notification-container']");
     }
 
-    DrawBorder dB = new DrawBorder();
     public void saveChanges() throws Exception {
         try {
             saveButton.isEnabled();

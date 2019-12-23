@@ -7,23 +7,21 @@ import org.openqa.selenium.support.FindBy;
 import util.Driver;
 import util.TakeScreens;
 
-import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
-
 public class LoginPopupOdnoklassniki extends Page {
 
     Logger log = Logger.getLogger(LoginPopupOdnoklassniki.class);
 
     @FindBy(xpath = "//div[@class='ext-widget_h_tx']")
-    WebElement odnoklassnikiElement;
+    private WebElement odnoklassnikiElement;
     @FindBy(xpath = "//input[@id='field_email']")
-    WebElement inputEmail;
+    private WebElement inputEmail;
     @FindBy(xpath = "//input[@id='field_password']")
-    WebElement inputPassword;
+    private WebElement inputPassword;
     @FindBy(xpath = "//input[@class='button-pro __wide form-actions_yes']")
-    WebElement loginButton;
+    private WebElement loginButton;
 
 
-    public void showAssertOdnoklassnikiLoginPopup(){
+    public void showAssertOdnoklassnikiLoginPopup() {
         try {
             Assert.assertTrue(odnoklassnikiElement.isDisplayed());
             log.info(">>> Login via Odnoklassniki pop up window is displayed! <<<");
@@ -35,7 +33,7 @@ public class LoginPopupOdnoklassniki extends Page {
     public void inputEmail(String email) throws Exception {
         showAssertOdnoklassnikiLoginPopup();
         TakeScreens.takeScreenshot(Driver.getDriver(), "login_popup_window_ODN");
-        if (inputEmail.isDisplayed()){
+        if (inputEmail.isDisplayed()) {
             inputEmail.click();
             inputEmail.clear();
             inputEmail.sendKeys(email);
@@ -45,7 +43,7 @@ public class LoginPopupOdnoklassniki extends Page {
     }
 
     public void inputPassword(String password) throws Exception {
-        if (inputPassword.isDisplayed()){
+        if (inputPassword.isDisplayed()) {
             inputPassword.click();
             inputPassword.clear();
             inputPassword.sendKeys(password);
@@ -56,17 +54,12 @@ public class LoginPopupOdnoklassniki extends Page {
     }
 
     public void login() throws Exception {
-        if (loginButton.isDisplayed()){
+        if (loginButton.isDisplayed()) {
             loginButton.click();
         } else {
             throw new Exception(">>>>> Cannot find LOGIN button! <<<<<");
         }
     }
-
-
-
-
-
 
 
 }

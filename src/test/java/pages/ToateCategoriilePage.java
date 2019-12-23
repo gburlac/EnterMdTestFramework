@@ -31,27 +31,22 @@ public class ToateCategoriilePage extends Page {
 
 
     public void assertCheckIsInCart() {
-
         assertTrue(checkIsInCart.isDisplayed());
     }
 
     public void clickOnCart() {
-
         clickOnCart.click();
     }
 
     public void clickbuttonVizualizatiCosul() {
-
         buttonVizualizatiCosul.click();
     }
 
     public void clickAddToCart() {
-
         selectAndAddToCart.click();
     }
 
     public void selectOptionTastaturi2() {
-
         selectOptionTastaturi2.click();
     }
 
