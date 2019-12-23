@@ -14,19 +14,19 @@ public class MainPageUISteps {
     static Logger log = Logger.getLogger(MainPageUISteps.class);
 
 
-    @Then("^All non-changeable elements is present$")
-    public void allNonChangeableElementsIsPresent() {
+    @Then("^All non-changeable elements with text are displayed on selected language$")
+    public void thenAllNonChangeableElementsWithTextAreDisplayedOnSelectedLanguage() {
         Waiter.waitByXPath("//div[contains(@class,'uk-flex-middle attar-header')]//div[contains(@class,'uk-width-auto@m')]");
-        TakeScreens.takeScreenshot(Driver.getDriver(), "Is on main page");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Language is changed, user is on main page");
         mainPage.assertMainPageUIElements();
         TakeScreens.takeScreenshot(Driver.getDriver(), "UI elements checked");
         log.info("UI elements are present");
     }
 
-    @Then("^All non-changeable elements with text are displayed on selected language$")
-    public void thenAllNonChangeableElementsWithTextAreDisplayedOnSelectedLanguage() {
+    @Then("^All non-changeable elements is present and selected language is romanian$")
+    public void allNonChangeableElementsIsPresentAndSelectedLanguageIsRomanian() {
         Waiter.waitByXPath("//div[contains(@class,'uk-flex-middle attar-header')]//div[contains(@class,'uk-width-auto@m')]");
-        TakeScreens.takeScreenshot(Driver.getDriver(), "Language is changed, user is on main page");
+        TakeScreens.takeScreenshot(Driver.getDriver(), "Is on main page");
         mainPage.assertMainPageUIElements();
         TakeScreens.takeScreenshot(Driver.getDriver(), "UI elements checked");
         log.info("UI elements are present");

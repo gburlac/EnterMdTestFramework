@@ -222,3 +222,27 @@
 2019-12-20 18:25:39 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
 2019-12-20 18:25:39 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
 2019-12-20 18:25:39 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-23 20:53:54 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
+2019-12-23 20:53:55 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-23 20:53:56 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-23 20:54:10 INFO  CommonSteps:32 - User is on homepage
+2019-12-23 20:54:21 INFO  CommonSteps:25 - Smartphones is selected
+2019-12-23 20:54:24 INFO  ProductListPageSteps:22 - Samsung Galaxy Fold F900 Product page is opened
+2019-12-23 20:54:34 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-23 20:54:40 INFO  CommonSteps:25 - Smartphones is selected
+2019-12-23 20:54:40 INFO  BeforeAfterSteps:42 - ----------------------TEST FINISHED----------------------
+2019-12-23 20:54:42 INFO  BeforeAfterSteps:44 - ----------------------TEST FINISHED----------------------
+2019-12-23 20:57:35 INFO  BeforeAfterSteps:20 - ----------------------TEST STARTED----------------------
+2019-12-23 20:57:37 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2019-12-23 20:57:37 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Vatamanenco\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2019-12-23 20:57:48 INFO  CommonSteps:32 - User is on homepage
+2019-12-23 20:57:58 INFO  CommonSteps:25 - Smartphones is selected
+2019-12-23 20:58:02 INFO  ProductListPageSteps:22 - Apple iPhone 11 Pro Product page is opened
+2019-12-23 20:58:11 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-23 20:58:18 INFO  CommonSteps:25 - Smartphones is selected
+2019-12-23 20:58:28 INFO  ProductListPageSteps:22 - Samsung Galaxy M30s M307 Product page is opened
+2019-12-23 20:58:39 INFO  CommonSteps:40 - Add product to compare list button is clicked
+2019-12-23 20:58:44 INFO  log:67 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2019-12-23 20:58:44 INFO  log:67 - List of comparing is displayed
+2019-12-23 20:58:44 INFO  BeforeAfterSteps:42 - ----------------------TEST FINISHED----------------------
+2019-12-23 20:58:46 INFO  BeforeAfterSteps:44 - ----------------------TEST FINISHED----------------------

@@ -1,6 +1,8 @@
 package pages;
 
 
+import context.ScenarioContext;
+import enums.Context;
 import enums.Users;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -372,6 +374,19 @@ public class MainPage extends Page {
         Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
         Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
         Assert.assertTrue(sfaturiUtileButton.isDisplayed());
+        if (ScenarioContext.getContext(Context.LANGUAGE)=="RU") {
+            Assert.assertEquals("Бытовая техника", electrocasniceButton.getText());
+            Assert.assertEquals("Новости", nouatiSiPromotiiButton.getText());
+            Assert.assertEquals("Акции", gadgeturiPentruOriceVirstaButton.getText());
+            Assert.assertEquals("Полезные советы", sfaturiUtileButton.getText());
+        }
+        else if (ScenarioContext.getContext(Context.LANGUAGE)=="RO"){
+            Assert.assertEquals("Electrocasnice", electrocasniceButton.getText());
+            Assert.assertEquals("Noutăți", nouatiSiPromotiiButton.getText());
+            Assert.assertEquals("Promoții", gadgeturiPentruOriceVirstaButton.getText());
+            Assert.assertEquals("Sfaturi Utile", sfaturiUtileButton.getText());
+        }
+
     }
 
     public void langChangerClick() {
