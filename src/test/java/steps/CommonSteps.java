@@ -5,9 +5,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import enums.Context;
 import org.apache.log4j.Logger;
-import util.Driver;
-import pages.*;
+import pages.MainPage;
 import pages.Page;
+import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
 
