@@ -5,3 +5,5 @@
 /automation.log
 /debug.log
 /*.iml
+/*.ipr
+/*.iws
