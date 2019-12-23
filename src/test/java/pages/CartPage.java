@@ -14,35 +14,35 @@ import java.util.List;
 
 public class CartPage extends Page {
     @FindBy(xpath = "//span[contains(text(), 'Total')]")
-    WebElement totalSumOfProducts;
+    private WebElement totalSumOfProducts;
     @FindBy(xpath = "//a[contains(text(), 'Coș de cumpărături')]")
-    WebElement assertCartPage;
+    private WebElement assertCartPage;
     @FindBy(xpath = "//a[@class='ty-cart-content__product-title']")
-    WebElement productTitleCart;
+    private WebElement productTitleCart;
     @FindBy(xpath = "//a[contains(@class,'ty-cart-content__product-title')][contains(text(),'Hisense H40B5600 40')]")
-    WebElement TVTitleInCart;
+    private WebElement TVTitleInCart;
     @FindBy(xpath = "//a[contains(@class,'ty-cart-content__product-title')][contains(text(),'Xiaomi Redmi Note 7')]")
-    WebElement phoneTitleInCart;
+    private WebElement phoneTitleInCart;
     @FindBy(xpath = "//a[contains(@class,'ty-cart-content__product-title')][contains(text(),'Windgoo M11')]")
-    WebElement transportTitleInCart;
+    private WebElement transportTitleInCart;
     @FindBy(xpath = "//div[contains(@id, 'cart_items')]//a[contains(@class, 'product-title')]")
     List<WebElement> productNamesListInCart;
     @FindBy(xpath = "//input[@id='amount_246748269']")
-    WebElement transportQuantity;
+    private WebElement transportQuantity;
     @FindBy(xpath = "//div[@id='quantity_update_246748269']//a[contains(@class,'cm-decrease ty')]")
-    WebElement transportQuantityDecreaser;
+    private WebElement transportQuantityDecreaser;
     @FindBy(xpath = "//input[@id='amount_2944274987']")
-    WebElement tvQuantity;
+    private WebElement tvQuantity;
     @FindBy(xpath = "//div[@id='quantity_update_2944274987']//a[@class='cm-decrease ty-value-changer__decrease']")
-    WebElement tvQuantityDecreaser;
+    private WebElement tvQuantityDecreaser;
     @FindBy(xpath = "//div[contains(@class, 'am-cart-item')]//div[contains(@class, 'ty-center')]//input")
-    WebElement phoneQuantity;
+    private WebElement phoneQuantity;
     @FindBy(xpath = "//div[@id='quantity_update_2776009334']//a[@class='cm-decrease ty-value-changer__decrease']")
-    WebElement phoneQuantityDecreaser;
+    private WebElement phoneQuantityDecreaser;
     @FindBy(xpath = "//div[contains(@class, 'am-cart-item')]//div[contains(@class, 'ty-center')]//input")
-    WebElement productQuantity;
+    private WebElement productQuantity;
     @FindBy(xpath = "//div[contains(@class, 'ty-value-changer')]//a[contains(@class, 'cm-decrease')]")
-    WebElement productQuantityDecreaser;
+    private WebElement productQuantityDecreaser;
 
     Logger log = Logger.getLogger(CartPage.class);
 

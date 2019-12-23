@@ -12,7 +12,6 @@ import java.util.List;
 
 
 public class CadouPentruEaPage extends Page {
-    Page page = new Page();
     Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(xpath = "//ul[@id='text_links_2948']/li[contains(@class, 'ty-text-links__item ty-level-0')][6]")
@@ -29,22 +28,20 @@ public class CadouPentruEaPage extends Page {
     List<WebElement> addToCartFromCategoryButton;
     @FindBy(xpath = "//form[contains(@name,'product_form')]")
     List<WebElement> productNameFromCategory;
-    //a[@class='ty-cart-content__product-title']
     @FindBy(xpath = "//a[@class='ty-cart-content__product-title']")
-    WebElement productNameInCart;
+    private WebElement productNameInCart;
     @FindBy(xpath = "//bdi[contains(text(),'Xiaomi Redmi Note 7')]")
-    WebElement productNameInProductPage;
+    private WebElement productNameInProductPage;
     @FindBy(xpath = "//form[@name='product_form_95196']//span[contains(text(),'Xiaomi Redmi Note 7')]")
-    WebElement selectProductName;
+    private WebElement selectProductName;
     @FindBy(xpath = "//button[@id='button_cart_95196']")
-    WebElement buttonAddToCartFromProd;
+    private WebElement buttonAddToCartFromProd;
 
 
     public void assertInCartItem() {
         String productName = (String) ScenarioContext.getContext(Context.PRODUCT_NAME);
         Assert.assertEquals(productName, productNameInCart.getText());
     }
-
 
     public void clickProductNameFromCategory(int product) {
         productNameFromCategory.get(product).click();

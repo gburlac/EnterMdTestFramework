@@ -12,13 +12,13 @@ public class LoginPopupVKontakte extends Page {
     Logger log = Logger.getLogger(LoginPopupVKontakte.class);
 
     @FindBy(xpath = "//div[@class='box_msg_gray box_msg_padded']//b[contains(text(),'ВКонтакте')]")
-    WebElement vkElement;
+    private WebElement vkElement;
     @FindBy(xpath = "//input[@name='email']")
-    WebElement emaiField;
+    private WebElement emaiField;
     @FindBy(xpath = "//input[@name='pass']")
-    WebElement passwordField;
+    private WebElement passwordField;
     @FindBy(xpath = "//button[@type='submit']")
-    WebElement loginButton;
+    private WebElement loginButton;
 
 
     public void showAssertsVKLoginPopup() {
@@ -60,6 +60,4 @@ public class LoginPopupVKontakte extends Page {
             throw new Exception(">>>>> Cannot find LOGIN button! <<<<<");
         }
     }
-
-
 }
