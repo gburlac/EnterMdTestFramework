@@ -19,7 +19,6 @@ public class ProductPage extends Page {
     Logger log = Logger.getLogger(ProductPage.class);
     WebDriver driver = Driver.getDriver();
     DrawBorder dB;
-    Actions actions = new Actions(Driver.getDriver());
 
     @FindBy(xpath = "//h3[@id='features' and contains(text(),'tehnice')]")
     WebElement specificatiiTehnice;
@@ -82,11 +81,13 @@ public class ProductPage extends Page {
         Waiter.waitByXPath("//h1[contains(text(),'Produs adaugat in cos')]");
         TakeScreens.takeScreenshot(driver, "product_added_to_cart_confirm");
         Waiter.waitByXPathUntilDissapear("//h1[contains(text(),'Produs adaugat in cos')]");
+        log.info("Product is added to cart!");
     }
 
     public void clickOnCartIcon() {
         TakeScreens.takeScreenshot(driver, "cart_icon");
         cartIcon.click();
+        log.info("Cart popup is opened!");
     }
 
     public void goToCart() throws Exception {
@@ -96,6 +97,7 @@ public class ProductPage extends Page {
             try {
                 if (!cartPopup.getText().equals("Coșul este gol")) {
                     goToCart.click();
+                    log.info("Opening cart page!");
                 }
             } catch (Exception ex) {
                 throw new Exception(">>>>> Your cart is empty! <<<<<");
