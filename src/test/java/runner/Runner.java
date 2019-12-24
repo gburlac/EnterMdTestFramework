@@ -9,10 +9,10 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/featureFiles",
         glue = {"steps"},
 //        name = "Navigate on EnterPages",
-//        tags = {"@Vatamanenco"},
+        tags = {"@Vatamanenco"},
 //        tags = {"@GBurlacUiTest"},
 //        tags = {"@GBurlacMakeOrders"},
-                tags = {"@Run"},
+//                tags = {"@Run"},
 //        tags = {"@RunVCrisac"},
         plugin = {"pretty"},
         monochrome = true

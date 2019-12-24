@@ -20,10 +20,10 @@ public class Page {
     ProductPage productPage;
     ToateCategoriilePage toateCategoriilePage;
     ElectrocasnicePage electrocasnicePage;
-    ProductListPage productListPage;
     CastiPage castiPage;
     CommonSteps commonSteps;
     ScenarioContext scenarioContext;
+    ProductListPage productListPage;
     UserPage userPage;
     ComparingPage comparingPage;
 

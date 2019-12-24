@@ -16,5 +16,5 @@ Feature: Product review functionality
       | Name  | Email                       | Message                  | manufacturer |
 #      | Dima  | dima-kaskader95@mail.ru     | Klassnii telefon         | 2            |
 #      | Vasya | vasya-ubiica@bk.ru          | Otlichnaya trubka        | 2            |
-      | Jora  | george-2005@gmail.com       | Ochen krutoy display     | 2            |
-#      | Lev   | lev-solomonovich@outook.com | Ochen horoshaya batareya | 2            |
+#      | Jora  | george-2005@gmail.com       | Ochen krutoy display     | 2            |
+      | Lev   | lev-solomonovich@outook.com | Ochen horoshaya batareya | 3            |

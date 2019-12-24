@@ -28,8 +28,8 @@ public class PropertiesReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
 
+    }
     public static PropertiesReader getInstatnce() {
         if (propertiesReader == null) {
             propertiesReader = new PropertiesReader();

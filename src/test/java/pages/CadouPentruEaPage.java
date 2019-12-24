@@ -10,7 +10,6 @@ import util.Driver;
 
 import java.util.List;
 
-
 public class CadouPentruEaPage extends Page {
     Actions actions = new Actions(Driver.getDriver());
 

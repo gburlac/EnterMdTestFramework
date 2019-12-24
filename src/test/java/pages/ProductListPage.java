@@ -36,7 +36,7 @@ public class ProductListPage extends Page {
     public void openProductPageByID() {
         int a = 0;
         Random random = new Random();
-        a = random.ints(0, (20 + 1)).findFirst().getAsInt();
+        a = random.ints(0, productNameLabel.size()-1).findFirst().getAsInt();
         ScenarioContext.setContext(Context.PRODUCT_NAME,productNameLabel.get(a).getText());
         productsOnPageList.get(a).click();
         Waiter.waitByXPath("//span//span//a");
