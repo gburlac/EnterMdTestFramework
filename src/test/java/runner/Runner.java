@@ -15,9 +15,7 @@ import org.junit.runner.RunWith;
 //        tags = {"@GBurlacMakeOrders"},
 //                tags = {"@Run"},
 //        tags = {"@RunVCrisac"},
-        plugin = {"pretty","json:target/Destination/cucumber.json"},
-        monochrome = true,
-        format={"json:target/Destination/cucumber.xml"}
-)
+        plugin = {"pretty","json:target/Destination/cucumber.json","html:target/Destination/cucumber-reports"},
+        monochrome = true)
 public class Runner {
 }
