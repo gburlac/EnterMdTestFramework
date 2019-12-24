@@ -11,9 +11,11 @@ public class CastiPage extends Page {
 
     Actions actions = new Actions(Driver.getDriver());
 
-    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[8]/div/div[2]/div/div/div[4]/div/div/a/picture/img")
+
+    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[9]/div/div[2]/div/div/div[4]/div/div/a/picture/img")
     private WebElement butonCasti;
-    @FindBy(xpath = "//div[@id='add_to_cart_update_95028']/div[@id='add_to_cart_update_95028']")
+    //*[@id="button_cart_95028"]
+    @FindBy(xpath = "//*[@id=\"button_cart_95028\"]")
     private WebElement butonAddtocartProduct;
     @FindBy(xpath = "//div[@id='cart_status_3262_cart']")
     private WebElement butonCartStatus;
@@ -105,6 +107,7 @@ public class CastiPage extends Page {
     }
 
     public void clickButonAddtocartProduct() {
+        actions.moveToElement(butonAddtocartProduct).build().perform();
         butonAddtocartProduct.click();
     }
 
