@@ -20,4 +20,5 @@ public class ScenarioContext {
     public static Boolean isContains(Context key) {
         return scenarioContext.containsKey(key.toString());
     }
+
 }
