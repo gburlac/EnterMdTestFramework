@@ -21,7 +21,7 @@ public class CommonSteps {
     public void userSelectsAnyCategory() {
         mainPage.selectSmartphonesCategory();
         Waiter.waitByXPathUntilDissapear("//span[contains(@class,'support-trigger-round-icon support-icon-comments-o')]");
-        Waiter.waitByXPath("//span[contains(@class,'support-trigger-round-icon support-icon-comments-o')]");
+        Waiter.waitByXPath("//img[@class='ty-pict    cm-image']");
         log.info("Smartphones is selected");
     }
 

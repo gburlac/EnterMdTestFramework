@@ -34,7 +34,6 @@ public class BeforeAfterSteps <log>{
     }
 @After
     public void after() {
-        log.info("----------------------TEST FINISHED----------------------");
         Driver.closeDriver();
     }
 }
