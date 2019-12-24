@@ -51,6 +51,7 @@ public class CadouPentruEaPage extends Page {
     }
 
     public void clickButtonAddToCartFromProd() {
+        actions.moveToElement(buttonAddToCartFromProd).build().perform();
         buttonAddToCartFromProd.click();
     }
 
