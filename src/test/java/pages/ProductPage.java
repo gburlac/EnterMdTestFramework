@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import util.DrawBorder;
 import util.Driver;
 import util.TakeScreens;
 import util.Waiter;
@@ -16,39 +15,22 @@ public class ProductPage extends Page {
     WebDriver driver = Driver.getDriver();
 
     @FindBy(xpath = "//h3[@id='features' and contains(text(),'tehnice')]")
-    private WebElement specificatiiTehnice;
+     WebElement specificatiiTehnice;
     @FindBy(xpath = "//div[contains(@data-title, 'Pune în coș')]//button[contains(@type, 'submit')]")
-    private WebElement addToCartButton;
+     WebElement addToCartButton;
     @FindBy(xpath = "//div[contains(@id, 'sw_dropdown_3262_cart')]")
-    private WebElement cartIcon;
+     WebElement cartIcon;
     @FindBy(xpath = "//a[contains(text(), 'Vizualizați coșul')]")
-    private WebElement goToCart;
+     WebElement goToCart;
     @FindBy(xpath = "//div[@class='ty-cart-items']")
-    private WebElement cartPopup;
-    @FindBy(xpath = "//a[contains(@class,'ty-btn cm-dialog-opener cm-dialog-auto-size uk-button uk-border-rounded uk-button-primary tm-add-review')]")
-    private WebElement writeReviewButton;
-    @FindBy(xpath = "//input[@name='post_data[name]']")
-    private WebElement reviewNameTextbox;
-    @FindBy(xpath = "//input[@name='post_data[email]']")
-    private WebElement reviewEmailTextbox;
-    @FindBy(xpath = "//textarea[@name='post_data[message]']")
-    private WebElement reviewMessageTextbox;
-    @FindBy(xpath = "//label[contains(@class, 'ty-rating__label')][1]")//label[contains(text(),'cut foarte mult')]
-    private WebElement reviewFiveStarsButton;
-    @FindBy(xpath = "//button[@name='dispatch[discussion.add]']")
-    private WebElement reviewSendButton;
-    @FindBy(xpath = "//*[@id=\"tygh_container\"]/div[3]/div")
-    private WebElement reviewSentNotification;
+     WebElement cartPopup;
     @FindBy(xpath = "//h1[@id='product_filters_page_title' and contains(text(),'Telefoane Samsung')]")
-    private WebElement assertSamsungPhones;
+     WebElement assertSamsungPhones;
     @FindBy(xpath = "//ul[@id='ranges_376_239']")
-    private WebElement assertSmartphonesCategory;
-    @FindBy(xpath = "//a[@class='ty-btn ty-btn__text picon-compare-two   text-button ']")
-    private WebElement addToCompareListButton;
-    @FindBy(xpath = "//*[@id=\"pagination_contents\"]/div[2]/div/div[1]/div[2]/div[1]/select")
-    private WebElement sortingByDropdown;
+     WebElement assertSmartphonesCategory;
+
     @FindBy(xpath = "//bdi")
-    private WebElement productName;
+     WebElement productName;
 
     public void assertProductDetails() throws Exception {
         try {
@@ -91,36 +73,6 @@ public class ProductPage extends Page {
         }
     }
 
-    public void writeReviewButtonClick() {
-        Waiter.waitByXPath("//a[contains(@class,'ty-btn cm-dialog-opener cm-dialog-auto-size uk-button uk-border-rounded uk-button-primary tm-add-review')]");
-        writeReviewButton.click();
-        Waiter.waitByXPath("//button[@name='dispatch[discussion.add]']");
-        Waiter.waitByXPath("//label[contains(text(),'cut foarte mult')]");
-    }
-
-    public void reviewFormCheck() {
-        Assert.assertTrue(reviewNameTextbox.isDisplayed());
-        Assert.assertTrue(reviewEmailTextbox.isDisplayed());
-        Assert.assertTrue(reviewFiveStarsButton.isDisplayed());
-        Assert.assertTrue(reviewMessageTextbox.isDisplayed());
-    }
-
-    public void reviewFormComplete(String name, String email, String message) {
-        reviewNameTextbox.sendKeys(name);
-        reviewEmailTextbox.sendKeys(email);
-        reviewMessageTextbox.sendKeys(message);
-        reviewFiveStarsButton.click();
-        TakeScreens.takeScreenshot(Driver.getDriver(), "Data is introduced");
-        reviewSendButton.click();
-        Waiter.waitByXPath("//div[@class='cm-notification-content notification-content alert-warning']");
-    }
-
-    public void reviewSentNotificationCheck() {
-        Waiter.waitByXPath("//div[@class='cm-notification-content notification-content alert-warning']");
-        Assert.assertTrue(reviewSentNotification.isDisplayed());
-    }
-
-
     public void showSmartphonesAssert() throws Exception {
         try {
             Assert.assertTrue(assertSmartphonesCategory.isDisplayed());
@@ -139,11 +91,6 @@ public class ProductPage extends Page {
             System.out.println("Exception catched: " + e.getMessage());
             throw new Exception(">>>>> Samsung phones are NOT displayed! <<<<<");
         }
-    }
-
-    public void addToCompareListButtonClick() {
-        addToCompareListButton.click();
-        Waiter.waitByXPathUntilDissapear("//div[@class='ty-product-notification__item clearfix']");
     }
 
     public String getProductName() {

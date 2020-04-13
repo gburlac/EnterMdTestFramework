@@ -4,7 +4,7 @@ package enums;
 
 public enum Users {
     REGISTERED_USER("Stanislav Abramov","abramov.stas@gmail.com", "123NRTM456"),
-    FACEBOOK_USER("", "",""),
+    FACEBOOK_USER("", "krysak.vladimir@gmail.com","endVilrkrew@1fb"),
     VKONTAKTE_USER("", "",""),
     ODNOKLASSNIKI_USER("", "","");
 

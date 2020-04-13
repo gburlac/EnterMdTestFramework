@@ -18,16 +18,18 @@ public class PropertiesReader {
 
     private void initProperties() {
         Properties prop = new Properties();
-        String path = "src/test/properties/env.properties";
+        String path = "src/test/properties/env.properties"; // calea catre fisier cu proprietati -> properties file
         try {
-            InputStream istream = new FileInputStream(path);
+            InputStream istream = new FileInputStream(path); // citeste datele din properties file
             prop.load(istream);
-            browser = prop.getProperty("browser");
+            browser = prop.getProperty("browser"); // alege proprietatea care trebuie
         } catch (FileNotFoundException e) {
             System.out.println("PROPRETIES FILE IS NOT FOUND");
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        // se duce la fisier -> deschide fisierul -> alege proprietatea
 
     }
     public static PropertiesReader getInstatnce() {

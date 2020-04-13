@@ -8,12 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/featureFiles",
         glue = {"steps"},
-//        name = "Navigate on EnterPages",
-        tags = {"@Vatamanenco"},
-//        tags = {"@GBurlacUiTest"},
-//        tags = {"@GBurlacMakeOrders"},
-//                tags = {"@Run"},
-//        tags = {"@RunVCrisac"},
+       tags = {"@Run"},
         plugin = {"pretty"},
         monochrome = true
 )

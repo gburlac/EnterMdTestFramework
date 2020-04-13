@@ -1,125 +1,136 @@
 package pages;
 
+import java.util.List;
 
-import context.ScenarioContext;
-import enums.Context;
-import enums.Users;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import util.*;
-import java.util.List;
+
+import context.ScenarioContext;
+import enums.Context;
+import enums.Users;
+import util.Driver;
+import util.TakeScreens;
+import util.Waiter;
+import util.WindowsHandler;
 
 public class MainPage extends Page {
+
     Page page = new Page();
+
     Logger log = Logger.getLogger(MainPage.class);
+
     WebDriver driver = Driver.getDriver();
+
     Actions actions = new Actions(Driver.getDriver());
+
     LoginPopupFacebook loginPopupFacebook = page.getLoginPopupFacebook();
+
     LoginPopupVKontakte loginPopupVKontakte = page.getLoginPopupVKontakte();
+
     LoginPopupOdnoklassniki loginPopupOdnoklassniki = page.getLoginPopupOdnoklassniki();
 
-    @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
-    private WebElement electroCasniceCategory;
-    @FindBy(xpath = "//*[@id=\"categories\"]/div[3]/div/div[2]/div/div/div/h1")
-    private WebElement electroCasniceCategoryMainLabel;
-    @FindBy(xpath = "//div[@id='block1']/h2[contains(@class, 'uk-cover tm-landing-white-title')]")
-    private WebElement tehnicaDeBucatarieLabel;
-    @FindBy(xpath = "//div[@id='block1']/h2[contains(@class, 'uk-cover tm-landing-white-title')]")
-    private WebElement aparateDeUzCasnicePart;
-    @FindBy(xpath = "//*[@id=\"block3\"]/h2")
-    private WebElement ingrijirePersonala;
     @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
-    private WebElement loginOption;
-    @FindBy(xpath = "//button[@name='dispatch[auth.login]']")
-    private WebElement loginViaFBButton;
+    WebElement loginOption;
+
     @FindBy(xpath = "//a[3]//img[1]")
-    private WebElement facebookIcon;
+    WebElement facebookIcon;
+
     @FindBy(xpath = "//a[2]//img[1]")
-    private WebElement VKontakteIcon;
+    WebElement VKontakteIcon;
+
     @FindBy(xpath = "//div[@id='auth-modal']//a[1]//img[1]")
-    private WebElement odnoklassnikiIcon;
-    @FindBy(className = "//div[contains(@class, 'name')]")
-    private WebElement loginMenu;
+    WebElement odnoklassnikiIcon;
+
     @FindBy(xpath = "//div[contains(@class, 'auth uk-grid')]")
-    private WebElement userMenu;
+    WebElement userMenu;
+
     @FindBy(xpath = "//div[contains(@class, 'auth')]//div[contains(@class, 'name')]//span")
-    private WebElement userName;
+    WebElement userName;
+
     @FindBy(xpath = "//input[@id='login_popup3262']")
-    private WebElement emailField;
+    WebElement emailField;
+
     @FindBy(xpath = "//input[@id='psw_popup3262']")
-    private WebElement passwordField;
+    WebElement passwordField;
+
     @FindBy(xpath = "//button[@name='dispatch[auth.login]']")
-    private WebElement loginButton;
-    @FindBy(xpath = "//div[@class='ty-control-group error']//p[1]")
-    private WebElement errorEmail;
+    WebElement loginButton;
+
     @FindBy(xpath = "//div[@class='cm-notification-content notification-content alert-error']")
-    private WebElement notificationAlertError;
+    WebElement notificationAlertError;
+
     @FindBy(xpath = "//div[@class='ty-control-group error']//p[1]")
-    private WebElement invalidEmailAlert;
+    WebElement invalidEmailAlert;
+
     @FindBy(xpath = "//div[@class='ty-control-group ty-password-forgot error']//p[1]")
-    private WebElement invalidPasswordAlert;
+    WebElement invalidPasswordAlert;
+
     @FindBy(xpath = "//*[@id=\"iam_search\"]")
-    private WebElement searchBar;
+    WebElement searchBar;
+
     @FindBy(xpath = "//div[contains(text(),'OnePlus 7 Pro')]")
-    private WebElement selectOnePlus;
+    WebElement selectOnePlus;
+
     @FindBy(xpath = "//li[2]//a[1]//div[1]//div[2]//div[1]")
-    private WebElement selectIphone;
-    @FindBy(xpath = "//button[@id='button_wishlist_9854998549']")
-    private WebElement buttonAddToWishlist;
-    @FindBy(xpath = "//button[@id='button_wishlist_102069102069']")
-    private WebElement buttonAddToWishlistIphone;
-    @FindBy(xpath = "//div[contains(@class, 'ty-float-right')]/a[contains(@class, 'ty-btn ty-btn__secondary')]")
-    private WebElement buttonCheckWischlist;
-    @FindBy(xpath = "//*[@id=\"det_img_98549\"]")
-    private WebElement buttonCheckProductInWischlist;
-    @FindBy(xpath = "//img[@id='det_img_102069']")
-    private WebElement buttonCheckProductInWischlistIphone;
+    WebElement selectIphone;
+
     @FindBy(xpath = " //a[@class='uk-margin-small-top uk-button uk-button-default uk-border-pill ty-tk-product-button']")
-    private WebElement buttonBuyInCredit;
+    WebElement buttonBuyInCredit;
+
     @FindBy(xpath = "//div[@class='tab-credit-submit']")
-    private WebElement checkCreditPage;
+    WebElement checkCreditPage;
+
     @FindBy(id = "megamenubutton")
-    private WebElement allCategories;
+    WebElement allCategories;
+
     @FindBy(xpath = "//li[contains(@class,'first-level blue')]//a[contains(text(),'Telefoane')]")
-    private WebElement telefoaneCategoriesList;
+    WebElement telefoaneCategoriesList;
+
     @FindBy(xpath = "//a[contains(text(),'Smartphone-uri')]")
-    private WebElement smartphonesCategory;
+    WebElement smartphonesCategory;
+
     @FindBy(xpath = "//div[contains(@class, 'pm-grid')]//form[contains(@name, 'product_form')]//div[contains(@class, 'ty-grid-list__image')]")
     List<WebElement> productList;
+
     @FindBy(xpath = "//li[contains(@class, 'first-level')]//a[contains(text(), 'Televizoare')]")
-    private WebElement TVCategoriesList;
+    WebElement TVCategoriesList;
+
     @FindBy(xpath = "//li[contains(@class, 'second-level')]//a[contains(text(), 'Televizoare')]")
-    private WebElement televizoareCategory;
+    WebElement televizoareCategory;
+
     @FindBy(xpath = "//li[@class='first-level blue']//a[contains(text(),'Transport')]")
-    private WebElement transportCategoriesList;
+    WebElement transportCategoriesList;
+
     @FindBy(xpath = "//a[contains(text(),'Transport electric')]")
-    private WebElement transportCategory;
-    @FindBy(xpath = "//img[@id='det_img_98146']")
-    private WebElement transportDetails;
+    WebElement transportCategory;
+
     @FindBy(xpath = "//div[@class='uk-width-auto@m']//li[6]//a[1]")
-    private WebElement logoutOption;
+    WebElement logoutOption;
+
     @FindBy(xpath = "//div[contains(@class, 'uk-dropdown')]//li//a[contains(@href, 'detalii-profil')]")
-    private WebElement myAccount;
+    WebElement myAccount;
+
     @FindBy(xpath = "//*[@id=\"index\"]/div[1]/div/div[2]/div/div/div[2]")
-    private WebElement logoEnter;
+    WebElement logoEnter;
+
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[1]/a")
-    private WebElement electrocasniceButton;
+    WebElement electrocasniceButton;
+
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[2]/a")
-    private WebElement nouatiSiPromotiiButton;
+    WebElement nouatiSiPromotiiButton;
+
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[3]/a")
-    private WebElement gadgeturiPentruOriceVirstaButton;
+    WebElement gadgeturiPentruOriceVirstaButton;
+
     @FindBy(xpath = "//*[@id=\"index\"]/div[3]/div/div[1]/div/div/ul/li[4]/a")
-    private WebElement sfaturiUtileButton;
+    WebElement sfaturiUtileButton;
+
     @FindBy(xpath = "//div[@id='languages_638']//div//a[@href='https://enter.online/ru/']")
-    private WebElement langChangerRU;
-    @FindBy(xpath = "//div[@id='languages_638']//div//a[@href='https://enter.online/']")
-    private WebElement langChangerRO;
-    @FindBy(xpath = "//*[@id=\"languages_638\"]/div[1]/a")
-    private WebElement langChanger;
+    WebElement langChangerRU;
 
     public void loginViaSocial(String socialNetwork, Users user) throws Exception {
         accessLoginMenu();
@@ -235,26 +246,6 @@ public class MainPage extends Page {
         smartphonesCategory.click();
     }
 
-    public void asserttElectrocasniceButton() {
-        Assert.assertTrue(electrocasniceButton.isDisplayed());
-    }
-
-    public void assertLogoEnter() {
-        Assert.assertTrue(logoEnter.isDisplayed());
-    }
-
-    public void assertNouatiSiPromotiiButton() {
-        Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
-    }
-
-    public void assertGadgeturiPentruOriceVirstaButton() {
-        Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
-    }
-
-    public void assertSfaturiUtileButton() {
-        Assert.assertTrue(sfaturiUtileButton.isDisplayed());
-    }
-
     public void openAllTVCategories() {
         TakeScreens.takeScreenshot(driver, "tv_categories");
         TVCategoriesList.click();
@@ -284,18 +275,19 @@ public class MainPage extends Page {
 
     public void logout() throws Exception {
         try {
+            Waiter.waitByXPath("//div[contains(@class, 'auth uk-grid')]");
             userMenu.click();
             logoutOption.click();
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new Exception("An error occured while logging out from the site.");
         }
-
     }
 
     public void assertUserIsLoggedOut() throws Exception {
         try {
-            if (userName.getText().equals("intră în cont"))
+            if (userName.getText().equals("intră în cont")) {
                 log.info(">>>>> SUCCESS! User is logged out! <<<<<");
+            }
         } catch (Exception e) {
             throw new Exception(">>>>> ERROR! User is not logged out! <<<<<");
         }
@@ -315,15 +307,6 @@ public class MainPage extends Page {
         loginButton.click();
     }
 
-    public void assertcheckCreditPage() {
-        Assert.assertTrue(checkCreditPage.isDisplayed());
-    }
-
-    public void clickButtonBuyInCredit() {
-        actions.moveToElement(buttonBuyInCredit).build().perform();
-        buttonBuyInCredit.click();
-    }
-
     public void accessLoginMenu() {
         loginOption.click();
         Waiter.waitByXPath("//form[contains(@name,'popup3262_form')]");
@@ -333,18 +316,6 @@ public class MainPage extends Page {
     public void inputEmail(String email) {
         emailField.clear();
         emailField.sendKeys(email);
-    }
-
-    public void clickbuttonselectIphone() {
-        selectIphone.click();
-    }
-
-    public void clickOnSelectOnePlus() {
-        selectOnePlus.click();
-    }
-
-    public void searchBarMethod(String value) {
-        searchBar.sendKeys(value);
     }
 
     public void assertAlertNotification(String errorMessage) {
@@ -360,30 +331,5 @@ public class MainPage extends Page {
             Assert.assertTrue(notificationAlertError.isDisplayed());
             log.info(">> ENTERED INVALID CREDENTIALS! <<<");
         }
-    }
-
-    public void assertMainPageUIElements() {
-        Assert.assertTrue(electrocasniceButton.isDisplayed());
-        Assert.assertTrue(logoEnter.isDisplayed());
-        Assert.assertTrue(nouatiSiPromotiiButton.isDisplayed());
-        Assert.assertTrue(gadgeturiPentruOriceVirstaButton.isDisplayed());
-        Assert.assertTrue(sfaturiUtileButton.isDisplayed());
-        if (ScenarioContext.getContext(Context.LANGUAGE)=="RU") {
-            Assert.assertEquals("Бытовая техника", electrocasniceButton.getText());
-            Assert.assertEquals("Новости", nouatiSiPromotiiButton.getText());
-            Assert.assertEquals("Акции", gadgeturiPentruOriceVirstaButton.getText());
-            Assert.assertEquals("Полезные советы", sfaturiUtileButton.getText());
-        }
-        else if (ScenarioContext.getContext(Context.LANGUAGE)=="RO"){
-            Assert.assertEquals("Electrocasnice", electrocasniceButton.getText());
-            Assert.assertEquals("Noutăți", nouatiSiPromotiiButton.getText());
-            Assert.assertEquals("Promoții", gadgeturiPentruOriceVirstaButton.getText());
-            Assert.assertEquals("Sfaturi Utile", sfaturiUtileButton.getText());
-        }
-
-    }
-
-    public void langChangerClick() {
-        langChangerRU.click();
     }
 }

@@ -11,21 +11,15 @@ public class Page {
     }
 
     MainPage mainPage;
-    CadouPentruEaPage cadouPentruEaPage;
     CartPage cartPage;
     LoginPopup loginPopup;
     LoginPopupFacebook loginPopupFacebook;
     LoginPopupVKontakte loginPopupVKontakte;
     LoginPopupOdnoklassniki loginPopupOdnoklassniki;
     ProductPage productPage;
-    ToateCategoriilePage toateCategoriilePage;
-    ElectrocasnicePage electrocasnicePage;
-    CastiPage castiPage;
     CommonSteps commonSteps;
     ScenarioContext scenarioContext;
-    ProductListPage productListPage;
     UserPage userPage;
-    ComparingPage comparingPage;
 
     public MainPage getMainPage() {
         return (mainPage == null) ? mainPage = new MainPage() : mainPage;
@@ -41,10 +35,6 @@ public class Page {
 
     public ScenarioContext getScenarioContext() {
         return (scenarioContext == null) ? scenarioContext = new ScenarioContext() : scenarioContext;
-    }
-
-    public CadouPentruEaPage getCadouPentruEaPage() {
-        return (cadouPentruEaPage == null) ? cadouPentruEaPage = new CadouPentruEaPage() : cadouPentruEaPage;
     }
 
     public LoginPopupFacebook getLoginPopupFacebook() {
@@ -71,24 +61,5 @@ public class Page {
         return (productPage == null) ? productPage = new ProductPage() : productPage;
     }
 
-    public ToateCategoriilePage getToateCategoriilePage() {
-        return (toateCategoriilePage == null) ? toateCategoriilePage = new ToateCategoriilePage() : toateCategoriilePage;
-    }
-
-    public ElectrocasnicePage getElectrocasnicePage() {
-        return (electrocasnicePage == null) ? electrocasnicePage = new ElectrocasnicePage() : electrocasnicePage;
-    }
-
-    public ProductListPage getProductListPage() {
-        return (productListPage == null) ? productListPage = new ProductListPage() : productListPage;
-    }
-
-    public CastiPage getCastiPage() {
-        return (castiPage == null) ? castiPage = new CastiPage() : castiPage;
-    }
-
-    public ComparingPage getComparingPage() {
-        return (comparingPage == null) ? comparingPage = new ComparingPage() : comparingPage;
-    }
 
 }

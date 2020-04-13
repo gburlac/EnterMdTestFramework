@@ -1,0 +1,206 @@
+2020-04-04 14:39:23 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-04 14:39:24 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-04 14:39:24 INFO  WebDriverManager:1042 - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2020-04-04 14:39:25 INFO  Downloader:128 - Downloading https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_win32.zip
+2020-04-04 14:39:25 INFO  Downloader:183 - Extracting binary from compressed file chromedriver_win32.zip
+2020-04-04 14:39:25 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-04 14:39:31 INFO  CommonSteps:32 - User is on homepage
+2020-04-04 14:39:34 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-04 14:39:34 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-04 14:39:34 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-04 14:39:39 INFO  CommonSteps:32 - User is on homepage
+2020-04-04 14:39:42 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-04 14:39:42 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-04 14:39:42 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:37:19 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:37:21 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:37:21 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:38:10 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:38:10 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:38:10 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:38:58 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:38:58 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:38:58 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:39:49 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:39:49 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:39:49 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:40:28 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:40:29 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:40:29 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:40:54 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 17:40:55 INFO  CommonSteps:32 - User is on homepage
+2020-04-05 17:41:01 INFO  LoginPopupFacebook:25 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2020-04-05 17:41:02 INFO  MainPage:139 - User is logged via Facebookaccount.
+2020-04-05 17:41:02 INFO  LoginFunctionality:30 - Opening popup for logging in via Social.
+2020-04-05 17:41:02 INFO  MainPage:186 - User is logged in!
+2020-04-05 17:41:03 INFO  LoginFunctionality:60 - Home page is displayed. User is logged.
+2020-04-05 17:41:04 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:41:04 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:41:04 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:41:52 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:41:52 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:41:52 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:42:40 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:42:40 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:42:40 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:43:27 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:43:27 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:43:27 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:44:15 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:44:15 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:44:15 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:45:03 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:45:03 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:45:03 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:45:52 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:45:52 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:45:52 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:46:40 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:46:40 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:46:40 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:49:41 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:49:41 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:49:41 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:51:24 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:51:25 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:51:25 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:51:31 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 17:51:32 INFO  CommonSteps:32 - User is on homepage
+2020-04-05 17:51:37 INFO  LoginPopupFacebook:25 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2020-04-05 17:51:39 INFO  MainPage:139 - User is logged via Facebookaccount.
+2020-04-05 17:51:39 INFO  LoginFunctionality:30 - Opening popup for logging in via Social.
+2020-04-05 17:51:39 INFO  MainPage:186 - User is logged in!
+2020-04-05 17:51:39 INFO  LoginFunctionality:60 - Home page is displayed. User is logged.
+2020-04-05 17:51:40 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:51:40 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:51:40 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:51:46 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 17:51:48 INFO  LoginFunctionality:70 - User tries to log in with valid email and password.
+2020-04-05 17:51:48 INFO  MainPage:357 - ENTERED INVALID PASSWORD
+2020-04-05 17:51:49 INFO  LoginFunctionality:77 - Notification alert message!
+2020-04-05 17:51:49 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:51:49 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:51:49 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:51:56 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 17:51:59 INFO  LoginFunctionality:70 - User tries to log in with valid email and password.
+2020-04-05 17:51:59 INFO  MainPage:353 - ENTERED INVALID EMAIL
+2020-04-05 17:51:59 INFO  LoginFunctionality:77 - Notification alert message!
+2020-04-05 17:52:01 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:52:01 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:52:01 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:54:24 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:54:25 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:54:25 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:54:31 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 17:54:32 INFO  CommonSteps:32 - User is on homepage
+2020-04-05 17:54:38 INFO  LoginPopupFacebook:25 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2020-04-05 17:54:39 INFO  MainPage:139 - User is logged via Facebookaccount.
+2020-04-05 17:54:39 INFO  LoginFunctionality:30 - Opening popup for logging in via Social.
+2020-04-05 17:54:39 INFO  MainPage:186 - User is logged in!
+2020-04-05 17:54:40 INFO  LoginFunctionality:60 - Home page is displayed. User is logged.
+2020-04-05 17:54:41 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:54:41 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:54:41 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:54:47 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 17:54:49 INFO  LoginFunctionality:70 - User tries to log in with valid email and password.
+2020-04-05 17:54:49 INFO  MainPage:358 - ENTERED INVALID PASSWORD
+2020-04-05 17:54:50 INFO  LoginFunctionality:77 - Notification alert message!
+2020-04-05 17:54:52 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:54:52 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:54:52 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:55:21 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:55:21 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:55:21 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:55:28 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 17:55:29 INFO  CommonSteps:32 - User is on homepage
+2020-04-05 17:55:35 INFO  LoginPopupFacebook:25 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2020-04-05 17:55:36 INFO  MainPage:139 - User is logged via Facebookaccount.
+2020-04-05 17:55:36 INFO  LoginFunctionality:30 - Opening popup for logging in via Social.
+2020-04-05 17:55:36 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 17:55:36 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 17:55:36 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 17:55:43 INFO  CommonSteps:40 - Enter.Online home page is opened.
+2020-04-05 18:04:18 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 18:04:18 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 18:04:18 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 18:04:25 INFO  CommonSteps:32 - User is on homepage
+2020-04-05 18:04:30 INFO  LoginPopupFacebook:25 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2020-04-05 18:04:31 INFO  MainPage:139 - User is logged via Facebookaccount.
+2020-04-05 18:04:31 INFO  LoginFunctionality:30 - Opening popup for logging in via Social.
+2020-04-05 18:04:33 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 18:04:33 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 18:04:33 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 18:04:38 INFO  CommonSteps:32 - User is on homepage
+2020-04-05 18:04:42 INFO  LoginFunctionality:42 - Home page is displayed. User is logged.
+2020-04-05 22:36:52 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 22:36:52 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 22:36:52 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-05 22:36:59 INFO  CommonSteps:32 - User is on homepage
+2020-04-05 22:37:02 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-05 22:37:02 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-05 22:37:02 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:00:39 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:00:41 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:00:41 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:00:47 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:00:50 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:00:55 INFO  LoginPopupFacebook:25 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2020-04-13 21:00:56 INFO  MainPage:150 - User is logged via Facebookaccount.
+2020-04-13 21:00:56 INFO  LoginFunctionality:35 - Opening popup for logging in via Social.
+2020-04-13 21:00:56 INFO  MainPage:197 - User is logged in!
+2020-04-13 21:00:57 INFO  LoginFunctionality:66 - Home page is displayed. User is logged.
+2020-04-13 21:00:58 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:00:58 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:00:58 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:01:05 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:01:07 INFO  LoginFunctionality:76 - User tries to log in with valid email and password.
+2020-04-13 21:01:07 INFO  MainPage:328 - ENTERED INVALID PASSWORD
+2020-04-13 21:01:08 INFO  LoginFunctionality:83 - Notification alert message!
+2020-04-13 21:01:10 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:01:10 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:01:10 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:01:17 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:01:19 INFO  LoginFunctionality:76 - User tries to log in with valid email and password.
+2020-04-13 21:01:19 INFO  MainPage:324 - ENTERED INVALID EMAIL
+2020-04-13 21:01:20 INFO  LoginFunctionality:83 - Notification alert message!
+2020-04-13 21:01:20 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:01:20 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:01:20 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:01:26 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:01:28 INFO  LoginFunctionality:76 - User tries to log in with valid email and password.
+2020-04-13 21:01:28 INFO  MainPage:324 - ENTERED INVALID EMAIL
+2020-04-13 21:01:29 INFO  LoginFunctionality:83 - Notification alert message!
+2020-04-13 21:01:29 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:01:29 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:01:29 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:01:36 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:01:38 INFO  LoginFunctionality:76 - User tries to log in with valid email and password.
+2020-04-13 21:01:38 INFO  MainPage:324 - ENTERED INVALID EMAIL
+2020-04-13 21:01:39 INFO  LoginFunctionality:83 - Notification alert message!
+2020-04-13 21:01:41 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:01:41 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:01:41 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:01:48 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:01:50 INFO  LoginFunctionality:76 - User tries to log in with valid email and password.
+2020-04-13 21:01:50 INFO  MainPage:324 - ENTERED INVALID EMAIL
+2020-04-13 21:01:50 INFO  LoginFunctionality:83 - Notification alert message!
+2020-04-13 21:01:52 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:01:52 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:01:52 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:01:59 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:02:02 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:02:07 INFO  LoginPopupFacebook:25 - >>>>> Login via Facebook window popup is displayed! <<<<<
+2020-04-13 21:02:08 INFO  MainPage:150 - User is logged via Facebookaccount.
+2020-04-13 21:02:08 INFO  LoginFunctionality:35 - Opening popup for logging in via Social.
+2020-04-13 21:02:09 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:02:09 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:02:09 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:02:16 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:02:20 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:02:23 INFO  LoginFunctionality:47 - Home page is displayed. User is logged.
+2020-04-13 21:02:29 INFO  BeforeAfterSteps:16 - ----------------------TEST STARTED----------------------
+2020-04-13 21:02:29 INFO  WebDriverManager:600 - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+2020-04-13 21:02:29 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\vcrisac\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+2020-04-13 21:02:35 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:02:37 INFO  CommonSteps:32 - Enter.Online home page is opened.
+2020-04-13 21:02:41 INFO  LoginFunctionality:47 - Home page is displayed. User is logged.

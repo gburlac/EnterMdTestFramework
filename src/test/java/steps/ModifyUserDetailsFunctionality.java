@@ -1,32 +1,34 @@
 package steps;
 
+import java.util.Map;
+
+import org.apache.log4j.Logger;
+
 import context.ScenarioContext;
 import cucumber.api.DataTable;
-import enums.Context;
 import cucumber.api.java.en.When;
-import org.apache.log4j.Logger;
+import enums.Context;
 import pages.MainPage;
 import pages.Page;
 import pages.UserPage;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class ModifyUserDetailsFunctionality {
+
     Page page = new Page();
+
     UserPage userPage = page.getUserPage();
+
     MainPage mainPage = page.getMainPage();
+
     Logger log = Logger.getLogger(ModifyUserDetailsFunctionality.class);
 
-
     @When("user goes to user account details")
-    public void goToAccountDetails() throws Exception {
+    public void goToAccountDetails() {
         mainPage.goToUserAccountDetails();
         log.info("User account details page is displayed.");
     }
 
-    @When("^edit user details$")
+    @When("^edit user details$") // leave
     public void editUserDetails(DataTable dataTable) throws Exception {
         Map<String, String> dataList = dataTable.asMap(String.class, String.class);
         userPage.prenumeField.clear();
@@ -46,7 +48,7 @@ public class ModifyUserDetailsFunctionality {
         userPage.cityField.sendKeys(dataList.get("City"));
         userPage.saveChanges();
         Thread.sleep(10000);
-//        userPage.waitNotifications();
+        //        userPage.waitNotifications();
         log.info("User details are updated.");
     }
 }

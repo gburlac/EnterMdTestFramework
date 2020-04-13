@@ -16,7 +16,6 @@ public class CommonSteps {
     MainPage mainPage = page.getMainPage();
     static Logger log = Logger.getLogger(CommonSteps.class);
 
-
     @When("^User selects Smartphones category$")
     public void userSelectsAnyCategory() {
         mainPage.selectSmartphonesCategory();
@@ -25,26 +24,12 @@ public class CommonSteps {
         log.info("Smartphones is selected");
     }
 
-    @Given("^User is on homepage$")
-    public void userIsOnHomepage() {
-        Driver.getDriver().get("https://enter.online/");
-        ScenarioContext.setContext(Context.LANGUAGE, "RO");
-        log.info("User is on homepage");
-    }
-
-    @Given("^Home page is displayed$")
+    @Given("^Home page is displayed$") // leave
     public void homePageIsDisplayed() {
         Driver.getDriver().get("https://enter.online/");
-        Waiter.waitByXPath("//sdiv[@class='support-trigger-round-wrapper']");
+        Waiter.waitByXPath("//*[name()='path' and contains(@class,'svg-accoun')]");
         TakeScreens.takeScreenshot(Driver.getDriver(), "home_page");
         log.info("Enter.Online home page is opened.");
-    }
-
-    @When("^User changes language of interface$")
-    public void userChangesLanguage() {
-        mainPage.langChangerClick();
-        log.info("User changed language on Russian");
-        ScenarioContext.setContext(Context.LANGUAGE, "RU");
     }
 
 }

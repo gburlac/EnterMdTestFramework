@@ -11,7 +11,7 @@ public class DeleteProductFromCart {
     CartPage cartPage = new CartPage();
 
     @When("^user delete (.*?) product$")
-    public void deleteProduct(String product) throws InterruptedException {
+    public void deleteProduct(String product) {
         switch (product) {
             case "Phones":
                 cartPage.deletePhoneFromCart();

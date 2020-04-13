@@ -1,7 +1,7 @@
-@RunVCrisac
+@Run
 Feature: Login via facebook profile with valid credentials
   Background:
-  Given Home page is displayed
+    Given Home page is displayed
   Scenario: Login on Enter.Online and logout
     When user is logged in via Facebook as FACEBOOK_USER
     Then home page is displayed and user is logged in as FACEBOOK_USER
@@ -19,11 +19,11 @@ Feature: Login via facebook profile with valid credentials
       | testemail@     | x        | EMAIL_ERROR              |
       | test.com       | тестпасс | EMAIL_ERROR              |
 
-  Scenario: as logged user add product to the cart and validate it
-    Given user is logged in via Facebook as FACEBOOK_USER
-    When user select TV category and add productId 3 product to cart
-    And user goes to cart
-    Then product is added to cart
+ Scenario: as logged user add product to the cart and validate it
+   Given user is logged in via Facebook as FACEBOOK_USER
+   When user select TV category and add productId 3 product to cart
+   And user goes to cart
+   Then product is added to cart
 
   Scenario: As logged user add several products in the cart, remove one, check if removed
     Given user logs in as REGISTERED_USER
@@ -38,7 +38,6 @@ Feature: Login via facebook profile with valid credentials
     Then product is added to cart
     When user delete Phones product
     Then product is deleted
-
 
   Scenario: as logged user edit user details
     Given user logs in as REGISTERED_USER
